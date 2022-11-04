@@ -24,14 +24,31 @@ description: >- # this means to ignore newlines until "baseurl:"
   Documentation for mei-friend, the friendly browser-based 'last-mile' 
   editor for music encodings.
 baseurl: "/help" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mei-friend.mdw.ac.at" # the base hostname & protocol for your site, e.g. http://example.com
+github_repo_url: https://github.com/mei-friend/mei-friend.github.io
+github_repo_branch: main
 twitter_username: sigsoundvienna
 github_username:  mei-friend
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+theme: jekyll-theme-open-project
+#plugins:
+#  - jekyll-feed
+
+tagline: Because examples are very important
+# Used in hero unit on main page.
+
+social:
+  links:
+    - https://twitter.com/sigsoundvienna
+    - https://github.com/mei-friend
+
+legal:
+  name: mei-friend, Department of Music Acoustics – Wiener Klangstil (IWK), mdw – University of Music and Performing Arts Vienna
+  tos_link: https://www.mdw.ac.at/netiquette/
+  privacy_policy_link: https://iwk.mdw.ac.at/impressum/
+
+permalink: /blog/:month-:day-:year-:title/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
