@@ -19,6 +19,13 @@
 # in the templates via {{ site.myvariable }}.
 
 title: mei-friend Documentation
+authors:
+  - name: Werner Goebl
+    email: goebl@mdw.ac.at
+  - name: David M. Weigl
+    email: weigl@mdw.ac.at
+
+author: "IWK mdw"
 email: goebl@mdw.ac.at, weigl@mdw.ac.at
 description: >- # this means to ignore newlines until "baseurl:"
   Documentation for mei-friend, the friendly browser-based 'last-mile' 
@@ -35,7 +42,7 @@ theme: jekyll-theme-open-project
 #plugins:
 #  - jekyll-feed
 
-tagline: Because examples are very important
+tagline: Get help here
 # Used in hero unit on main page.
 
 social:
@@ -50,22 +57,12 @@ legal:
 
 permalink: /blog/:month-:day-:year-:title/
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# algolia_search:
+#   api_key: '<your Algolia API key>'
+#   index_name: '<your Algolia index name>'
+
+landing_priority: [blog, specs, software]
+
+
+
+
