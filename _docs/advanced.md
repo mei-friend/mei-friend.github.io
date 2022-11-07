@@ -1,13 +1,10 @@
 ---
-title: Getting Started
-tags: 
- - jekyll
- - github
-description: Getting started with Docsy Jekyll
-permalink: /docs/getting-started/
+title: Advanced 
+description: Advanced topics
+permalink: /docs/advanced/
 ---
 
-# Getting Started
+# Advanced
 
 ## Features
 

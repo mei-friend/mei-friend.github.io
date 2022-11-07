@@ -1,25 +1,37 @@
+- title: Quickstart
+  url: "quickstart"
 - title: Documentation
-  url: docs
+  url: "docs"
   links:
     - title: "Getting Started"
       url: "docs/getting-started"
       children:
-        - title: Facsimile support
+        - title: Basic concepts 
+          url: "docs/basic/"
+        - title: "Import / Export"
+          url: "docs/import-export/"
+        - title: Navigation 
+          url: "docs/navigation/"
+        - title: Editing
+          url: "docs/editing/"
+        - title: Validation 
+          url: "docs/validation/"
+        - title: Settings 
+          url: "docs/settings/"
+        - title: Working with GitHub 
+          url: "docs/github/"
+    - title: "Advanced topics"
+      url: "docs/advanced/"
+      children:
+        - title: Working with large files 
+          url: "docs/largefiles/"
+        - title: Facsimile
           url: "docs/facsimile/"
-        - title: Development
-          url: "docs/getting-started#development"
-        - title: Customization
-          url: "docs/getting-started#customization"
-    - title: Versioning
-      url: "docs/versioning"
-    - title: "About"
-      url: "about"
-    - title: "News"
-      url: "news"
-- title: "Extras"
-  url: "docs/extras"
-  links:
-    - title: Quizzes
-      url: "docs/extras/example-quiz"
-    - title: Tags Page
-      url: "tags"
+        - title: Annotation
+          url: "docs/annotation/"
+        - title: Critical apparatus
+          url: "docs/critapp/"
+- title: "About"
+  url: "about"
+- title: "News"
+  url: "news"
