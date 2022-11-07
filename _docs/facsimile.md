@@ -1,3 +1,8 @@
+---
+title: Facsimile support
+permalink: /facsimile/
+---
+
 # mei-friend facsimile support
 
 The [facsimile element](https://music-encoding.org/guidelines/v4/elements/facsimile) contains image information of the written notation source. mei-friend is able to display this information (given that the graphical sources are available online), to edit the zones (change size, pan, insert, delete) and ingest facsimile information of a skeleton MEI file (such as exported from [Deep Optical Measure Detector](https://measure-detector.edirom.de/)) to a given MEI file.
