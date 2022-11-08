@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: mei-friend Documentation
+title: mei-friend Help
 email: goebl@mdw.ac.at
 author: Werner Goebl and David M. Weigl 
 description: > # this means to ignore newlines until "baseurl:"
@@ -40,7 +40,7 @@ version_params:
   version_menu: "Release"
   version_dir: Archive
   tocversion_dir: versions
-  versioning: true
+  versioning: false
 
   # Disable so older versions cannot be searched
   allow_search: true  
@@ -54,10 +54,10 @@ version_params:
     - Previous
 
 # Should there be feedback buttons at the bottom of pages?
-feedback: true
+feedback: false
 
 # Link to a privacy policy in footer, uncomment and define if wanted
-# privacy: https://domain.com/privacy
+privacy: https://iwk.mdw.ac.at/impressum
 
 # google-analytics: UA-XXXXXXXXXX
 # Image and (square) dimension for logo (don't start with /)
@@ -81,7 +81,6 @@ themeColor: red # purple, green, blue, orange, purple, grey
 fixedNav: 'true' # true or false
 
 permalink: /:year/:title/
-markdown: kramdown
 exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
 
 # Collections

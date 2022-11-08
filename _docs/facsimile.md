@@ -21,6 +21,8 @@ To zoom the displayed image, use the slider in the above menu or `CTRL - mouse w
 
 ## Creating your own MEI file with facsimile information
 
+{% include alert.html type="info" title="Look out! Editing a skeleton! Ahhhhh!" %}
+
 ### Editing a skeleton file
 To create an MEI file with facsimile information, you may use [Deep Optical Measure Detector](https://measure-detector.edirom.de/), an online tool that detects zones in notation images for each measure. This tool accepts individual images and outputs a skeleton (empty) minimal MEI file containing empty measures with the corresponding coordinates in the separate zone elements inside facsimile. 
 
