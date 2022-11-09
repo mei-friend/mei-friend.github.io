@@ -3,10 +3,9 @@ layout: page
 title: Docsy Jekyll Theme
 permalink: /
 ---
+![assets/img/menu-logo.png](assets/img/menu-logo.png)
 
-# Welcome to Docsy Jekyll
-
-This is a starter template for a docsy jekyll theme.
+Welcome to the mei-friend Help pages. Here you will find documentation for the mei-friend "last-mile" music encoding editor. 
 
 ![assets/img/docsy-jekyll.png](assets/img/docsy-jekyll.png)
 
