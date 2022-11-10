@@ -33,6 +33,14 @@
           url: "docs/annotation/"
         - title: Critical apparatus
           url: "docs/critapp/"
+        - title: mei-friend Environments
+          url: "docs/env/"
+        - title: Developing mei-friend
+          url: "docs/dev/"
+        - title: Extending the public repertoire
+          url: "docs/repertoire/"
+    - title: "Further reading"
+      url: "docs/furtherreading"
 - title: "About"
   url: "about"
 - title: "News"

@@ -16,7 +16,7 @@
 
 title: mei-friend Help
 email: goebl@mdw.ac.at
-author: Werner Goebl and David M. Weigl 
+author: <a href="https://iwk.mdw.ac.at/werner-goebl">Werner Goebl</a>, <a href="https://iwk.mdw.ac.at/david-weigl">David M. Weigl</a>, <a href="https://iwk.mdw.ac.at">IWK</a>
 description: > # this means to ignore newlines until "baseurl:"
   Documentation for mei-friend, the friendly web-based music encoding editor
 
@@ -28,6 +28,7 @@ url: "https://mei-friend.mdw.ac.at" # the base hostname & protocol for your site
 
 # Social (First three Required)
 repo: "https://github.com/mei-friend/mei-friend.github.io"
+org: "https://github.com/mei-friend/"
 github_user: "mei-friend"
 github_repo: "mei-friend.github.io"
 github_branch: "main"
@@ -38,7 +39,7 @@ twitter: sigsoundvienna
 # These options are used to configure the locations of your version history when you want to serve versioned documents
 version_params:
   version_menu: "Release"
-  version_dir: Archive
+  #version_dir: Archive
   tocversion_dir: versions
   versioning: false
 
