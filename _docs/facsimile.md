@@ -1,7 +1,7 @@
 ---
 title: Facsimile support
 permalink: /docs/facsimile/
-layout: default
+layout: page 
 ---
 # mei-friend facsimile support
 
