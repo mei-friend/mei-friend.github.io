@@ -16,6 +16,8 @@
           url: "docs/navigation/"
         - title: Editing
           url: "docs/editing/"
+        - title: Manipulating
+          url: "docs/manipulating/"
         - title: Validation 
           url: "docs/validation/"
         - title: Settings 
