@@ -13,8 +13,7 @@ Some mei-friend workflows are illustrated below.
 ## Fundamental functionalities
 ![Demonstration of fundamental functionalities]({{ site.baseurl }}/assets/img/demo/mei-friend-01.gif)
 
-## GitHub workflow
-![Demonstration of GitHub workflow]({{ site.baseurl }}/assets/img/demo/mei-friend-02.gif)
+
 
 <!--<div class="section-index">
     <hr class="panel-line">
