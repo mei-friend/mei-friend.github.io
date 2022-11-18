@@ -14,7 +14,7 @@ mei-friend is an editor targeting the [Music Encoding Initiative's](https://musi
 
 ## What do I need to start working with mei-friend?
 {% include alert.html type="info" title='mei-friend is available at <a href="https://mei-friend.mdw.ac.at">https://mei-friend.mdw.ac.at</a>.' %}
-mei-friend is a browser-based application - no further installation is necessary. Though we endevour to support all modern browsers, Firefox and Chrome-based browsers currently offer the best experience. While the editor will function when opened on a tablet, interaction with mei-friend is optimised for a mouse-and-keyboard set-up. 
+mei-friend is a browser-based application – no further installation is necessary. Though we endevour to support all modern browsers, Firefox and Chrome-based browsers currently offer the best experience. While the editor will function when opened on a tablet, interaction with mei-friend is optimised for a mouse-and-keyboard set-up. 
 {% include alert.html type="warning" title="mei-friend works best with Firefox or Chrome on a PC or Mac." %}
 
 ## Let's work through an example
