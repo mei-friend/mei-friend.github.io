@@ -6,21 +6,21 @@ permalink: /cheatsheet/
 
 # Keyboard Shortcuts Cheat sheet
 
-Most of the keyboard shortcuts are lsited in the respective menu items; however, some of them you will only find here.
+Most of the keyboard shortcuts are listed in the respective menu items in mei-friend's menu bar; however, some of them you will only find here.
 
 <script>
-    let shiftKey = "&#8679;"; // SHIFT
-    let altKey = "&#8997;"; // ALT
-    let cmdKey = "&#8963;"; // CTRL
-    let cmd2Key = "&#8997;"; // ALT
-    shiftKey = 'SHIFT';
+    let shiftKey = "&#8679;"; // SHIFT symbol
+    let altKey = "&#8997;"; // ALT symbol
+    let cmdKey = "&#8963;"; // CTRL symbol
+    let cmd2Key = "&#8997;"; // ALT symbol
+    shiftKey = 'SHIFT'; // prefer text instead of symbols
     altKey = 'ALT';
     cmdKey = 'CTRL';
     cmd2Key = 'ALT';
     if (navigator.platform.startsWith('Mac')) {
-      cmdKey = "&#8984;"; // CMD
-      cmd2Key = "&#8963;"; // CTRL
-      cmdKey = 'CMD';
+      cmdKey = "&#8984;"; // CMD symbol
+      cmd2Key = "&#8963;"; // CTRL symbol
+      cmdKey = 'CMD'; // text instead of symbols
       cmd2Key = 'CTRL';
     }
 
@@ -88,8 +88,12 @@ Most of the keyboard shortcuts are lsited in the respective menu items; however,
     </tr>
 </table>
 
+<h3 class='text-highlight'>Selecting elements</h3>
+
+Most comfortably, use mouse click and drag to select elements. You can use the following shortcuts in combination with click and drag for selecting elements. 
+Please consult `Settings->mei-friend->Drag select` to choose the element types while drag-selecting.
+
 <table>
-    <h3 class='text-highlight'>Selecting elements</h3>
     <tr>
     <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">click</span></td>
     <td class="explanation">Select multiple notes by mouse click</td>
