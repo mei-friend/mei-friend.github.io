@@ -34,8 +34,9 @@ Most of the keyboard shortcuts are listed in the respective menu items in mei-fr
 
 <!-- GENERAL -->
 
+### Getting help
+
 <table>
-    <h3 class='text-highlight'>Getting help</h3>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">?</span></td>
         <td class="explanation">Open mei-friend documentation</td>
@@ -46,8 +47,9 @@ Most of the keyboard shortcuts are listed in the respective menu items in mei-fr
     </tr>
 </table>
 
+### Navigating through notation
+
 <table>
-    <h3 class='text-highlight'>Navigating through notation</h3>
     <tr>
         <td class="icons"><span class="keyIcon">&rarr;</span></td>
         <td class="explanation">Select next note, rest, or mRest</td>
@@ -90,8 +92,9 @@ Most of the keyboard shortcuts are listed in the respective menu items in mei-fr
     </tr>
 </table>
 
+### Zooming and display
+
 <table>
-    <h3 class='text-highlight'>Zooming/Display</h3>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">+</span>, <span class="keyIcon cmdKey"></span><span class="keyIcon">–</span></td>
         <td class="explanation">Zoom notation in/out (or <span class="keyIcon cmdKey"></span><span class="keyIcon">Mouse wheel</span>)</td>
@@ -102,7 +105,7 @@ Most of the keyboard shortcuts are listed in the respective menu items in mei-fr
     </tr>
 </table>
 
-<h3 class='text-highlight'>Selecting elements</h3>
+### Selecting elements
 
 Most comfortably, use mouse click and drag to select elements. You can use the following shortcuts in combination with click and drag for selecting elements. 
 Please consult `Settings->mei-friend->Drag select` to choose the element types while drag-selecting.
@@ -120,8 +123,10 @@ Please consult `Settings->mei-friend->Drag select` to choose the element types w
 
 
 <!-- MANIPULATE -->
+
+### Manipulating elements
+
 <table>
-    <h3 class='text-highlight'>Manipulating elements</h3>
     <tr>
         <td class="icons"><span class="keyIcon">X</span></td>
         <td class="explanation">Invert attribute `@place` (dir, dynam, trill, tuplet number, ...),
@@ -134,16 +139,18 @@ Please consult `Settings->mei-friend->Drag select` to choose the element types w
     </tr>
 </table>
 
+### Deleting elements
+
 <table>
-    <h3 class="text-highlight">Deleting elements</h3>
     <tr>
         <td class="icons"><span class="keyIcon">BACKSPACE</span> or <span class="keyIcon">DELETE</span></td>
         <td class="explanation">Delete control elements, clef change, accid, artic, beam</td>
     </tr>
 </table>
 
+### Moving elements
+
 <table>
-    <h3 class='text-highlight'>Moving elements</h3>
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">&uarr;</span></td>
         <td class="explanation">Move note, rest, mRest, multiRest one tone upwards </td>
@@ -170,8 +177,9 @@ Please consult `Settings->mei-friend->Drag select` to choose the element types w
     </tr>
 </table>
 
+### MEI encoding manipulation
+
 <table>
-    <h3 class="text-highlight">MEI encoding manipulation</h3>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">C</span></td>
         <td class="explanation">Remove @accid.ges when @accid is present </td>
@@ -200,7 +208,8 @@ Please consult `Settings->mei-friend->Drag select` to choose the element types w
 
 <!-- INSERT -->
 
-<h3 class="text-highlight">Inserting elements</h3>
+### Inserting elements
+
 <p>Key bindings insert elements above selected note by default and below when pressing the <span class="keyIcon">CTRL&nbsp;&#8963;</span> key additionally.
 The elements are inserted using @startid and @endid attributes.
 <!--To insert elements with @tstamp and @tstamp2 attributes,
@@ -311,7 +320,8 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
     </tr>
 </table>
 
-<h3 class="text-highlight">Toggle articulation</h3>
+### Toggle articulation
+
 <table>
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">S</span></td>
@@ -339,7 +349,8 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
     </tr>
 </table>
 
-<h3 class="text-highlight">URL Parameters</h3>
+### URL Parameters 
+
 <p>mei-friend may ba called with several parameters passed through the URL
 in the form of <span class="code">https://mei-friend.mdw.ac.at/?file=fileURL&select=beamId</span>.</p>
 <table>
@@ -396,7 +407,9 @@ in the form of <span class="code">https://mei-friend.mdw.ac.at/?file=fileURL&sel
         <td class="explanation">Size of facsimile panel relative to notation panel</td>
     </tr>
 </table>
-<h4>Examples using URL parameters</h4>
+
+#### Examples using URL parameters 
+
 <p>
 <a class="code" target="_blank"
 href="https://mei-friend.mdw.ac.at/?file=https://raw.githubusercontent.com/trompamusic-encodings/Schumann-Clara_Romanze-in-a-Moll/master/Schumann-Clara_Romanze-ohne-Opuszahl_a-Moll.mei&orientation=top&select=beam-0000001097443359,staff-0000001071700568,chord-0000002117575656,chord-0000000554871076&select=slur-0000000400617177,slur-0000001381747608&speed=true&breaks=auto">Schumann piece with several elements 
