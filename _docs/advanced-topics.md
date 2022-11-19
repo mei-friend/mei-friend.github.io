@@ -1,7 +1,8 @@
 ---
-title: Advanced 
+title: Advanced topics
 description: Advanced topics
-permalink: /docs/advanced/
+permalink: /docs/advanced-topics/
+layout: page
 ---
 
 # Advanced
