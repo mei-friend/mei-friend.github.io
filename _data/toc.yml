@@ -29,6 +29,8 @@
       children:
         - title: Working with large files 
           url: "docs/largefiles/"
+        - title: URL parameters
+          url: "docs/urlparameters/"
         - title: Facsimile
           url: "docs/facsimile/"
         - title: Annotation
