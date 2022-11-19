@@ -94,23 +94,32 @@ Most of the keyboard shortcuts are listed in the respective menu items in mei-fr
 
 ### Zooming and display
 
-These zooming keyboard shortcuts apply for the currently active panel (notation panel, editor panel, or the facsimile panel).
+Some zooming keyboard shortcuts apply for the currently active panel (notation panel, editor panel, or the facsimile panel).
 
 <table>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">+</span>, <span class="keyIcon cmdKey"></span><span class="keyIcon">–</span></td>
-        <td class="explanation">Zoom notation/encoding/facsimile in or out (or <span class="keyIcon cmdKey"></span><span class="keyIcon">Mouse wheel</span>)</td>
+        <td class="explanation">Zoom notation/encoding/facsimile in or out</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">0</span>, <span class="keyIcon cmdKey"></span><span class="keyIcon">5</span></td>
-        <td class="explanation">Zoom notation to 100%, 50%, respectively</td>
+        <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">Mouse wheel</span></td>
+        <td class="explanation">Zoom notation/encoding/facsimile in or out (depending on mouse wheel direction)</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">0</span></td>
+        <td class="explanation">Zoom notation to 100%</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">5</span></td>
+        <td class="explanation">Zoom notation to 50%</td>
     </tr>
 </table>
 
 ### Selecting elements
 
-Most comfortably, use mouse click and drag to select elements. You can use the following shortcuts in combination with click and drag for selecting elements. 
+Most comfortably, use mouse click and drag to select elements. 
 Please consult `Settings->mei-friend->Drag select` to choose the element types while drag-selecting.
+You can use the following shortcuts in combination with click and drag for selecting elements. 
 
 <table>
     <tr>
