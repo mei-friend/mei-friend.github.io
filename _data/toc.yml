@@ -1,4 +1,4 @@
-- title: Cheat sheet 
+- title: "Cheat sheet" 
   url: "cheatsheet"
 - title: Quickstart
   url: "quickstart"
@@ -8,7 +8,7 @@
     - title: "Getting Started"
       url: "docs/getting-started"
       children:
-        - title: Basic concepts 
+        - title: "Basic concepts" 
           url: "docs/basic/"
         - title: "Import / Export"
           url: "docs/import-export/"
@@ -22,26 +22,26 @@
           url: "docs/validation/"
         - title: Settings 
           url: "docs/settings/"
-        - title: Working with GitHub 
+        - title: "Working with GitHub" 
           url: "docs/github/"
     - title: "Advanced topics"
       url: "docs/advanced/"
       children:
-        - title: Working with large files 
+        - title: "Working with large files" 
           url: "docs/largefiles/"
-        - title: URL parameters
+        - title: "URL parameters"
           url: "docs/urlparameters/"
         - title: Facsimile
           url: "docs/facsimile/"
         - title: Annotation
           url: "docs/annotation/"
-        - title: Critical apparatus
+        - title: "Critical apparatus"
           url: "docs/critapp/"
-        - title: mei-friend Environments
+        - title: "mei-friend Environments"
           url: "docs/env/"
-        - title: Developing mei-friend
+        - title: "Developing mei-friend"
           url: "docs/dev/"
-        - title: Extending the public repertoire
+        - title: "Extending the public repertoire"
           url: "docs/repertoire/"
     - title: "Further reading"
       url: "docs/furtherreading"
