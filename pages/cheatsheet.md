@@ -123,12 +123,12 @@ You can use the following shortcuts in combination with click and drag for selec
 
 <table>
     <tr>
-    <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">click</span></td>
-    <td class="explanation">Select multiple notes by mouse click</td>
+        <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">click</span></td>
+        <td class="explanation">Select multiple notes by mouse click</td>
     </tr>
     <tr>
-    <td class="icons"><span class="keyIcon altKey"></span><span class="keyIcon">click</span></td>
-    <td class="explanation">Select the chord when clicking onto a note</td>
+        <td class="icons"><span class="keyIcon altKey"></span><span class="keyIcon">click</span></td>
+        <td class="explanation">Select the chord when clicking onto a note</td>
     </tr>
 </table>
 
