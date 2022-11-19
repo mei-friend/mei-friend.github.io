@@ -94,14 +94,16 @@ Most of the keyboard shortcuts are listed in the respective menu items in mei-fr
 
 ### Zooming and display
 
+These zooming keyboard shortcuts apply for the currently active panel (notation panel, editor panel, or the facsimile panel).
+
 <table>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">+</span>, <span class="keyIcon cmdKey"></span><span class="keyIcon">–</span></td>
-        <td class="explanation">Zoom notation in/out (or <span class="keyIcon cmdKey"></span><span class="keyIcon">Mouse wheel</span>)</td>
+        <td class="explanation">Zoom notation/encoding/facsimile in or out (or <span class="keyIcon cmdKey"></span><span class="keyIcon">Mouse wheel</span>)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">0</span>, <span class="keyIcon cmdKey"></span><span class="keyIcon">5</span></td>
-        <td class="explanation">Zoom to 100%, 50%, respectively</td>
+        <td class="explanation">Zoom notation to 100%, 50%, respectively</td>
     </tr>
 </table>
 
@@ -184,7 +186,7 @@ Please consult `Settings->mei-friend->Drag select` to choose the element types w
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">C</span></td>
         <td class="explanation">Remove @accid.ges when @accid is present </td>
     </tr>
-    <tr>Renumber measures (counts successive measures with @metcon="false" as one, counts multiple endings with same numbering)
+    <tr>Renumber measures (counts successive measures with `@metcon="false"` as one, counts multiple endings with same numbering)
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">R</span></td>
         <td class="explanation">Test renumbering (output to console)</td>
     </tr>
@@ -201,7 +203,7 @@ Please consult `Settings->mei-friend->Drag select` to choose the element types w
         <td class="explanation">Re-render MEI encoding through Verovio (removing xml:ids)</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon cmdKey"></span></span><span class="keyIcon">I</span></td>
+        <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">I</span></td>
         <td class="explanation">Ingest facsimile</td>
     </tr>
 </table>
