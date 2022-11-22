@@ -4,9 +4,9 @@ date:   2022-11-17 18:52:21
 categories: mei-friend update
 badges:
  - type: info
-   tag: info-badge
+   tag: update
  - type: success
-   tag: success-badge
+   tag: new feature
 ---
 
 Being busy with designing an app that might be of help for a larger circle of users and managing to implement and test it, is usually filling up one's days and weeks. However, it is clear that providing a thorough documentation is as essential as chasing bugs and edge cases. 
