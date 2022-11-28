@@ -21,10 +21,15 @@ MEI-friend is not designed to write MEI by hand but to import an already existin
 
 MEI-friend has two major screen regions: the editor panel and the notation panel. The editor panel is where the MEI encoding is displayed and the notation panel where it is rendered. These two panels are always connected so that every change that is made in one of them will result in a change also in the other one.
 
-![screen regions of MEI-friend]({{ site.baseurl }}/assets/img/Basic_concepts/ "screen regions of MEI-friend")
+![screen regions of MEI-friend]({{ site.baseurl }}/assets/img/Basic_concepts/Screenshot_Screen_Regions.png "screen regions of MEI-friend")
 
-At the top you can find a menu bar 
+At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the location of your screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file
 
+{% include alert.html type="info" title="Info" The small box between menu bar and file name (in this case "ALL 4.0.1") contains information regarding the type of music notation and the schema used in the file. For now it is not important! %}
+
+
+
+On the far right you will find three icons to toggle the following panels: the [facsimile panel](_docs\facsimile.md), the annotations panel and the settings panel.
 
 * Screenshot + labels
 * Menu bar (with three panel icons)
