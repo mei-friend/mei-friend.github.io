@@ -27,8 +27,6 @@ At the top you can find a menu bar with the options: Login, File, Code, View, Ma
 
 {% include alert.html type="info" title="Info" The small box between menu bar and file name (in this case "ALL 4.0.1") contains information regarding the type of music notation and the schema used in the file. For now it is not important! %}
 
-
-
 On the far right you will find three icons to toggle the following panels: the [facsimile panel](_docs\facsimile.md), the annotations panel and the settings panel.
 
 * Screenshot + labels
