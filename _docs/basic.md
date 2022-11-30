@@ -28,7 +28,7 @@ On the far right you will find three icons to toggle the following panels: the [
 
 The notation menu bar lets you navigate the notation panel among other things.
 
-{% include alert.html type="info" title="Info" The small box between menu bar and file name (in this case "ALL 4.0.1") contains information regarding the type of music notation and the schema used in the file. For now it is not important! %}
+{% include alert.html type="info" title="Info" %} The small box between menu bar and file name (in this case "ALL 4.0.1") contains information regarding the type of music notation and the schema used in the file. For now it is not important!
 
 ## Modifying layout of screen regions
 
@@ -40,7 +40,7 @@ If you want to resize the screen regions you can click and drag the separating l
 
 A very important and central feature of the mei-friend is the already briefly mentioned link between the notation and the editor panel. To establish this link it is necessary that every element in the editor panel has the attribute `<xml:id>` with some string of characters following. With this ID mei-friend is able to connect any changes made between the two panels. Important for synchronized updates is also the blue "Updates" checkmark in the notation menu bar. Otherwise changes have to be updated manually.
 
-{% include alert.html type="info" title="" Even without ID's changes in the editor panel will be visible in the notation panel but not vice versa. %}
+{% include alert.html type="info" title="No ID's" %} Even without ID's changes in the editor panel will be visible in the notation panel but not vice versa. 
 
 If your MEI-file is missing ID's or might be using the same ID twice (i.e. due to copying an element) you can rerender the file with `Manipulate -> Re-render MEI (with ID's)` which will generate any missing ID's for your elements while also reformating identations, spaces and similar things. `Manipulate -> Re-render MEI (remove ID's)` will remove any ID that is not referenced somewhere else while reformating.
 
@@ -49,11 +49,11 @@ To make changes directly in the notations panel you need to use hotkeys that you
 ![navigation in the notation menu bar]({{ site.baseurl }}/assets/img/Basic_concepts/navigation_notation_panel.png "navigation in the notation menu bar")
 
 Using the navigation section in the notation menu bar you can flip through the pages of your rendered MEI-file or put in a page number that you want to jump to. Important to note is that the editor panel will follow the notation panel to the corresponding encoding part as long as this feature is enabled by the blue checkmark to the right.
-The downwards arrow to the left allows you to select a [section] (https://music-encoding.org/guidelines/v4/elements/section) {:target="_blank"} and jump directly to it. Among other things sections are simply useful to segment a work semantically (like in this case for Beethovens "Sechs Variationen": "Tema, Var-I, Var-II ..."). This arrow wont appear if you don't have any sections in your encoding!
+The downwards arrow to the left allows you to select a [section](https://music-encoding.org/guidelines/v4/elements/section) {:target="_blank"} and jump directly to it. Among other things sections are simply useful to segment a work semantically (like in this case for Beethovens "Sechs Variationen": "Tema, Var-I, Var-II ..."). This arrow wont appear if you don't have any sections in your encoding!
 
-If you are working with larger files the speedmode option (in the notation menu bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensly.
+If you are working with larger files the [speedmode](_docs\largefiles.md) option (in the notation menu bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensly.
 
-{% include alert.html type="info" title="Local storage" mei-friend remembers your most recent work and settings in your browser's local storage to persist them even if your browser is closed as long as you don't delete it automatically.%}
+{% include alert.html type="info" title="Local storage" %} mei-friend remembers your most recent work and settings in your browser's local storage to persist them even if your browser is closed as long as you don't delete it automatically
 
 ## Where next?
 
