@@ -38,7 +38,9 @@ If you want to resize the screen regions you can click and drag the separating l
 
 ## Interaction between editor and notation
 
-A very important and central feature of the mei-friend is the already briefly mentioned link between the notation and the editor panel. To establish this link it is necessary that every element in the editor panel has the attribute `<xml:id>` with some string of characters following. With this ID mei-friend is able to connect any changes made between the two panels. Important for synchronized updates is also the blue "Updates" checkmark in the notation menu bar. Otherwise changes have to be updated manually.
+A very important and central feature of the mei-friend is the already briefly mentioned link between the notation and the editor panel. Elements in the notation panel are highlighted in blue and in the editor panel in orange (b3 in bar 2, line 142 in the screenshot).
+
+To establish this link it is necessary that every element in the editor panel has the attribute `<xml:id>` with some string of characters following. With this ID mei-friend is able to connect any changes made between the two panels. Important for synchronized updates is also the blue "Updates" checkmark in the notation menu bar. Otherwise changes have to be updated manually.
 
 > {% include alert.html type="info" title="No ID's" %} Even without ID's changes in the editor panel will be visible in the notation panel but not vice versa. 
 
