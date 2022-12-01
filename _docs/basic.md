@@ -8,7 +8,7 @@ layout: page
 ## MEI basic concepts
 
 MEI-Friend is a online tool designed to work with and edit MEI (Music Encoding Initiative). MEI is an xml-based encoding language that supports most western music notation from mensural notation, to tablature to modern music notation (Common Music Notation, CMN). In short MEI tries to encode music notation in a machine-readable structure. 
-If you don't know how MEI works or have never worked with xml-tpye languages there are very beginner friendly tutorials [here] (https://music-encoding.org/resources/tutorials.html){:target="_blank"}. You can also find a thorough documentation [here] (https://music-encoding.org/guidelines/v4/content/){:target="_blank"}.
+If you don't know how MEI works or have never worked with xml-tpye languages there are very beginner friendly tutorials [here](https://music-encoding.org/resources/tutorials.html){:target="_blank"}. You can also find a thorough documentation [here](https://music-encoding.org/guidelines/v4/content/){:target="_blank"}.
 
 MEI-friend is not designed to write MEI by hand but to import an already existing MEI file (that was converted from musicXML for example) and edit and correct it.
 
