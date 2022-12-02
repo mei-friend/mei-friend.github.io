@@ -30,12 +30,13 @@ Articulation can be added by selecting a single note but also by selecting multi
 
 ### Adding spanning elements
 
-To add spanning elements like slurs, ties or hairpins select the starting and ending note (notes between can also be selected, the element will be added from first to last selected) and either use `Insert -> Slur` or simply use the hotkey "s". This will add a slur above the notes selected. With "Ctrl + s" it can be added below. If only one note is selected the element will use the next note as the endpoint. The `<slur>` element can then also be found in the encoding and edited here if necessary. You could maybe want to add the attribute `place=below` manually.
+To add spanning elements like a slur select the starting and ending note (notes between can also be selected, the element will be added from first to last selected) and either use `Insert -> Slur` or simply use the hotkey "s". This will add a slur above the notes selected. With "Ctrl + s" it can be added below. If only one note is selected the element will use the next note as the endpoint. The `<slur>` element can then also be found in the encoding and edited here if necessary. You could maybe want to add the attribute `place=below` manually.
 
 Spanning elements added this way will always have a `startid` and `endid` which reference the ID's of the starting and ending note. Equivalent to this a spanning element can also be sufficiently defined by specifying the `staff` and two timestamps `tstamp` and `tstamp2`. This method is commonly used for hairpins.
 
-These two methods can also be mixed by using `startid` with `tstamp2`. You can use this method if a slur has a starting note but doesn't have a ending note.
-(Screenshot)
+These two methods can also be mixed by using `startid` with `tstamp2` or `tstamp` and `endid`. You can use this method if a slur has a starting note but doesn't have a ending note.
+
+![Screenshot of slurs]({{ site.baseurl }}/assets/img/editing/spanning.PNG "Situation with multiple endings where slurs don't end/start on a specific note")
 
 ### Adding Dynamics and Directives
 
