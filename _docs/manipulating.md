@@ -13,5 +13,10 @@ If you want some elements in your score to be aligned vertically select all of t
 
 ![vertical groups]({{ site.baseurl }}assets\img\manipulating\vgrps.PNG "left with vertical group and right without")
 
+## Clean gestural accidentals (accid.ges)
+
 ## Renumbering measures
 
+There are a couple of important settings for renumbering measures in the settings panel under `mei-friend Settings -> Renumber measures`, i.e. how to treat incomplete measures or wether to continue counting measures across endings or not.
+
+Before using `Renumber measures (exec)` it is recommended to use `Renumber measures (test)`: This will show how the renumbering will be done in the console of your browser (hotkey "F12" for many browsers) before actually executing it.
