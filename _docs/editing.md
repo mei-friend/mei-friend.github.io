@@ -11,7 +11,7 @@ There are two ways to edit your MEI-file: Either changing the encoding directly 
 
 Using the editor panel you can simply edit the encoding, changing attribute values or adding new elements. Typical text editing functions are available that you can find under `Code` in the menu bar like "Undo", "Search" or "Replace".
 
-{% include alert.html type="info" title="Regexp" content="Using ["Regular Expression"](https://en.wikipedia.org/wiki/Regular_expression) (regex or regexp) in the search bar is supported  to make searching more powerful." %}
+{% include alert.html type="info" title="Regexp" content="Using [Regular Expression](https://en.wikipedia.org/wiki/Regular_expression) (regex or regexp) in the search bar is supported  to make searching more powerful." %}
 
 Adding new elements by hand is tideous and generally not recommended. You can use the `Insert` menu in the menu bar to add elements or just copy already existing elements. If you copy elements be mindful to change the ID so there aren't multiple elements with the same ID.
 

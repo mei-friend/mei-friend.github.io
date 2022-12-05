@@ -28,7 +28,7 @@ On the far right you will find three icons to toggle the following panels: the [
 
 The notation menu bar lets you navigate the notation panel among other things.
 
-{% include alert.html type="info" title="Info" content="The small box between menu bar and file name (in this case "ALL 4.0.1") contains information regarding the type of music notation and the schema used in the file. For now it is not important!" %}
+{% include alert.html type="info" title="Info" content="The small box between menu bar and file name (in this case `ALL 4.0.1`) contains information regarding the type of music notation and the schema used in the file. For now it is not important!" %}
 
 ## Modifying layout of screen regions
 
@@ -42,7 +42,7 @@ A very important and central feature of the mei-friend is the already briefly me
 
 To establish this link it is necessary that every element in the editor panel has the attribute `<xml:id>` with some string of characters following. With this ID mei-friend is able to connect any changes made between the two panels. Important for synchronized updates is also the blue "Updates" checkmark in the notation menu bar. Otherwise changes have to be updated manually.
 
-{% include alert.html type="info" title="No ID's" content="Even without ID's changes in the editor panel will be visible in the notation panel but not vice versa." %}
+{% include alert.html type="info" title="No IDs" content="Even without IDs changes in the editor panel will be visible in the notation panel but not vice versa." %}
 
 If your MEI-file is missing ID's or might be using the same ID twice (i.e. due to copying an element) you can rerender the file with `Manipulate -> Re-render MEI (with ID's)` which will generate any missing ID's for your elements while also reformating identations, spaces and similar things. `Manipulate -> Re-render MEI (remove ID's)` will remove any ID that is not referenced somewhere else while reformating.
 
