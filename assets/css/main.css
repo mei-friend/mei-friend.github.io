@@ -316,7 +316,11 @@ pre {
 }
 
 figure {
-    margin: 0 0 1rem
+    margin: 0 0 1rem;
+    border: 1px solid #30638e;
+    border-radius: 5px;
+    padding: .5em .5em .5em .5em;
+    margin-top: 1.5em;
 }
 
 img {
@@ -639,6 +643,17 @@ mark,
 .figure-caption {
     font-size: 90%;
     color: #888
+}
+
+.figure-title {
+    margin-top: -2em;
+    margin-bottom: .5em;
+    font-weight: bold;
+    font-size: large;
+}
+
+.halfwidth {
+    max-width: 50%;
 }
 
 code {
