@@ -25,7 +25,7 @@
         - title: "Working with GitHub" 
           url: "docs/github/"
     - title: "Advanced topics"
-      url: "docs/advanced-topics/"
+      url: "docs/advanced-topics"
       children:
         - title: "Working with large files" 
           url: "docs/largefiles/"
