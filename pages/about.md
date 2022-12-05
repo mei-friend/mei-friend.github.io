@@ -5,6 +5,26 @@ permalink: /about/
 
 # About
 
+Who are we? 
+
+Werner, David, Matthäus & community (laurent, th-we)
+
+IWK, mdw
+
+TROMPA, Signature Sound, E-Laute
+
+License
+
+Components: 
+
+CodeMirror
+
+Verovio
+
+txml
+
+jsgit.
+
 This is a [starter template](https://vsoch.github.io/docsy-jekyll/) for a Docsy jekyll theme, based
 on the Beautiful [Docsy](https://github.com/google/docsy) that renders with Hugo. This version is intended for
 native deployment on GitHub pages. See the [repository]({{ site.repo }}) for more details.

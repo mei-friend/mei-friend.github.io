@@ -5,11 +5,11 @@
 - title: Documentation
   url: "docs"
   links:
-    - title: "Getting Started"
-      url: "docs/getting-started"
+    - title: "Basic Topics"
+      url: "docs/basic-topics"
       children:
-        - title: "Basic concepts" 
-          url: "docs/basic/"
+        - title: "Getting started" 
+          url: "docs/getting-started/"
         - title: "Import / Export"
           url: "docs/import-export/"
         - title: Navigation 
