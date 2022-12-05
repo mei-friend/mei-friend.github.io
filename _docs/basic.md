@@ -16,7 +16,7 @@ MEI-friend is not designed to write MEI by hand but to import an already existin
 
 MEI-friend has two major screen regions: the editor panel and the notation panel. The editor panel is where the MEI encoding is displayed and the notation panel where it is rendered. These two panels are always connected so that every change that is made in one of them will result in a change also in the other one.
 
-![screen regions of mei-friend]({{ site.baseurl }}/assets/img/Basic_concepts/screenshot_screen_regions.PNG "screen regions of mei-friend")
+![screen regions of mei-friend]({{ site.baseurl }}/assets/img/Basic_concepts/Screenshot_Screen_Regions.PNG "screen regions of mei-friend")
 
 At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file
 
@@ -44,7 +44,7 @@ To establish this link it is necessary that every element in the editor panel ha
 
 {% include alert.html type="info" title="No IDs" content="Even without IDs changes in the editor panel will be visible in the notation panel but not vice versa." %}
 
-If your MEI-file is missing ID's or might be using the same ID twice (i.e. due to copying an element) you can rerender the file with `Manipulate -> Re-render MEI (with ID's)` which will generate any missing ID's for your elements while also reformating identations, spaces and similar things. `Manipulate -> Re-render MEI (remove ID's)` will remove any ID that is not referenced somewhere else while reformating.
+If your MEI-file is missing IDs or might be using the same ID twice (i.e. due to copying an element) you can rerender the file with `Manipulate -> Re-render MEI (with ID's)` which will generate any missing IDs for your elements while also reformating identations, spaces and similar things. `Manipulate -> Re-render MEI (remove ID's)` will remove any ID that is not referenced somewhere else while reformating.
 
 To make changes directly in the notations panel you need to use hotkeys that you can find under `Help -> Show help page`. You will find that they are similar to hotkeys used by conventional music notation software.
 
