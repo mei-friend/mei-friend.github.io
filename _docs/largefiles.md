@@ -41,6 +41,6 @@ You may download the current 3-page speed mode MEI file for debugging using `CTR
 
 To test the advantages of speed mode in comparison to normal mode, try these large files:
 
-[Beethoven Diabelli Variations Op. 120: 56.706 lines](https://mei-friend.mdw.ac.at/?file=https://raw.githubusercontent.com/trompamusic-encodings/Beethoven_Op120_BreitkopfHaertel/master/Beethoven_Op120-Breitkopf.mei&speed=true){:target="_blank"}
+[Beethoven Diabelli Variations Op. 120: 56,6k lines](https://mei-friend.mdw.ac.at/?file=https://raw.githubusercontent.com/trompamusic-encodings/Beethoven_Op120_BreitkopfHaertel/master/Beethoven_Op120-Breitkopf.mei&speed=true){:target="_blank"}
 
-
+[Beethoven 100k lines with a selection at second-last page](https://mei-friend.mdw.ac.at/?file=https://raw.githubusercontent.com/trompamusic/mei-friend/master/eval/Beethoven-100k-lines.mei&speed=true&select=beam-0000000394677671){:target="_blank"}
