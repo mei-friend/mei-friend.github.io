@@ -7,7 +7,7 @@ layout: page
 
 ## MEI basic concepts
 
-MEI-Friend is a online tool designed to work with and edit MEI (Music Encoding Initiative). MEI is an xml-based encoding language that supports most western music notation from mensural notation, to tablature to modern music notation (Common Music Notation, CMN). In short MEI tries to encode music notation in a machine-readable structure. 
+MEI-Friend is a online tool designed to work with and edit MEI (Music Encoding Initiative). MEI is an xml-based encoding language that supports most western music notation from mensural notation, to tablature to modern music notation (Common Music Notation, CMN). In short MEI tries to encode music notation in a machine-readable structure.
 If you don't know how MEI works or have never worked with xml-tpye languages there are very beginner friendly tutorials [here](https://music-encoding.org/resources/tutorials.html){:target="_blank"}. You can also find a thorough documentation [here](https://music-encoding.org/guidelines/v4/content/){:target="_blank"}.
 
 MEI-friend is not designed to write MEI by hand but to import an already existing MEI file (that was converted from musicXML for example) and edit and correct it.
@@ -28,7 +28,7 @@ On the far right you will find three icons to toggle the following panels: the [
 
 The notation menu bar lets you navigate the notation panel among other things.
 
-{% include alert.html type="info" title="Info" %} The small box between menu bar and file name (in this case "ALL 4.0.1") contains information regarding the type of music notation and the schema used in the file. For now it is not important!
+{% include alert.html type="info" title="Info" content="The small box between menu bar and file name (in this case "ALL 4.0.1") contains information regarding the type of music notation and the schema used in the file. For now it is not important!" %}
 
 ## Modifying layout of screen regions
 
@@ -42,7 +42,7 @@ A very important and central feature of the mei-friend is the already briefly me
 
 To establish this link it is necessary that every element in the editor panel has the attribute `<xml:id>` with some string of characters following. With this ID mei-friend is able to connect any changes made between the two panels. Important for synchronized updates is also the blue "Updates" checkmark in the notation menu bar. Otherwise changes have to be updated manually.
 
-{% include alert.html type="info" title="No ID's" %} Even without ID's changes in the editor panel will be visible in the notation panel but not vice versa. 
+{% include alert.html type="info" title="No ID's" content="Even without ID's changes in the editor panel will be visible in the notation panel but not vice versa." %}
 
 If your MEI-file is missing ID's or might be using the same ID twice (i.e. due to copying an element) you can rerender the file with `Manipulate -> Re-render MEI (with ID's)` which will generate any missing ID's for your elements while also reformating identations, spaces and similar things. `Manipulate -> Re-render MEI (remove ID's)` will remove any ID that is not referenced somewhere else while reformating.
 
@@ -55,8 +55,8 @@ The downwards arrow to the left allows you to select a [section](https://music-e
 
 If you are working with larger files the [speedmode](_docs\largefiles.md) option (in the notation menu bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensly.
 
-> {% include alert.html type="info" title="Local storage" %} mei-friend remembers your most recent work and settings in your browser's local storage to persist them even if your browser is closed as long as you don't delete it automatically
+{% include alert.html type="info" title="Local storage" content="mei-friend remembers your most recent work and settings in your browser's local storage to persist them even if your browser is closed as long as you don't delete it automatically." %}
 
 ## Where next?
 
-Kurzer Text mit Wegweisern zu anderen Kapiteln
+Kurzer Text mit Wegweisern zu anderen Kapitel.

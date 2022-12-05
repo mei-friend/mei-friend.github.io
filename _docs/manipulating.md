@@ -3,7 +3,7 @@ title: Manipulating
 permalink: /docs/manipulating/
 layout: page
 ---
-# Manipulating 
+# Manipulating
 
 Mei-friend provides some useful tools to manipulate your score or specific elements (under `Manipulate` in the menu bar) in it besides the straight forward ones already discussed in [editing](_docs\editing.md).
 
