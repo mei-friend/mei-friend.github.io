@@ -14,7 +14,7 @@ These may be generated via optical music recognition, or via conversion from oth
 
 {% include alert.html type="danger" title="(Dec 2022) This documentation is currently under development and not yet recommended for public consumption." %}
 
-<figure class="figure twothirdwidth left">
+<figure class="figure twothirdswidth left">
     <a href="https://mei-friend.mdw.ac.at" target="_blank">
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/mei-friend-screenshot.png" 
             alt="Screenshot of mei-friend" />

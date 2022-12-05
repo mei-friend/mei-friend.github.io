@@ -10,13 +10,27 @@ The [facsimile element](https://music-encoding.org/guidelines/v4/elements/facsim
 ## Explore an MEI file with facsimile information
 To demonstrate the functionality, please load our example file [Beethoven WoO57 Andante favori](https://mei-friend.mdw.ac.at/?notationOrientation=top&notationProportion=.6&facsimileOrientation=left&facsimileProportion=.45&breaks=line&file=https://raw.githubusercontent.com/trompamusic-encodings/Beethoven_Op76_BreitkopfHaertel/master/Beethoven_Op76-Breitkopf-Haertel.mei){:target="_blank"} from our public-domain github repository. Upon opening, the facsimile panel will be activated automatically that shows the image information provided in the MEI file. The facsimile panel can be hidden through the close bottom on the right side of the facsimile menu, and shown again using the facsimile icon in the upper right corner of mei-friend. The facsimile source images are linked through `<graphic@target>` (inside the `surface` element) and can be formulated as absolute URLs or as paths relative to the github repository's root folder or in an image folder `img`.
 
-![Screenshot of mei-friend with facsimile information as fullpage]({{ site.baseurl }}/assets/img/facsimile/facsimile-fullpage-screenshot.png "Screenshot of mei-friend with facsimile as fullpage")
+<figure class="figure textwidth">
+    <div class="figure-title">Fig. 1: mei-friend facsimile in full-page mode.</div>
+    <a href="https://mei-friend.mdw.ac.at/?notationOrientation=top&notationProportion=.6&facsimileOrientation=left&facsimileProportion=.45&breaks=encoded&file=https://raw.githubusercontent.com/trompamusic-encodings/Beethoven_Op76_BreitkopfHaertel/master/Beethoven_Op76-Breitkopf-Haertel.mei&select=mlzsrty" target="_blank">
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/facsimile/facsimile-fullpage-screenshot.png" 
+            alt="Screenshot of mei-friend facsimile mode in full page" />
+    </a>
+    <figcaption class="figure-caption">Screenshot of mei-friend with facsimile information as full page. (Click on image to open this file with this selection.)</figcaption>
+</figure>
 
 ### Adjusting the facsimile display
 
 To zoom the displayed image, use the slider in the above menu or `CTRL - mouse wheel` (on MacOS `CMD - mouse wheel`). To change the relative position of the facsimile panel relative to the notation, use the `View –> Facsimile top/bottom/left/right` in the mei-friend control menu. Drag the borders or corners to adjust the size of the facsimile panel or click into the body of a selected zone element to move it over the source image. All these settings will be stored in the local storage and restored after the mei-friend is reloaded. By default, only the zones corresponding to the displayed measures in the notation panel are shown. If you want to see the entire page, please activate `Show full page` in the facsimile menu.
 
-![Screenshot of mei-friend with facsimile information of one system]({{ site.baseurl }}/assets/img/facsimile/facsimile-system-screenshot.png "Screenshot of mei-friend with facsimile of one system")
+<figure class="figure textwidth">
+    <div class="figure-title">Fig. 2: mei-friend facsimile in system mode.</div>
+    <a href="https://mei-friend.mdw.ac.at/?notationOrientation=top&notationProportion=.6&facsimileOrientation=top&facsimileProportion=.45&breaks=line&file=https://raw.githubusercontent.com/trompamusic-encodings/Beethoven_Op76_BreitkopfHaertel/master/Beethoven_Op76-Breitkopf-Haertel.mei&select=m5ds0e" target="_blank">
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/facsimile/facsimile-system-screenshot.png" 
+            alt="Screenshot of mei-friend with facsimile of one system" />
+    </a>
+    <figcaption class="figure-caption">Screenshot of mei-friend with facsimile information of one system. (Click on image to open this file with this selection.)</figcaption>
+</figure>
 
 
 ### Navigating with facsimile
@@ -45,7 +59,14 @@ Analogously, you may delete a selected zone by pressing `DELETE`. This will dele
 
 Another path to obtain facsimile information into your encoding file, is to use the [Deep Optical Measure Detector](https://measure-detector.edirom.de/){:target="_blank"}, an online tool that automatically detects zones in notation images for each measure. This tool accepts individual images and outputs a skeleton (empty) minimal MEI file (statically named 'measure_annotations.xml') containing empty measures with the `@facs` pointers to zone elements inside facsimile containing the detected coordinate information. 
 
-![Screenshot of the Deep Optical Measure Detector]({{ site.baseurl }}/assets/img/facsimile/DOMD-screenshot.png "Screenshot of the Deep Optical Measure Detector")
+<figure class="figure textwidth">
+    <div class="figure-title">Fig. 3: Screenshot of the Deep Optical Measure Detector.</div>
+    <a href="https://measure-detector.edirom.de/" target="_blank">
+       <img class="figure-img" src="{{ site.baseurl }}/assets/img/facsimile/DOMD-screenshot.png" 
+        alt="Screenshot of the Deep Optical Measure Detector by the CEMFI lab" />
+    </a>
+    <figcaption class="figure-caption">Screenshot of the Deep Optical Measure Detector by the <a href="http://www.cemfi.de/" target="_blank">CEMFI lab, Detmold</a>. </figcaption>
+</figure>
 
 
 #### Inserting and deleting zones alongside pointing measures
