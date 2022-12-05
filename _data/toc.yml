@@ -27,9 +27,9 @@
     - title: "Advanced topics"
       url: "docs/advanced-topics"
       children:
-        - title: "Working with large files" 
+        - title: "Working with large files: Speedmode" 
           url: "docs/largefiles/"
-        - title: "URL parameters"
+        - title: "Remote control via URL parameters"
           url: "docs/urlparameters/"
         - title: Facsimile
           url: "docs/facsimile/"
