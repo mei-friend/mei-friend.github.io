@@ -320,7 +320,7 @@ figure {
     border: 1px solid #30638e;
     border-radius: 5px;
     padding: .5em .5em .5em .5em;
-    margin-top: 1.5em;
+    margin-top: 3em;
 }
 
 img {
@@ -632,7 +632,7 @@ mark,
 }
 
 .figure {
-    display: inline-block
+    display: block;
 }
 
 .figure-img {
@@ -650,10 +650,12 @@ mark,
     margin-bottom: .5em;
     font-weight: bold;
     font-size: large;
-}
+}   
 
-.halfwidth {
+.halfwidth {
     max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 code {
