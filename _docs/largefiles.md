@@ -39,7 +39,7 @@ You may download the current 3-page speed mode MEI file for debugging using `CTR
 
 ## Examples of large files
 
-To test the advantages of speed mode in comparison to normal mode, try these large files:
+To compare speed mode with normal mode, try these large files:
 
 [Beethoven Diabelli Variations Op. 120: 56,6k lines](https://mei-friend.mdw.ac.at/?file=https://raw.githubusercontent.com/trompamusic-encodings/Beethoven_Op120_BreitkopfHaertel/master/Beethoven_Op120-Breitkopf.mei&speed=true){:target="_blank"}
 
