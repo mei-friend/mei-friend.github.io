@@ -20,7 +20,7 @@ MEI-friend has two major screen regions: the editor panel and the notation panel
 
 At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file
 
-On the far right you will find three icons to toggle the following panels: the [facsimile panel](_docs/facsimile.md), the annotations panel and the [settings panel](_docs/settings.md). For now the settings panel is the most relevant with its secondary options:
+On the far right you will find three icons to toggle the following panels: the [facsimile panel]({{ site.baseurl }}/docs/facsimile.md), the annotations panel and the [settings panel]({{ site.baseurl }}/docs/settings.md). For now the settings panel is the most relevant with its secondary options:
 
 - **mei-friend**: settings regarding mei-friend as a whole
 - **editor**: settings regarding the editor panel
@@ -44,16 +44,16 @@ To establish this link it is necessary that every element in the editor panel ha
 
 {% include alert.html type="info" title="No IDs" content="Even without IDs changes in the editor panel will be visible in the notation panel but not vice versa." %}
 
-If your MEI-file is missing IDs or might be using the same ID twice (i.e. due to copying an element) you can rerender the file with `Manipulate -> Re-render MEI (with ID's)` which will generate any missing IDs for your elements while also reformating identations, spaces and similar things. `Manipulate -> Re-render MEI (remove ID's)` will remove any ID that is not referenced somewhere else while reformating.
+If your MEI-file is missing IDs or might be using the same ID twice (i.e. due to copying an element) you can [generate those missing IDs]({{ site.baseurl }}/docs/manipulating.md#Re-render_MEI_(with_ids)).
 
-To make changes directly in the notations panel you need to use hotkeys that you can find under `Help -> Show help page`. You will find that they are similar to hotkeys used by conventional music notation software.
+To make changes directly in the notations panel you can use the options in the menu bar but it is recommended to use hotkeys that you can find under `Help -> Show help page`. You will find that they are similar to hotkeys used by conventional music notation software.
 
 ![navigation in the notation menu bar]({{ site.baseurl }}/assets/img/getting_started/navigation_notation_panel.PNG "navigation in the notation menu bar")
 
 Using the navigation section in the notation menu bar you can flip through the pages of your rendered MEI-file or put in a page number that you want to jump to. Important to note is that the editor panel will follow the notation panel to the corresponding encoding part as long as this feature is enabled by the blue checkmark to the right.
-The downwards arrow to the left allows you to select a [section](https://music-encoding.org/guidelines/v4/elements/section) {:target="_blank"} and jump directly to it. Among other things sections are simply useful to segment a work semantically (like in this case for Beethovens "Sechs Variationen": "Tema, Var-I, Var-II ..."). This arrow wont appear if you don't have any sections in your encoding!
+For more information see [navigation]({{ site.baseurl }}/docs/navigation.md).
 
-If you are working with larger files the [speedmode](_docs\largefiles.md) option (in the notation menu bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensly.
+If you are working with larger files the [speedmode]({{ site.baseurl }}/docs/largefiles.md) option (in the notation menu bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensly.
 
 {% include alert.html type="info" title="Local storage" content="mei-friend remembers your most recent work and settings in your browser's local storage to persist them even if your browser is closed as long as you don't delete it automatically." %}
 
