@@ -11,7 +11,7 @@ Editing large encodings, that is MEI files with more than 25,000 lines, may resu
 
 When editing the MEI directly in the text buffer, automatic updating of the rendered notation involves repeating this intensive process after each edit. To circumvent this issue, automatic updates may be disabled in mei-friend’s interface (see Fig. 1), instead allowing the user to request re-rendering of the notation manually, on button click.
 
-<figure class="figure halfwidth">
+<figure class="figure thirdwidth">
     <div class="figure-title">Fig. 1: Notation update behavior.</div>
     <img class="figure-img" src="{{ site.baseurl }}/assets/img/speedmode/mei-friend-update-notation.png" 
         alt="mei-friend notation update behavior" max-width="50%" />
@@ -35,7 +35,15 @@ The search for time-spanning elements (containing `@tstamp`, `@tstamp2` or `@sta
 
 In speed mode, only a constantly small portion of the MEI encoding (i.e., the excerpt) is transferred to Verovio, limiting its processing load and thus keeping interactions swift and smooth.
 
-You may download the current 3-page speed mode MEI file for debugging using `CTRL-SHIFT-S` on Windows or Linux; and `CMD-SHIFT-S` on MacOS.
+For debugging, the current three-page speed mode MEI file may be downloaded into the local download folder of your browser using `CTRL-SHIFT-S` on Windows or Linux; and `CMD-SHIFT-S` on MacOS.
+
+### Speedmode and automatic page breaks
+
+Speedmode relies on system and page beginnings (`<sb>`, `<pb>`) in the MEI encoding to display a requested page instantaneously. When the breaks selector is set to "auto" in the notation menu bar, mei-friend has to compute a page layout for a given screen size and panel settings, before being able to serve individual pages. This pagination process is accomplished in a separate worker thread running in the background. While this pagination process is running, a quick first page of notation is shown to the user and the page count display in the notation menu bar is set to "?" and will be replaced with the actual page count only after this process has finished. Subsequently, the time-spanning elements will be computed and shown once that background process has been finished. 
+
+So, when opening a large file, such as Beethovens Diabelli Variations Op.&nbsp;120 in Fig.&nbsp;3, you will first see the quick first page, while the pagination process is running (displayed by the growning status bar at the center of the page footer). Durign that process, the Verovio icon is spinning in a clockwise manner. After this pagination process has been finished, the time-spanning process is starting. During this process, the Verovio icon is spinning counter-clockwise. The results of this process is shown immediately after completion (in Fig.&nbsp;3 the slur at the right side of the system appears).  
+
+ Fig. 3 animated GIF to be inserted here.
 
 ## Examples of large files
 

@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <a href="https://mei-friend.mdw.ac.at" target="_blank">
-    <img src="assets/img/menu-logo.png" alt="mei-friend logo" width="400px" style="margin:auto; display:block;"/>
+    <img src="assets/img/menu-logo.png" alt="mei-friend logo" width="400px" style="margin:0px; display:block;"/>
 </a>
 
 Welcome to the mei-friend Help pages. Here you will find documentation for the mei-friend "last-mile" music encoding editor. 
@@ -14,12 +14,12 @@ These may be generated via optical music recognition, or via conversion from oth
 
 {% include alert.html type="danger" title="(Dec 2022) This documentation is currently under development and not yet recommended for public consumption." %}
 
-<figure class="figure twothirdswidth left">
+<figure class="figure halfwidth">
     <a href="https://mei-friend.mdw.ac.at" target="_blank">
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/mei-friend-screenshot.png" 
             alt="Screenshot of mei-friend" />
     </a>
-    <figcaption class="figure-caption">Screenshot of mei-friend</figcaption>
+    <figcaption class="figure-caption">Screenshot of default landing state of mei-friend.</figcaption>
 </figure>
 
 In the navigation menu, you will find:
