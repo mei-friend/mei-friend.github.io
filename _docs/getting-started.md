@@ -16,7 +16,7 @@ MEI-friend is not designed to write MEI by hand but to import an already existin
 
 MEI-friend has two major screen regions: the editor panel and the notation panel. The editor panel is where the MEI encoding is displayed and the notation panel where it is rendered. These two panels are always connected so that every change that is made in one of them will result in a change also in the other one.
 
-![screen regions of mei-friend]({{ site.baseurl }}/assets/img/Basic_concepts/Screenshot_Screen_Regions.PNG "screen regions of mei-friend")
+![screen regions of mei-friend]({{ site.baseurl }}/assets/img/getting_started/screenshot_screen_regions.PNG "screen regions of mei-friend")
 
 At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file
 
@@ -48,7 +48,7 @@ If your MEI-file is missing IDs or might be using the same ID twice (i.e. due to
 
 To make changes directly in the notations panel you need to use hotkeys that you can find under `Help -> Show help page`. You will find that they are similar to hotkeys used by conventional music notation software.
 
-![navigation in the notation menu bar]({{ site.baseurl }}/assets/img/Basic_concepts/navigation_notation_panel.PNG "navigation in the notation menu bar")
+![navigation in the notation menu bar]({{ site.baseurl }}/assets/img/getting_started/navigation_notation_panel.PNG "navigation in the notation menu bar")
 
 Using the navigation section in the notation menu bar you can flip through the pages of your rendered MEI-file or put in a page number that you want to jump to. Important to note is that the editor panel will follow the notation panel to the corresponding encoding part as long as this feature is enabled by the blue checkmark to the right.
 The downwards arrow to the left allows you to select a [section](https://music-encoding.org/guidelines/v4/elements/section) {:target="_blank"} and jump directly to it. Among other things sections are simply useful to segment a work semantically (like in this case for Beethovens "Sechs Variationen": "Tema, Var-I, Var-II ..."). This arrow wont appear if you don't have any sections in your encoding!
