@@ -20,7 +20,7 @@ MEI-friend has two major screen regions: the editor panel and the notation panel
 
 At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file
 
-On the far right you will find three icons to toggle the following panels: the [facsimile panel](_docs\facsimile.md), the annotations panel and the settings panel. For now the settings panel is the most relevant with its secondary options:
+On the far right you will find three icons to toggle the following panels: the [facsimile panel](_docs/facsimile.md), the annotations panel and the [settings panel](_docs/settings.md). For now the settings panel is the most relevant with its secondary options:
 
 - **mei-friend**: settings regarding mei-friend as a whole
 - **editor**: settings regarding the editor panel
