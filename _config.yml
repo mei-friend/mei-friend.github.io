@@ -14,11 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: mei-friend Help
+title: Documentation
 email: goebl@mdw.ac.at
 author: <a href="https://iwk.mdw.ac.at/werner-goebl">Werner Goebl</a>, <a href="https://iwk.mdw.ac.at/david-weigl">David M. Weigl</a>, <a href="https://iwk.mdw.ac.at">IWK</a>
 description: > # this means to ignore newlines until "baseurl:"
-  Documentation for mei-friend, the friendly web-based music encoding editor
+  Documentation for mei-friend, the friendly Web-based music encoding editor
 
 # Add your baseurl here (your repository) but DO NOT CHANGE THE LINE NUMBER without editing .circleci/circle_urls.sh
 baseurl: "" # the subpath of your site, e.g. /blog

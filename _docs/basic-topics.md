@@ -1,6 +1,6 @@
 ---
 title: Basic topics
-permalink: /docs/basic-topics/
+permalink: /docs/basic/
 layout: page 
 ---
 # Basic topics

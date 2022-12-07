@@ -6,7 +6,7 @@
   url: "docs"
   links:
     - title: "Basic Topics"
-      url: "docs/basic-topics"
+      url: "docs/basic"
       children:
         - title: "Getting started" 
           url: "docs/basic/getting-started/"
@@ -25,7 +25,7 @@
         - title: "Working with GitHub" 
           url: "docs/basic/github/"
     - title: "Advanced topics"
-      url: "docs/advanced-topics"
+      url: "docs/advanced"
       children:
         - title: "Working with large files: Speedmode" 
           url: "docs/advanced/largefiles/"
