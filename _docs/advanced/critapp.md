@@ -16,7 +16,7 @@ Supplied elements are highlighted by color in mei-friend, when the respective op
 
 <figure class="figure">
     <div class="figure-title">Fig.&nbsp;1: Supplied elements highlighted in orange.</div>
-    <a href="https://mei-friend.mdw.ac.at/?fork=true&file=https://raw.githubusercontent.com/Signature-Sound-Vienna/mei-skeleton/main/mary.mei" target="_blank">
+    <a href="https://dme.mozarteum.at/movi/navigator/11586" target="_blank">
        <img class="figure-img" src="{{ site.baseurl }}/assets/img/markup/Critical-supplied-DIME.png" 
         alt="Highlighted supplied elements in an excerpt by the Digital Mozart Edition." />
     </a>
