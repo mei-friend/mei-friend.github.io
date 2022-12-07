@@ -1,6 +1,6 @@
 ---
 title: Further reading
-permalink: /docs/basic/furtherreading/
+permalink: /docs/furtherreading/
 layout: page
 ---
 # Further reading    

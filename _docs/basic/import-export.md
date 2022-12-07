@@ -43,3 +43,6 @@ layout: page
 * File status indicator will show when any changes were made. This is cleared once you save MEI or git commit.
 
 
+## Fundamental functionalities
+![Demonstration of fundamental functionalities]({{ site.baseurl }}/assets/img/demo/mei-friend-01.gif)
+
