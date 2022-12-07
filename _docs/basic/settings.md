@@ -21,6 +21,24 @@ All of the options in this panel are also briefly described in the tooltips that
 
 - **Insert application statement:** Inserts default meta data into the first three lines of an MEI-file if it is rerenderd at any point. If you made any changes to the schema used it is recommended to turn this off so you do not have to change it back everytime you rerender.
 
+### Annotations
+
+- **Show annotations** (in the notation) 
+- **Show annotation panel:** Same effect as the annotations icon in the top right next to the settings icon.
+- **Maximum number of annotations:** This limits the number of annotations displayed and is useful to prevent mei-friend from slowing down.
+
+### Drag select
+
+Here you can select the type of elements that will be selectable by drag select. Espescially useful for placement elements and slurs that are difficult to select otherwise.
+
+### Control menu
+
+### Renumber measures
+
+### Facsimile panel
+
+### Handle editorial content
+
 ## Editor settings
 
 bla bla
