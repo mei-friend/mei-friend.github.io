@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Github support
-permalink: /docs/github/
+permalink: /docs/basic/github/
 ---
 # Working with Github
 

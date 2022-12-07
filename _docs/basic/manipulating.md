@@ -1,6 +1,6 @@
 ---
 title: Manipulating
-permalink: /docs/manipulating/
+permalink: /docs/basic/manipulating/
 layout: page
 ---
 # Manipulating

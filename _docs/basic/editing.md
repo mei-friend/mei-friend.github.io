@@ -1,6 +1,6 @@
 ---
 title: Editing
-permalink: /docs/editing/
+permalink: /docs/basic/editing/
 layout: page
 ---
 # Editing

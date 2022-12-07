@@ -1,6 +1,6 @@
 ---
 title: Navigation
-permalink: /docs/navigation/
+permalink: /docs/basic/navigation/
 layout: page 
 ---
 # Navigation

@@ -9,21 +9,21 @@
       url: "docs/basic-topics"
       children:
         - title: "Getting started" 
-          url: "docs/getting-started/"
+          url: "docs/basic/getting-started/"
         - title: "Import / Export"
-          url: "docs/import-export/"
+          url: "docs/basic/import-export/"
         - title: Navigation 
-          url: "docs/navigation/"
+          url: "docs/basic/navigation/"
         - title: Editing
-          url: "docs/editing/"
+          url: "docs/basic/editing/"
         - title: Manipulating
-          url: "docs/manipulating/"
+          url: "docs/basic/manipulating/"
         - title: Validation 
-          url: "docs/validation/"
+          url: "docs/basic/validation/"
         - title: Settings 
-          url: "docs/settings/"
+          url: "docs/basic/settings/"
         - title: "Working with GitHub" 
-          url: "docs/github/"
+          url: "docs/basic/github/"
     - title: "Advanced topics"
       url: "docs/advanced-topics"
       children:

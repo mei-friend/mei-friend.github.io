@@ -1,6 +1,6 @@
 ---
 title: Settings
-permalink: /docs/settings/
+permalink: /docs/basic/settings/
 layout: page
 ---
 # Settings panel

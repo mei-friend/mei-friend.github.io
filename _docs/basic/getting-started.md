@@ -1,6 +1,6 @@
 ---
 title: Getting started
-permalink: /docs/getting-started/
+permalink: /docs/basic/getting-started/
 layout: page 
 ---
 # Getting started

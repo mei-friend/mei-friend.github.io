@@ -1,6 +1,6 @@
 ---
 title: Import and Export
-permalink: /docs/import-export/
+permalink: /docs/basic/import-export/
 layout: page 
 ---
 # Import and Export

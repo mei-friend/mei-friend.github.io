@@ -1,6 +1,6 @@
 ---
 title: Validation
-permalink: /docs/validation/
+permalink: /docs/basic/validation/
 layout: page
 ---
 # XML Schema Validation
