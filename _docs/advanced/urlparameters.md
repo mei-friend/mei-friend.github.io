@@ -1,6 +1,6 @@
 ---
 title: URL parameters
-permalink: /docs/urlparameters/
+permalink: /docs/advanced/urlparameters/
 layout: page
 ---
 # Remote controlling mei-friend with URL parameters

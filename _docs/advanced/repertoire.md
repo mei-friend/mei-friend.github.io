@@ -1,6 +1,6 @@
 ---
 title: Public repertoire
-permalink: /docs/repertoire/
+permalink: /docs/advanced/repertoire/
 layout: page
 ---
 # Public repertoire    

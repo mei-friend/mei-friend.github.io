@@ -1,6 +1,6 @@
 ---
 title: Annotation
-permalink: /docs/annotation/
+permalink: /docs/advanced/annotation/
 layout: page
 ---
 # Annotating music encodings

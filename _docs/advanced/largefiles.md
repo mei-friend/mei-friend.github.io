@@ -1,6 +1,6 @@
 ---
 title: Large files
-permalink: /docs/largefiles/
+permalink: /docs/advanced/largefiles/
 layout: page
 ---
 # Handling large MEI files

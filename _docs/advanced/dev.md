@@ -1,6 +1,6 @@
 ---
 title: Developing mei-friend
-permalink: /docs/dev/
+permalink: /docs/advanced/dev/
 layout: page
 ---
 # Developing mei-friend    

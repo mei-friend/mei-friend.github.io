@@ -1,6 +1,6 @@
 ---
 title: Critical apparatus
-permalink: /docs/critapp/
+permalink: /docs/advanced/critapp/
 layout: page
 ---
 # Critical apparatus    

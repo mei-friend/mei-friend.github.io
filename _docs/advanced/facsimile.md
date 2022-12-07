@@ -1,6 +1,6 @@
 ---
 title: Facsimile support
-permalink: /docs/facsimile/
+permalink: /docs/advanced/facsimile/
 layout: page 
 ---
 # mei-friend facsimile support

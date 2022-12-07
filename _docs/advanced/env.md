@@ -1,6 +1,6 @@
 ---
 title: Environments
-permalink: /docs/env/
+permalink: /docs/advanced/env/
 layout: page
 ---
 # mei-friend environments    
