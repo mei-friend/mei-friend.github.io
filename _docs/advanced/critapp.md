@@ -5,7 +5,7 @@ layout: page
 ---
 # Critical apparatus    
 
-Here we describe a functionality yet to be completed. We plan to support `<app>` and `<choice>` with all allowed children in a useful way yet to be discussed.
+Here we describe functionality yet to be completed. We plan to support  `<app>` and `<choice>` with all allowed children in a useful way yet to be discussed.
 To date, only the `<supplied>` element is supported for display and in inserting.
 
 ## Supplied element
@@ -27,5 +27,3 @@ Supplied elements are highlighted by color in mei-friend, when the respective op
 
 To insert an supplied element into an encoding, select an [allowed element](https://music-encoding.org/guidelines/v4/elements/supplied){:target="_blank"} in the notation and press `U`. This will surround the selected elements with a supplied element and a responsibility attribute (`@resp`) to each of it.
 The responsibility statement has to be chosen beforehand from an input select in the mei-friend settings menu, which is automatically populated from the responsibility statement list in the header of the MEI file. 
-
-

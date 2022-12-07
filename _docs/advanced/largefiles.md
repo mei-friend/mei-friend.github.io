@@ -11,11 +11,11 @@ Editing large encodings, that is MEI files with more than 25,000 lines, may resu
 
 When editing the MEI directly in the text buffer, automatic updating of the rendered notation involves repeating this intensive process after each edit. To circumvent this issue, automatic updates may be disabled in mei-friend’s interface (see Fig. 1), instead allowing the user to request re-rendering of the notation manually, on button click.
 
-<figure class="figure thirdwidth">
+<figure class="figure twothirdswidth">
     <div class="figure-title">Fig. 1: Notation update behavior.</div>
-    <img class="figure-img" src="{{ site.baseurl }}/assets/img/speedmode/mei-friend-update-notation.png" 
+    <img class="figure-img" src="{{ site.baseurl }}/assets/img/speedmode/notation-menu-bar-update.png" 
         alt="mei-friend notation update behavior" max-width="50%" />
-    <figcaption class="figure-caption">Checkbox to control notation update behavior of mei-friend: when checked, the notation gets automatically re-rendered after each edit. When unchecked, each re-rendering is initiated manually upon button click.</figcaption>
+    <figcaption class="figure-caption">Checkbox to control notation update behavior of mei-friend: when checked, the notation gets automatically re-rendered after each edit (and undate button deactivated). When unchecked, each re-rendering may be initiated manually upon button click.</figcaption>
 </figure>
 
 ## The speed mode
@@ -43,7 +43,12 @@ Speedmode relies on system and page beginnings (`<sb>`, `<pb>`) in the MEI encod
 
 So, when opening a large file, such as Beethovens Diabelli Variations Op.&nbsp;120 in Fig.&nbsp;3, you will first see the quick first page, while the pagination process is running (displayed by the growning status bar at the center of the page footer). Durign that process, the Verovio icon is spinning in a clockwise manner. After this pagination process has been finished, the time-spanning process is starting. During this process, the Verovio icon is spinning counter-clockwise. The results of this process is shown immediately after completion (in Fig.&nbsp;3 the slur at the right side of the system appears).  
 
- Fig. 3 animated GIF to be inserted here.
+<figure class="figure">
+    <div class="figure-title">Fig.&nbsp;3: Speedmode with pagination and spanning thread.</div>
+    <img class="figure-img" src="{{ site.baseurl }}/assets/img/speedmode/mei-friend-speedmode-auto.gif" 
+        alt="mei-friend notation update behavior" max-width="50%" />
+    <figcaption class="figure-caption">Speedmode demonstration: 1) Opening a large file from GitHub (Beethoven Op.&nbsp;120) with breaks option set to system (<span class="code">--breaks=line</span>): a first page is shown instantly, the time spanning elements are computed afterwards (Verovio icon spinning counter-clockwise) and slur at right-hand side appears shortly afterwards. 2) changing breaks option to automatic causes the pagination process to start (Verovio icon spinning clockwise and status bar in footer is growing). Upon completion of pagination (slur disappears), the spanning process is executed and slur re-appears when this process has been completed.</figcaption>
+</figure>
 
 ## Examples of large files
 
