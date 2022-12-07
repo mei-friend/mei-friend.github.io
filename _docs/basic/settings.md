@@ -35,6 +35,8 @@ Here you can select the type of elements that will be selectable by drag select.
 
 ### Renumber measures
 
+See details under [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumbering_measures).
+
 ### Facsimile panel
 
 ### Handle editorial content
