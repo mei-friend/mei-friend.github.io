@@ -1,5 +1,6 @@
 ---
 title: Getting started
+description: First steps in mei-friend
 permalink: /docs/basic/getting-started/
 layout: page 
 ---

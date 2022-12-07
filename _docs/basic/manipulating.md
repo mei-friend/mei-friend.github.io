@@ -1,5 +1,6 @@
 ---
 title: Manipulating
+description: Using mei-friend functionality to manipulate encodings
 permalink: /docs/basic/manipulating/
 layout: page
 ---
