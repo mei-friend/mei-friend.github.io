@@ -14,12 +14,12 @@ These may be generated via optical music recognition, or via conversion from oth
 
 {% include alert.html type="danger" title="(Dec 2022) This documentation is currently under development and not yet recommended for public consumption." %}
 
-<figure class="figure halfwidth">
+<figure class="figure">
     <a href="https://mei-friend.mdw.ac.at" target="_blank">
-        <img class="figure-img" src="{{ site.baseurl }}/assets/img/mei-friend-screenshot.png" 
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/mei-friend-Op77-middle.png" 
             alt="Screenshot of mei-friend" />
     </a>
-    <figcaption class="figure-caption">Screenshot of default landing state of mei-friend.</figcaption>
+    <figcaption class="figure-caption">Screenshot of mei-friend showing an excerpt of Beethoven's Op. 77 encoded after the Breitkopf and Härtel complete edition, The notation panel is at the left side; the editor window shows some validation messages.</figcaption>
 </figure>
 
 In the navigation menu, you will find:
