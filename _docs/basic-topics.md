@@ -7,7 +7,7 @@ layout: page
 
 Here we describe basic topcis related to the usage of mei-friend.
 
-This is a test code:
+This is a test code to list relevant links automatically:
 
 <div class="section-index">
     <hr class="panel-line">

@@ -693,6 +693,21 @@ a>code {
     color: inherit
 }
 
+.uni-logo {
+    max-height: 60px;
+    margin-right: 3em;
+}
+
+.eu-logo {
+    max-height: 25px;
+    margin-right: 0.5em;
+}
+
+.logo {
+    max-height: 25px;
+    margin-right: 2em;
+}
+
 kbd {
     padding: .2rem .4rem;
     font-size: 87.5%;
