@@ -1,5 +1,6 @@
 ---
 title: Facsimile support
+description: Display and edit encoded facsimile information
 permalink: /docs/advanced/facsimile/
 layout: page 
 ---

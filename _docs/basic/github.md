@@ -1,5 +1,6 @@
 ---
 layout: page
+description: GitHub integration in mei-friend
 title: Github support
 permalink: /docs/basic/github/
 ---

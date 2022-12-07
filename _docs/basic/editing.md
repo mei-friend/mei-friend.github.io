@@ -1,5 +1,6 @@
 ---
 title: Editing
+description: Editing operations in mei-friend
 permalink: /docs/basic/editing/
 layout: page
 ---

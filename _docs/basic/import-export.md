@@ -1,5 +1,6 @@
 ---
 title: Import and Export
+description: Import encodings to and export from mei-friend
 permalink: /docs/basic/import-export/
 layout: page 
 ---

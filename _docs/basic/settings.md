@@ -1,5 +1,6 @@
 ---
 title: Settings
+description: mei-friend settings
 permalink: /docs/basic/settings/
 layout: page
 ---
