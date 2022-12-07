@@ -12,7 +12,7 @@ To date, only the `<supplied>` element is supported for display and in inserting
 
 ### Displaying supplied elements
 
-Supplied elements are highlighted by color in mei-friend, when the respective option in the mei-friend settings menu is activated. There, also the display color can be chosen from a color picker interface (by default orange). An example of a scholarly encoding with supplied elements is provided in Fig. 1, showing an excerpt of the first movement of the Symphony K.550 by Wolfgang Amadeus Mozart in the <a href="https://dme.mozarteum.at/movi/en" target="_blank">Digital Mozart Edition</a>. 
+Supplied elements are highlighted by color in mei-friend, when the respective option in the mei-friend settings menu is activated. There, also the display color can be chosen from a color picker interface (by default orange). An example of a scholarly encoding with supplied elements is provided in Fig. 1, showing an excerpt of the first movement of the Symphony K.550 by Wolfgang Amadeus Mozart in the <a href="https://dme.mozarteum.at/movi/en" target="_blank">Digital Mozart Edition</a> of the Stiftung Mozarteum Salzburg. 
 
 <figure class="figure">
     <div class="figure-title">Fig.&nbsp;1: Supplied elements highlighted in orange.</div>
