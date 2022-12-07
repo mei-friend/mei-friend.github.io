@@ -20,7 +20,7 @@ MEI-friend has two major screen regions: the editor panel and the notation panel
 
 At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file
 
-On the far right you will find three icons to toggle the following panels: the [facsimile panel]({{ site.baseurl }}/docs/facsimile.md), the annotations panel and the [settings panel]({{ site.baseurl }}/docs/settings.md). For now the settings panel is the most relevant with its secondary options:
+On the far right you will find three icons to toggle the following panels: the [facsimile panel]({{ site.baseurl }}/docs/advanced/facsimile.md), the annotations panel and the [settings panel]({{ site.baseurl }}/docs/settings.md). For now the settings panel is the most relevant with its secondary options:
 
 - **mei-friend**: settings regarding mei-friend as a whole
 - **editor**: settings regarding the editor panel
@@ -51,9 +51,9 @@ To make changes directly in the notations panel you can use the options in the m
 ![navigation in the notation menu bar]({{ site.baseurl }}/assets/img/getting_started/navigation_notation_panel.PNG "navigation in the notation menu bar")
 
 Using the navigation section in the notation menu bar you can flip through the pages of your rendered MEI-file or put in a page number that you want to jump to. Important to note is that the editor panel will follow the notation panel to the corresponding encoding part as long as this feature is enabled by the blue checkmark to the right.
-For more information see [navigation]({{ site.baseurl }}/docs/navigation.md).
+For more information see [navigation]({{ site.baseurl }}/docs/basic/navigation.md).
 
-If you are working with larger files the [speedmode]({{ site.baseurl }}/docs/largefiles.md) option (in the notation menu bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensly.
+If you are working with larger files the [speedmode]({{ site.baseurl }}/docs/advanced/largefiles.md) option (in the notation menu bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensly.
 
 {% include alert.html type="info" title="Local storage" content="mei-friend remembers your most recent work and settings in your browser's local storage to persist them even if your browser is closed as long as you don't delete it automatically." %}
 
