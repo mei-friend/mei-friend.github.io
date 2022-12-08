@@ -19,7 +19,7 @@ Here you may read about more advanced topcis related to the usage of mei-friend.
                         {% for dos in site.docs %} 
                             {% if dos.title contains i.title or i.title contains dos.title %}
                                 <div class="entry">
-                                    <h5><a href="{{ i.url | prepend: '/' | prepend: site.url }}">{{ i.title }}</a></h5>
+                                    <h5><a href="{{ i.url | prepend: '/' | prepend: site.baseurl }}">{{ i.title }}</a></h5>
                                     <p><b>{{ dos.description }}.</b></p>
                                 </div>
                             {% endif %}
