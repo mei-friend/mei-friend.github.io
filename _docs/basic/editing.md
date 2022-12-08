@@ -6,7 +6,7 @@ layout: page
 ---
 # Editing
 
-There are two ways to edit your MEI-file: Either changing the encoding directly in the editor panel or by using `Manipulate` and `Insert` or rather the corresponding [hotkeys](https://mei-friend.mdw.ac.at/help).
+There are two ways to edit your MEI-file: Either changing the encoding directly in the editor panel or by using `Manipulate` and `Insert` or rather the corresponding [hotkeys]({{ site.baseurl }}/cheatsheet).
 
 ## Editing in the editor panel
 
@@ -48,4 +48,4 @@ You can not insert dynamics for multiple staffs at once. If you select notes fro
 All element manipulation can be used on one or multiple notes. All of these functions can be found in `Manipulating` but using hotkeys is recommended. Simply delete an element with "Delete" or "Backspace". You can change the pitch with "Shift" + "ArrowUp" / "ArrowDown" or an octave up or down by simultaneously pressing "Ctrl".
 With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up or down and a `staff` attribute will be added to the element. The placement of an element relative to the staff can be inverted with "X" (changes the `place` attribute).
 
-For more advanced manipulating techniques see [manipulating](({{ site.baseurl }}/docs/basic/manipulating.md).
+For more advanced manipulating techniques see [manipulating]({{ site.baseurl }}/docs/basic/manipulating).
