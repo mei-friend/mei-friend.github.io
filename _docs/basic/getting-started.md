@@ -58,6 +58,14 @@ If you are working with larger files the [speedmode]({{ site.baseurl }}/docs/adv
 
 {% include alert.html type="info" title="Local storage" content="mei-friend remembers your most recent work and settings in your browser's local storage to persist them even if your browser is closed as long as you don't delete it automatically." %}
 
+## mei-friend appearance
+
+Changing theme of editor will adapt mei-friend's appearance... a variety of bright and dark themes available...
+If set to default, it will follow the night shift settings of your operating system...
+You may chose to have the notation match the appearance of the theme. In case of a dark theme, this will invert the usual colors of the notation.
+
+**Insert animated GIF with some selected themes**
+
 ## Where next?
 
 Kurzer Text mit Wegweisern zu anderen Kapitel.
