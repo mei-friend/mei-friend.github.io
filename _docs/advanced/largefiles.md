@@ -1,5 +1,6 @@
 ---
-title: Large files
+title: Working with large files
+description: How mei-friend manages to keep large files easy to edit
 permalink: /docs/advanced/largefiles/
 layout: page
 ---

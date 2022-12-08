@@ -1,5 +1,6 @@
 ---
-title: Public repertoire
+title: Extending the public repertoire
+description: How you may contribute to a community-based list of public-domain music encodings
 permalink: /docs/advanced/repertoire/
 layout: page
 ---

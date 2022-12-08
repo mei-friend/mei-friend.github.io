@@ -1,5 +1,6 @@
 ---
 title: URL parameters
+description: Remote-control mei-friend through URL parameters 
 permalink: /docs/advanced/urlparameters/
 layout: page
 ---

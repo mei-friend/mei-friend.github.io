@@ -10,7 +10,7 @@
       children:
         - title: "Getting started" 
           url: "docs/basic/getting-started/"
-        - title: "Import / Export"
+        - title: "Import and Export"
           url: "docs/basic/import-export/"
         - title: Navigation 
           url: "docs/basic/navigation/"
@@ -24,7 +24,7 @@
           url: "docs/basic/persistence/"
         - title: Validation 
           url: "docs/basic/validation/"
-        - title: "Working with GitHub" 
+        - title: "GitHub integration" 
           url: "docs/basic/github/"
     - title: "Advanced topics"
       url: "docs/advanced"

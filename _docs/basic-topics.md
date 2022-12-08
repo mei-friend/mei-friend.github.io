@@ -6,16 +6,34 @@ layout: page
 ---
 # Basic topics
 
-Here we describe basic topcis related to the usage of mei-friend.
-
-This is a test code to list relevant links automatically:
-   
-        {% if post.url contains page.url %}
-        {% endif %}
-  
-## This is a list of site.docs (sorted alphabetically, but with descriptions):
+Here you may read about the basic topcis related to the usage of mei-friend.
 
 <div class="section-index">
+    <hr class="panel-line">
+    {% for post in site.data.toc %}  
+        {% if post.url == 'docs' %}
+            {% for li in post.links %} 
+                {% if page.url contains li.url %}
+                    {% for i in li.children %} 
+                        {% for dos in site.docs %} 
+                            {% if dos.title contains i.title %}
+                                <div class="entry">
+                                    <h5><a href="{{ i.url | prepend: '/' | prepend: site.url }}">{{ i.title }}</a></h5>
+                                    <p><b>{{ dos.description }}.</b></p>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                {% endif %}    
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</div>
+   
+  
+<!-- ## This is a list of site.docs (sorted alphabetically, but with descriptions): -->
+
+<!-- <div class="section-index">
     <hr class="panel-line">
     {% for post in site.docs %}  
     {% if post.url contains page.url %}
@@ -28,9 +46,9 @@ This is a test code to list relevant links automatically:
         </div>
     {% endif %}
     {% endfor %}
-</div>
+</div> -->
 
-## This is a list of site.data.tocs (sorted as in TOC, but without descriptions):
+<!-- ## This is a list of site.data.tocs (sorted as in TOC, but without descriptions):
 
 <div class="section-index">
     <hr class="panel-line">
@@ -40,13 +58,19 @@ This is a test code to list relevant links automatically:
                 <p>baseurl: {{ site.url }}; li.title: {{ li.title }}, li.url: {{ li.url }}; page.url: {{ page.url }}</p>
                 {% if page.url contains li.url %}
                     {% for i in li.children %} 
-                        <div class="entry">
-                            <h5><a href="{{ i.url | prepend: '/' | prepend: site.url }}">{{ i.title }}</a></h5>
-                            <p>i.title: <b>{{ i.title }}</b>, i.url: <b>{{ i.url }}.</b></p>
-                        </div>
+                        <p>XXX i.title: {{ i.title }}.</p>
+                        {% for dos in site.docs %} 
+                            <p>dos.title: {{ dos.title }}; dos.description: {{ dos.description }}.</p>
+                            {% if dos.title == i.title %}
+                                <div class="entry">
+                                    <h5><a href="{{ i.url | prepend: '/' | prepend: site.url }}">{{ i.title }}</a></h5>
+                                    <p>dos.description: <b>{{ dos.description }}</b>, i.url: <b>{{ i.url }}.</b></p>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
                     {% endfor %}
                 {% endif %}    
             {% endfor %}
         {% endif %}
     {% endfor %}
-</div>
+</div> -->

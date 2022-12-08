@@ -1,5 +1,6 @@
 ---
 title: Critical apparatus
+description: Interact with MEI critical apparatus 
 permalink: /docs/advanced/critapp/
 layout: page
 ---

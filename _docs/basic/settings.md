@@ -1,6 +1,6 @@
 ---
 title: Settings
-description: mei-friend settings
+description: Separate detailed settings panels for mei-friend, the encoding editor, and the notation engraver Verovio
 permalink: /docs/basic/settings/
 layout: page
 ---
