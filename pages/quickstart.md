@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Quickstart
+title: Quickstart guide
 permalink: /quickstart/
 ---
 
 # Quickstart guide
 
-Here we walk you through a short interaction with the mei-friend editor. For more in-depth instruction, please see the [mei-friend documentation]({{ site.baseurl }}/docs/). Also consider consulting the handy [cheat sheet]({{ site.baseurl }}/cheatsheet). 
+Here we walk you through a short interaction with the mei-friend editor. For more in-depth instruction, please see the [mei-friend documentation]({{ site.baseurl }}/docs). Also consider consulting the handy [cheat sheet]({{ site.baseurl }}/cheatsheet). 
 
 ## What is MEI? 
 
@@ -14,7 +14,7 @@ mei-friend is an editor targeting the [Music Encoding Initiative's](https://musi
 
 ## What do I need to start working with mei-friend?
 {% include alert.html type="info" title='mei-friend is available at <a href="https://mei-friend.mdw.ac.at">https://mei-friend.mdw.ac.at</a>.' %}
-mei-friend is a browser-based application – no further installation is necessary. Though we endevour to support all modern browsers, Firefox and Chrome-based browsers currently offer the best experience. While the editor will function when opened on a tablet, interaction with mei-friend is optimised for a mouse-and-keyboard set-up. 
+mei-friend is a browser-based application &ndash; no further installation is necessary. Though we endevour to support all modern browsers, Firefox and Chrome-based browsers currently offer the best experience. While the editor will function when opened on a tablet, interaction with mei-friend is optimised for a mouse-and-keyboard set-up. 
 {% include alert.html type="warning" title="mei-friend works best with Firefox or Chrome on a PC or Mac." %}
 
 ## Let's work through an example
@@ -29,7 +29,7 @@ mei-friend is able to open files from three different locations:
 * From the Web, via `File->Open URL`
 * From GitHub, through the GitHub (available via `Login`)
 
-{% include alert.html type="info" title="Regardless of the location type, mei-friend runs locally on your machine - no data is submitted to our server." %}
+{% include alert.html type="info" title="Regardless of the location type, mei-friend runs locally on your machine &ndash; your data remains on your device and will never be submitted to our server." %}
 
 For now, let's open a local file. For the purposes of this exercise, please download [this sample MEI file]({{ site.baseurl }}/assets/mei/example.mei). 
 
@@ -55,11 +55,11 @@ You may notice a validation error being displayed when the file loads -- we will
 
 ### Saving your work
 
-Now that you've completed work on this encoding, you will want to save a local copy. To avoid overwriting the unedited version, you may wish to change the filename -- to do this, simply click on it in the file status display area and change it to `example-modified.mei` (or however you see fit). 
+Now that you've completed work on this encoding, you will want to save a local copy. To avoid overwriting the unedited version, you may wish to change the filename &ndash; to do this, simply click on it in the file status display area and change it to `example-modified.mei` (or however you see fit). 
 
 Use `File->Save MEI` to download a copy of your modified MEI to your hard drive. Notice that the file status display's change indicator is now reset, since there have been no changes (yet) since your last save.
 
-Note that mei-friend is also able to commit changes directly to a GitHub repository - for more on this, see [Working with GitHub](docs/github).
+Note that mei-friend is also able to commit changes directly to a GitHub repository &ndash; for more on this, see [Working with GitHub](docs/github).
 
 ## What next?
 

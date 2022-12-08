@@ -7,11 +7,11 @@ permalink: /about/
 
 The mei-friend online application and its documentation has been designed and implemented by:
 
-[Werner Goebl](https://iwk.mdw.ac.at/goebl/){:target="_blank"} & 
-[David M. Weigl](https://iwk.mdw.ac.at/david-weigl/){:target="_blank"}, as well as, 
-Matthäus Pescoller (Documentation)
+[Werner Goebl](https://iwk.mdw.ac.at/goebl/){:target="_blank"} ([@wergo](https://github.com/wergo)) & 
+[David M. Weigl](https://iwk.mdw.ac.at/david-weigl/){:target="_blank"} ([@musicog](https://github.com/musicog)),
+as well as Matthäus Pescoller ([@mapscl](https://github.com/mapscl), documentation and testing), 
 
-[Department of Music Acoustics &ndash; Wiener Klangstil (IWK)](https://iwk.mdw.ac.at/){:target="_blank"}
+[Department of Music Acoustics &ndash; Wiener Klangstil (IWK)](https://iwk.mdw.ac.at/){:target="_blank"}, 
 
 [mdw &ndash; University of Music and Performing Arts Vienna](https://www.mdw.ac.at/){:target="_blank"}
 
@@ -49,7 +49,9 @@ Development into mei-friend has been covered by several research projects over t
 
 ## License
 
-mei-friend is provided under [GNU Affero General Public License v3.0](https://github.com/mei-friend/mei-friend/blob/main/LICENSE){:target="_blank"}. 
+The *mei-friend* Web application is published under [GNU AGPL 3.0](https://github.com/mei-friend/mei-friend/blob/main/LICENSE){:target="_blank"}. 
+
+The mei-friend documentation is provided under [XXX]().
 
 We thank the community for input to the mei-friend development. In particular, we would like to acknowledge Laurent Pugin, who contributed the code for schema validation and Thomas Weber, who helped to improve the Speedmode module in mei-friend.
 
@@ -59,6 +61,11 @@ mei-friend makes use of [CodeMirror](https://codemirror.net){:target="_blank"} a
 
 This documentation page uses a [starter template](https://vsoch.github.io/docsy-jekyll/){:target="_blank"} for a Docsy jekyll theme, based
 on the Beautiful [Docsy](https://github.com/google/docsy) that renders with Hugo. 
+
+## Publications
+<a name="GoeblWeigl-MEC2021"></a>Goebl, W. & Weigl, D. M. (2022). Alleviating the Last Mile of Encoding: The mei-friend Package for the Atom Text Editor.  In S. Münnich & D. Rizo (Eds.), Music Encoding Conference Proceedings 2021 (pp. 31&ndash;39). University of Alicante. doi:[10.17613/fc1c-mx52](https://doi.org/10.17613/fc1c-mx52)
+
+<a name="GoeblWeigl-MEC2022">Goebl, W. & Weigl, D. M. (2022). The mei-friend Web Application: Editing MEI in the Browser. Music Encoding Conference 2022 [Late-breaking Reports]. [forthcoming].
 
 ## Support
 
