@@ -20,3 +20,8 @@ Local storage size may depend on your Browser and is normally around 5 MB. Files
 </figure>
 
 {% include alert.html type="primary" title='Limitation' content='At the momement, mei-friend will create a local storage session per URL. When having multiple tabs open in the same browser, spill-over effects may occur. This will be addressed in future releases of mei-friend.' %}
+
+## Reset to default
+
+To reset mei-friend, use `Help --> Reset to default`. This will clear all local storage, reset all settings to the default values, and load the default MEI encoding used for demonstration purposes. To reset individual menu tabs, press the reset button at the bottom of each settings menus tab (please see [Settings]({{ site.baseurl }}/docs/basic/settings) for more information).
+

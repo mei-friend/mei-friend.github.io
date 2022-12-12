@@ -1,6 +1,6 @@
 ---
 title: Validation
-description: Schema validation in mei-friend
+description: Schema validation and code completion in mei-friend
 permalink: /docs/basic/validation/
 layout: page
 ---
