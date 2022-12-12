@@ -9,12 +9,12 @@ layout: page
 ## Supported file types for import
 
 mei-friend is able to open a variety of music encoding formats. If not MEI, it will convert on the fly to MEI using Verovio. 
-mei-friend will attempt to guess your file type from its content, regardless of file extension. 
+mei-friend will attempt to guess your file type from its content, regardless of file extension. Only for ABC (".abc") and compressed musicXML (".mxl") files are guessed by their file extension.
 
-{% include alert.html type="warning" title='ABC (".abc") and compressed musicXML (".mxl") files are guessed by their file extension' %}
-
+Supported formats (through Verovio):
 * MEI
-* MusicXML (Uncompressed, such as ".xml", ".musicXml"; and compressed, file name must end with ".mxl")
+* MusicXML uncompressed (plain-text, in score-partwise format) 
+* MusicXML compressed (file name must end with ".mxl")
 * Humdrum Kern (Verovio release versions only)
 * PAE (Plaine and Easie)
 * ABC (file name must end with ".abc")
@@ -22,13 +22,6 @@ mei-friend will attempt to guess your file type from its content, regardless of 
 {% include alert.html type="warning" title="Humdrum Kern is supported in Verovio's release versions, but not in the current development version" %}
 
 ## Supported import modes
-
-<!-- * Open local file
-    * Through file dialog `Menu - Open file`
-    * Through Drag'n'Drop (best onto notation)
-* Open URL
-* Public repertoire (see Public Repertoire doc page)
-* GitHub (see GitHub documentation page) -->
 
 ### Open local file through file dialog
 
@@ -54,13 +47,18 @@ As a convenience to the user, mei-friend supports Drag'n'Drop for any supported 
 
 ### Open URL and public repertoire
 
-mei-friend allows you to open ...
+mei-friend allows you to open a file from a URL through clicking on the `Open URL` menu item. The dialog is shown in Fig.&thinsp;3. It accepts all supported format, but it requires that the server at which the file is located allows [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS){:target="_blank"}. If CORS is not allowed, a CORS error is displayed in the dialog. In that case, you may then download the file first and open it locally in mei-friend.
+
+For example, try to enter the following URL in this dialog:
+<span class="code">https://kern.humdrum.org/cgi-bin/ksdata?location=users/craig/classical/field&file=nocturne.krn&format=kern</span>.
 
 <figure class="figure">
-    <div class="figure-title">Fig.&thinsp;3: mei-friend Drag'n'Drop look.</div>
+    <a href="https://mei-friend.mdw.ac.at/?file=https://kern.humdrum.org/cgi-bin/ksdata?location=users/craig/classical/field&file=nocturne.krn&format=kern" target="_blank">
+    <div class="figure-title">Fig.&thinsp;3: Public repertoire dialog.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/mei-friend-public-repertoire.png" 
             alt="Screenshot of mei-friend public repertoire and open URL dialog" />
-    <figcaption class="figure-caption">Screenshot of the open URL and public repertoire dialog. You may chose a piece from the public repertoire by composer and title or enter the URL of a file.</figcaption>
+    </a>
+    <figcaption class="figure-caption">Screenshot of the open URL and public repertoire dialog. You may choose a piece from the public repertoire by composer and title or enter the URL of a file.</figcaption>
 </figure>
 
 ### GitHub integration
@@ -69,18 +67,34 @@ Please see the detailed description for [GitHub integration]({{ site.baseurl }}/
 
 ## Supported export modes
 
-* Save MEI
-* Save MIDI
-* Save SVG (for current notation view)
-* Git Commit (see GitHub documentation page)
+mei-friend has several ways to export or download data. 
+
+### Save MEI
+
+Clicking on `Save MEI` (`CTRL-S` or `CMD-S` on macOS, see Fig.&thinsp;1) will download the complete MEI exncoding as a new file to the browser's download folder.  (Note: This is the only way to save data from your browser to your local file system.) If executing this command multiple times, the browser will generate a new file with a new file name each time. 
+
+For debugging purposes, you may download the current speedmode MEI page excerpt by pressing `CTRL-SHIFT-S` (or `CMD-SHIFT-S` under macOS). 
+ 
+### Save MIDI
+
+Clicking on `Save MIDI` will generate a standard MIDI file from the current encoding and download it the browser's download folder. 
+
+### Save SVG
+
+Clicking on `Save SVG` will generate an SVG file from the currently displayed notation page and download it to the download folder. 
+A comprehensive PDF download interface has yet to be implemented.
+### Git Commit
+
+Please see the detailed description for [GitHub integration]({{ site.baseurl }}/docs/basic/github) of mei-friend. 
 
 ### Notification of changes
-* File status indicator will show when any changes were made. This is cleared once you save MEI or git commit.
+
+A file status indicator shows that a file contains changes by altering the color of the file name from green (no changes) to red (changes since last download) and adding a red asterisk next to the file name. 
+Once the file has been downloaded (saved as MEI) or the changes committed to GitHub, this file status indicator will be cleared (color is reverted from red to green) and the red asterisk disappears.
 
 
 
+<!--
 ## Fundamental functionalities
-Probably move this somewhere else...
-
-![Demonstration of fundamental functionalities]({{ site.baseurl }}/assets/img/demo/mei-friend-01.gif)
-
+![Demonstration of fundamental functionalities]({{ site.baseurl }}/assets/img/demo/mei-friend-01.gif) 
+-->
