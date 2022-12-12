@@ -17,6 +17,8 @@ MEI-friend is not designed to write MEI by hand but to import an already existin
 
 MEI-friend has two major screen regions: the editor panel and the notation panel. The editor panel is where the MEI encoding is displayed and the notation panel where it is rendered. These two panels are always connected so that every change that is made in one of them will result in a change also in the other one.
 
+**WG TODO:** please also name in graphcis: schema status (CMN ALL); file name; change status (*); validation status (grünes hakerl links im encoding panel)
+
 ![screen regions of mei-friend]({{ site.baseurl }}/assets/img/getting_started/screenshot_screen_regions.PNG "screen regions of mei-friend")
 
 At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file
