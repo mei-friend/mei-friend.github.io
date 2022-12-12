@@ -6,7 +6,7 @@ layout: page
 ---
 # Manipulating
 
-Mei-friend provides some useful tools to manipulate your score or specific elements (under `Manipulate` in the menu bar) in it besides the straight forward ones already discussed in [editing]({{ site.baseurl }}/docs/basic/editing).
+Mei-friend provides some useful tools to manipulate your score or specific elements (under `Manipulate` in the menu bar) in it besides the straight forward ones already discussed in [editing]({{ site.baseurl }}/docs/basic/editing.md).
 
 ## Vertical Groups
 
