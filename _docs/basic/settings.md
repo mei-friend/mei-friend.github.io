@@ -34,6 +34,12 @@ Here you can select the type of elements that will be selectable by drag select.
 
 ### Control menu
 
+- **Show notation font selector:** Select the notation font used in the notation panel.
+- **Show navigation arrows:** These arrows allow to navigate in the notation panel from note to note horizontally or vertically (or: use arrow keys).
+- **Show notation update controls:** Show controls to update the notation panel after changes in the editor panel manually or automatically.
+
+![Controls]({{ site.baseurl }}/assets/img/settings/show_controls.PNG "Controls")
+
 ### Renumber measures
 
 See details under [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumbering_measures).
