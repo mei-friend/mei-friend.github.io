@@ -42,9 +42,16 @@ Here you can select the type of elements that will be selectable by drag select.
 
 ### Renumber measures
 
-See details under [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumbering_measures).
+- **Continue across incomplete measures:** Measures that are incomplete (thus have attribute `metcon="false"`) will also be numbered as if they were complete (??).
+- **Use suffix at incomplete measures:** (??)
+- **Continue across endings:** Continue numbering measures across multiple endings.
+- **Use suffix at endings:** Only selectable (ausgrauen?) if numbering is NOT continued across endings. E.g. measures in ending 1 will be numbered "90-a, 91-a..." and in ending 2 "90-b, 91-b...". Chose from different suffix options.
+
+See also [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumbering_measures).
 
 ### Facsimile panel
+
+- **:**
 
 ### Handle editorial content
 
