@@ -29,6 +29,8 @@ On the far right you will find three icons to toggle the following panels: the [
 - **editor**: settings regarding the editor panel
 - **verovio**: settings regarding the music notation engraving library [verovio](https://www.verovio.org/index.xhtml){:target="_blank"} used here that translates the written out encoding into actual music notation
 
+For details see [here]({{ site.baseurl }}/docs/basic/settings.md):
+
 The notation menu bar lets you navigate the notation panel among other things.
 
 {% include alert.html type="info" title="Info" content="The small box between menu bar and file name (in this case `ALL 4.0.1`) contains information regarding the type of music notation and the schema used in the file. For now it is not important!" %}

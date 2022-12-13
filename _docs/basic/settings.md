@@ -51,9 +51,14 @@ See also [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumberin
 
 ### Facsimile panel
 
-- **:**
+- **Show facsimile panel:** Same as using the facsimile icon from the three panel icons in the top right.
+- **Facsimile panel position:** The facsimile panel will be placed in the notation panel side. Chose where to place it (default: bottom).
+- **Facsimile image zoom:** 
+- **Show full page:**
+- **Edit facsimile zones:**
 
 ### Handle editorial content
+
 
 ## Editor settings
 
