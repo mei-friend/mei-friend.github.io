@@ -6,7 +6,7 @@ layout: page
 ---
 # Settings panel
 
-All of the options in this panel are also briefly described in the tooltips that appear if hovered over one of the options.
+All of the options in this panel are also briefly described in the tooltips that appear if hovered over one of the options. With the button at the bottom of the panels you can reset your settings to the mei-friend default.
 
 ## mei-friend settings
 
@@ -78,7 +78,12 @@ See also [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumberin
 
 ### Editor behavior
 
--
+- **Auto validation:** Enable automatic validation to validate encoding against schema after each edit. This feature works like a spell checker for MEI.
+- **Auto close brackets:** Automatically close brackets.
+- **Auto close tags:** Automatically close tags of elements if written by hand.
+- **Match tags:** Highlight elements tags around the cursor in the editor.
+- **Highlight trailing spaces:** Highlight unnecessary trailing spaces at end of lines.
+- **Key map:** 
 
 ## Verovio settings
 
