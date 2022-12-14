@@ -59,6 +59,9 @@ See also [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumberin
 
 ### Handle editorial content
 
+- **Show `<supplied>` elements:** Highlight supplied elements in the notation panel (default: on).
+- **Select `<supplied>` highlight color:** Choose the color of the highlights.
+- **Select `<supplied>` responsibility:** Select the person responsible for  supplied elements. The list contains the `xml:id` of every person named in `<meiHead> -> <fileDesc> -> <pubStmt>` as `<respStmt>`.
 
 ## Editor settings
 
