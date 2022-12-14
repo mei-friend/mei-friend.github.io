@@ -65,7 +65,20 @@ See also [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumberin
 
 ## Editor settings
 
-bla bla
+### Editor appearance
+
+- **Font size:** Font size in the editor panel.
+- **Theme:** Different color schemes to choose from to change the editors appearance.
+- **Notation matches theme:** Choose wether the notation should change its appearance according to the theme change.
+- **Indentation size:** Change the amount of spaces used for indentation. (??)
+- **Line wrapping:** Wether or not lines are wrapped at the end of the panel.
+- **Line numbers:** Show line numbers.
+- **First line number:** Choose the starting line number.
+- **Code folding:** Enable ability to fold code at every xml-element that is spans over more than one line.
+
+### Editor behavior
+
+-
 
 ## Verovio settings
 
