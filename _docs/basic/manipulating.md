@@ -10,11 +10,18 @@ Mei-friend provides some useful tools to manipulate your score or specific eleme
 
 ## Vertical Groups
 
-If you want some elements in your score to be aligned vertically select all of them and use `Add vertical group` or hotkey "v". This adds the attribute `vgrp` with an unused group number to your elements. Elements with the same group number will be aligned. A typical case would be a hairpin-dynamic connection as seen in the screenshot with the crescendo-forte (left with vertical group, right without).
+If you want some elements in your score to be aligned vertically select all of them and use `Add vertical group` or hotkey "v". This adds the attribute `@vgrp` with an unused group number to your elements. Elements with the same group number will be aligned. A typical case would be a hairpin-dynamic connection as seen in the screenshot with the crescendo-forte (left with vertical group, right without).
 
 ![vertical groups]({{ site.baseurl }}assets/img/manipulating/vgrps.PNG "left with vertical group and right without")
 
+## Moving and deleting elements
+
+All of these functions can be used on one or multiple notes. Simply delete an element with "Delete" or "Backspace". You can change the pitch with "Shift" + "ArrowUp" / "ArrowDown" or an octave up or down by simultaneously pressing "Ctrl".
+With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up or down and a `staff` attribute will be added to the element. The placement of an element relative to the staff can be inverted with "X" (changes the `@place` attribute).
+
 ## Clean gestural accidentals (accid.ges)
+
+This function checks if the attribute `@accid.ges` is equal to `@accid` and changes `@accid.ges` if necessary.
 
 ## Renumbering measures
 
@@ -23,3 +30,5 @@ There are a couple of important settings for renumbering measures in the setting
 Before using `Renumber measures (exec)` it is recommended to use `Renumber measures (test)`: This will show how the renumbering will be done in the console of your browser (hotkey "F12" for many browsers) before actually executing it.
 
 ## Re-render MEI (with ids)
+
+

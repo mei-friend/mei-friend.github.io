@@ -78,12 +78,12 @@ See also [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumberin
 
 ### Editor behavior
 
-- **Auto validation:** Enable automatic validation to validate encoding against schema after each edit. This feature works like a spell checker for MEI.
+- **Auto validation:** Enable automatic validation to validate encoding against schema after each edit. This feature works like a spell checker for MEI. More info [here]({{ site.baseurl }}/docs/basic/validation.md).
 - **Auto close brackets:** Automatically close brackets.
 - **Auto close tags:** Automatically close tags of elements if written by hand.
 - **Match tags:** Highlight elements tags around the cursor in the editor.
 - **Highlight trailing spaces:** Highlight unnecessary trailing spaces at end of lines.
-- **Key map:** 
+- **Key map:** Select the key map for different key bindings.
 
 ## Verovio settings
 
