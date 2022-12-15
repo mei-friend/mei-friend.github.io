@@ -60,7 +60,7 @@ For more information see [navigation]({{ site.baseurl }}/docs/basic/navigation.m
 
 If you are working with larger files the [speedmode]({{ site.baseurl }}/docs/advanced/largefiles.md) option (in the notation menu bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensly.
 
-{% include alert.html type="info" title="Local storage" content="mei-friend remembers your most recent work and settings in your browser's local storage to persist them even if your browser is closed as long as you don't delete it automatically." %}
+{% include alert.html type="info" title="Local storage" content="mei-friend remembers your most recent work and settings in your browser's local storage to persist them even if your browser is closed as long as you don't delete it automatically (more info [here]({{ site.baseurl }}/docs/basic/persistence.md))." %}
 
 ## mei-friend appearance
 
