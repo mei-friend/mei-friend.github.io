@@ -11,7 +11,7 @@ Mei-friend provides some useful tools to manipulate your score or specific eleme
 ## Moving and deleting elements
 
 The following functions can be used on one or multiple notes. Simply delete an element with "Delete" or "Backspace". You can change the pitch with "Shift" + "ArrowUp" / "ArrowDown" or an octave up or down by simultaneously pressing "Ctrl".
-With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up or down and a `@staff` attribute will be added to the element. The placement of an element relative to the staff can be inverted with "X" (changes the `@place` attribute).
+With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up or down and a `@staff` attribute will be added to the element if it doesn't have one already. The placement of an element relative to the staff can be inverted with "X" (changes the `@place` attribute).
 
 ## Vertical Groups
 

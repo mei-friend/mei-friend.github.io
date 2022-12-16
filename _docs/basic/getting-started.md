@@ -11,7 +11,7 @@ layout: page
 MEI-Friend is a online tool designed to work with and edit MEI (Music Encoding Initiative). MEI is an xml-based encoding language that supports most western music notation from mensural notation, to tablature to modern music notation (Common Music Notation, CMN). In short MEI tries to encode music notation in a machine-readable structure.
 If you don't know how MEI works or have never worked with xml-tpye languages there are very beginner friendly tutorials [here](https://music-encoding.org/resources/tutorials.html){:target="_blank"}. You can also find a thorough documentation [here](https://music-encoding.org/guidelines/v4/content/){:target="_blank"}.
 
-MEI-friend is not designed to write MEI by hand but to import an already existing MEI file (that was converted from musicXML for example) and edit and correct it.
+MEI-friend is not designed to write MEI by hand but to import an already existing MEI file (that was converted from musicXML for example) then edit and correct it.
 
 ## Application screen regions
 
@@ -33,7 +33,7 @@ For details see [settings]({{ site.baseurl }}/docs/basic/settings):
 
 The notation menu bar lets you navigate the notation panel among other things.
 
-{% include alert.html type="info" title="Info" content="The small box between menu bar and file name (in this case `ALL 4.0.1`) contains information regarding the type of music notation and the schema used in the file. For now it is not important!" %}
+{% include alert.html type="info" title="Info" content="The small box between menu bar and file name (in this case `ALL 4.0.1`) contains information regarding the type of music notation and the schema used in the file." %}
 
 ## Modifying layout of screen regions
 
