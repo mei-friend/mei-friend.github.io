@@ -12,14 +12,14 @@ mei-friend is able to open a variety of music encoding formats. If not MEI, it w
 mei-friend will attempt to guess your file type from its content, regardless of file extension. Only for ABC (".abc") and compressed musicXML (".mxl") files are guessed by their file extension.
 
 Supported formats (through Verovio):
-* MEI
-* MusicXML uncompressed (plain-text, in score-partwise format) 
-* MusicXML compressed (file name must end with ".mxl")
-* Humdrum Kern (Verovio release versions only)
-* PAE (Plaine and Easie)
-* ABC (file name must end with ".abc")
+* [MEI](https://en.wikipedia.org/wiki/Music_Encoding_Initiative){:target="_blank"} 
+* [MusicXML](https://en.wikipedia.org/wiki/MusicXML){:target="_blank"} uncompressed (plain-text, in score-partwise format) 
+* [MusicXML](https://en.wikipedia.org/wiki/MusicXML){:target="_blank"} compressed (file name must end with ".mxl")
+* [Humdrum Kern](https://www.humdrum.org/guide/ch02/){:target="_blank"} (Supported in Verovio's release versions only, but not in the current development version)
+* [PAE](https://en.wikipedia.org/wiki/Plaine_%26_Easie_Code){:target="_blank"} (Plaine and Easie)
+* [ABC](https://en.wikipedia.org/wiki/ABC_notation){:target="_blank"} (file name must end with ".abc")
 
-{% include alert.html type="warning" title="Humdrum Kern is supported in Verovio's release versions, but not in the current development version" %}
+<!-- {% include alert.html type="warning" title="Humdrum Kern is supported in Verovio's release versions, but not in the current development version" %} -->
 
 ## Supported import modes
 
@@ -74,8 +74,8 @@ mei-friend has several ways to export or download data.
 Clicking on `Save MEI` (`CTRL-S` or `CMD-S` on macOS, see Fig.&thinsp;1) will download the complete MEI exncoding as a new file to the browser's download folder.  (Note: This is the only way to save data from your browser to your local file system.) If executing this command multiple times, the browser will generate a new file with a new file name each time. 
 
 For debugging purposes, you may download the current speedmode MEI page excerpt by pressing `CTRL-SHIFT-S` (or `CMD-SHIFT-S` under macOS). 
- 
-### Save MIDI
+This will save the currently displayed page surrounded with dummy pages for setting the score definition and connecting time-spanning elements (such as slurs) that reach into the current page (for longer description, see [Working with large files]({{ site.baseurl }}/docs/advanced/largefiles/#the-speed-mode)).
+ ### Save MIDI
 
 Clicking on `Save MIDI` will generate a standard MIDI file from the current encoding and download it the browser's download folder. 
 
