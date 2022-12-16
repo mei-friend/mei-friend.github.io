@@ -21,7 +21,7 @@ If you want some elements in your score to be aligned vertically select all of t
 
 ## Clean gestural accidentals (accid.ges)
 
-This function checks if the attribute `@accid.ges` is equal to `@accid` and changes `@accid.ges` if necessary.
+This function will check for every element if they have both `@accid` and `@accid.ges` and delete the unnecessary `@accid.ges` if that is the case.
 
 ## Renumbering measures
 
@@ -29,9 +29,11 @@ There are a couple of important settings for renumbering measures in the setting
 
 Before using `Renumber measures (exec)` it is recommended to use `Renumber measures (test)`: This will show how the renumbering will be done in the console of your browser (hotkey "F12" for many browsers) before actually executing it.
 
-## Re-render MEI (with ids)
+## Re-render MEI
 
+The MEI-file can be re-rendered either with IDs which adds IDs to any element that doesn't have one already or by removing IDs which removes all IDs that are not referenced anywhere (e.g. by a slur) to not lose any information about the encoding.
 
+Re-rendering will also correct the formating of the file like indentation (to just indent a selected part of a file use `Code -> Indent selection` or use "Alt + Shift + F")
 
 ## Ingest Facsimile
 
