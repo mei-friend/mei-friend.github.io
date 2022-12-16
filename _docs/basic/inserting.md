@@ -18,7 +18,7 @@ Adding new elements by hand is tideous though and generally not recommended. Usi
 
 ## Editing in the notation panel
 
-You can also edit in the notation panel directly. Changes can be made to single or multiple elements depending how many are selected. To make it easier to select slurs or difficult to click articulations like staccato dots or accents you can enable [drag select]({{ site:baseurl }}/docs/basic/settings.md#Drag_select): Go to `settings -> mei-friend` and enable `select slurs` and `select placement elements` under `drag select`.
+You can also edit in the notation panel directly. Changes can be made to single or multiple elements depending how many are selected. To make it easier to select slurs or difficult to click articulations like staccato dots or accents you can enable [drag select]({{ site.baseurl }}/docs/basic/settings.md#Drag_select): Go to `settings -> mei-friend` and enable `select slurs` and `select placement elements` under `drag select`.
 
 {% include alert.html type="info" title="Select approporiate elements" content="Make sure that you select appropriate elements, i.e. if you select an entire measure you won't be able to insert any elements, but you will still be able to shift the pitches of all selected notes." %}
 
