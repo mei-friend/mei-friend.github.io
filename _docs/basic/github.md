@@ -31,7 +31,7 @@ After having authorized mei-friend, you may then sign in to GitHub with your use
         alt="Sign in to your GitHub profile" />
     <img class="figure-img" src="{{ site.baseurl }}/assets/img/github/GitHub-two-factor-auth.png" 
         alt="Two-factor authentication of your GitHub profile" />
-    <figcaption class="figure-caption">Screenshot of the sign-in window of GitHub (left) and the two-factor authentication (right). As you can see in the address bar of your browser, this confidential login data is handled directly with github.com. No login credentials will be transferred to mdw servers.</figcaption>
+    <figcaption class="figure-caption">Screenshot of the sign-in window of GitHub (left) and the two-factor authentication (right). As you can see in the address bar of your browser, this confidential login data is handled directly by github.com. No login credentials will be transferred to mdw servers.</figcaption>
 </figure>
 
 Upon successful authentication, your name will appear in the GitHub menu of mei-friend next to the GitHub icon (see Fig.&thinsp;3 with Werner Goebl signed in).
@@ -71,9 +71,9 @@ To completely sign off from GitHub, please confirm the following sign out page f
 
 After successful login, your profile name will appear next to the GitHub cat logo. By clicking on your name, you will see a list of repositories of your GitHub profile. The GitHub menu will guide you through the repository structure, all available branches and files within a repository. Each update might take some loading time during which the GitHub cat icon will spin (i.e., rotate clockwise). After having opened a file, the profile name, repository name and the file name will be shown in the file name status display. You may now work on your file and make changes. 
 
-The GitHub menu also provides navigation arrows to return to the next higher level in the GitHub structure (see Fig.&thinsp;6 below). Each click requires negotiation with the GitHub API indicated through a spinning GitHub icon.
+The GitHub menu also provides navigation buttons to return to the previous level in the GitHub structure (see Fig.&thinsp;6 below). Each click requires negotiation with the GitHub API indicated through a spinning GitHub icon.
 
-## Commit changes
+## Committing changes
 
  After having accomplished a meaningful portion of editing work to your encoding, you may now commit these changes back to your GitHub file by entering a commit message in the GitHub menu and confirming the commit by pressing the commit button (see Fig.&thinsp;6). The rotating GitHub icon indicates the commit being negotiated with the GitHub API. After this has been finished, the commit table at the bottom of the GitHub menu will contain the new commit just made with date, author, commit message, and commit hash. The commit hash itself is clickable and will guide you straight to that commit on the GitHub website for future interaction. Note that the commit message field will only be editable after an edit has been made to the encoding (indicated by red color in the file name marked additionally with an asterisk). 
 
@@ -87,12 +87,15 @@ The GitHub menu also provides navigation arrows to return to the next higher lev
 
 
 
-## Fork repository
+## Forking a repository
 
+Forking someone else's repository is made easy with mei-friend: just click the (second) menu item in the GitHub menu to enter the organisation and repository to be forked, as well as the target profile. Once the "fork repository" button is pressed, you will be guided to the forked repo in the profile you selected before (for an animated GIF see Fig&thinsp;7 below). 
+
+Forking can be initiated as a URL parameter, for more information please see [URL parameters]({{ site.baseurl }}/docs/advanced/urlparameters#pedagogical-example-forktrue).
 
 <figure class="figure fullwidth">
     <div class="figure-title">Fig.&thinsp;7: Forking, editing and commiting changes.</div>
     <img class="figure-img" src="{{ site.baseurl }}/assets/img/demo/mei-friend-02.gif" 
         alt="Typical GitHub workflow: opening file, performing some edits, and commiting changes back to GitHub" />
-    <figcaption class="figure-caption">Animated GIF of a typical GitHub workflow: selecting repository and branch, opening a file, performing some edits, and commiting changes back to GitHub. Clicking on the commit hash will bring you to that commit on the GitHub website.</figcaption>
+    <figcaption class="figure-caption">Animated GIF of a typical GitHub workflow: selecting repository to be forked into your own profile, selecting a branch and opening a file, performing some edits (here: deleting beams and inserting beamSpans, changing stem direction, adding two dynamics and align them vertically), and commiting changes back to GitHub. Clicking on the commit hash will bring you to that commit on the GitHub website.</figcaption>
 </figure>
