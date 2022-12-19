@@ -35,7 +35,7 @@
           url: "docs/advanced/urlparameters/"
         - title: Facsimile
           url: "docs/advanced/facsimile/"
-        - title: Annotation
+        - title: Annotating music encodings
           url: "docs/advanced/annotation/"
         - title: "Critical apparatus"
           url: "docs/advanced/critapp/"
