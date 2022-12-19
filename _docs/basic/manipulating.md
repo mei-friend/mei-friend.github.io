@@ -15,9 +15,14 @@ With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up o
 
 ## Vertical Groups
 
-If you want some elements in your score to be aligned vertically select all of them and use `Add vertical group` or hotkey "v". This adds the attribute [`@vgrp`](https://music-encoding.org/guidelines/v4/attribute-classes/att.verticalgroup.html) with an unused group number to your elements. Elements with the same group number will be aligned. A typical case would be a hairpin-dynamic connection as seen in the screenshot with the crescendo-forte (left with vertical group, right without). 
+If you want some elements in your score to be aligned vertically select all of them and use `Add vertical group` or hotkey "v". This adds the attribute [`@vgrp`](https://music-encoding.org/guidelines/v4/attribute-classes/att.verticalgroup.html) with an unused group number to your elements. Elements with the same group number will be aligned. A typical case would be a hairpin-dynamic connection as seen in the screenshot with the crescendo-forte. 
 
-![vertical groups]({{ site.baseurl }}/assets/img/manipulating/vgrps.PNG "left with vertical group and right without")
+<figure class="figure">
+    <div class="figure-title">Fig.&thinsp;1: Example of vertical groups with dynamics.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/manipulating/vgrps.PNG" 
+            alt="Example of vertical groups with dynamics" />
+    <figcaption class="figure-caption">On the left the crescendo-forte connection with vertical group and right without.</figcaption>
+</figure>
 
 ## Clean gestural accidentals (accid.ges)
 
