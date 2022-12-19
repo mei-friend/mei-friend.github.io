@@ -86,4 +86,8 @@ You may chose to have the notation match the appearance of the theme. In case of
 
 ## Where next?
 
-Kurzer Text mit Wegweisern zu anderen Kapitel.
+For file management and importing or exporting files including supported filetypes check out the pages about [github]({{ site.baseurl }}/docs/basic/github.md) and [import-export]({{ site.baseurl }}/docs/basic/import-export.md)
+
+You can find more about file editing at [inserting]({{ site.baseurl }}/docs/basic/inserting.md) and [manipulating]({{ site.baseurl }}/docs/basic/manipulating.md). Also read through [validation]({{ site.baseurl }}/docs/basic/validation.md) to see how mei-friend helps you write ecodings and find errors in your encoding.
+
+For more advanced techniques like working with facsimiles go to [advanced]({{ site.baseurl }}/docs/advanced).
