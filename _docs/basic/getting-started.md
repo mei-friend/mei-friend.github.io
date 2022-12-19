@@ -19,7 +19,14 @@ MEI-friend has two major screen regions: the editor panel and the notation panel
 
 **WG TODO:** please also name in graphcis: schema status (CMN ALL); file name; change status (*); validation status (grünes hakerl links im encoding panel)
 
-![screen regions of mei-friend]({{ site.baseurl }}/assets/img/getting_started/screenshot_screen_regions.PNG "screen regions of mei-friend")
+
+<figure class="figure">
+    <div class="figure-title">Fig.&thinsp;1: Screen regions of the mei-friend.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/screenshot_screen_regions.PNG" 
+            alt="Screenshot of mei-friends layout" />
+    <figcaption class="figure-caption">Basic layout of mei-friend: To change the position of the two main panels go to "View" and choose notation panel placement.</figcaption>
+</figure>
+
 
 At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file
 
@@ -53,7 +60,12 @@ If your MEI-file is missing IDs or might be using the same ID twice (i.e. due to
 
 To make changes directly in the notations panel you can use the options in the menu bar but it is recommended to use hotkeys that you can find under `Help -> Show help page`. You will find that they are similar to hotkeys used by conventional music notation software.
 
-![navigation in the notation menu bar]({{ site.baseurl }}/assets/img/getting_started/navigation_notation_panel.PNG "navigation in the notation menu bar")
+<figure class="figure">
+    <div class="figure-title">Fig.&thinsp;2: Navigation in the notation panel.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/navigation_notation_panel.PNG" 
+            alt="Screenshot of mei-friends layout" />
+    <figcaption class="figure-caption">The navigation menu bar in the notaiton panel.</figcaption>
+</figure>
 
 Using the navigation section in the notation menu bar you can flip through the pages of your rendered MEI-file or put in a page number that you want to jump to. Important to note is that the editor panel will follow the notation panel to the corresponding encoding part as long as this feature is enabled by the blue checkmark to the right.
 For more information see [navigation]({{ site.baseurl }}/docs/basic/navigation).
