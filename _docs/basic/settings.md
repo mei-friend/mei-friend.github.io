@@ -38,7 +38,7 @@ Here you can select the type of elements that will be selectable by drag select.
 - **Show navigation arrows:** These arrows allow to navigate in the notation panel from note to note horizontally or vertically (or: use arrow keys).
 - **Show notation update controls:** Show controls to update the notation panel after changes in the editor panel manually or automatically.
 
-<figure class="figure">
+<figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;1: Controls in the notation panel.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/settings/show_controls.PNG" 
             alt="Controls in the notation panel" />
@@ -47,12 +47,12 @@ Here you can select the type of elements that will be selectable by drag select.
 
 ### Renumber measures
 
-- **Continue across incomplete measures:** Measures that are incomplete (thus have attribute `metcon="false"`) will also be numbered as if they were complete (??).
+- **Continue across incomplete measures:** Measures that are incomplete (thus have attribute `metcon="false"`) will also be counted as full measures.
 - **Use suffix at incomplete measures:** (??)
 - **Continue across endings:** Continue numbering measures across multiple endings.
 - **Use suffix at endings:** Only selectable (ausgrauen?) if numbering is NOT continued across endings. E.g. measures in ending 1 will be numbered "90-a, 91-a..." and in ending 2 "90-b, 91-b...". Chose from different suffix options.
 
-See also [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumbering_measures).
+See also [manipulating]({{ site.baseurl }}/docs/basic/manipulating#Renumbering-measures).
 
 ### Facsimile panel
 
@@ -75,7 +75,7 @@ See also [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumberin
 - **Font size:** Font size in the editor panel.
 - **Theme:** Different color schemes to choose from to change the editors appearance.
 - **Notation matches theme:** Choose wether the notation should change its appearance according to the theme change.
-- **Indentation size:** Change the amount of spaces used for indentation. (??)
+- **Indentation size:** Change the amount of spaces used for indentation (amount of spaces per tab). (??)
 - **Line wrapping:** Wether or not lines are wrapped at the end of the panel.
 - **Line numbers:** Show line numbers.
 - **First line number:** Choose the starting line number.
@@ -83,7 +83,7 @@ See also [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumberin
 
 ### Editor behavior
 
-- **Auto validation:** Enable automatic validation to validate encoding against schema after each edit. This feature works like a spell checker for MEI. More info [here]({{ site.baseurl }}/docs/basic/validation.md).
+- **Auto validation:** Enable automatic validation to validate encoding against schema after each edit. This feature works like a spell checker for MEI. More info [here]({{ site.baseurl }}/docs/basic/validation).
 - **Auto close brackets:** Automatically close brackets.
 - **Auto close tags:** Automatically close tags of elements if written by hand.
 - **Match tags:** Highlight elements tags around the cursor in the editor.

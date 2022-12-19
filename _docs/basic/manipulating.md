@@ -15,9 +15,9 @@ With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up o
 
 ## Vertical Groups
 
-If you want some elements in your score to be aligned vertically select all of them and use `Add vertical group` or hotkey "v". This adds the attribute [`@vgrp`](https://music-encoding.org/guidelines/v4/attribute-classes/att.verticalgroup.html) with an unused group number to your elements. Elements with the same group number will be aligned. A typical case would be a hairpin-dynamic connection as seen in the screenshot with the crescendo-forte. 
+If you want some elements in your score to be aligned vertically select all of them and use `Add vertical group` or hotkey "v". This adds the attribute [`@vgrp`](https://music-encoding.org/guidelines/v4/attribute-classes/att.verticalgroup.html) with an unused group number to your elements. Elements with the same group number will be aligned. A typical case would be a hairpin-dynamic connection as seen in Fig. 1 with the crescendo-forte. 
 
-<figure class="figure">
+<figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;1: Example of vertical groups with dynamics.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/manipulating/vgrps.PNG" 
             alt="Example of vertical groups with dynamics" />
@@ -30,7 +30,7 @@ This function will check for every element if they have both `@accid` and `@acci
 
 ## Renumbering measures
 
-There are a couple of important settings for renumbering measures in the settings panel under `mei-friend Settings -> Renumber measures`, i.e. how to name incomplete measures, wether to continue counting measures across endings or not or what suffixes to use for endings (For details see [here]({{ site.baseurl }}/docs/basic/settings.md#Renumber_measures))
+There are a couple of important settings for renumbering measures in the settings panel under `mei-friend Settings -> Renumber measures`, i.e. how to name incomplete measures, wether to continue counting measures across endings or not or what suffixes to use for endings (For details see [here]({{ site.baseurl }}/docs/basic/settings#Renumber_measures))
 
 Before using `Renumber measures (exec)` it is recommended to use `Renumber measures (test)`: This will show how the renumbering will be done in the console of your browser (hotkey "F12" for many browsers) before actually executing it.
 

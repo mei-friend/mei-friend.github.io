@@ -17,16 +17,12 @@ MEI-friend is not designed to write MEI by hand but to import an already existin
 
 MEI-friend has two major screen regions: the editor panel and the notation panel. The editor panel is where the MEI encoding is displayed and the notation panel where it is rendered. These two panels are always connected so that every change that is made in one of them will result in a change also in the other one.
 
-**WG TODO:** please also name in graphcis: schema status (CMN ALL); file name; change status (*); validation status (grünes hakerl links im encoding panel)
-
-
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;1: Screen regions of the mei-friend.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/screenshot_screen_regions.PNG" 
             alt="Screenshot of mei-friends layout" />
     <figcaption class="figure-caption">Basic layout of mei-friend: To change the position of the two main panels go to "View" and choose notation panel placement.</figcaption>
 </figure>
-
 
 At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file
 
@@ -40,7 +36,7 @@ For details see [settings]({{ site.baseurl }}/docs/basic/settings):
 
 The notation menu bar lets you navigate the notation panel among other things.
 
-{% include alert.html type="info" title="Info" content="The small box between menu bar and file name (in this case `ALL 4.0.1`) contains information regarding the type of music notation and the schema used in the file." %}
+{% include alert.html type="info" title="Schema" content="The small box 'schema' in Fig. 1 (in this case `ALL 4.0.1`) contains information regarding the type of music notation and the schema used in the file." %}
 
 ## Modifying layout of screen regions
 
@@ -52,19 +48,19 @@ If you want to resize the screen regions you can click and drag the separating l
 
 A very important and central feature of the mei-friend is the already briefly mentioned link between the notation and the editor panel. Elements in the notation panel are highlighted in blue and in the editor panel in orange (b3 in bar 2, line 142 in the screenshot).
 
-To establish this link it is necessary that every element in the editor panel has the attribute `<xml:id>` with some string of characters following. With this ID mei-friend is able to connect any changes made between the two panels. Important for synchronized updates is also the blue "Updates" checkmark in the notation menu bar. Otherwise changes have to be updated manually.
+To establish this link it is necessary that every element in the editor panel has the attribute `@xml:id` with some string of characters following. With this ID mei-friend is able to connect any changes made between the two panels. Important for synchronized updates is also the blue "Updates" checkmark in the notation menu bar. Otherwise changes have to be updated manually.
 
 {% include alert.html type="info" title="No IDs" content="Even without IDs changes in the editor panel will be visible in the notation panel but not vice versa." %}
 
-If your MEI-file is missing IDs or might be using the same ID twice (i.e. due to copying an element) you can [generate those missing IDs]({{ site.baseurl }}/docs/manipulating.md#Re-render_MEI_(with_ids)).
+If your MEI-file is missing IDs or might be using the same @xml:id twice (i.e. due to copying an element) you can [generate those missing IDs]({{ site.baseurl }}/docs/manipulating#Re-render-MEI-(with-ids)).
 
 To make changes directly in the notations panel you can use the options in the menu bar but it is recommended to use hotkeys that you can find under `Help -> Show help page`. You will find that they are similar to hotkeys used by conventional music notation software.
 
-<figure class="figure">
+<figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;2: Navigation in the notation panel.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/navigation_notation_panel.PNG" 
-            alt="Screenshot of mei-friends layout" />
-    <figcaption class="figure-caption">The navigation menu bar in the notaiton panel.</figcaption>
+            alt="Navigation in the notation panel" />
+    <figcaption class="figure-caption">The navigation menu bar in the notation panel.</figcaption>
 </figure>
 
 Using the navigation section in the notation menu bar you can flip through the pages of your rendered MEI-file or put in a page number that you want to jump to. Important to note is that the editor panel will follow the notation panel to the corresponding encoding part as long as this feature is enabled by the blue checkmark to the right.
@@ -72,9 +68,7 @@ For more information see [navigation]({{ site.baseurl }}/docs/basic/navigation).
 
 If you are working with larger files the [speedmode]({{ site.baseurl }}/docs/advanced/largefiles) option (in the notation menu bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensly.
 
-{% capture alert_text %}mei-friend remembers your most recent changes in your document and settings in your browser's local storage to persist them even if your browser is closed or the mei-friend page left (more info at [persistence]({{ site.baseurl }}/docs/basic/persistence).{% endcapture %}
-{% include alert.html type="info" title="Persistence: Save changes and settings in Browser's local storage" content=alert_text %}
-TODO: <a href='{{ site.baseurl }}/docs/basic/persistence'>persistence</a>
+{% include alert.html type="info" title="Persistence: Save changes and settings in browser's local storage" content="mei-friend remembers your most recent changes in your document and settings in your browser's local storage to persist them even if your browser is closed or the mei-friend page left (more info at <a href='/docs/basic/persistence'>persistence</a>)" %}
 
 ## mei-friend appearance
 

@@ -34,9 +34,9 @@ To add spanning elements like a slur select the starting and ending note (notes 
 
 Spanning elements added this way will always have a `@startid` and `@endid` which reference the ID's of the starting and ending note. Equivalent to this a spanning element can also be sufficiently defined by specifying the `@staff` and two timestamps `@tstamp` and `@tstamp2`. This method is commonly used for hairpins.
 
-These two methods can also be mixed by using `@startid` with `@tstamp2` or `@tstamp` and `@endid`. You can use this method if a slur has a starting note but doesn't have a ending note. A classic situation would be at repeats or multiple endings (as seen in the screenshot below). This method does not have to be used over page or system breaks! Just specify the start and end point and it will be rendered correctly.
+These two methods can also be mixed by using `@startid` with `@tstamp2` or `@tstamp` and `@endid`. You can use this method if a slur has a starting note but doesn't have a ending note. A classic situation would be at repeats or multiple endings (as seen in the Fig. 1). This method does not have to be used over page or system breaks! Just specify the start and end point and it will be rendered correctly.
 
-<figure class="figure">
+<figure class="thirdwidth">
     <div class="figure-title">Fig.&thinsp;1: Slurs with no specified ending/starting point.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/inserting/spanning.PNG" 
             alt="Screenshot of slurs with no specified ending/starting point" />
