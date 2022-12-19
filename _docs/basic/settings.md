@@ -38,7 +38,12 @@ Here you can select the type of elements that will be selectable by drag select.
 - **Show navigation arrows:** These arrows allow to navigate in the notation panel from note to note horizontally or vertically (or: use arrow keys).
 - **Show notation update controls:** Show controls to update the notation panel after changes in the editor panel manually or automatically.
 
-![Controls]({{ site.baseurl }}/assets/img/settings/show_controls.PNG "Controls")
+<figure class="figure">
+    <div class="figure-title">Fig.&thinsp;1: Controls in the notation panel.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/settings/show_controls.PNG" 
+            alt="Controls in the notation panel" />
+    <figcaption class="figure-caption">(1) Update controls (2) Notation font selector (3) Navigation arrows.</figcaption>
+</figure>
 
 ### Renumber measures
 
@@ -53,9 +58,9 @@ See also [manipulation]({{ site.baseurl }}/docs/basic/manipulating.md#Renumberin
 
 - **Show facsimile panel:** Same as using the facsimile icon from the three panel icons in the top right.
 - **Facsimile panel position:** The facsimile panel will be placed in the notation panel side. Chose where to place it (default: bottom).
-- **Facsimile image zoom:** 
-- **Show full page:**
-- **Edit facsimile zones:**
+- **Facsimile image zoom:** Zoom level of facsimile image (in percent)
+- **Show full page:** Show facsimile image on full page.
+- **Edit facsimile zones:** This will link bounding boxes to facsimile zones.
 
 ### Handle editorial content
 
