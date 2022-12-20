@@ -69,7 +69,7 @@ To completely sign off from GitHub, please confirm the following sign out page f
 
 ## Loading files from GitHub
 
-After successful login, your profile name will appear next to the GitHub cat logo. By clicking on your name, you will see a list of repositories of your GitHub profile. The GitHub menu will guide you through the repository structure, all available branches and files within a repository. Each update might take some loading time during which the GitHub cat icon will spin (i.e., rotate clockwise). After having opened a file, the profile name, repository name and the file name will be shown in the file name status display. You may now work on your file and make changes. 
+After successful login, your profile name will appear next to the GitHub cat logo. By clicking on your name, you will see a list of repositories of your GitHub profile. The GitHub menu will guide you through the repository structure, all available branches and files within a repository. If a repository contains only a single branch (such as "main") branch selection will be skipped and files listed for selection. Each update might take some loading time during which the GitHub cat icon will spin (i.e., rotate clockwise). After having opened a file, the profile name, repository name and the file name will be shown in the file name status display. You may now work on your file and make changes. 
 
 The GitHub menu also provides navigation buttons to return to the previous level in the GitHub structure (see Fig.&thinsp;6 below). Each click requires negotiation with the GitHub API indicated through a spinning GitHub icon.
 
