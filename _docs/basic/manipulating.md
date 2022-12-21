@@ -6,7 +6,7 @@ layout: page
 ---
 # Manipulating
 
-Mei-friend provides some useful tools to manipulate your score or specific elements (under `Manipulate` in the menu bar or use corresponding hotkeys) in it. 
+Mei-friend provides some useful tools to manipulate your score or specific elements (under `Manipulate` in the menu bar or use corresponding keyboard shortcuts) in it. 
 
 ## Moving and deleting elements
 
@@ -30,16 +30,18 @@ This function will check for every element if they have both `@accid` and `@acci
 
 ## Renumbering measures
 
-There are a couple of important settings for renumbering measures in the settings panel under `mei-friend Settings -> Renumber measures`, i.e. how to name incomplete measures, wether to continue counting measures across endings or not or what suffixes to use for endings (For details see [here]({{ site.baseurl }}/docs/basic/settings#Renumber_measures))
+There are a couple of important settings for renumbering measures in the settings panel under `mei-friend Settings -> Renumber measures`, i.e. how to name incomplete measures, wether to continue counting measures across endings or not or what suffixes to use for endings (For details see [here]({{ site.baseurl }}/docs/basic/settings/#renumber-measures))
 
-Before using `Renumber measures (exec)` it is recommended to use `Renumber measures (test)`: This will show how the renumbering will be done in the console of your browser (hotkey "F12" for many browsers) before actually executing it.
+Before using `Renumber measures (exec)` it is recommended to use `Renumber measures (test)`: This will show how the renumbering will be done in a pop-up window before actually executing it.
 
-## Re-render MEI
+## Add/remove ids
 
-The MEI-file can be re-rendered either with IDs which adds IDs to any element that doesn't have one already or by removing IDs which removes all IDs that are not referenced anywhere (e.g. by a slur) to not lose any information about the encoding.
+`xml:id`s can be either added or removed with `Add ids to MEI` and `Remove ids from MEi`. Removing keeps all `@xml:id` that are referenced somewhere (e.g. by a slur) to not lose any information about the encoding.
 
-Re-rendering will also correct the formating of the file like indentation (to just indent a selected part of a file use `Code -> Indent selection` or use "Alt + Shift + F")
+## Rerender via Verovio
+
+With this feature the file can be newly rendered. Rerendering will also correct the formating of the file like indentation (to just indent a selected part of a file use `Code -> Indent selection` or "Alt + Shift + F")
 
 ## Ingest Facsimile
 
-For more information see [here]({{ site.baseurl }}/docs/advanced/facsimile.md#Creating_your_own_MEI_file_with_facsimile_information)
+For more information see [here]({{ site.baseurl }}/docs/advanced/facsimile/#creating-your-own-mei-file-with-facsimile-information)

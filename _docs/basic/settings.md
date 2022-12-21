@@ -6,7 +6,16 @@ layout: page
 ---
 # Settings panel
 
-All of the options in this panel are also briefly described in the tooltips that appear if hovered over one of the options. With the button at the bottom of the panels you can reset your settings to the mei-friend default.
+In this panel you have three tabs: mei-friend, editor and Verovio. There is a search bar available at the top right of the panel to search the current tab. With the `default` button at the bottom, the current tab is reset to default settings (see Fig.1).
+
+<figure class="halfwidth">
+    <div class="figure-title">Fig.&thinsp;1: Settings panel.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/settings/settings_panel.PNG" 
+            alt="Settings panel" />
+    <figcaption class="figure-caption">The settings panel.</figcaption>
+</figure>
+
+{% include alert.html type="info" title="Settings Information" content="All of the options in this panel are also briefly described in the tooltips that appear if hovered over one of the options." %}
 
 ## mei-friend settings
 
@@ -16,11 +25,11 @@ All of the options in this panel are also briefly described in the tooltips that
 
 {% include alert.html type="danger" title="Refresh" content="Switching to older verovio versions before 3.11.0 might require a refresh due to memory issues." %}
 
-- **Speedmode:** Toggle Verovio Speed Mode. In Speedmode, only the current page is sent to Verovio to reduce rendering time with large files. See also [Working with large files: Speedmode]({{ site.baseurl }}/docs/advanced/largefiles.md). This option can also be toggled the notation menu bar.
+- **Speedmode:** Toggle Verovio Speed Mode. In Speedmode, only the current page is sent to Verovio to reduce rendering time with large files. See also [Working with large files: Speedmode]({{ site.baseurl }}/docs/advanced/largefiles.md). This option can also be toggled the notation control bar.
 
 - **Style of generated xml:ids:** This option defines the format of xml:ids that are automatically created using `Manipulate -> Re-render MEI (with ids)`. This is mostly just preference...
 
-- **Insert application statement:** Inserts default meta data into the first three lines of an MEI-file if it is rerenderd at any point. If you made any changes to the schema used it is recommended to turn this off so you do not have to change it back everytime you rerender.
+- **Insert application statement:** Inserts default meta data into the first three lines of an MEI-file if it is "Rerenderd via Verovio" at any point. If you made any changes to the schema used, it is recommended to turn this off so you do not have to change it back everytime you rerender.
 
 ### Annotations
 
@@ -30,7 +39,7 @@ All of the options in this panel are also briefly described in the tooltips that
 
 ### Drag select
 
-Here you can select the type of elements that will be selectable by drag select. Espescially useful for placement elements and slurs that are difficult to select otherwise.
+Here you can select the type of elements that will be selectable by drag select. Espescially useful for placement elements and slurs that are difficult to select otherwise. Using this option mei-friend will always highlight the element closest to the cursor in the editor panel.
 
 ### Control menu
 
@@ -39,7 +48,7 @@ Here you can select the type of elements that will be selectable by drag select.
 - **Show notation update controls:** Show controls to update the notation panel after changes in the editor panel manually or automatically.
 
 <figure class="halfwidth">
-    <div class="figure-title">Fig.&thinsp;1: Controls in the notation panel.</div>
+    <div class="figure-title">Fig.&thinsp;2: Controls in the notation panel.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/settings/show_controls.PNG" 
             alt="Controls in the notation panel" />
     <figcaption class="figure-caption">(1) Update controls (2) Notation font selector (3) Navigation arrows.</figcaption>
@@ -47,20 +56,16 @@ Here you can select the type of elements that will be selectable by drag select.
 
 ### Renumber measures
 
-- **Continue across incomplete measures:** Measures that are incomplete (thus have attribute `metcon="false"`) will also be counted as full measures.
-- **Use suffix at incomplete measures:** (??)
+- **Continue across incomplete measures:** Measures that are incomplete (thus have attribute `@metcon="false"`) will also be counted as if they were full measures.
+- **Use suffix at incomplete measures:** Only selectable if "Continue across incomplete measures" is NOT activated. Inserts the suffix "cont" (for "continued") for incomplete measures that follow another incomplete measure.
 - **Continue across endings:** Continue numbering measures across multiple endings.
-- **Use suffix at endings:** Only selectable (ausgrauen?) if numbering is NOT continued across endings. E.g. measures in ending 1 will be numbered "90-a, 91-a..." and in ending 2 "90-b, 91-b...". Chose from different suffix options.
+- **Use suffix at endings:** Only selectable if numbering is NOT continued across endings. Inserts a suffix for measures in endings. E.g. measures in ending 1 will be numbered "90-a, 91-a..." and in ending 2 "90-b, 91-b...". "ending@n" will take the value of `@n` from the `<ending>` element the measures are in and add it to the measure numbers (e.g. measures in ending "1." will get the suffix "1.").
 
-See also [manipulating]({{ site.baseurl }}/docs/basic/manipulating#Renumbering-measures).
+See also [manipulating]({{ site.baseurl }}/docs/basic/manipulating/#renumbering-measures).
 
 ### Facsimile panel
 
-- **Show facsimile panel:** Same as using the facsimile icon from the three panel icons in the top right.
-- **Facsimile panel position:** The facsimile panel will be placed in the notation panel side. Chose where to place it (default: bottom).
-- **Facsimile image zoom:** Zoom level of facsimile image (in percent)
-- **Show full page:** Show facsimile image on full page.
-- **Edit facsimile zones:** This will link bounding boxes to facsimile zones.
+More information [here]({{ site.baseurl }}/docs/advanced/facsimile)
 
 ### Handle editorial content
 
@@ -83,7 +88,7 @@ See also [manipulating]({{ site.baseurl }}/docs/basic/manipulating#Renumbering-m
 
 ### Editor behavior
 
-- **Auto validation:** Enable automatic validation to validate encoding against schema after each edit. This feature works like a spell checker for MEI. More info [here]({{ site.baseurl }}/docs/basic/validation).
+- **Auto validation:** Enable automatic validation to validate encoding against schema after each edit. This feature works like a spell checker for MEI. More information [here]({{ site.baseurl }}/docs/basic/validation).
 - **Auto close brackets:** Automatically close brackets.
 - **Auto close tags:** Automatically close tags of elements if written by hand.
 - **Match tags:** Highlight elements tags around the cursor in the editor.
@@ -92,4 +97,4 @@ See also [manipulating]({{ site.baseurl }}/docs/basic/manipulating#Renumbering-m
 
 ## Verovio settings
 
-Here are all settings that are provided by the Verovio toolkit for engraving the notation.
+Here are all settings that are provided by the Verovio toolkit for engraving the notation. Click [here](https://book.verovio.org/toolkit-reference/toolkit-options.html) for information about them.

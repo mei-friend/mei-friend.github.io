@@ -38,7 +38,7 @@ If you would like to highlight the first phrase of the secondary theme prominent
 
 [https://mei-friend.mdw.ac.at/?scale=90&breaks=auto&select=note-0000001852354230&file=https://raw.githubusercontent.com/trompamusic-encodings/Beethoven_Op53_HenleUrtext/master/Beethoven_Op53_1-HenleUrtext.mei](https://mei-friend.mdw.ac.at/?scale=90&breaks=auto&select=note-0000001852354230&file=https://raw.githubusercontent.com/trompamusic-encodings/Beethoven_Op53_HenleUrtext/master/Beethoven_Op53_1-HenleUrtext.mei){:target="_blank"}
 
-As the breaks mode is set to auto, mei-friend will first display the first page while processing the page layout in the background (a question mark is shown instead of the number of pages in the page navigation panel). Once that is done, it will flip to the page with the selected note ID `note-0000001852354230`. 
+As the breaks mode is set to auto, mei-friend will first display the first page while processing the page layout in the background (a question mark is shown instead of the number of pages in the page navigation panel). Once that is done, it will flip to the page with the selected note `@xml:id` `note-0000001852354230`. 
 
 <figure class="figure">
     <div class="figure-title">Fig.&nbsp;2: Highlighting note of secondary theme.</div>

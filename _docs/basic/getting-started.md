@@ -30,11 +30,11 @@ On the far right you will find three icons to toggle the following panels: the [
 
 - **mei-friend**: settings regarding mei-friend as a whole
 - **editor**: settings regarding the editor panel
-- **verovio**: settings regarding the music notation engraving library [verovio](https://www.verovio.org/index.xhtml){:target="_blank"} used here that translates the written out encoding into actual music notation
+- **Verovio**: settings regarding the music notation engraving library [Verovio](https://www.verovio.org/index.xhtml){:target="_blank"} used here that translates the written out encoding into actual music notation
 
 For details see [settings]({{ site.baseurl }}/docs/basic/settings):
 
-The notation menu bar lets you navigate the notation panel among other things.
+The notation control bar lets you navigate the notation panel among other things.
 
 {% include alert.html type="info" title="Schema" content="The small box 'schema' in Fig. 1 (in this case `ALL 4.0.1`) contains information regarding the type of music notation and the schema used in the file." %}
 
@@ -48,25 +48,17 @@ If you want to resize the screen regions you can click and drag the separating l
 
 A very important and central feature of the mei-friend is the already briefly mentioned link between the notation and the editor panel. Elements in the notation panel are highlighted in blue and in the editor panel in orange (b3 in bar 2, line 142 in the screenshot).
 
-To establish this link it is necessary that every element in the editor panel has the attribute `@xml:id` with some string of characters following. With this ID mei-friend is able to connect any changes made between the two panels. Important for synchronized updates is also the blue "Updates" checkmark in the notation menu bar. Otherwise changes have to be updated manually.
+To establish this link it is necessary that every element in the editor panel has the attribute `@xml:id` with some string of characters following. With this `@xml:id` mei-friend is able to connect any changes made between the two panels. Important for synchronized updates is also the blue "Updates" checkmark in the notation menu bar. Otherwise changes have to be updated manually.
 
-{% include alert.html type="info" title="No IDs" content="Even without IDs changes in the editor panel will be visible in the notation panel but not vice versa." %}
+{% include alert.html type="info" title="No `@xml:id`" content="Even without `@xml:id` changes in the editor panel will be visible in the notation panel but not vice versa." %}
 
-If your MEI-file is missing IDs or might be using the same @xml:id twice (i.e. due to copying an element) you can [generate those missing IDs]({{ site.baseurl }}/docs/manipulating#Re-render-MEI-(with-ids)).
+If your MEI-file is missing `@xml:id` or might be using the same @xml:id twice (i.e. due to copying an element) you can [generate those missing `@xml:id`]({{ site.baseurl }}/docs/manipulating/#Re-render-mei).
 
-To make changes directly in the notations panel you can use the options in the menu bar but it is recommended to use hotkeys that you can find under `Help -> Show help page`. You will find that they are similar to hotkeys used by conventional music notation software.
+Find our how to navigate the encoding [here]({{ site.baseurl }}/docs/basic/navigation).
 
-<figure class="halfwidth">
-    <div class="figure-title">Fig.&thinsp;2: Navigation in the notation panel.</div>
-        <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/navigation_notation_panel.PNG" 
-            alt="Navigation in the notation panel" />
-    <figcaption class="figure-caption">The navigation menu bar in the notation panel.</figcaption>
-</figure>
+To make changes directly in the notations panel you can use the options in the menu bar but it is recommended to use keyboard shortcuts that you can find under `Help -> Show help page` or [here]({{ site.baseurl }}/cheatsheet){:target="_blank"}. You will find that they are similar to shortcuts used by conventional music notation software.
 
-Using the navigation section in the notation menu bar you can flip through the pages of your rendered MEI-file or put in a page number that you want to jump to. Important to note is that the editor panel will follow the notation panel to the corresponding encoding part as long as this feature is enabled by the blue checkmark to the right.
-For more information see [navigation]({{ site.baseurl }}/docs/basic/navigation).
-
-If you are working with larger files the [speedmode]({{ site.baseurl }}/docs/advanced/largefiles) option (in the notation menu bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensly.
+If you are working with larger files the [speedmode]({{ site.baseurl }}/docs/advanced/largefiles) option (in the notation control bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensly.
 
 {% include alert.html type="info" title="Persistence: Save changes and settings in browser's local storage" content="mei-friend remembers your most recent changes in your document and settings in your browser's local storage to persist them even if your browser is closed or the mei-friend page left (more info at <a href='/docs/basic/persistence'>persistence</a>)" %}
 
@@ -80,7 +72,7 @@ You may chose to have the notation match the appearance of the theme. In case of
 
 ## Where next?
 
-For file management and importing or exporting files including supported filetypes check out the pages about [github]({{ site.baseurl }}/docs/basic/github) and [import-export]({{ site.baseurl }}/docs/basic/import-export)
+For file management and importing or exporting files including supported filetypes check out the pages about [import-export]({{ site.baseurl }}/docs/basic/import-export) and [github]({{ site.baseurl }}/docs/basic/github).
 
 You can find more about file editing at [inserting]({{ site.baseurl }}/docs/basic/inserting) and [manipulating]({{ site.baseurl }}/docs/basic/manipulating). Also read through [validation]({{ site.baseurl }}/docs/basic/validation) to see how mei-friend helps you write ecodings and find errors in your encoding.
 
