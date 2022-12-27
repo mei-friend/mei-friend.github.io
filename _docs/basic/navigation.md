@@ -23,5 +23,5 @@ It might make sense to insert `<section>` elements into your encoding to better 
     <div class="figure-title">Fig.&thinsp;2: Drop down section menu.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/navigation/section_menu.PNG" 
             alt="Drop down section menu" />
-    <figcaption class="figure-caption">Example from Beethoven "Sechs Variationen" .</figcaption>
+    <figcaption class="figure-caption">Example from Beethoven "Sechs Variationen", WoO 70.</figcaption>
 </figure>
