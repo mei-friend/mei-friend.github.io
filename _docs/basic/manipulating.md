@@ -30,11 +30,11 @@ This function will check for every element if they have both `@accid` and `@acci
 
 ## Renumbering measures
 
-There are a couple of important settings for renumbering measures in the settings panel under `mei-friend Settings -> Renumber measures`, i.e. how to name incomplete measures, wether to continue counting measures across endings or not or what suffixes to use for endings (For details see [here]({{ site.baseurl }}/docs/basic/settings/#renumber-measures))
+There are a couple of important settings for renumbering measures in the settings panel under `mei-friend Settings -> Renumber measures`, i.e. how to name incomplete measures, wether to continue counting measures across endings or not or what suffixes to use for endings (for details see [here]({{ site.baseurl }}/docs/basic/settings/#renumber-measures))
 
 Before using `Renumber measures (exec)` it is recommended to use `Renumber measures (test)`: This will show how the renumbering will be done in a pop-up window before actually executing it.
 
-## Add/remove ids
+## Add/remove ids to/from MEI
 
 `xml:id`s can be either added or removed with `Add ids to MEI` and `Remove ids from MEi`. Removing keeps all `@xml:id` that are referenced somewhere (e.g. by a slur) to not lose any information about the encoding.
 

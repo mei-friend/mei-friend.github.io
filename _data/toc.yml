@@ -18,6 +18,8 @@
           url: "docs/basic/inserting/"
         - title: Manipulating
           url: "docs/basic/manipulating/"
+        - title: Code
+          url: "docs/basic/code/"
         - title: Settings 
           url: "docs/basic/settings/"
         - title: Persistence 
