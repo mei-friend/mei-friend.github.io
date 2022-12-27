@@ -5,11 +5,11 @@ permalink: /docs/basic/inserting/
 layout: page
 ---
 
-# Editing in the editor and notation panel
+# Inserting in the editor and notation panel
 
 There are two ways to insert elements into your MEI-file: Either directly in the editor panel or by using `Insert` or rather the corresponding [keyboard shortcuts]({{ site.baseurl }}/cheatsheet){:target="_blank"} in the notation panel.
 
-Using the editor panel you can simply edit the encoding, changing attribute values or adding new elements. Typical text editing functions are available that you can find under [Code]({{ site.baseurl }}/docs/basic/code) in the menu bar like "Undo", "Search" or "Replace".
+Using the editor panel you can simply edit the encoding, changing attribute values or adding new elements. Typical text editing functions are available that you can find under [Edit]({{ site.baseurl }}/docs/basic/code) in the menu bar like "Undo", "Search" or "Replace".
 
 Adding new elements by hand is tideous though and generally not recommended. Using the `Insert` menu in the menu bar (or shortcuts) to add elements is generally the better way or just copy already existing elements. If you copy elements be mindful to change the `@xml:id` so there aren't multiple elements with the same `@xml:id`.
 
