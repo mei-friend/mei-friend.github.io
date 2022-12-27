@@ -4,19 +4,14 @@ description: Inserting operations in mei-friend
 permalink: /docs/basic/inserting/
 layout: page
 ---
-# General
+
+# Editing in the editor and notation panel
 
 There are two ways to insert elements into your MEI-file: Either directly in the editor panel or by using `Insert` or rather the corresponding [keyboard shortcuts]({{ site.baseurl }}/cheatsheet){:target="_blank"} in the notation panel.
 
-## Editing in the editor panel
-
-Using the editor panel you can simply edit the encoding, changing attribute values or adding new elements. Typical text editing functions are available that you can find under `Code` in the menu bar like "Undo", "Search" or "Replace".
-
-{% include alert.html type="info" title="Regexp" content="Using <a href='https://en.wikipedia.org/wiki/Regular_expression'>Regular Expression</a> (regex or regexp) in the search bar is supported to make searching more powerful." %}
+Using the editor panel you can simply edit the encoding, changing attribute values or adding new elements. Typical text editing functions are available that you can find under [Code]({{ site.baseurl }}/docs/basic/code) in the menu bar like "Undo", "Search" or "Replace".
 
 Adding new elements by hand is tideous though and generally not recommended. Using the `Insert` menu in the menu bar (or shortcuts) to add elements is generally the better way or just copy already existing elements. If you copy elements be mindful to change the `@xml:id` so there aren't multiple elements with the same `@xml:id`.
-
-## Editing in the notation panel
 
 You can also edit in the notation panel directly. Changes can be made to single or multiple elements depending how many are selected. To make it easier to select slurs or difficult to click articulations like staccato dots or accents you can enable [drag select]({{ site.baseurl }}/docs/basic/settings/#drag-select): Go to `settings -> mei-friend` and enable `select slurs` and `select placement elements` under `drag select`. Holding "Ctrl" and leftclicking to select multiple elements is also possible. To select a chord hold "Alt" and click a note from the chord. 
 
