@@ -26,17 +26,15 @@ MEI-friend has two major screen regions: the editor panel and the notation panel
 
 At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file
 
-On the far right you will find three icons to toggle the following panels: the [facsimile panel]({{ site.baseurl }}/docs/advanced/facsimile), the annotations panel and the [settings panel]({{ site.baseurl }}/docs/settings). For now the settings panel is the most relevant with its secondary options:
+On the far right you will find three panel icons to toggle the following panels: the [facsimile panel]({{ site.baseurl }}/docs/advanced/facsimile), the annotations panel and the [settings panel]({{ site.baseurl }}/docs/basic/settings). For now the settings panel is the most relevant with its secondary options:
 
 - **mei-friend**: settings regarding mei-friend as a whole
 - **editor**: settings regarding the editor panel
 - **Verovio**: settings regarding the music notation engraving library [Verovio](https://www.verovio.org/index.xhtml){:target="_blank"} used here that translates the written out encoding into actual music notation
 
-For details see [settings]({{ site.baseurl }}/docs/basic/settings):
-
 The notation control bar lets you navigate the notation panel among other things.
 
-{% include alert.html type="info" title="Schema" content="The small box 'schema' in Fig. 1 (in this case `ALL 4.0.1`) contains information regarding the type of music notation and the schema used in the file." %}
+{% include alert.html type="info" title="Schema indicator" content="The small box 'schema' in Fig. 1 (in this case `ALL 4.0.1`) contains information regarding the type of music notation and the schema used in the file." %}
 
 ## Modifying layout of screen regions
 

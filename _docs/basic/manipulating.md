@@ -21,7 +21,7 @@ If you want some elements in your score to be aligned vertically select all of t
     <div class="figure-title">Fig.&thinsp;1: Example of vertical groups with dynamics.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/manipulating/vgrps.PNG" 
             alt="Example of vertical groups with dynamics" />
-    <figcaption class="figure-caption">On the left the crescendo-forte connection with vertical group and right without.</figcaption>
+    <figcaption class="figure-caption">On the left the crescendo-forte connection with vertical group and on the right without.</figcaption>
 </figure>
 
 ## Clean gestural accidentals (accid.ges)
