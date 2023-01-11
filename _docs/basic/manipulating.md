@@ -13,6 +13,8 @@ Mei-friend provides some useful tools to manipulate your score or specific eleme
 The following functions can be used on one or multiple notes. Simply delete an element with "Delete" or "Backspace". You can change the pitch with "Shift" + "ArrowUp" / "ArrowDown" or an octave up or down by simultaneously pressing "Ctrl".
 With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up or down and a `@staff` attribute will be added to the element if it doesn't have one already. The placement of an element relative to the staff can be inverted with "X" (changes the `@place` attribute).
 
+**insert gif**
+
 ## Vertical Groups
 
 If you want some elements in your score to be aligned vertically select all of them and use `Add vertical group` or hotkey "v". This adds the attribute [`@vgrp`](https://music-encoding.org/guidelines/v4/attribute-classes/att.verticalgroup.html) with an unused group number to your elements. Elements with the same group number will be aligned. A typical case would be a hairpin-dynamic connection as seen in Fig. 1 with the crescendo-forte. 
@@ -34,9 +36,13 @@ There are a couple of important settings for renumbering measures in the setting
 
 Before using `Renumber measures (exec)` it is recommended to use `Renumber measures (test)`: This will show how the renumbering will be done in a pop-up window before actually executing it.
 
+**insert gif**
+
 ## Add/remove ids to/from MEI
 
 `xml:id` can be either added or removed with `Add ids to MEI` and `Remove ids from MEi`. Removing keeps all `@xml:id` that are referenced somewhere (e.g. by a slur) to not lose any information about the encoding.
+
+**insert gif**
 
 ## Rerender via Verovio
 
