@@ -36,7 +36,7 @@ Before using `Renumber measures (exec)` it is recommended to use `Renumber measu
 
 ## Add/remove ids to/from MEI
 
-`xml:id`s can be either added or removed with `Add ids to MEI` and `Remove ids from MEi`. Removing keeps all `@xml:id` that are referenced somewhere (e.g. by a slur) to not lose any information about the encoding.
+`xml:id` can be either added or removed with `Add ids to MEI` and `Remove ids from MEi`. Removing keeps all `@xml:id` that are referenced somewhere (e.g. by a slur) to not lose any information about the encoding.
 
 ## Rerender via Verovio
 
