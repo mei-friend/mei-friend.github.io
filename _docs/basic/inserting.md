@@ -15,7 +15,12 @@ Adding new elements by hand is tideous though and generally not recommended. Usi
 
 If you edit directly in the notation panel you can also select multiple elements and make changes for more than one at once. To make it easier to select slurs or difficult to click articulations like staccato dots or accents you can enable [drag select]({{ site.baseurl }}/docs/basic/settings/#drag-select): Go to `settings -> mei-friend` and enable `select slurs` and `select placement elements` under `drag select`. Holding "Ctrl" and leftclicking to select multiple elements is also possible. To select a chord hold "Alt" and click a note from the chord.
 
-**insert gif with drag select**
+<figure class="figure">
+    <div class="figure-title">Fig.&thinsp;1: Drag select.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/inserting/drag_select.gif" 
+            alt="Drag select." />
+    <figcaption class="figure-caption">To be able to select slurs and placement elements, drag select has to be enabled for these elements.</figcaption>
+</figure>
 
 {% include alert.html type="info" title="Select approporiate elements" content="Make sure that you select appropriate elements, i.e. if you select an entire measure you won't be able to insert any elements, but you will still be able to shift the pitches of all selected notes." %}
 
@@ -36,10 +41,10 @@ Spanning elements added this way will always have a `@startid` and `@endid` whic
 These two methods can also be mixed by using `@startid` with `@tstamp2` or `@tstamp` and `@endid`. You can use this method if a slur has a starting note but doesn't have a ending note. A classic situation would be at repeats or multiple endings (as seen in the Fig. 1). This method does not have to be used over page or system breaks! Just specify the start and end point and it will be rendered correctly.
 
 <figure class="thirdwidth">
-    <div class="figure-title">Fig.&thinsp;1: Slurs with no specified ending/starting point.</div>
+    <div class="figure-title">Fig.&thinsp;2: Slurs with no specified ending/starting point.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/inserting/spanning.PNG" 
             alt="Screenshot of slurs with no specified ending/starting point" />
-    <figcaption class="figure-caption">Situation with multiple endings where slurs don't end/start on a specific note in the danube waltz.</figcaption>
+    <figcaption class="figure-caption">Situation with multiple endings where slurs don't end/start on a specific note.</figcaption>
 </figure>
 
 ### Inserting Dynamics and Directives
