@@ -24,6 +24,8 @@
           url: "docs/basic/persistence/"
         - title: Validation 
           url: "docs/basic/validation/"
+        - title: "MIDI playback"
+          url: "docs/basic/midiplayback/"
         - title: "GitHub integration" 
           url: "docs/basic/github/"
     - title: "Advanced topics"
