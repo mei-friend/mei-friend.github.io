@@ -8,8 +8,7 @@ permalink: /about/
 The mei-friend online application and its documentation has been designed and implemented by:
 
 [Werner Goebl](https://iwk.mdw.ac.at/goebl/){:target="_blank"} ([@wergo](https://github.com/wergo)) & 
-[David M. Weigl](https://iwk.mdw.ac.at/david-weigl/){:target="_blank"} ([@musicog](https://github.com/musicog)),
-as well as Matthäus Pescoller ([@mapscl](https://github.com/mapscl), documentation and testing), 
+[David M. Weigl](https://iwk.mdw.ac.at/david-weigl/){:target="_blank"} ([@musicog](https://github.com/musicog)), 
 
 [Department of Music Acoustics &ndash; Wiener Klangstil (IWK)](https://iwk.mdw.ac.at/){:target="_blank"}, 
 
@@ -47,17 +46,27 @@ Development into mei-friend has been covered by several research projects over t
 </a>
 </div>
 
+## Acknowledgments
+
+We thank Matthäus Pescoller ([@mapscl](https://github.com/mapscl) for contributing to the documentations and testing mei-friend by creating huge orchestral score encodings.
+
+We thank the community for input to the mei-friend development. 
+In particular, we would like to acknowledge [Laurent Pugin](https://github.com/lpugin), who contributed the code for schema validation and 
+[Thomas Weber](https://github.com/th-we), who helped to improve the Speedmode module in mei-friend.
+
 ## License
 
 The *mei-friend* Web application is published under [GNU AGPL 3.0](https://github.com/mei-friend/mei-friend/blob/main/LICENSE){:target="_blank"}. 
 
-The mei-friend documentation is provided under [XXX]().
+The *mei-friend* documentation is provided under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/){:target="_blank"}.
 
-We thank the community for input to the mei-friend development. In particular, we would like to acknowledge Laurent Pugin, who contributed the code for schema validation and Thomas Weber, who helped to improve the Speedmode module in mei-friend.
 
 ## Components
 
-mei-friend makes use of [CodeMirror](https://codemirror.net){:target="_blank"} as text editor, and [Verovio](https://www.verovio.org){:target="_blank"} as music engraving engine. [GitHub](https://github.org){:target="_blank"} integration is provided using [jsgit](https://github.com/creationix/jsgit){:target="_blank"}, [jsgit-browser](https://github.com/LivelyKernel/js-git-browser){:target="_blank"}, and the [GitHub REST API](https://docs.github.com/en/rest){:target="_blank"}. XML-DOM manipulations are performed using [tXml](https://github.com/TobiasNickel/tXml){:target="_blank"} by Tobias Nickel. The MEI validation and RNG loading code is adapted from the implementation in the [Verovio editor](https://editor.verovio.org){:target="_blank"}, kindly contributed by Laurent Pugin. It makes use of [libxml2](https://gitlab.gnome.org/GNOME/libxml2/){:target="_blank"}. Icons are taken from GitHub's [Octicons repository](https://github.com/primer/octicons){:target="_blank"}.
+mei-friend makes use of [CodeMirror](https://codemirror.net){:target="_blank"} as text editor, and [Verovio](https://www.verovio.org){:target="_blank"} as music engraving engine. 
+[GitHub](https://github.org){:target="_blank"} integration is provided using [jsgit](https://github.com/creationix/jsgit){:target="_blank"}, [jsgit-browser](https://github.com/LivelyKernel/js-git-browser){:target="_blank"}, and the [GitHub REST API](https://docs.github.com/en/rest){:target="_blank"}. XML-DOM manipulations are performed using [tXml](https://github.com/TobiasNickel/tXml){:target="_blank"} by Tobias Nickel. 
+The MEI validation and RNG loading code is adapted from the implementation in the [Verovio editor](https://editor.verovio.org){:target="_blank"}, kindly contributed by Laurent Pugin. It makes use of [libxml2](https://gitlab.gnome.org/GNOME/libxml2/){:target="_blank"}. 
+Icons are taken from GitHub's [Octicons repository](https://github.com/primer/octicons){:target="_blank"}.
 
 This documentation page uses a [starter template](https://vsoch.github.io/docsy-jekyll/){:target="_blank"} for a Docsy jekyll theme, based
 on the Beautiful [Docsy](https://github.com/google/docsy) that renders with Hugo. 

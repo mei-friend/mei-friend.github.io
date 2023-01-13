@@ -683,6 +683,10 @@ mark,
     margin-left: 0px;
 }
 
+.halfchildren img {
+    max-width: 49%;
+}
+
 code {
     font-size: 87.5%;
     color: #952a1e;

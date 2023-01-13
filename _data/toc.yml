@@ -14,10 +14,12 @@
           url: "docs/basic/import-export/"
         - title: Navigation 
           url: "docs/basic/navigation/"
-        - title: Editing
-          url: "docs/basic/editing/"
+        - title: Inserting
+          url: "docs/basic/inserting/"
         - title: Manipulating
           url: "docs/basic/manipulating/"
+        - title: Editing
+          url: "docs/basic/editing/"
         - title: Settings 
           url: "docs/basic/settings/"
         - title: Persistence 
@@ -37,7 +39,7 @@
           url: "docs/advanced/urlparameters/"
         - title: Facsimile
           url: "docs/advanced/facsimile/"
-        - title: Annotation
+        - title: Annotating music encodings
           url: "docs/advanced/annotation/"
         - title: "Critical apparatus"
           url: "docs/advanced/critapp/"
