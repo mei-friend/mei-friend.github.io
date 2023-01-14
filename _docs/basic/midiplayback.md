@@ -13,7 +13,7 @@ MIDI playback is implemented in mei-friend using the open-source [html-midi-play
     <div class="figure-title">Fig.&thinsp;1: Listen to your encoding using the MIDI playback control bar.</div>
     <img class="figure-img" src="{{ site.baseurl }}/assets/img/midiplayback/midiplayback.png" 
         alt="Screenshot of mei-friend facsimile mode in full page" />
-    <figcaption class="figure-caption">mei-friend can be used to listen to the encoding in its current state, as part of your encoding workflow.</figcaption>
+    <figcaption class="figure-caption">The MIDI playback control bar (image bottom) can be used to listen to the encoding in its current state, as part of your encoding workflow.</figcaption>
 </figure>
 
 ## MIDI playback control bar
@@ -29,7 +29,7 @@ Making a selection (in the notation or editor panel) or flipping the current pag
 
 ## Score-following during playback
 
-By default, the page displayed in the notation panel will flip itself in time to the music while the MIDI player is playing back, and currently-sounding score elements will be highlighted in the notation -- see Fig.&thinsp;1, specifically the note (left-hand) and chord (right-hand) highlighted at this moment of playback. These behaviours can be configured (i.e., disabled or re-enabled) in the ['mei-friend' tab of the settings panel]({{ site.baseurl }}/docs/basic/settings), respectively via the 'Page-follow MIDI playback' and 'Highlight currently-sounding elements' checkboxes. 
+By default, the page displayed in the notation panel will flip itself in time to the music while the MIDI player is playing back, and currently-sounding score elements will be highlighted in the notation -- see Fig.&thinsp;1, specifically the note (left-hand) and chord (right-hand) highlighted at this moment of playback. These behaviours can be configured (i.e., disabled or re-enabled) in the ['mei-friend' tab of the settings panel]({{ site.baseurl }}/docs/basic/settings), respectively via the 'Page-follow MIDI playback' and 'Highlight currently-sounding notes' checkboxes. 
 
 When 'Page-follow MIDI playback' is enabled, this behaviour also makes it possible to 'flip through' the encoding by seeking along the MIDI player's progress bar.
 
