@@ -18,12 +18,16 @@
           url: "docs/basic/inserting/"
         - title: Manipulating
           url: "docs/basic/manipulating/"
+        - title: Editing
+          url: "docs/basic/editing/"
         - title: Settings 
           url: "docs/basic/settings/"
         - title: Persistence 
           url: "docs/basic/persistence/"
         - title: Validation 
           url: "docs/basic/validation/"
+        - title: "MIDI playback"
+          url: "docs/basic/midiplayback/"
         - title: "GitHub integration" 
           url: "docs/basic/github/"
     - title: "Advanced topics"

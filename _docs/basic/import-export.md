@@ -75,7 +75,8 @@ Clicking on `Save MEI` (`CTRL-S` or `CMD-S` on macOS, see Fig.&thinsp;1) will do
 
 For debugging purposes, you may download the current speedmode MEI page excerpt by pressing `CTRL-SHIFT-S` (or `CMD-SHIFT-S` under macOS). 
 This will save the currently displayed page surrounded with dummy pages for setting the score definition and connecting time-spanning elements (such as slurs) that reach into the current page (for longer description, see [Working with large files]({{ site.baseurl }}/docs/advanced/largefiles/#the-speed-mode)).
- ### Save MIDI
+
+### Save MIDI
 
 Clicking on `Save MIDI` will generate a standard MIDI file from the current encoding and download it the browser's download folder. 
 
