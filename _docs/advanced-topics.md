@@ -7,7 +7,7 @@ layout: page
 
 # Advanced Topics
 
-Here you may read about more advanced topcis related to the usage of mei-friend.
+Here you may read about more advanced topics related to the usage of mei-friend.
 
 <div class="section-index">
     <hr class="panel-line">
