@@ -10,17 +10,23 @@ Mei-friend provides some useful tools to manipulate your score or specific eleme
 
 ## Moving and deleting elements
 
-The following functions can be used on one or multiple notes. Simply delete an element with "Delete" or "Backspace". You can change the pitch with "Shift" + "ArrowUp" / "ArrowDown" or an octave up or down by simultaneously pressing "Ctrl".
-With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up or down and a `@staff` attribute will be added to the element if it doesn't have one already. The placement of an element relative to the staff can be inverted with "X" (changes the `@place` attribute).
+The following functions can be used on one or multiple notes. Simply delete an element with "Delete" or "Backspace" (Note: This does not apply to notes. They can only be removed in the editor panel mamanually). You can change the pitch with "Shift" + "ArrowUp" / "ArrowDown" or an octave up or down by simultaneously pressing "Ctrl".
+With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up or down and a `@staff` attribute will be added to the element if it doesn't have one already. The placement of an element relative to the staff can be inverted with "X" (changes the `@place` or `@curvedir` attribute).
 
-**insert gif**
+<figure class="figure">
+    <div class="figure-title">Fig.&thinsp;1: Moving and deleting elements.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/inserting/insert_dynam.gif" 
+            alt="Moving and deleting elements" />
+    <figcaption class="figure-caption">Notes moved in different ways, deleting a slur and sforzato.</figcaption>
+</figure>
+
 
 ## Vertical Groups
 
 If you want some elements in your score to be aligned vertically select all of them and use `Add vertical group` or hotkey "v". This adds the attribute [`@vgrp`](https://music-encoding.org/guidelines/v4/attribute-classes/att.verticalgroup.html) with an unused group number to your elements. Elements with the same group number will be aligned. A typical case would be a hairpin-dynamic connection as seen in Fig. 1 with the crescendo-forte. 
 
 <figure class="halfwidth">
-    <div class="figure-title">Fig.&thinsp;1: Example of vertical groups with dynamics.</div>
+    <div class="figure-title">Fig.&thinsp;2: Example of vertical groups with dynamics.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/manipulating/vgrps.PNG" 
             alt="Example of vertical groups with dynamics" />
     <figcaption class="figure-caption">On the left the crescendo-forte connection with vertical group and on the right without.</figcaption>

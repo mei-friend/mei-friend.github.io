@@ -58,7 +58,7 @@ Dynamics can be added with the hotkey "D" (placed above by default) or "Ctrl + D
 
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;4: Inserting dynamics and inverting its placement.</div>
-        <img class="figure-img" src="{{ site.baseurl }}/assets/img/inserting/insert_slur.gif" 
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/inserting/insert_dynam.gif" 
             alt="Inserting dynamics and inverting its placement" />
     <figcaption class="figure-caption">A `Dynamics` element is inserted. Default is `@place=above`. This time the placement is inverted with the shortcut `X`.</figcaption>
 </figure>
