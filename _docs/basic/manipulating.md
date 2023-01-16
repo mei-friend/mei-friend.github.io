@@ -17,7 +17,7 @@ With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up o
     <div class="figure-title">Fig.&thinsp;1: Moving and deleting elements.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/manipulating/move_delete.gif" 
             alt="Moving and deleting elements" />
-    <figcaption class="figure-caption">Notes moved in different ways, deleting a slur and sforzato.</figcaption>
+    <figcaption class="figure-caption">Notes moved in different ways, deleting a slur and sforzatos.</figcaption>
 </figure>
 
 
