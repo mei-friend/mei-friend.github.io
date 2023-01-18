@@ -25,13 +25,13 @@ MEI-friend has two major screen regions: the editor panel and the notation panel
     <figcaption class="figure-caption">Basic layout of mei-friend: To change the position of the two main panels go to "View" and choose notation panel placement.</figcaption>
 </figure>
 
-At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file and its status: Green means no unsaved changes and red with an asterisk means there are still unsaved changes (see Fig. 2).
+At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file and its status: Green means no unsaved changes and red with an asterisk means there are still unsaved changes (see Fig. 2). Saving can either mean locally saving the mei file to your device or commiting the changes to a git repository.
 
 <figure class="thirdwidth">
     <div class="figure-title">Fig.&thinsp;2: File status.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/un_saved.PNG" 
             alt="File status" />
-    <figcaption class="figure-caption">Top: Saved. Bottom: Still unsaved changes.</figcaption>
+    <figcaption class="figure-caption">Top: Saved. <br>Bottom: Still unsaved changes in local storage.</figcaption>
 </figure>
 
 On the far right you will find three panel icons to toggle the following panels: the [facsimile panel]({{ site.baseurl }}/docs/advanced/facsimile), the annotations panel and the [settings panel]({{ site.baseurl }}/docs/basic/settings). For now the settings panel is the most relevant with its secondary options:
@@ -77,11 +77,15 @@ If you are working with larger files the [speedmode]({{ site.baseurl }}/docs/adv
 
 ## mei-friend appearance
 
-Changing theme of editor will adapt mei-friend's appearance... a variety of bright and dark themes available...
-If set to default, it will follow the night shift settings of your operating system...
-You may chose to have the notation match the appearance of the theme. In case of a dark theme, this will invert the usual colors of the notation.
+Changing theme of editor will adapt mei-friend's appearance. There are a variety of bright and dark themes available.
+If set to default, it will follow the night shift settings of your operating system. You may choose to have the notation match the appearance of the theme by selecting `Notation matches theme`. In case of a dark theme, this will invert the usual colors of the notation.
 
-**Insert animated GIF with some selected themes**
+<figure class="figure">
+    <div class="figure-title">Fig.&thinsp;4: Themes.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/themes.gif" 
+            alt="Themes" />
+    <figcaption class="figure-caption">Some fancy themes.</figcaption>
+</figure>
 
 ## Where next?
 
