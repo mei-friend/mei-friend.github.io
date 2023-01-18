@@ -93,4 +93,4 @@ For file management and importing or exporting files including supported filetyp
 
 You can find more about file editing at [inserting]({{ site.baseurl }}/docs/basic/inserting) and [manipulating]({{ site.baseurl }}/docs/basic/manipulating). Also read through [validation]({{ site.baseurl }}/docs/basic/validation) to see how mei-friend helps you write ecodings and find errors in your encoding.
 
-For more advanced techniques like working with facsimiles see [advanced]({{ site.baseurl }}/docs/advanced).
+For more advanced techniques like working with facsimiles see [advanced topics]({{ site.baseurl }}/docs/advanced).
