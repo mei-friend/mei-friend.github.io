@@ -17,11 +17,21 @@ MIDI playback is implemented in mei-friend using the open-source [html-midi-play
 </figure>
 
 ## MIDI playback control bar
-The MIDI playback control bar houses the MIDI playback interface. To open or close the bar, click on the 'loudspeaker' panel icon in the top-right corner of the mei-friend interface (see Fig.&thinsp;1). Alternatively, you may use the checkbox labeled 'Show MIDI playback control bar' in the ['mei-friend' tab of the settings panel]({{ site.baseurl }}/docs/basic/settings). The bar will always be opened on the bottom of the interface, just above the status bar, regardless of the [screen layout's current orientation]({{ site.baseurl }}/docs/basic/getting-started/#modifying-layout-of-screen-regions).
+The MIDI playback control bar houses the MIDI playback interface. There are several ways to open or close the bar:
+* click on the 'loudspeaker' panel icon in the top-right corner of the mei-friend interface (see Fig.&thinsp;1);
+* or, use the checkbox labeled 'Show MIDI playback control bar' in the ['mei-friend' tab of the settings panel]({{ site.baseurl }}/docs/basic/settings);
+
+Or, to open the bar and cause playback to begin immediately:
+* click on the 'loudspeaker' contextual bubble that appears in the bottom-left corner of the mei-friend interface when the bar is closed (see Fig.&thinsp;2);
+* or, press `SPACE` on your keyboard when the bar is closed.
+
+The bar will always be opened on the bottom of the interface, just above the status bar, regardless of the [screen layout's current orientation]({{ site.baseurl }}/docs/basic/getting-started/#modifying-layout-of-screen-regions).
+
+To close the bar, you may also use the `ESC` key.
 
 ## Controlling playback
 
-To start playback, click on the 'Play' button in the control bar. This will cause the button to display the 'Pause' symbol, which can be clicked to halt playback again. The time indicators to the right of this button display the current playback time and the total length of the MIDI rendition, which will correspond either to the full encoding or to the end of the current page [if speed mode is enabled](#speed-mode-and-midi-playback).
+To start playback, click on the 'Play' button in the control bar. This will cause the button to display the 'Pause' symbol, which can be clicked to halt playback again. Alternatively, you may use the `SPACE` key on your keyboard. The time indicators to the right of this button display the current playback time and the total length of the MIDI rendition, which will correspond either to the full encoding or to the end of the current page [if speed mode is enabled](#speed-mode-and-midi-playback). 
 
 Initial playback will start on the page currently displayed in the notation panel, either at the first selected score element or -- if no selection has been made -- at the beginning of the page. When 'Play' is clicked after the player has been paused, playback will resume at the previous playback position. 
 
