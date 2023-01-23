@@ -97,4 +97,4 @@ More information [here]({{ site.baseurl }}/docs/advanced/facsimile)
 
 ## Verovio settings
 
-Here are all settings that are provided by the Verovio toolkit for engraving the notation. Click [here](https://book.verovio.org/toolkit-reference/toolkit-options.html) for information about them.
+These are all settings that are provided by the Verovio toolkit for engraving the notation. Click [here](https://book.verovio.org/toolkit-reference/toolkit-options.html) for information about them.
