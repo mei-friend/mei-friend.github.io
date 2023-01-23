@@ -76,11 +76,11 @@ Most of the keyboard shortcuts are listed in the respective menu items in mei-fr
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon cmd2Key"></span><span class="keyIcon">&rarr;</span></td>
-        <td class="explanation">Go to next page (or <span class="keyIcon">&#8671;</span> or <span class="keyIcon">SPACE</span>)</td>
+        <td class="explanation">Go to next page (or <span class="keyIcon">&#8671;</span>)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon cmd2Key"></span><span class="keyIcon">&larr;</span></td>
-        <td class="explanation">Go to previous page (or <span class="keyIcon">&#8670;</span> or <span class="keyIcon shiftKey"></span><span class="keyIcon">SPACE</span>)</td>
+        <td class="explanation">Go to previous page (or <span class="keyIcon">&#8670;</span>)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">&uarr;</span></td>
@@ -357,6 +357,18 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">P</span></td>
         <td class="explanation">Toggle spiccato on note/chord</td>
+    </tr>
+</table>
+
+### MIDI playback
+<table>
+    <tr>
+        <td class="icons"><span class="keyIcon">SPACE</span></td>
+        <td class="explanation">Play/pause (opens player if required)</td>
+    </tr>
+    <tr>
+        <td class="code"><span class="keyIcon">ESC</span></td>
+        <td class="explanation">Stop playback and hide player</td>
     </tr>
 </table>
 

@@ -12,7 +12,7 @@ MIDI playback is implemented in mei-friend using the open-source [html-midi-play
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;1: Listen to your encoding using the MIDI playback control bar.</div>
     <img class="figure-img" src="{{ site.baseurl }}/assets/img/midiplayback/midiplayback.png" 
-        alt="Screenshot of mei-friend facsimile mode in full page" />
+        alt="Screenshot of mei-friend interface showing MIDI playback control bar" />
     <figcaption class="figure-caption">The MIDI playback control bar (image bottom) can be used to listen to the encoding in its current state, as part of your encoding workflow.</figcaption>
 </figure>
 
@@ -22,12 +22,18 @@ The MIDI playback control bar houses the MIDI playback interface. There are seve
 * or, use the checkbox labeled 'Show MIDI playback control bar' in the ['mei-friend' tab of the settings panel]({{ site.baseurl }}/docs/basic/settings);
 
 Or, to open the bar and cause playback to begin immediately:
-* click on the 'loudspeaker' contextual bubble that appears in the bottom-left corner of the mei-friend interface when the bar is closed (see Fig.&thinsp;2);
+* click on the MIDI playback shortcut bubble that appears in the bottom-left corner of the mei-friend interface when the bar is closed (see Fig.&thinsp;2); note that this shortcut disappears if 'Show playback shortcut' is disabled in the ['mei-friend' tab of the settings panel]({{ site.baseurl }}/docs/basic/settings).
 * or, press `SPACE` on your keyboard when the bar is closed.
 
 The bar will always be opened on the bottom of the interface, just above the status bar, regardless of the [screen layout's current orientation]({{ site.baseurl }}/docs/basic/getting-started/#modifying-layout-of-screen-regions).
 
 To close the bar, you may also use the `ESC` key.
+<figure class="figure thirdwidth">
+    <div class="figure-title">Fig.&thinsp;2: Playback shortcut.</div>
+    <img class="figure-img" src="{{ site.baseurl }}/assets/img/midiplayback/bubble.png" 
+        alt="Screenshot of MIDI playback contextual bubble" />
+    <figcaption class="figure-caption">Click on the playback shortcut bubble (bottom-left) to open the MIDI control bar and start playback. </figcaption>
+</figure>
 
 ## Controlling playback
 
@@ -39,7 +45,7 @@ Making a selection (in the notation or editor panel) or flipping the current pag
 
 ## Score-following during playback
 
-By default, the page displayed in the notation panel will flip itself in time to the music while the MIDI player is playing back, and currently-sounding score elements will be highlighted in the notation -- see Fig.&thinsp;1, specifically the note (left-hand) and chord (right-hand) highlighted at this moment of playback. These behaviours can be configured (i.e., disabled or re-enabled) in the ['mei-friend' tab of the settings panel]({{ site.baseurl }}/docs/basic/settings), respectively via the 'Page-follow MIDI playback' and 'Highlight currently-sounding notes' checkboxes. 
+By default, the page displayed in the notation panel will flip itself in time to the music while the MIDI player is playing back, and the panel will scroll to display the currently-sounding score elements, which will be highlighted in the notation -- see Fig.&thinsp;1, specifically the note (left-hand) and chord (right-hand) highlighted at this moment of playback. These behaviours can be configured (i.e., disabled or re-enabled) in the ['mei-friend' tab of the settings panel]({{ site.baseurl }}/docs/basic/settings), respectively via the 'Page-follow MIDI playback,' 'Scroll-follow MIDI playback,' and 'Highlight currently-sounding notes' checkboxes. 
 
 When 'Page-follow MIDI playback' is enabled, this behaviour also makes it possible to 'flip through' the encoding by seeking along the MIDI player's progress bar.
 
