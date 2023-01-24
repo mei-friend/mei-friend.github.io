@@ -16,7 +16,9 @@ Here you may read about the basic topcis related to the usage of mei-friend.
                 {% if page.url contains li.url %}
                     {% for i in li.children %} 
                         {% for dos in site.docs %} 
-                            {% if dos.title contains i.title %}
+                            {% assign dtitle = dos.title | downcase %}
+                            {% assign ititle = i.title | downcase %}
+                            {% if dtitle contains ititle %}
                                 <div class="entry">
                                     <h5><a href="{{ i.url | prepend: '/' | prepend: site.baseurl }}">{{ i.title }}</a></h5>
                                     <p><b>{{ dos.description }}.</b></p>
