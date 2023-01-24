@@ -33,7 +33,7 @@
     - title: "Advanced topics"
       url: "docs/advanced"
       children:
-        - title: "Working with large files: Speedmode" 
+        - title: "Working with large files: Speed mode" 
           url: "docs/advanced/largefiles/"
         - title: "Remote control via URL parameters"
           url: "docs/advanced/urlparameters/"

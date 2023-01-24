@@ -52,7 +52,7 @@ We thank Matthäus Pescoller ([@mapscl](https://github.com/mapscl) for contribut
 
 We thank the community for input to the mei-friend development. 
 In particular, we would like to acknowledge [Laurent Pugin](https://github.com/lpugin), who contributed the code for schema validation and 
-[Thomas Weber](https://github.com/th-we), who helped to improve the Speedmode module in mei-friend.
+[Thomas Weber](https://github.com/th-we), who helped to improve the speed mode module in mei-friend.
 
 ## License
 

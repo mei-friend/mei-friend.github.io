@@ -73,7 +73,7 @@ mei-friend has several ways to export or download data.
 
 Clicking on `Save MEI` (`CTRL-S` or `CMD-S` on macOS, see Fig.&thinsp;1) will download the complete MEI exncoding as a new file to the browser's download folder.  (Note: This is the only way to save data from your browser to your local file system.) If executing this command multiple times, the browser will generate a new file with a new file name each time. 
 
-For debugging purposes, you may download the current speedmode MEI page excerpt by pressing `CTRL-SHIFT-S` (or `CMD-SHIFT-S` under macOS). 
+For debugging purposes, you may download the current speed mode MEI page excerpt by pressing `CTRL-SHIFT-S` (or `CMD-SHIFT-S` under macOS). 
 This will save the currently displayed page surrounded with dummy pages for setting the score definition and connecting time-spanning elements (such as slurs) that reach into the current page (for longer description, see [Working with large files]({{ site.baseurl }}/docs/advanced/largefiles/#the-speed-mode)).
 
 ### Save MIDI

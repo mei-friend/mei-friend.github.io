@@ -71,7 +71,7 @@ If your MEI-file is missing `@xml:id` or might be using the same @xml:id twice (
 
 To make changes directly in the notations panel you can use the options in the menu bar but it is recommended to use keyboard shortcuts that you can find under `Help -> Show help page` or [here]({{ site.baseurl }}/cheatsheet){:target="_blank"}. You will find that they are similar to shortcuts used by conventional music notation software. For more information read the pages about [inserting]({{ site.baseurl}}/docs/basic/inserting) and [manipulating]({{ site.baseurl}}/docs/basic/manipulating) elements.
 
-If you are working with larger files the [speedmode]({{ site.baseurl }}/docs/advanced/largefiles) option (in the notation control bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensly.
+If you are working with larger files the [speed mode]({{ site.baseurl }}/docs/advanced/largefiles) option (in the notation control bar) is essential. In this mode only the current page is rendered instead of the whole file which reduces rendering times immensely.
 
 {% include alert.html type="info" title="Persistence: Save changes and settings in browser's local storage" content="mei-friend remembers your most recent changes in your document and settings in your browser's local storage to persist them even if your browser is closed or the mei-friend page left (more info at <a href='/docs/basic/persistence'>persistence</a>)" %}
 

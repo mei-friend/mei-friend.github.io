@@ -25,7 +25,7 @@ In this panel you have three tabs: mei-friend, editor and Verovio. There is a se
 
 {% include alert.html type="danger" title="Refresh" content="Switching to older verovio versions before 3.11.0 might require a refresh due to memory issues." %}
 
-- **Speedmode:** Toggle Verovio Speed Mode. In Speedmode, only the current page is sent to Verovio to reduce rendering time with large files. See also [Working with large files: Speedmode]({{ site.baseurl }}/docs/advanced/largefiles.md). This option can also be toggled the notation control bar.
+- **Speed mode:** Toggle Speed Mode. In Speed mode, only the current page is sent to Verovio to reduce rendering time with large files. See also [Working with large files: Speed mode]({{ site.baseurl }}/docs/advanced/largefiles.md). This option can also be toggled the notation control bar.
 
 - **Style of generated xml:ids:** This option defines the format of xml:ids that are automatically created using `Manipulate -> Re-render MEI (with ids)`. This is mostly just preference...
 
