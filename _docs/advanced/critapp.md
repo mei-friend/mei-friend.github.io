@@ -5,15 +5,13 @@ permalink: /docs/advanced/critapp/
 layout: page
 ---
 # Critical apparatus    
-
-Here we describe functionality yet to be completed. We plan to support  `<app>` and `<choice>` with all allowed children in a useful way yet to be discussed.
-To date, only the `<supplied>` element is supported for display and in inserting.
-
+At the moment, mei-friend's functionalities targeting MEI's critical apparatus and editorial markup is limited to insertion and display of [`supplied`](https://music-encoding.org/guidelines/v4/elements/supplied.html){:target="_blank"} elements, as described below.  We plan to support working with [`<app>`](https://music-encoding.org/guidelines/v4/elements/app.html){:target="_blank"} and [`<choice>`](https://music-encoding.org/guidelines/v4/elements/choice.html){:target="_blank"} in future development. 
 ## Supplied element
-
 ### Displaying supplied elements
 
-Supplied elements are highlighted by color in mei-friend, when the respective option in the mei-friend settings menu is activated. There, also the display color can be chosen from a color picker interface (by default orange). An example of a scholarly encoding with supplied elements is provided in Fig. 1, showing an excerpt of the first movement of the Symphony K.550 by Wolfgang Amadeus Mozart in the <a href="https://dme.mozarteum.at/movi/en" target="_blank">Digital Mozart Edition</a> of the Stiftung Mozarteum Salzburg. 
+Supplied elements (i.e., elements wrapped within [`<supplied>`](https://music-encoding.org/guidelines/v4/elements/supplied.html){:target="_blank"}) are highlighted in the notation panel when the respective option in the 'Handle editorial content' section of the [mei-friend settings menu]({{ site.baseurl }}/docs/basic/settings) is activated. This menu also allows the highlight color to be selected using a color picker (default: orange), and provides for the selection of responsibilities for supplied elements inserted with mei-friend ([see below](#inserting-supplied-element)). 
+
+An example of a scholarly encoding with supplied elements is provided in Fig. 1, showing an excerpt of the first movement of the Symphony K.550 by Wolfgang Amadeus Mozart available from the <a href="https://dme.mozarteum.at/movi/en" target="_blank">Digital Mozart Edition</a> of the Stiftung Mozarteum Salzburg. 
 
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;1: Supplied elements highlighted in orange.</div>
@@ -21,10 +19,9 @@ Supplied elements are highlighted by color in mei-friend, when the respective op
        <img class="figure-img" src="{{ site.baseurl }}/assets/img/markup/Critical-supplied-DIME.png" 
         alt="Highlighted supplied elements in an excerpt by the Digital Mozart Edition." />
     </a>
-    <figcaption class="figure-caption">Highlighted supplied elements in an excerpt of an MEI encoding by the <a href="https://dme.mozarteum.at/movi/en" target="_blank">Digital Mozart Edition</a> by the Mozarteum Salzburg. Note that the encoding of the first movement of the Symphony K.550 exceeds the local storage capacity of the browser, resulting in a warning message next to the file name.</figcaption>
+    <figcaption class="figure-caption">Supplied elements (highlighted in orange) in an excerpt of an MEI encoding from the <a href="https://dme.mozarteum.at/movi/en" target="_blank">Digital Mozart Edition</a> by the Mozarteum Salzburg.</figcaption>
 </figure>
 
 ### Inserting supplied element
 
-To insert an supplied element into an encoding, select an [allowed element](https://music-encoding.org/guidelines/v4/elements/supplied){:target="_blank"} in the notation and press `U`. This will surround the selected elements with a supplied element and a responsibility attribute (`@resp`) to each of it.
-The responsibility statement has to be chosen beforehand from an input select in the mei-friend settings menu, which is automatically populated from the responsibility statement list in the header of the MEI file. 
+To mark one or more [permitted elements](https://music-encoding.org/guidelines/v4/elements/supplied#mayContain){:target="_blank"} as supplied, select the elements in the notation and press `U`. This will surround the selected elements with a [`supplied`](https://music-encoding.org/guidelines/v4/elements/supplied#mayContain){:target="_blank"} element, which will be furnished with a responsibility attribute (`@resp`). The value of this attribute must first be chosen from the `Select <supplied> responsibility` drop-down menu in the 'Handle editorial content' section of the [mei-friend settings]({{ site.baseurl }}/docs/basic/settings). The values available in this drop-down menu are automatically populated from the responsibility statement list in the header of the current MEI file. 
