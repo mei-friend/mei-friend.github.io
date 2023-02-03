@@ -8,24 +8,28 @@ layout: page
 
 ## MEI basic concepts
 
-MEI-Friend is a online tool designed to work with and edit MEI (Music Encoding Initiative). MEI is an xml-based encoding language that supports most western music notation from mensural notation, to tablature to modern music notation (Common Music Notation, CMN). In short MEI tries to encode music notation in a machine-readable structure.
+mei-friend is a friendly, browser-based editor for music encodings. The Music Encoding Intiative ([MEI](https://music-encoding.org){:target="_blank"}) is a welcoming community of music technologists, librarians, historians, theorists, and other music scholars engaged in an ongoing effort to define best practices for representing musical documents and structures. Based on this initiative, the MEI XML schema expresses a core set of rules for recording physical and intellectual characteristics of documents in a variety of notation systems, including modern common Western music notation (CMN), Renaisance-era mensural and Medieval neume notations, and several types of guitar and lute tablature notations. In short, MEI is used to encode music notation in a machine-readable structure.
 
-If you don't know how MEI works or have never worked with xml-type languages there are very beginner friendly tutorials [here](https://music-encoding.org/resources/tutorials.html){:target="_blank"}. You can also find a thorough documentation [here](https://music-encoding.org/guidelines/v4/content/){:target="_blank"}.
+If you are unfamiliar with MEI (or with XML schemas in general), please refer to the [tutorials published by the Music Encoding Initiative](https://music-encoding.org/resources/tutorials.html){:target="blank} to get up to speed. For comprehensive documentation of the MEI schema, please refer to the [MEI Guidelines](https://music-encoding.org/guidelines/v4/content/){:target="_blank"}.
 
-MEI-friend is not designed to write MEI by hand but to import an already existing MEI file (that was converted from musicXML for example) then edit and correct it.
+Beside MEI, mei-friend is able to [open a number of different music encoding formats]({{ site.baseurl }}/docs/basic/import-export). These are all automatically converted to MEI for you in the background when opened. Editing in mei-friend is thus always done in MEI, even on files that originate in a different encoding format. This makes mei-friend especially suitable for 'cleaning up' encodings as the final step in a workflow that may start with, e.g., a rough MusicXML encoding produced by an [Optical Music Recognition (OMR)](https://ddmal.music.mcgill.ca/research/OMR/resources/OMRBibliography/) process, or via conversion from notation software such as [MuseScore](https://musescore.org){:target="_blank"}, [Sibelius](https://www.sibelius.com){:target="_blank"}, [Finale](https://www.finalemusic.com){:target="_blank"}, or [Dorico](https://www.steinberg.net/dorico/){:target="_blank"}. For this reason, we refer to mei-friend as a *last-mile* encoding editor. 
+
 
 ## Application screen regions
 
-MEI-friend has two major screen regions: the editor panel and the notation panel. The editor panel is where the MEI encoding is displayed and the notation panel where it is rendered. These two panels are always connected so that every change that is made in one of them will result in a change also in the other one.
+mei-friend has two primary screen regions: the editor panel and the notation panel. The editor panel contains a text editor view of the current encoding using the MEI XML schema. The notation panel displays an interactive digital score, rendered from the editor panel's MEI XML using the wonderful [Verovio](https://www.verovio.org){:target="_blank"} open-source notation engraving library. The contents of the two panels are tightly interconnected; changes made using either panel will immediately be reflected in both (XML and visual) representations.
 
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;1: Screen regions of the mei-friend.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/screenshot_screen_regions.PNG" 
             alt="Screenshot of mei-friends layout" />
-    <figcaption class="figure-caption">Basic layout of mei-friend: To change the position of the two main panels go to "View" and choose notation panel placement.</figcaption>
+    <figcaption class="figure-caption">Basic application layout. The relative positions of the two main panels may be re-arranged by choosing a notation panel placement from <span class="code">View</span> in the menu bar.</figcaption>
 </figure>
 
-At the top you can find a menu bar with the options: Login, File, Code, View, Manipulate, Insert and Help. Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. Right next to those options you can see the name of the displayed file and its status: Green means no unsaved changes and red with an asterisk means there are still unsaved changes (see Fig. 2). Saving can either mean locally saving the mei file to your device or commiting the changes to a git repository.
+At the top of the mei-friend interface, the menu bar offers the following options: `Login`, `File`, `Code`, `View`, `Manipulate`, `Insert`, and `Help`. <!--Using `View` you can change the layout of the screen regions the way you prefer to have them arranged. --> 
+<!--TODO DW continue from here -->
+Next to the menu bar
+Right next to those options you can see the name of the displayed file and its status: Green means no unsaved changes and red with an asterisk means there are still unsaved changes (see Fig. 2). Saving can either mean locally saving the mei file to your device or commiting the changes to a git repository.
 
 <figure class="thirdwidth">
     <div class="figure-title">Fig.&thinsp;2: File status.</div>
