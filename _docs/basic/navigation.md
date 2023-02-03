@@ -21,7 +21,7 @@ It might make sense to insert `<section>` elements into your encoding to better 
 
 <figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;2: Drop down section menu.</div>
-        <img class="figure-img" src="{{ site.baseurl }}/assets/img/navigation/section-menu.PNG" 
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/navigation/section-menu.png" 
             alt="Drop down section menu" />
     <figcaption class="figure-caption">Example from Beethoven "Sechs Variationen", WoO 70.</figcaption>
 </figure>

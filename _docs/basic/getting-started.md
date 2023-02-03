@@ -29,7 +29,7 @@ At the top you can find a menu bar with the options: Login, File, Code, View, Ma
 
 <figure class="thirdwidth">
     <div class="figure-title">Fig.&thinsp;2: File status.</div>
-        <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/un_saved.PNG" 
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/un_saved.png" 
             alt="File status" />
     <figcaption class="figure-caption">Top: Saved. <br>Bottom: Still unsaved changes in local storage.</figcaption>
 </figure>
@@ -60,7 +60,7 @@ To establish this link it is necessary that every element in the editor panel ha
 
 <figure class="thirdwidth">
     <div class="figure-title">Fig.&thinsp;3: Automatic update.</div>
-        <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/update_checkmark.PNG" 
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/update_checkmark.png" 
             alt="Automatic update" />
     <figcaption class="figure-caption">The blue checkmark enables automatic updates after changes.</figcaption>
 </figure>

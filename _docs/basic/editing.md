@@ -11,7 +11,7 @@ Under `Code` in the menu bar you can find various text editing operations like "
 
 <figure class="thirdwidth">
     <div class="figure-title">Fig.&thinsp;1: The 'Code' drop down menu.</div>
-        <img class="figure-img" src="{{ site.baseurl }}/assets/img/editing/code.PNG" 
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/editing/code.png" 
             alt="'Code' drop down menu" />
     <figcaption class="figure-caption">All of the text editing options in mei-friend.</figcaption>
 </figure>
@@ -22,7 +22,7 @@ If "[Code folding]({{ site.baseurl }}/docs/basic/settings/#editor-appearance)" i
 
 <figure class="thirdwidth">
     <div class="figure-title">Fig.&thinsp;2: Code folding.</div>
-        <img class="figure-img" src="{{ site.baseurl }}/assets/img/editing/code_folding.PNG" 
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/editing/code_folding.png" 
             alt="Code folding" />
     <figcaption class="figure-caption">By clicking the small arrow next to line 31 the unfolded (left) `music` element is being folded (right).</figcaption>
 </figure>
