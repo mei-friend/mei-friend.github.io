@@ -707,10 +707,45 @@ a>code {
     margin-right: 0.5em;
 }
 
-.logo {
+
+.logos { 
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 1rem;
+}
+
+.logo { 
+  display:block;
+}
+
+.logo a { 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
+
+.logo img { 
+  width:140px;
+  height:80px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.logo.wide img { 
+  max-width: 250% !important;
+  width: 200px;
+  padding: 0 1em;
+}
+
+.logo.tall img { 
+  height:150px;
+}
+
+/*.logo {
     max-height: 25px;
     margin-right: 2em;
-}
+}*/
 
 kbd {
     padding: .2rem .4rem;
