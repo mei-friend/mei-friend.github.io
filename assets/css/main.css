@@ -18701,3 +18701,8 @@ td.explanation {
     font-family: monospace;
     font-size: 90%;
 }
+
+.quote{ 
+    text-decoration:underline dotted grey; 
+    padding:0 .4em;
+}
