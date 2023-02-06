@@ -13,15 +13,27 @@ Here we walk you through a short interaction with the mei-friend editor. For mor
 mei-friend is an editor targeting the [Music Encoding Initiative's](https://music-encoding.org) (*MEI*) XML schema for music encodings, though it is able to open other formats as well. If you are new to MEI and/or to XML, consider working through the [beginner's tutorials](https://music-encoding.org/resources/tutorials.html) available on the [MEI website](https://music-encoding.org) before proceeding here.
 
 ## What do I need to start working with mei-friend?
-{% include alert.html type="info" title='mei-friend is available at <a href="https://mei-friend.mdw.ac.at">https://mei-friend.mdw.ac.at</a>.' %}
-mei-friend is a browser-based application &ndash; no further installation is necessary. Though we endevour to support all modern browsers, Firefox and Chrome-based browsers currently offer the best experience. While the editor will function when opened on a tablet, interaction with mei-friend is optimised for a mouse-and-keyboard set-up. 
+{% include alert.html type="info" title='mei-friend is available at <a href="https://mei-friend.mdw.ac.at">https://mei-friend.mdw.ac.at</a>.' content='If you are feeling adventurous, a <a href="https://repo.mdw.ac.at/mei-friend" target="_blank">staging (beta) version</a> is also available.' %}
+
+mei-friend is a free, open-source, browser-based application &ndash; no further installation is necessary. You can use it right away! 
+
+No registration is required, but if you plan to [commit changes to encodings hosted on GitHub]({{ site.base_url }}/docs/basic/github), you'll need an account there.
+
+Though we endevour to support all modern browsers, Firefox and Chrome-based browsers currently offer the best experience. While the editor will function when opened on a tablet, interaction with mei-friend is optimised for a mouse-and-keyboard set-up. 
+
 {% include alert.html type="warning" title="mei-friend works best with Firefox or Chrome on a PC or Mac." %}
 
 ## Let's work through an example
 
 Open <a href="https://mei-friend.mdw.ac.at" target="_blank">mei-friend</a> in another tab and have a look at the interface. It should look something like this:
 
-{% include alert.html type="danger" title="TODO INSERT ANNOTATED SCREENSHOT" %}
+<figure class="figure">
+    <div class="figure-title">Fig.&thinsp;1: The mei-friend interface.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/quickstart/mei-friend-interface.png" 
+            alt="Screenshot of mei-friends layout" />
+    <figcaption class="figure-caption">The mei-friend interface in its default state, displaying some MEI XML (<em>top panel</em>) and a corresponding digital score (<em>bottom panel</em>).</figcaption>
+</figure>
+
 
 ### Open a music encoding
 mei-friend is able to open files from three different locations:
@@ -29,7 +41,7 @@ mei-friend is able to open files from three different locations:
 * From the Web, via `File->Open URL`
 * From GitHub, through the GitHub (available via `Login`)
 
-{% include alert.html type="info" title="Regardless of the location type, mei-friend runs locally on your machine &ndash; your data remains on your device and will never be submitted to our server." %}
+{% include alert.html type="info" title="mei-friend runs on your machine, not on our server!" content="Regardless of the location type, mei-friend runs locally on your machine &ndash; your data remains on your device and will never be submitted to our server." %}
 
 For now, let's open a local file. For the purposes of this exercise, please download [this sample MEI file]({{ site.baseurl }}/assets/mei/example.mei). 
 
