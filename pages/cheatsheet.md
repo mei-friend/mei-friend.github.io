@@ -269,7 +269,7 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">A</span></td>
-        <td class="explanation">Insert arpeggio for selected note(s)</td>
+        <td class="explanation">Insert arpeggio for selected note(s) (with @order="up" per default, with CTRL + A @order="down")</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">F</span></td>
