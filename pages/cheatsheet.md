@@ -145,7 +145,7 @@ You can use the following shortcuts in combination with click and drag for selec
         from above to below or below to above for selected element</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon shiftKey">X</span></td>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">X</span></td>
         <td class="explanation">Set att.placement (dir, dynam, trill, ...) to @place="between" 
         and determine staff attribute from staff group of selected element (has to contain exactly two staves)</td>
     </tr>
