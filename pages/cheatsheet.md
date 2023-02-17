@@ -13,10 +13,12 @@ Most of the keyboard shortcuts are listed in the respective menu items in mei-fr
     let altKey = "&#8997;"; // ALT symbol
     let cmdKey = "&#8963;"; // CTRL symbol
     let cmd2Key = "&#8997;"; // ALT symbol
+    let ctrlKey = "&#8963;" // always CTRL symbol on all OS
     shiftKey = 'SHIFT'; // prefer text instead of symbols
     altKey = 'ALT';
     cmdKey = 'CTRL';
     cmd2Key = 'ALT';
+    ctrlKey = 'CTRL';
     if (navigator.platform.startsWith('Mac')) {
       cmdKey = "&#8984;"; // CMD symbol
       cmd2Key = "&#8963;"; // CTRL symbol
@@ -233,15 +235,15 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
 <table>
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">T</span></td>
-        <td class="explanation">Insert tempo above selected note(s)</td>
+        <td class="explanation">Insert tempo at selected note(s)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">I</span></td>
-        <td class="explanation">Insert directive above selected note(s)</td>
+        <td class="explanation">Insert directive at selected note(s)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">D</span></td>
-        <td class="explanation">Insert dynamics above selected note, with extender if two notes selected</td>
+        <td class="explanation">Insert dynamics at selected note, with extender if two notes selected</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">S</span></td>
@@ -253,11 +255,11 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">H</span></td>
-        <td class="explanation">Insert crescendo hairpin starting/ending above selected notes</td>
+        <td class="explanation">Insert crescendo hairpin starting/ending at selected notes</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">H</span></td>
-        <td class="explanation">Insert diminuendo hairpin starting/ending above selected notes</td>
+        <td class="explanation">Insert diminuendo hairpin starting/ending at selected notes</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">B</span></td>
@@ -270,6 +272,14 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
     <tr>
         <td class="icons"><span class="keyIcon">U</span></td>
         <td class="explanation">Surround selected elements with a supplied element; responsibility attribute to be selected in settings</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon ctrlKey">U</span></td>
+        <td class="explanation">Make artic attribute a separate element and surround it with a supplied element;  responsibility attribute to be selected in settings</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon ctrlKey shiftKey">U</span></td>
+        <td class="explanation">Make accid attribute a separate element and surround it with a supplied element;  responsibility attribute to be selected in settings</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">A</span></td>
