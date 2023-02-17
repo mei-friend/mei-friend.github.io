@@ -226,8 +226,7 @@ You can use the following shortcuts in combination with click and drag for selec
 
 ### Inserting elements
 
-<p>Key bindings insert elements above selected note by default and below when pressing the <span class="keyIcon">CTRL&nbsp;&#8963;</span> key additionally.
-The elements are inserted using @startid and @endid attributes.
+<p>Key bindings insert elements without placement attribute by default. To insert or invert placement, use <span class="keyIcon">X</span>. The elements are inserted using @startid and @endid attributes.
 <!--To insert elements with @tstamp and @tstamp2 attributes,
 use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
 </p>
@@ -348,7 +347,7 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
         <td class="explanation">Toggle accent on note/chord</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">N</span></td>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">E</span></td>
         <td class="explanation">Toggle tenuto on note/chord</td>
     </tr>
     <tr>
