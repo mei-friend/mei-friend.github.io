@@ -274,11 +274,11 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
         <td class="explanation">Surround selected elements with a supplied element; responsibility attribute to be selected in settings</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon ctrlKey">U</span></td>
+        <td class="icons"><span class="keyIcon ctrlKey"></span><span class="keyIcon">U</span></td>
         <td class="explanation">Make artic attribute a separate element and surround it with a supplied element;  responsibility attribute to be selected in settings</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon ctrlKey shiftKey">U</span></td>
+        <td class="icons"><span class="keyIcon ctrlKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">U</span></td>
         <td class="explanation">Make accid attribute a separate element and surround it with a supplied element;  responsibility attribute to be selected in settings</td>
     </tr>
     <tr>
