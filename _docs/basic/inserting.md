@@ -27,8 +27,6 @@ If you edit directly in the notation panel you can also select multiple elements
 
 {% include alert.html type="info" title="Select approporiate elements" content="Make sure that you select appropriate elements, i.e., if you select an entire measure you will not be able to insert any elements, but you will still be able to shift the pitches of all selected notes." %}
 
-## Inserting elements
-
 ### Inserting spanning elements
 
 To add spanning elements like a slur select the starting and ending note (notes between can also be selected, the element will be added from first to last selected) and either use `Insert -> Slur` or simply use the shortcut `S`. This will add a slur to the notes selected. If only one note is selected, the the next note in the same layer and staff will be used as the endpoint. The `<slur>` element inserted to the encoding and may be edited there if necessary. You might want to add the attribute `@curvedir="below"` manually or just use `X` with the slur selected, multiple times, if necessary.

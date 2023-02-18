@@ -6,12 +6,11 @@ layout: page
 ---
 # Manipulate menu
 
-mei-friend provides several useful functions to manipulate specific elements or the entire encoding (under item `Manipulate` in the menu bar or by using the corresponding keyboard shortcuts). 
+mei-friend provides several useful functions to manipulate specific elements or the entire encoding (under item `Manipulate` in the menu bar or by using the corresponding keyboard shortcuts). Most of the following functions can be used on one or multiple selected elements (such as notes, chords or beams). 
 
 ## Inverting placement
 
-The following functions can be used on one or multiple notes.  You can change the pitch with "Shift" + "ArrowUp" / "ArrowDown" or an octave up or down by simultaneously pressing "Ctrl".
-With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up or down and a `@staff` attribute will be added to the element if it doesn't have one already. The placement of an element relative to the staff can be inverted with "X" (changes the `@place` or `@curvedir` attribute).
+The placement, curve direction, or stem direction of a selected element may be set (if absent) or inverted using `X` multiple times. This will flip the `@place`, `@curvedir`, or `stem.dir` attribute to the opposite value, depending on the selected element. This also works on selected `beam`, `beamSpan` or `tuplet` elements.
 
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;1: Moving and deleting elements.</div>
@@ -20,10 +19,12 @@ With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up o
     <figcaption class="figure-caption">Notes moved in different ways, deleting a slur and sforzatos.</figcaption>
 </figure>
 
+A special case is between placement, such as typically found in piano music: `SHIFT X` will set the `@place` attribute to `between`, while simultaneously adding (or modifying an existing) `@staff` attribute. mei-friend will search for the embracing staff group of the selected element's staff to determine the two staff numbers that the selected element will sit between. If the staff group does not have exactly two staves (as typically in piano music), it will try to infer the two staff numbers and post a warning alert. Pressing `SHIFT X` a second time, will set `@place` to a default `above`. 
+
 
 ## Vertical groups
 
-If you want some elements in your score to be aligned vertically select all of them and use `Add vertical group` or shortcut "v". This adds the attribute [`@vgrp`](https://music-encoding.org/guidelines/v4/attribute-classes/att.verticalgroup.html) with an unused group number to your elements. Elements with the same group number will be aligned. A typical case would be a hairpin-dynamic connection as seen in Fig. 1 with the crescendo-forte. 
+If you want some elements in your score to be aligned vertically, select all of them and use `Add vertical group` or shortcut `V`. This will add an attribute [`@vgrp`](https://music-encoding.org/guidelines/v4/attribute-classes/att.verticalgroup.html) with a group number unused on the current page to your elements. Elements with the same group number will be vertically aligned by Verovio. A typical case would be a hairpin-dynamic connection as seen in Fig. 1 with the crescendo-forte. 
 
 <figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;2: Example of vertical groups with dynamics.</div>
@@ -34,11 +35,14 @@ If you want some elements in your score to be aligned vertically select all of t
 
 ## Delete elements
 
-TODO Simply delete an element with "Delete" or "Backspace" (Note: This does not apply to notes. They can only be removed in the editor panel manually).
+Simply delete an element with the `DELETE` or `BACKSPACE` key. (Note: This does not apply to notes. Notes or chords can currently only be removed manually in the editor panel).
 
 ## Moving notes
 
 TODO In pitch, across staves
+
+You can change the pitch with "Shift" + "ArrowUp" / "ArrowDown" or an octave up or down by simultaneously pressing "Ctrl".
+With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up or down and a `@staff` attribute will be added to the element if it doesn't have one already.
 
 ## Clean gestural accidentals (accid.ges)
 
