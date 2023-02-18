@@ -19,7 +19,7 @@ Beside MEI, mei-friend is able to [open a number of different music encoding for
 
 mei-friend has two primary screen regions: the **editor panel** and the **notation panel**. The editor panel contains a text editor view of the current encoding using MEI XML. The notation panel displays an interactive digital score, rendered from the editor panel's MEI XML using the wonderful [Verovio](https://www.verovio.org){:target="_blank"} open-source notation engraving library. The contents of the two panels are tightly coupled; changes made using either panel will immediately be reflected in both (XML and visual) representations.
 
-<figure class="figure">
+<figure class="fullwidth">
     <div class="figure-title">Fig.&thinsp;1: Screen regions of the mei-friend.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/getting_started/screenshot_screen_regions.PNG" 
             alt="Screenshot of mei-friends layout" />
