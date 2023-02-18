@@ -4,13 +4,13 @@ description: Using mei-friend functionality to manipulate encodings
 permalink: /docs/basic/manipulating/
 layout: page
 ---
-# Manipulating
+# Manipulate menu
 
-Mei-friend provides some useful tools to manipulate your score or specific elements (under `Manipulate` in the menu bar or use corresponding keyboard shortcuts) in it. 
+mei-friend provides several useful functions to manipulate specific elements or the entire encoding (under item `Manipulate` in the menu bar or by using the corresponding keyboard shortcuts). 
 
-## Moving and deleting elements
+## Inverting placement
 
-The following functions can be used on one or multiple notes. Simply delete an element with "Delete" or "Backspace" (Note: This does not apply to notes. They can only be removed in the editor panel manually). You can change the pitch with "Shift" + "ArrowUp" / "ArrowDown" or an octave up or down by simultaneously pressing "Ctrl".
+The following functions can be used on one or multiple notes.  You can change the pitch with "Shift" + "ArrowUp" / "ArrowDown" or an octave up or down by simultaneously pressing "Ctrl".
 With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up or down and a `@staff` attribute will be added to the element if it doesn't have one already. The placement of an element relative to the staff can be inverted with "X" (changes the `@place` or `@curvedir` attribute).
 
 <figure class="figure">
@@ -21,7 +21,7 @@ With "Alt + Ctrl" and "ArrowUp" / "ArrowDown" elements can be moved a staff up o
 </figure>
 
 
-## Vertical Groups
+## Vertical groups
 
 If you want some elements in your score to be aligned vertically select all of them and use `Add vertical group` or shortcut "v". This adds the attribute [`@vgrp`](https://music-encoding.org/guidelines/v4/attribute-classes/att.verticalgroup.html) with an unused group number to your elements. Elements with the same group number will be aligned. A typical case would be a hairpin-dynamic connection as seen in Fig. 1 with the crescendo-forte. 
 
@@ -31,6 +31,14 @@ If you want some elements in your score to be aligned vertically select all of t
             alt="Example of vertical groups with dynamics" />
     <figcaption class="figure-caption">On the left the crescendo-forte connection with vertical group and on the right without.</figcaption>
 </figure>
+
+## Delete elements
+
+TODO Simply delete an element with "Delete" or "Backspace" (Note: This does not apply to notes. They can only be removed in the editor panel manually).
+
+## Moving notes
+
+TODO In pitch, across staves
 
 ## Clean gestural accidentals (accid.ges)
 
@@ -50,9 +58,9 @@ Before using `Renumber measures (exec)` it is recommended to use `Renumber measu
 </figure>
 
 
-## Add/remove ids to/from MEI
+## Add ids to or remove from MEI encoding
 
-`xml:id` can be either added or removed with `Add ids to MEI` and `Remove ids from MEi`. Ids will only be removed inside of `<body>` elements so e.g. `<meiHead>` is no affected. Removing keeps all `@xml:id` that are referenced somewhere (e.g. by a slur) to not lose any information about the encoding. The style of ids that are being generated can be selected in the [settings]({{ site.basurl  }}/docs/basic/settings/#general).
+`xml:id` can be either added or removed with `Add ids to MEI` and `Remove ids from MEi`. Ids will only be removed inside of `<body>` elements so e.g. `<meiHead>` is no affected. Removing keeps all `@xml:id` that are referenced somewhere (e.g. by a slur) to not lose any information about the encoding. The style of ids that are being generated can be selected in the [settings]({{ site.basurl }}/docs/basic/settings/#general). TODO CHECK SHORTCUTS!
 
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;3: Removing and adding ids.</div>
@@ -63,8 +71,8 @@ Before using `Renumber measures (exec)` it is recommended to use `Renumber measu
 
 ## Rerender via Verovio
 
-With this feature the file can be newly rendered. Rerendering will also correct the formating of the file like indentation (to just indent a selected part of a file use `Code -> Indent selection` or "Alt + Shift + F")
+With this feature the file can be newly rendered. Rerendering will also correct the formating of the file like indentation (to just indent a selected part of a file use `Code -> Indent selection` or "Alt + Shift + F") TODO CHECK SHORTCUTS!
 
-## Ingest Facsimile
+## Add or ingest Facsimile
 
-For more information see [here]({{ site.baseurl }}/docs/advanced/facsimile/#creating-your-own-mei-file-with-facsimile-information)
+For more information see [facsimile]({{ site.baseurl }}/docs/advanced/facsimile/#creating-your-own-mei-file-with-facsimile-information)
