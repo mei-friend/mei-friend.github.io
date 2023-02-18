@@ -18680,7 +18680,25 @@ footer {
 
 /* mei-friend specific  */
 .icons {
-    min-width: 150px;
+    min-width: 80px;
+}
+
+@media(min-width:576px) {
+    .icons {
+        min-width: 100px;
+    }
+}
+
+@media(min-width:768px) {
+    .icons {
+        min-width: 130px;
+    }
+}
+
+@media(min-width:992px) {
+    .icons {
+        min-width: 200px;
+    }
 }
 
 span.keyIcon {

@@ -29,6 +29,7 @@ Most of the keyboard shortcuts are listed in the respective menu items in mei-fr
     document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll(".cmdKey").forEach(e => e.innerHTML = cmdKey);
       document.querySelectorAll(".cmd2Key").forEach(e => e.innerHTML = cmd2Key);
+      document.querySelectorAll(".ctrlKey").forEach(e => e.innerHTML = ctrlKey);
       document.querySelectorAll(".shiftKey").forEach(e => e.innerHTML = shiftKey);
       document.querySelectorAll(".altKey").forEach(e => e.innerHTML = altKey);
     });
