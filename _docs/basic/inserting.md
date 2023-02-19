@@ -62,6 +62,8 @@ A control element (such as dynamics, directives) or ornaments (trills, mordents)
 
 Control elements can also be inserted on multiple selected notes. mei-friend will insert the control element referring to the first (`@startid`) and last (`@endid`) selected element. Some control elements with `@startid` and `@endid` will be displayed by Verovio with a dashed extender line. You may also insert dynamics for multiple staves at once, by selecting notes from multiple staves. This will add the corresponding staff number to the `@staff` attribute (however, the `@endid` attribute should be checked in those cases).
 
+When inserting a pedal mark (`P`) on multiple selected notes, a pedal down will inserted on the first and a pedal up on the last selected note. 
+
 ### Inserting a beam or beam span
 
 Inserting a beam works along the same lines as above: First select the notes that the beam should span and then press `B` (or use the menu item). It will surround the selected notes with a beam element. When notes belong to different measures, a `beamSpan` should be used instead of a `beam` element. Inserted with `SHIFT - B`, it will add an element to the end of a measure with a `@plist` attribute referring to the elements under the beam span. 

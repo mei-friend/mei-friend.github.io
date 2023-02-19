@@ -296,7 +296,7 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">P</span></td>
-        <td class="explanation">Insert pedal down for selected note</td>
+        <td class="explanation">Insert pedal down for (first) selected note (and pedal up for last selected note, if multiple notes are selected)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon ctrlKey"></span><span class="keyIcon">P</span></td>
