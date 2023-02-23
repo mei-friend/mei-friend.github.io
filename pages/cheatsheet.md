@@ -299,7 +299,7 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
         <td class="explanation">Insert pedal down for (first) selected note (and pedal up for last selected note, if multiple notes are selected)</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon ctrlKey"></span><span class="keyIcon">P</span></td>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">P</span></td>
         <td class="explanation">Insert pedal up for selected note</td>
     </tr>
     <tr>
@@ -341,7 +341,7 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
         <td class="explanation">Insert F clef <i>after</i> selected element</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">C</span></td>
+        <td class="icons"><span class="keyIcon ctrlKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">C</span></td>
         <td class="explanation">Insert C clef <i>before</i> selected element</td>
     </tr>
 </table>
@@ -370,7 +370,7 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
         <td class="explanation">Toggle staccatissimo on note/chord</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">P</span></td>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">C</span></td>
         <td class="explanation">Toggle spiccato on note/chord</td>
     </tr>
 </table>
