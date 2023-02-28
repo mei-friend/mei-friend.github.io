@@ -76,14 +76,34 @@ Clicking on `Save MEI` (`CTRL-S` or `CMD-S` on macOS, see Fig.&thinsp;1) will do
 For debugging purposes, you may download the current speed mode MEI page excerpt by pressing `CTRL-SHIFT-S` (or `CMD-SHIFT-S` under macOS). 
 This will save the currently displayed page surrounded with dummy pages for setting the score definition and connecting time-spanning elements (such as slurs) that reach into the current page (for longer description, see [Working with large files]({{ site.baseurl }}/docs/advanced/largefiles/#the-speed-mode)).
 
-### Save MIDI
-
-Clicking on `Save MIDI` will generate a standard MIDI file from the current encoding and download it the browser's download folder. 
-
 ### Save SVG
 
 Clicking on `Save SVG` will generate an SVG file from the currently displayed notation page and download it to the download folder. 
 A comprehensive PDF download interface has yet to be implemented.
+
+### Save MIDI
+
+Clicking on `Save MIDI` will generate a standard MIDI file from the current encoding and download it the browser's download folder. 
+
+### Preview and save PDF
+
+Clicking the menu item `Preview PDF` (or standard `CTRL-P` under Windows/Linux and `CMD-P` under Mac operating systems) will activate the preview mode as shown in Fig.&thinsp;4. 
+
+This mode takes the page size and margin settings from the Verovio settings panel to display the notation as a full page. It will also provide a page range selection modal to select all pages, the current page, a specific page range, or selected pages and page ranges by directly typing the page numbers (such as `2, 5-8`, separated by commas for individual pages and hyphens for page ranges). Switching into the preview-PDF mode will change certain Verovio settings (`'Adjust page height': false, 'mm output': true`) to enable the full-page view through Verovio. It also hides certain notation control bar items (flip-to-page and udpate) and shows the notation font selector.  When closing the preview-PDF mode (by clicking the `x` button or pressing `ESC`), the original notation control bar settings, as shown in the mei-friend settings panel, will be restored. 
+
+{% include alert.html type="info" title="Why only one page is selected in speed mode?" content='When speed mode is activated, only the current page will be exported to the PDF file. Please deactivate speed mode, to have all pages available for selection and export to the PDF file.' %}
+
+To generate and download the PDF file for the selected pages, press the `Save PDF` button at the top-right of the notation control bar. Your browser will notify you about the downloaded PDF file, using the encoding file name with a `.pdf` file extension. 
+
+<figure class="figure">
+    <a href="https://mei-friend.mdw.ac.at/" target="_blank">
+    <div class="figure-title">Fig.&thinsp;4: Preview PDF with a full-page view.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/mei-friend-preview-pdf.png" 
+            alt="Screenshot of mei-friend in preview PDF mode, showing the notation in full page alongside the settings panel to adjust the details of the preview." />
+    </a>
+    <figcaption class="figure-caption">Screenshot of mei-friend in preview PDF mode, showing the notation as a full page with an additional page-range selector modal and a save-PDF button in the notation control bar. At the right-hand side, Verovio settings panel is shown to adjust the details of the preview.</figcaption>
+</figure>
+
 ### Git Commit
 
 Please see the detailed description for [GitHub integration]({{ site.baseurl }}/docs/basic/github) of mei-friend. 
