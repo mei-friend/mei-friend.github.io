@@ -95,7 +95,7 @@ This mode takes the page size and margin settings from the Verovio settings pane
 
 To generate and download the PDF file for the selected pages, press the `Save PDF` button at the top-right of the notation control bar. Your browser will notify you about the downloaded PDF file, using the encoding file name with a `.pdf` file extension. 
 
-<figure class="figure">
+<figure class="figure fullwidth">
     <a href="https://mei-friend.mdw.ac.at/" target="_blank">
     <div class="figure-title">Fig.&thinsp;4: Preview PDF with a full-page view.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/mei-friend-preview-pdf.png" 
