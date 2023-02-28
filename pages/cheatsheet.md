@@ -13,10 +13,12 @@ Most of the keyboard shortcuts are listed in the respective menu items in mei-fr
     let altKey = "&#8997;"; // ALT symbol
     let cmdKey = "&#8963;"; // CTRL symbol
     let cmd2Key = "&#8997;"; // ALT symbol
+    let ctrlKey = "&#8963;" // always CTRL symbol on all OS
     shiftKey = 'SHIFT'; // prefer text instead of symbols
     altKey = 'ALT';
     cmdKey = 'CTRL';
     cmd2Key = 'ALT';
+    ctrlKey = 'CTRL';
     if (navigator.platform.startsWith('Mac')) {
       cmdKey = "&#8984;"; // CMD symbol
       cmd2Key = "&#8963;"; // CTRL symbol
@@ -27,6 +29,7 @@ Most of the keyboard shortcuts are listed in the respective menu items in mei-fr
     document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll(".cmdKey").forEach(e => e.innerHTML = cmdKey);
       document.querySelectorAll(".cmd2Key").forEach(e => e.innerHTML = cmd2Key);
+      document.querySelectorAll(".ctrlKey").forEach(e => e.innerHTML = ctrlKey);
       document.querySelectorAll(".shiftKey").forEach(e => e.innerHTML = shiftKey);
       document.querySelectorAll(".altKey").forEach(e => e.innerHTML = altKey);
     });
@@ -145,6 +148,11 @@ You can use the following shortcuts in combination with click and drag for selec
         from above to below or below to above for selected element</td>
     </tr>
     <tr>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">X</span></td>
+        <td class="explanation">Set att.placement (dir, dynam, trill, ...) to @place="between" 
+        and determine staff attribute from staff group of selected element (has to contain exactly two staves)</td>
+    </tr>
+    <tr>
         <td class="icons"><span class="keyIcon">V</span></td>
         <td class="explanation">Insert vertical group (`@vgrp`) attribute to selected elements with a new value for the displayed page</td>
     </tr>
@@ -221,23 +229,22 @@ You can use the following shortcuts in combination with click and drag for selec
 
 ### Inserting elements
 
-<p>Key bindings insert elements above selected note by default and below when pressing the <span class="keyIcon">CTRL&nbsp;&#8963;</span> key additionally.
-The elements are inserted using @startid and @endid attributes.
+<p>Key bindings insert elements without placement attribute by default. To insert or invert placement, use <span class="keyIcon">X</span>. The elements are inserted using @startid and @endid attributes.
 <!--To insert elements with @tstamp and @tstamp2 attributes,
 use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
 </p>
 <table>
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">T</span></td>
-        <td class="explanation">Insert tempo above selected note(s)</td>
+        <td class="explanation">Insert tempo at selected note(s)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">I</span></td>
-        <td class="explanation">Insert directive above selected note(s)</td>
+        <td class="explanation">Insert directive at selected note(s)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">D</span></td>
-        <td class="explanation">Insert dynamics above selected note, with extender if two notes selected</td>
+        <td class="explanation">Insert dynamics at selected note, with extender if two notes selected</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">S</span></td>
@@ -249,11 +256,11 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">H</span></td>
-        <td class="explanation">Insert crescendo hairpin starting/ending above selected notes</td>
+        <td class="explanation">Insert crescendo hairpin starting/ending at selected notes</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">H</span></td>
-        <td class="explanation">Insert diminuendo hairpin starting/ending above selected notes</td>
+        <td class="explanation">Insert diminuendo hairpin starting/ending at selected notes</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">B</span></td>
@@ -268,8 +275,16 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
         <td class="explanation">Surround selected elements with a supplied element; responsibility attribute to be selected in settings</td>
     </tr>
     <tr>
+        <td class="icons"><span class="keyIcon ctrlKey"></span><span class="keyIcon">U</span></td>
+        <td class="explanation">Make artic attribute a separate element and surround it with a supplied element;  responsibility attribute to be selected in settings</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon ctrlKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">U</span></td>
+        <td class="explanation">Make accid attribute a separate element and surround it with a supplied element;  responsibility attribute to be selected in settings</td>
+    </tr>
+    <tr>
         <td class="icons"><span class="keyIcon">A</span></td>
-        <td class="explanation">Insert arpeggio for selected note(s)</td>
+        <td class="explanation">Insert arpeggio for selected note(s) (with @order="up" per default, with CTRL + A @order="down")</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">F</span></td>
@@ -281,11 +296,11 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">P</span></td>
-        <td class="explanation">Insert pedal down for selected note(s)</td>
+        <td class="explanation">Insert pedal down for (first) selected note (and pedal up for last selected note, if multiple notes are selected)</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon">&#8963;</span><span class="keyIcon">P</span></td>
-        <td class="explanation">Insert pedal up for selected note(s)</td>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">P</span></td>
+        <td class="explanation">Insert pedal up for selected note</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">L</span></td>
@@ -326,7 +341,7 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
         <td class="explanation">Insert F clef <i>after</i> selected element</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">C</span></td>
+        <td class="icons"><span class="keyIcon ctrlKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">C</span></td>
         <td class="explanation">Insert C clef <i>before</i> selected element</td>
     </tr>
 </table>
@@ -343,7 +358,7 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
         <td class="explanation">Toggle accent on note/chord</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">N</span></td>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">E</span></td>
         <td class="explanation">Toggle tenuto on note/chord</td>
     </tr>
     <tr>
@@ -355,7 +370,7 @@ use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
         <td class="explanation">Toggle staccatissimo on note/chord</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">P</span></td>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">C</span></td>
         <td class="explanation">Toggle spiccato on note/chord</td>
     </tr>
 </table>
