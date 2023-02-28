@@ -9,7 +9,7 @@ layout: page
 ## Supported file types for import
 
 mei-friend is able to open a variety of music encoding formats. If not MEI, it will convert on the fly to MEI using Verovio. 
-mei-friend will attempt to guess your file type from its content, regardless of file extension. Only for ABC (".abc") and compressed musicXML (".mxl") files are guessed by their file extension.
+mei-friend will attempt to guess your file type from its content, regardless of file extension. Only ABC (".abc") and compressed musicXML (".mxl") files are guessed by their file extension.
 
 Supported formats (through Verovio):
 * [MEI](https://en.wikipedia.org/wiki/Music_Encoding_Initiative){:target="_blank"} 
@@ -25,7 +25,7 @@ Supported formats (through Verovio):
 
 ### Open local file through file dialog
 
-By clicking `Menu --> Open file` (or pressing `CTRL + O` or `CMD + O` on macOS, see Fig.&thinsp;1), a file dialog window will open that allows you to select any file from your local file system. All supported files will be handled as described above. There are separate menus for handling specific file types (musicXML, Humdrum kern, PAE and ABC); those file dialogs will filter by typical file ending. The functionality of these menu items is actually covered by the generic open file dialog; we have kept them in the file menu list to spell out the import capabilities to a new user.
+By clicking `Menu–>Open file` (or pressing `CTRL O` or `CMD O` on macOS, see Fig.&thinsp;1), a file dialog window will open that allows you to select any file from your local file system. All supported files will be handled as described above. There are separate menus for handling specific file types (musicXML, Humdrum kern, PAE and ABC); those file dialogs will filter by typical file ending. The functionality of these menu items is actually covered by the generic open file dialog; we have kept them in the file menu list to spell out the import capabilities to a new user.
 
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;1: mei-friend file menu list.</div>
