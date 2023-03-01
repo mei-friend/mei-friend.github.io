@@ -4,7 +4,7 @@ description: The mei-friend development environments
 permalink: /docs/advanced/env/
 layout: page
 ---
-# mei-friend environments    
+# mei-friend Environments    
 
 We maintain two public-facing instances of mei-friend: 
 * A production instance, available from <https://mei-friend.mdw.ac.at> and serving the '[main](https://github.com/mei-friend/mei-friend/tree/main)' branch of our codebase. This instance always serves the latest 'release' version of mei-friend. This instance is intended for general use - please use it unless you have a specific reason not to!
