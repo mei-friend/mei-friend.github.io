@@ -27,5 +27,5 @@ The current environment is reflected:
 </figure>
 
 
-Please see the section on [developing mei-friend]({{ site.base_url }}/dev) for further information on contributing to our codebase.
+Please see the section on [developing mei-friend]({{ site.base_url }}/docs/advanced/dev) for further information on contributing to our codebase.
 
