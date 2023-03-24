@@ -57,5 +57,6 @@ The search for time-spanning elements (containing `@tstamp`, `@tstamp2` or `@sta
     <figcaption class="figure-caption">Processing flow chart from encoding to notation engraving. <strong>a.</strong> In “normal mode” the entire content of the encoding is passed to the Verovio toolkit. After the notation layout for the entire encoding is processed, a selected page is rendered to the notation panel as SVG. <strong>b.</strong> In “speed mode” the MEI encoding is loaded into the DOM. To render the requested page, its corresponding MEI elements are extracted from the DOM and used to generate an artificial MEI encoding, placing dummy pages around the requested page to incorporate single-note “anchors” for spanning elements. Verovio is then used to render the requested (middle) page (Figure taken from <a href="{{ site.baseurl }}/about#GoeblWeigl-MEC2021" title="Goebl &amp; Weigl, MEC 2021: Alleviating the Last Mile of Encoding...">Goebl &amp; Weigl, 2022</a>).</figcaption>
 </figure>
 
+### Saving the 'speed mode' MEI
 
 For debugging, the current three-page speed mode MEI file may be downloaded into the local download folder of your browser using `CTRL-SHIFT-S` on Windows or Linux; and `CMD-SHIFT-S` on MacOS.
