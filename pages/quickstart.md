@@ -21,7 +21,12 @@ mei-friend is a browser-based application &ndash; no further installation is nec
 
 Open <a href="https://mei-friend.mdw.ac.at" target="_blank">mei-friend</a> in another tab and have a look at the interface. It should look something like this:
 
-{% include alert.html type="danger" title="TODO INSERT ANNOTATED SCREENSHOT" %}
+<figure class="fullwidth">
+    <div class="figure-title">Default mei-friend interface</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/quickstart/mei-friend-default.png" 
+            alt="Screenshot of mei-friend's default interface" />
+    <figcaption class="figure-caption">On first opening, mei-friend's interface greets you with an <a href="https://github.com/trompamusic-encodings/Beethoven_WoO70_BreitkopfHaertel">encoding of a Breitkopf and Härtel edition of Beethoven's "Six Variations on <i>Nel cor più non mi sento</i>" (WoO 70)</a>, showing the MEI (XML) encoding in a panel above the rendered music notation.</figcaption>
+</figure>
 
 ### Open a music encoding
 mei-friend is able to open files from three different locations:
