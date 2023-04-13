@@ -10,7 +10,7 @@ In this panel you have three tabs: mei-friend, editor and Verovio. There is a se
 
 <figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;1: Settings panel.</div>
-        <img class="figure-img" src="{{ site.baseurl }}/assets/img/settings/settings_panel.png" 
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/settings/settings_panel.PNG" 
             alt="Settings panel" />
     <figcaption class="figure-caption">The settings panel.</figcaption>
 </figure>
@@ -49,17 +49,19 @@ Here you can select the type of elements that will be selectable by drag select.
 
 <figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;2: Controls in the notation panel.</div>
-        <img class="figure-img" src="{{ site.baseurl }}/assets/img/settings/show_controls.png" 
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/settings/show_controls.PNG" 
             alt="Controls in the notation panel" />
     <figcaption class="figure-caption">(1) Update controls (2) Notation font selector (3) Navigation arrows.</figcaption>
 </figure>
 
 ### Transpose
-mei-friend exposes [Verovio's transposition functionality](https://book.verovio.org/advanced-topics/transposition.html){:target="_blank"} to be controlled through the mei-friend settings panel. Transposition can be switched on and off through a checkbox. When activated, the user may select the transposition parameters (transpose by interval or to a specific key) and press the ``transpose`` button to execute the transposition and display the transposed notation in the notation panel. The encoding remains unchanged while transposing. 
+mei-friend exposes [Verovio's transposition functionality](https://book.verovio.org/advanced-topics/transposition.html){:target="_blank"} to be controlled through the mei-friend settings panel. Verovio supports a base-40 transposition system that allows for all musically sensible transposition intervals containing up to two sharps or flats (double augmented or double diminished, respectively). 
 
-In order to transpose the encoding, activate and adjust the transposition settings as required and use ``Manipulate -> Rerender via Verovio`` from the control menu. This will run the encoding through Verovio and display it in the CodeMirror editor. (Note: this may change the schema settings to the Verovio defaults.)
+Transposition can be switched on and off through a checkbox. When activated, the user may select the transposition parameters (transpose by interval or to a specific key) and press the ``transpose`` button to execute the transposition and display the transposed notation in the notation panel. When transposing by interval, multiple presses on the transpose button will successively change the notation. **The encoding remains unchanged while transposing.** 
 
-<figure class="halfwidth">
+In order to also transpose the encoding, activate and adjust the transposition settings as required and use ``Manipulate -> Rerender via Verovio`` from the control menu. This will run the encoding through Verovio and display it in the CodeMirror editor. (Note: this may change the schema settings to the Verovio defaults.)
+
+<figure class="thirdwidth">
     <div class="figure-title">Fig.&thinsp;3: Transposition settings.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/settings/mei-friend-transposition-settings.png" 
             alt="Transposition settings in the mei-friend settings panel" />
