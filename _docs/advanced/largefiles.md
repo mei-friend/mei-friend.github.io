@@ -39,7 +39,7 @@ So, when opening a large file, such as Beethoven's Diabelli Variations Op.&thins
 
 ## Examples of large files
 
-To compare the responsiveness of mei-friend with and without speed mode,you may try these large files:
+To compare the responsiveness of mei-friend with and without speed mode, you may try these large files:
 
 [Beethoven Diabelli Variations Op.&thinsp;120: 56.6k lines](https://mei-friend.mdw.ac.at/?file=https://raw.githubusercontent.com/trompamusic-encodings/Beethoven_Op120_BreitkopfHaertel/master/Beethoven_Op120-Breitkopf.mei&speed=true){:target="_blank"}
 
