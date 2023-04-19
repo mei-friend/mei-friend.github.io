@@ -15,6 +15,7 @@ Using the `Insert` menu functions in the menu bar (or shortcuts) to add elements
 
 <!-- If you copy elements be mindful to change the `@xml:id` so there aren't multiple elements with the same `@xml:id`. -->
 
+## Selecting elements
 
 If you edit directly in the notation panel you can also select multiple elements and make changes for more than one element at once. To make it easier to select slurs or less tedious to click on articulation elements like staccato dots or accents you can enable [drag-select]({{ site.baseurl }}/docs/basic/settings/#drag-select): Go to `settings -> mei-friend` and enable `select slurs` and `select placement elements` under `drag select`. Holding `CTRL` (`CMD` under macOS) while leftclicking,  selecting multiple elements is possible. To click-select the entire chord element, hold `ALT` while clicking on a note insied a chord.
 
