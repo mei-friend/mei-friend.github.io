@@ -14,7 +14,7 @@ Here you will find documentation and help for the mei-friend "last-mile" music e
 mei-friend is intended to alleviate the common task of cleaning up encodings in the [Music Encoding Initiative](https://music-encoding.org/){:target="_blank"}'s (MEI) XML format. 
 These may be generated via optical music recognition, or via conversion from other formats. mei-friend is a full-featured, cross-browser compatible Web application, with optimised performance and an extended set of features. The application is available online at [https://mei-friend.mdw.ac.at](https://mei-friend.mdw.ac.at){:target="_blank"}.
 
-{% include alert.html type="danger" title="(Dec 2022) This documentation is currently under development and not yet recommended for public consumption." %}
+{% include alert.html type="danger" title="(Dec 2022) This documentation is currently under development and not yet recommended for public consumption. (April 2023) However, most basic topics and many advanced topics are already completed." %}
 
 <figure class="figure fullwidth">
     <!-- <div class="figure-title">Fig.&thinsp;1: Screenshot of mei-friend.</div> -->

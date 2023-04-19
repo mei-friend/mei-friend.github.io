@@ -23,29 +23,26 @@ In this panel you have three tabs: mei-friend, editor and Verovio. There is a se
 
 - **Verovio version:** With the selected verion the MEI will be rendered. Default is latest but it is also possible to select the one in development. You might want to select an older version if there is a relevant bug so you can't display your file correctly with the latest version.
 
-{% include alert.html type="danger" title="Refresh" content="Switching to older verovio versions before 3.11.0 might require a refresh due to memory issues." %}
+{% include alert.html type="danger" title="Refresh" content="Switching to Verovio versions older than 3.11.0 might require a page refresh due to memory issues." %}
 
 - **Speed mode:** Toggle Speed Mode. In Speed mode, only the current page is sent to Verovio to reduce rendering time with large files. See also [Working with large files: Speed mode]({{ site.baseurl }}/docs/advanced/largefiles.md). This option can also be toggled the notation control bar.
 
 - **Style of generated xml:ids:** This option defines the format of xml:ids that are automatically created using `Manipulate -> Re-render MEI (with ids)`. This is mostly just preference...
 
-- **Insert application statement:** Inserts default meta data into the first three lines of an MEI-file if it is "Rerenderd via Verovio" at any point. If you made any changes to the schema used, it is recommended to turn this off so you do not have to change it back everytime you rerender.
-
-### Annotations
-
-- **Show annotations** (in the notation) 
-- **Show annotation panel:** Same effect as the annotations icon in the top right next to the settings icon.
-- **Maximum number of annotations:** This limits the number of annotations displayed and is useful to prevent mei-friend from slowing down.
+- **Insert application statement:** Inserts default meta data into the first three lines of an MEI file if it is ``Rerenderd via Verovio`` at any point. If you made any changes to the schema used, it is recommended to turn this off so you do not have to change it back every time you rerender.
 
 ### Drag select
 
-Here you can select the type of elements that will be selectable by drag select. Espescially useful for placement elements and slurs that are difficult to select otherwise. Using this option mei-friend will always highlight the element closest to the cursor in the editor panel.
+Here you can select the type of elements that will be selectable by mouse drag select. Espescially useful for placement elements and slurs that are difficult to select otherwise. Using this option mei-friend will always highlight the element closest to the cursor in the editor panel.
 
-### Control menu
+### Notation control bar
 
+Allows you to show/hide certain control items in the notation control bar in order to save space on your device screen. 
+
+- **Show flip to page controls:** Show controls for flip-to-page behavior that is whether notation flips to the page of the current element in the editor panel.
+- **Show notation update controls:** Show controls for notation updating behavior after changes in the editor panel. 
 - **Show notation font selector:** Select the notation font used in the notation panel.
-- **Show navigation arrows:** These arrows allow to navigate in the notation panel from note to note horizontally or vertically (or: use arrow keys).
-- **Show notation update controls:** Show controls to update the notation panel after changes in the editor panel manually or automatically.
+- **Show navigation arrows:** These arrows allow to navigate in the notation panel from note to note horizontally or vertically (alternatively use the four arrow keys).
 
 <figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;2: Controls in the notation panel.</div>
@@ -53,6 +50,21 @@ Here you can select the type of elements that will be selectable by drag select.
             alt="Controls in the notation panel" />
     <figcaption class="figure-caption">(1) Update controls (2) Notation font selector (3) Navigation arrows.</figcaption>
 </figure>
+
+### Transpose
+mei-friend exposes [Verovio's transposition functionality](https://book.verovio.org/advanced-topics/transposition.html){:target="_blank"} to be controlled through the mei-friend settings panel. Verovio supports a base-40 transposition system that allows for all musically sensible transposition intervals containing up to two sharps or flats (double augmented or double diminished, respectively). 
+
+Transposition can be switched on and off through a checkbox. When activated, the user may select the transposition parameters (transpose by interval or to a specific key) and press the ``transpose`` button to execute the transposition and display the transposed notation in the notation panel. When transposing by interval, multiple presses on the transpose button will successively change the notation. **The encoding remains unchanged while transposing.** 
+
+In order to also transpose the encoding, activate and adjust the transposition settings as required and use ``Manipulate -> Rerender via Verovio`` from the control menu. This will run the encoding through Verovio and display it in the CodeMirror editor. (Note: this may change the schema settings to the Verovio defaults.)
+
+<figure class="thirdwidth">
+    <div class="figure-title">Fig.&thinsp;3: Transposition settings.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/settings/mei-friend-transposition-settings.png" 
+            alt="Transposition settings in the mei-friend settings panel" />
+    <figcaption class="figure-caption">Excerpt from the mei-friend settings panel: transposition settings.</figcaption>
+</figure>
+
 
 ### Renumber measures
 
@@ -62,6 +74,12 @@ Here you can select the type of elements that will be selectable by drag select.
 - **Use suffix at endings:** Only selectable if numbering is NOT continued across endings. Inserts a suffix for measures in endings. E.g. measures in ending 1 will be numbered "90-a, 91-a..." and in ending 2 "90-b, 91-b...". "ending@n" will take the value of `@n` from the `<ending>` element the measures are in and add it to the measure numbers (e.g. measures in ending "1." will get the suffix "1.").
 
 See also [manipulating]({{ site.baseurl }}/docs/basic/manipulating/#renumbering-measures).
+
+### Annotations
+
+- **Show annotations** (in the notation) 
+- **Show annotation panel:** Same effect as the annotations icon in the top right next to the settings icon.
+- **Maximum number of annotations:** This limits the number of annotations displayed and is useful to prevent mei-friend from slowing down.
 
 ### Facsimile panel
 
