@@ -32,7 +32,7 @@ Annotations may be generated and listed using the annotation panel. This panel m
 The annotation panel has two tabs -- `Tools` to generate annotations, and `List` to obtain a quick overview of the annotations currently present within your encoding.
 
 ### Tools for making annotations 
-To generate in-line annotations using mei-friend, you must first [select one or more score elements]({{ site.base_url }}/docs/basic/inserting/#selecting-elements) that you wish to annotate. Note that [each element must possess a valid `@xml:id` attribute]({{ site.base_url }}/docs/basic/manipulating/#add-ids-to-or-remove-from-mei-encoding) in order to be annotated. 
+To generate inline annotations using mei-friend, you must first [select one or more score elements]({{ site.base_url }}/docs/basic/inserting/#selecting-elements) that you wish to annotate. Note that [each element must possess a valid `@xml:id` attribute]({{ site.base_url }}/docs/basic/manipulating/#add-ids-to-or-remove-from-mei-encoding) in order to be annotated. 
 
 Choose among the tools available through the annotation panel to annotate your selection (Fig.&thinsp;2). Currently implemented annotation types include [`Highlight`](#highlight) (highlighter icon), [`Describe`](#describe) (pencil icon), and [`Link`](#link) (chain-link icon). 
 
@@ -44,7 +44,7 @@ Choose among the tools available through the annotation panel to annotate your s
 </figure>
 
 #### Highlight 
-The 'Highlight' tool (highlighter icon) creates an in-line annotation that targets each selected element: an <a href="https://music-encoding.org/guidelines/v4/elements/annot.html">`annot` element</a> with each selected element's `@xml:id` in its [`<annot@plist>`](https://music-encoding.org/guidelines/v4/elements/annot.html#attributes){:target="_blank"}. The `<annot>` is placed within the encoding at the [closest valid location](https://music-encoding.org/guidelines/v4/elements/annot.html#containedBy){:target="_blank"} relative to the first selected element.
+The 'Highlight' tool (highlighter icon) creates an inline annotation that targets each selected element: an <a href="https://music-encoding.org/guidelines/v4/elements/annot.html">`annot` element</a> with each selected element's `@xml:id` in its [`<annot@plist>`](https://music-encoding.org/guidelines/v4/elements/annot.html#attributes){:target="_blank"}. The `<annot>` is placed within the encoding at the [closest valid location](https://music-encoding.org/guidelines/v4/elements/annot.html#containedBy){:target="_blank"} relative to the first selected element.
 
 If the [`Show annotations`](#annotation-settings) setting is not disabled, the selected elements will be highlighted using green shading within the notation panel (Fig.&thinsp;3).
 
@@ -56,7 +56,7 @@ If the [`Show annotations`](#annotation-settings) setting is not disabled, the s
 </figure>
 
 #### Describe
-The `Describe` tool (pencil icon) creates an in-line annotation using the same mechanism as the [`Highlight`](#highlight) tool. In addition, it pops up an alert window to prompt the user to enter a textual description. This description is then entered into the [body of the generated `annot` element](https://music-encoding.org/guidelines/v4/elements/annot.html#mayContain){:target="_blank"} as textual content. 
+The `Describe` tool (pencil icon) creates an inline annotation using the same mechanism as the [`Highlight`](#highlight) tool. In addition, it pops up an alert window to prompt the user to enter a textual description. This description is then entered into the [body of the generated `annot` element](https://music-encoding.org/guidelines/v4/elements/annot.html#mayContain){:target="_blank"} as textual content. 
 
 If the [`Show annotations`](#annotation-settings) setting is not disabled, the selected elements will be highlighted using blue shading within the notation panel (Fig.&thinsp;3). The mouse cursor will turn into a '?' indicator when hovering over the selected elements, and a tooltip will display the textual description entered by the user (Fig.&thinsp;4).
 
@@ -68,7 +68,7 @@ If the [`Show annotations`](#annotation-settings) setting is not disabled, the s
 </figure>
 
 #### Link
-The `Link` tool (chain-link icon) creates an in-line annotation using the same mechanism as the [`Highlight`](#highlight) tool. In addition, it pops up an alert window to prompt the user to enter a URI (Web address). This URI is then entered into the [body of the generated `annot` element](https://music-encoding.org/guidelines/v4/elements/annot.html#mayContain){:target="_blank"} as a [`ptr`](https://music-encoding.org/guidelines/v4/elements/ptr.html){:target="_blank"} element with its [`<ptr@target>`](https://music-encoding.org/guidelines/v4/elements/ptr.html#attributes){:target="_blank"} pointing to the supplied URI. 
+The `Link` tool (chain-link icon) creates an inline annotation using the same mechanism as the [`Highlight`](#highlight) tool. In addition, it pops up an alert window to prompt the user to enter a URI (Web address). This URI is then entered into the [body of the generated `annot` element](https://music-encoding.org/guidelines/v4/elements/annot.html#mayContain){:target="_blank"} as a [`ptr`](https://music-encoding.org/guidelines/v4/elements/ptr.html){:target="_blank"} element with its [`<ptr@target>`](https://music-encoding.org/guidelines/v4/elements/ptr.html#attributes){:target="_blank"} pointing to the supplied URI. 
 
 If the [`Show annotations`](#annotation-settings) setting is not disabled, the selected elements will be highlighted using red shading within the notation panel (Fig.&thinsp;3). The mouse cursor will turn into a pointer indicator when hovering over the selected elements, and a tooltip will display the URI entered by the user (Fig.&thinsp;5). Clicking on a selected element will open the URI in a new browser tab.
 
@@ -81,7 +81,34 @@ If the [`Show annotations`](#annotation-settings) setting is not disabled, the s
 
 ### The annotations list
 
+<figure class="thirdwidth">
+    <div class="figure-title">Fig.&thinsp;6: Annotations list.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/annotation/annotationPanel-List.png" 
+            alt="'List' tab of the Annotation panel" />
+    <figcaption class="figure-caption">The 'List' tab of the Annotation Panel lists all currently loaded annotations. </figcaption>
+</figure>
+
+The 'List' tab of the annotations panel (Fig.&thinsp;6) provides a convenient overview of all annotations loaded for the current encoding -- all inline `<annot>` alongside any [stand-off annotations loaded from the Web](#loading-stand-off-annotations-from-the-web), unless these exceed the [maximum number of annotations setting](#annotation-settings). 
+
+Each annotation is represented by a 'bubble' (rounded rectangle), each split into an upper and lower region (see Fig.&thinsp;6). 
+
+The upper region characterizes the annotation's meaning, location, and extent:
+* *Type*, represented by a corresponding icon (highlighter: [highlight](#highlight), pencil: [describe](#describe), chain-link: [link](#link))
+* *Location*, represented by a page number (or span of page numbers) corresponding to the (current) page location of the annotated element(s) in the rendered notation -- updated dynamically to track layout changes
+* *Extent*, representing the number of elements annotated
+* *Body*, in the case of [describe](#describe) and [link](#link) annotations, reflecting the textual description or link entered when creating the annotation
+
+The lower region exposes four icons used to interact with the annotation:
+* *Flip to page* (page icon with arrow), to jump to and select the `<annot>` (inline annotations) or the first annotated element (stand-off annotations) annotated element within the editor and notation panels
+* *Inline indicator* (page icon with `<>` symbol), when not grayed out, indicates that the annotation is represented by an inline `<annot>` -- click the icon to copy the corresponding `<annot@xml:id>`to the 
+clipboard. 
+* *Stand-off indicator* (RDF icon, three connected circles -- nodes -- representing a graph), when not grayed out, indicates that the annotation is represented by a stand-off Web Annotation -- click the icon to copy the corresponding URI to the clipboard.
+* *Delete annotation* (square icon with `-`), to delete an annotation; this will remove inline `<annot>` elements, send an HTTP DELETE request to attempt to remove stand-off Web Annotations, and unload the annotation from the annotation list. 
+
+Note that we are planning functionality to convert between inline and stand-off annotations using the respective indicator icons in future development. 
+
 #### Loading stand-off annotations from the Web
+When working with an encoding [loaded from the Web via URL]({{ site.base_url }}/docs/basic/import-export/#open-url-and-public-repertoire) or through the [GitHub integration]({{ site.base_url }}/docs/basic/import-export), [Web Annotations targetting element (fragment) URIs within the encoding](#background-targetting-stand-off-annotations) may be loaded in by clicking on the `Load Web Annotation(s)` button with the RDF icon at the top of the [annotations list](#the-annotations-list). When prompted for a URI after clicking this button, you may either enter the URI of a Web Annotation to load it directly; or, you may enter the URI of a [Linked Data Platform](https://www.w3.org/TR/ldp/){:target="_blank"} (LDP) container -- such as those offered by [Solid Pods](https://solidproject.org/){:target="_blank"} -- in which case, any Web Annotations targetting the currently loaded encoding within the container (or, recursively, within contained containers) will be loaded for you.
 
 ## Background: Targetting stand-off annotations 
 The Linked Data paradigm involves the interconnection (linking) of resources stored on the Web by reference to their Web addresses or URIs. Any MEI document stored on the Web has its own URI; for instance, the following URI is the Web address of a sample encoding of an arrangement of Beethoven's *Hymn to Joy*:
