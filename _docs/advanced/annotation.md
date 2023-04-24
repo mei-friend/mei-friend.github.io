@@ -46,7 +46,7 @@ Choose among the tools available through the annotation panel to annotate your s
 #### Highlight 
 The 'Highlight' tool (highlighter icon) creates an inline annotation that targets each selected element: an <a href="https://music-encoding.org/guidelines/v4/elements/annot.html">`annot` element</a> with each selected element's `@xml:id` in its [`<annot@plist>`](https://music-encoding.org/guidelines/v4/elements/annot.html#attributes){:target="_blank"}. The `<annot>` is placed within the encoding at the [closest valid location](https://music-encoding.org/guidelines/v4/elements/annot.html#containedBy){:target="_blank"} relative to the first selected element.
 
-If the [`Show annotations`](#annotation-settings) setting is not disabled, the selected elements will be highlighted using green shading within the notation panel (Fig.&thinsp;3).
+If the [`Show annotations`]({{ site.base_url}}/docs/basic/settings#annotations) setting is not disabled, the selected elements will be highlighted using green shading within the notation panel (Fig.&thinsp;3).
 
 <figure class="thirdwidth">
     <div class="figure-title">Fig.&thinsp;3: A 'highlight' annotation.</div>
@@ -58,7 +58,7 @@ If the [`Show annotations`](#annotation-settings) setting is not disabled, the s
 #### Describe
 The `Describe` tool (pencil icon) creates an inline annotation using the same mechanism as the [`Highlight`](#highlight) tool. In addition, it pops up an alert window to prompt the user to enter a textual description. This description is then entered into the [body of the generated `annot` element](https://music-encoding.org/guidelines/v4/elements/annot.html#mayContain){:target="_blank"} as textual content. 
 
-If the [`Show annotations`](#annotation-settings) setting is not disabled, the selected elements will be highlighted using blue shading within the notation panel (Fig.&thinsp;3). The mouse cursor will turn into a '?' indicator when hovering over the selected elements, and a tooltip will display the textual description entered by the user (Fig.&thinsp;4).
+#
 
 <figure class="thirdwidth">
     <div class="figure-title">Fig.&thinsp;4: A 'describe' annotation.</div>
@@ -68,9 +68,9 @@ If the [`Show annotations`](#annotation-settings) setting is not disabled, the s
 </figure>
 
 #### Link
-The `Link` tool (chain-link icon) creates an inline annotation using the same mechanism as the [`Highlight`](#highlight) tool. In addition, it pops up an alert window to prompt the user to enter a URI (Web address). This URI is then entered into the [body of the generated `annot` element](https://music-encoding.org/guidelines/v4/elements/annot.html#mayContain){:target="_blank"} as a [`ptr`](https://music-encoding.org/guidelines/v4/elements/ptr.html){:target="_blank"} element with its [`<ptr@target>`](https://music-encoding.org/guidelines/v4/elements/ptr.html#attributes){:target="_blank"} pointing to the supplied URI. 
+The `Link` tool (chain-link icon) creates an inline annotation using the same mechanism as the [`Highlight`](#highlight) tool. In addition, it pops up an alert window to prompt the user to enter a URI (Web address). This URI is then entered into the [body of the generated `annot` element](https://music-encoding.org/guidelines/v4/elements/annot.html#mayContain){:target="_blank"} as a [`ptr`](https://music-encoding.org/guidelines/v4/elements/ptr.html){:target="_blank"} element with its [`<ptr@target>`](https://mu/ic-encoding.org/guidelines/v4/elements/ptr.html#attributes){:target="_blank"} pointing to the supplied URI. 
 
-If the [`Show annotations`](#annotation-settings) setting is not disabled, the selected elements will be highlighted using red shading within the notation panel (Fig.&thinsp;3). The mouse cursor will turn into a pointer indicator when hovering over the selected elements, and a tooltip will display the URI entered by the user (Fig.&thinsp;5). Clicking on a selected element will open the URI in a new browser tab.
+If the [`Show annotations`]({{ site.base_url}}/docs/basic/settings#annotations)) setting is not disabled, the selected elements will be highlighted using red shading within the notation panel (Fig.&thinsp;3). The mouse cursor will turn into a pointer indicator when hovering over the selected elements, and a tooltip will display the URI entered by the user (Fig.&thinsp;5). Clicking on a selected element will open the URI in a new browser tab.
 
 <figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;5: A 'link' annotation.</div>
@@ -88,7 +88,7 @@ If the [`Show annotations`](#annotation-settings) setting is not disabled, the s
     <figcaption class="figure-caption">The 'List' tab of the Annotation Panel lists all currently loaded annotations. </figcaption>
 </figure>
 
-The 'List' tab of the annotations panel (Fig.&thinsp;6) provides a convenient overview of all annotations loaded for the current encoding -- all inline `<annot>` alongside any [stand-off annotations loaded from the Web](#loading-stand-off-annotations-from-the-web), unless these exceed the [maximum number of annotations setting](#annotation-settings). 
+The 'List' tab of the annotations panel (Fig.&thinsp;6) provides a convenient overview of all annotations loaded for the current encoding -- all inline `<annot>` alongside any [stand-off annotations loaded from the Web](#loading-stand-off-annotations-from-the-web), unless these exceed the [maximum number of annotations setting]({{ site.base_url}}/docs/basic/settings#annotations)). 
 
 Each annotation is represented by a 'bubble' (rounded rectangle), each split into an upper and lower region (see Fig.&thinsp;6). 
 
@@ -103,7 +103,7 @@ The lower region exposes four icons used to interact with the annotation:
 * *Inline indicator* (page icon with `<>` symbol), when not grayed out, indicates that the annotation is represented by an inline `<annot>` -- click the icon to copy the corresponding `<annot@xml:id>`to the 
 clipboard. 
 * *Stand-off indicator* (RDF icon, three connected circles -- nodes -- representing a graph), when not grayed out, indicates that the annotation is represented by a stand-off Web Annotation -- click the icon to copy the corresponding URI to the clipboard.
-* *Delete annotation* (square icon with `-`), to delete an annotation; this will remove inline `<annot>` elements, send an HTTP DELETE request to attempt to remove stand-off Web Annotations, and unload the annotation from the annotation list. 
+* *Delete annotation* (square icon with `-`), to delete an annotation; this will remove inline `<annot>` elements, send an `HTTP DELETE` request to attempt to remove stand-off Web Annotations, and unload the annotation from the annotation list. 
 
 Note that we are planning functionality to convert between inline and stand-off annotations using the respective indicator icons in future development. 
 
