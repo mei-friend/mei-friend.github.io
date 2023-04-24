@@ -1,7 +1,5 @@
 - title: "Cheat sheet" 
   url: "cheatsheet"
-- title: Quickstart
-  url: "quickstart"
 - title: Documentation
   url: "docs"
   links:
@@ -30,8 +28,6 @@
           url: "docs/basic/midiplayback/"
         - title: "GitHub integration" 
           url: "docs/basic/github/"
-        - title: "Help" 
-          url: "docs/basic/help/"
     - title: "Advanced topics"
       url: "docs/advanced"
       children:
