@@ -36,6 +36,7 @@
 				<div>
 					<small class="text-white">© {{ 'now' | date: "%Y" }} {{ site.author }}.</small> 
 					{% if site.privacy %}<small class="text-white"><a href="{{ site.privacy }}" target="_blank">Impressum</a>.</small>{% endif %}
+          <small class="text-white">Site last updated: {{ site.time | date: '%B %e %Y %H:%M'  }}</small>
 				</div>
 				<div>
 							<!--<p class="mt-2"><a href="/about/">About Docsy</a></p>	-->
