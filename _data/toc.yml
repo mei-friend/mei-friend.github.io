@@ -51,5 +51,5 @@
       url: "docs/furtherreading"
 - title: "About"
   url: "about"
-- title: "News"
-  url: "news"
+# - title: "News"
+#   url: "news"
