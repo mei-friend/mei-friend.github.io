@@ -5,19 +5,21 @@ permalink: /docs/basic/inserting/
 layout: page
 ---
 
-# Insert menu 
+<script src="../../assets/js/icons.js">></script>
 
-There are two ways to insert elements into your MEI-file: Either by typing directly MEI encoding in the editor panel (supported by code completion, see [validation]({{ site.baseurl }}/docs/basic/validation)) or by using the insert functions listed in the  `Insert` menu item (or rather through the corresponding [keyboard shortcuts]({{ site.baseurl }}/cheatsheet)) in the notation panel.
+# Insert menu
+
+There are two ways to insert elements into your MEI-file: Either by typing directly MEI encoding in the editor panel (supported by code completion, see [validation]({{ site.baseurl }}/docs/basic/validation)) or by using the insert functions listed in the `Insert` menu item (or rather through the corresponding [keyboard shortcuts]({{ site.baseurl }}/cheatsheet)) in the notation panel.
 
 Using the editor panel you can simply edit the encoding, changing attribute values or adding new elements. Typical text editing functions are available that you can find under [Code]({{ site.baseurl }}/docs/basic/editing) in the menu bar such as `Undo`, `Search` or `Indent selection`.
 
-Using the `Insert` menu functions in the menu bar (or shortcuts) to add elements is an efficient way to insert new elements. Some inserting functions comprise high-level code manipulation, such as inserting an octave element, where all referenced elements will be manipulated at the same time. 
+Using the `Insert` menu functions in the menu bar (or shortcuts) to add elements is an efficient way to insert new elements. Some inserting functions comprise high-level code manipulation, such as inserting an octave element, where all referenced elements will be manipulated at the same time.
 
 <!-- If you copy elements be mindful to change the `@xml:id` so there aren't multiple elements with the same `@xml:id`. -->
 
 ## Selecting elements
 
-If you edit directly in the notation panel you can also select multiple elements and make changes for more than one element at once. To make it easier to select slurs or less tedious to click on articulation elements like staccato dots or accents you can enable [drag-select]({{ site.baseurl }}/docs/basic/settings/#drag-select): Go to `settings -> mei-friend` and enable `select slurs` and `select placement elements` under `drag select`. Holding `CTRL` (`CMD` under macOS) while leftclicking,  selecting multiple elements is possible. To click-select the entire chord element, hold `ALT` while clicking on a note insied a chord.
+If you edit directly in the notation panel you can also select multiple elements and make changes for more than one element at once. To make it easier to select slurs or less tedious to click on articulation elements like staccato dots or accents you can enable [drag-select]({{ site.baseurl }}/docs/basic/settings/#drag-select): Go to `settings -> mei-friend` and enable `select slurs` and `select placement elements` under `drag select`. Holding `CTRL` (`CMD` under macOS) while leftclicking, selecting multiple elements is possible. To click-select the entire chord element, hold `ALT` while clicking on a note insied a chord.
 
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;1: Drag select.</div>
@@ -41,7 +43,7 @@ To add spanning elements like a slur (or a hairpin), select the starting and end
 
 Spanning elements added this way will always have a `@startid` and `@endid` which reference the `@xml:id` of the starting and ending note. Equivalent to this a spanning element can also be sufficiently defined by specifying the `@staff` and two timestamps `@tstamp` and `@tstamp2`. This method is commonly used for hairpins.
 
-These two methods can also be mixed by using `@startid` with `@tstamp2` or `@tstamp` and `@endid`. This method isuseful if a slur has a starting note but does not have an ending note. A typical situation would be at repeats or multiple endings (as seen in the Fig.&nbsp;3). 
+These two methods can also be mixed by using `@startid` with `@tstamp2` or `@tstamp` and `@endid`. This method isuseful if a slur has a starting note but does not have an ending note. A typical situation would be at repeats or multiple endings (as seen in the Fig.&nbsp;3).
 
 <figure class="thirdwidth">
     <div class="figure-title">Fig.&thinsp;3: Slurs with no specified ending/starting point.</div>
@@ -52,7 +54,7 @@ These two methods can also be mixed by using `@startid` with `@tstamp2` or `@tst
 
 ### Inserting dynamics, directives, and other control elements
 
-A control element (such as dynamics, directives) or ornaments (trills, mordents) may be added to the selected element with the keyboard shortcut `D` (see the menu bar or the [cheat sheet]({{ site.baseurl }}/cheatsheet/#inserting-elements)) for a list of shortcuts). By default, a control element is added without a `@place` attribute (or the equivalent `@curvedir` in slurs). To set or change this attribute, use `Invert placement` (`X`) multiple times, if necessary. Use `SHIFT - X` to set `@place` to `between`, such as in piano scores (see [between placement]({{ site.baseurl }}/docs/basic/manipulating/#moving-and-deleting-elements) for more details).  The default dynamic that is inserted is always "mf"; it can be changed by editing the string between the tags.
+A control element (such as dynamics, directives) or ornaments (trills, mordents) may be added to the selected element with the keyboard shortcut `D` (see the menu bar or the [cheat sheet]({{ site.baseurl }}/cheatsheet/#inserting-elements)) for a list of shortcuts). By default, a control element is added without a `@place` attribute (or the equivalent `@curvedir` in slurs). To set or change this attribute, use `Invert placement` (`X`) multiple times, if necessary. Use `SHIFT - X` to set `@place` to `between`, such as in piano scores (see [between placement]({{ site.baseurl }}/docs/basic/manipulating/#moving-and-deleting-elements) for more details). The default dynamic that is inserted is always "mf"; it can be changed by editing the string between the tags.
 
 To insert controle elements with `@tstamp` and `@tstamp2` attributes instead of start and end ids, press the <span class="keyIcon cmd2Key"></span> key simultaneously.
 
@@ -65,18 +67,19 @@ To insert controle elements with `@tstamp` and `@tstamp2` attributes instead of 
 
 Control elements can also be inserted on multiple selected notes. mei-friend will insert the control element referring to the first (`@startid`) and last (`@endid`) selected element. Some control elements with `@startid` and `@endid` will be displayed by Verovio with a dashed extender line. You may also insert dynamics for multiple staves at once, by selecting notes from multiple staves. This will add the corresponding staff number to the `@staff` attribute (however, the `@endid` attribute should be checked in those cases).
 
-When inserting a pedal mark (`P`) on multiple selected notes, a pedal down will inserted on the first and a pedal up on the last selected note. 
+When inserting a pedal mark (`P`) on multiple selected notes, a pedal down will inserted on the first and a pedal up on the last selected note.
 
 ### Inserting a beam or beam span
 
-Inserting a beam works along the same lines as above: First select the notes that the beam should span and then press `B` (or use the menu item). It will surround the selected notes with a beam element. When notes belong to different measures, a `beamSpan` should be used instead of a `beam` element. Inserted with `SHIFT - B`, it will add an element to the end of a measure with a `@plist` attribute referring to the elements under the beam span. 
+Inserting a beam works along the same lines as above: First select the notes that the beam should span and then press `B` (or use the menu item). It will surround the selected notes with a beam element. When notes belong to different measures, a `beamSpan` should be used instead of a `beam` element. Inserted with `SHIFT - B`, it will add an element to the end of a measure with a `@plist` attribute referring to the elements under the beam span.
+
 ### Inserting an octave element
 
 An `octave` element is inserted again on a series of selected notes, pressing `O` for inserting the most common "8va" octave element. This will insert an octave element at the end of the measure of the first selected element, with `@startid` and `@endid` attributes pointing to the first and the last selected element and a `dis` and a `dis.place` attribute for the extent and direction of displacement. All notes selected will be processed adding an `oct.ges` attribute to accommodate the displacement information. To insert other displacements as the default 8 tones up (such as 15 tones down), use the modifyer keys as shown in the menu bar or [cheat sheet]({{ site.baseurl }}/cheatsheet/#inserting-elements)). To delete an `octave` element, just use `DELETE`; it will remove the element and all added `oct.ges` attributes of the notes under the octave spanner.
 
 ### Inserting a supplied element
 
-For details, please see [inserting supplied elements]({{ site.baseurl }}/docs/advanced/critapp/#inserting-supplied-element). 
+For details, please see [inserting supplied elements]({{ site.baseurl }}/docs/advanced/critapp/#inserting-supplied-element).
 
 ### Toggling articulation
 

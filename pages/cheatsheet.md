@@ -4,38 +4,11 @@ title: Cheat sheet
 permalink: /cheatsheet/
 ---
 
+<script src="../../assets/js/icons.js">></script>
+
 # Keyboard Shortcuts Cheat sheet
 
 Most of the keyboard shortcuts are listed in the respective menu items in mei-friend's menu bar; however, some of them you will only find here.
-
-<script>
-    let shiftKey = "&#8679;"; // SHIFT symbol
-    let altKey = "&#8997;"; // ALT symbol
-    let cmdKey = "&#8963;"; // CTRL symbol
-    let cmd2Key = "&#8997;"; // ALT symbol
-    let ctrlKey = "&#8963;" // always CTRL symbol on all OS
-    shiftKey = 'SHIFT'; // prefer text instead of symbols
-    altKey = 'ALT';
-    cmdKey = 'CTRL';
-    cmd2Key = 'ALT';
-    ctrlKey = 'CTRL';
-    if (navigator.platform.startsWith('Mac')) {
-      cmdKey = "&#8984;"; // CMD symbol
-      cmd2Key = "&#8963;"; // CTRL symbol
-      cmdKey = 'CMD'; // text instead of symbols
-      cmd2Key = 'CTRL';
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll(".cmdKey").forEach(e => e.innerHTML = cmdKey);
-      document.querySelectorAll(".cmd2Key").forEach(e => e.innerHTML = cmd2Key);
-      document.querySelectorAll(".ctrlKey").forEach(e => e.innerHTML = ctrlKey);
-      document.querySelectorAll(".shiftKey").forEach(e => e.innerHTML = shiftKey);
-      document.querySelectorAll(".altKey").forEach(e => e.innerHTML = altKey);
-    });
-</script>
-
-<!-- GENERAL -->
 
 ### Getting help
 
@@ -120,9 +93,9 @@ Some zooming keyboard shortcuts apply for the currently active panel (notation p
 
 ### Selecting elements
 
-Most comfortably, use mouse click and drag to select elements. 
+Most comfortably, use mouse click and drag to select elements.
 Please consult `Settings->mei-friend->Drag select` to choose the element types while drag-selecting.
-You can use the following shortcuts in combination with click and drag for selecting elements. 
+You can use the following shortcuts in combination with click and drag for selecting elements.
 
 <table>
     <tr>
@@ -134,7 +107,6 @@ You can use the following shortcuts in combination with click and drag for selec
         <td class="explanation">Select the chord when clicking onto a note</td>
     </tr>
 </table>
-
 
 <!-- MANIPULATE -->
 
@@ -382,6 +354,7 @@ To insert elements with `@tstamp` and `@tstamp2` attributes, press the <span cla
 </table>
 
 ### MIDI playback
+
 <table>
     <tr>
         <td class="icons"><span class="keyIcon">SPACE</span></td>
@@ -393,7 +366,7 @@ To insert elements with `@tstamp` and `@tstamp2` attributes, press the <span cla
     </tr>
 </table>
 
-### URL Parameters 
+### URL Parameters
 
 <p>mei-friend may ba called with several parameters passed through the URL
 in the form of <span class="code">https://mei-friend.mdw.ac.at/?file=fileURL&select=beamId</span>.</p>
@@ -452,7 +425,7 @@ in the form of <span class="code">https://mei-friend.mdw.ac.at/?file=fileURL&sel
     </tr>
 </table>
 
-#### Examples using URL parameters 
+#### Examples using URL parameters
 
 <p>
 <a class="code" target="_blank"
@@ -464,4 +437,3 @@ selected in the middle</a>
 href="http://mei-friend.mdw.ac.at/?notationOrientation=top&notationProportion=.6&facsimileOrientation=left&facsimileProportion=.6&breaks=line&file=https://raw.githubusercontent.com/trompamusic-encodings/Beethoven_Op76_BreitkopfHaertel/master/Beethoven_Op76-Breitkopf-Haertel.mei">Beethoven Op.76 containing facsimile
 elements with measure-wise zones</a>
 </p>
-
