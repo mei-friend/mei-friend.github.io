@@ -213,15 +213,23 @@ You can use the following shortcuts in combination with click and drag for selec
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">M</span></td>
-        <td class="explanation">Re-render MEI encoding through Verovio (inserting xml:ids)</td>
+        <td class="explanation">Add XML ids to MEI (done natively in mei-friend)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">M</span></td>
-        <td class="explanation">Re-render MEI encoding through Verovio (removing xml:ids)</td>
+        <td class="explanation">Add XML ids from MEI, except those used for referencing other elements (done natively in mei-friend)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">I</span></td>
         <td class="explanation">Ingest facsimile</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">E</span></td>
+        <td class="explanation">Surround selection in editor with tag to be specified in context menu (entire current tag selected, if only single cursor position provided)</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">/</span></td>
+        <td class="explanation">Enclose selection in editor with last tag specified in context menu (entire current tag selected, if only single cursor position provided)</td>
     </tr>
 </table>
 
