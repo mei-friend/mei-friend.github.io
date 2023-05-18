@@ -207,9 +207,7 @@ You can use the following shortcuts in combination with click and drag for selec
 
 ### Inserting elements
 
-<p>Key bindings insert elements without placement attribute by default. To insert or invert placement, use <span class="keyIcon">X</span>. The elements are inserted using `@startid` and `@endid` attributes by default. To insert them with `@tstamp` and `@tstaamp2` attributes instead, press <span class="keyIcon cmd2Key"></span> together with the keyboard shortcuts listed below. Time stamp insertion is supported for these elements: `slur`, `tie`, `hairpin`, `fermata`, `dir`, `dynam`, `pedal`, `mordent`, `trill`, `turn`, `glissando`.
-To insert elements with `@tstamp` and `@tstamp2` attributes, press the <span class="keyIcon cmd2Key"></span> key simultaneously.
-</p>
+Key bindings insert elements without placement attribute by default. To insert or invert placement, use <span class="keyIcon">X</span>. The elements are inserted using `@startid` and `@endid` attributes by default. To insert them with `@tstamp` and `@tstaamp2` attributes instead, press <span class="keyIcon cmd2Key"></span> together with the keyboard shortcuts listed below. Time stamp insertion is supported for these elements: `slur`, `tie`, `hairpin`, `fermata`, `dir`, `dynam`, `pedal`, `mordent`, `trill`, `turn`, `glissando`.
 
 <table>
     <tr>
