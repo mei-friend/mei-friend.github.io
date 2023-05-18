@@ -4,7 +4,7 @@ title: Cheat sheet
 permalink: /cheatsheet/
 ---
 
-<script src="../../assets/js/icons.js">></script>
+<script src="{{ site.baseurl }}/assets/js/icons.js">></script>
 
 # Keyboard Shortcuts Cheat sheet
 

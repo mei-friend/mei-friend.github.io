@@ -5,7 +5,7 @@ permalink: /docs/basic/inserting/
 layout: page
 ---
 
-<script src="../../assets/js/icons.js">></script>
+<script src="{{ site.baseurl }}/assets/js/icons.js">></script>
 
 # Insert menu
 
