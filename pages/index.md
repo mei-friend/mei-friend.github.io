@@ -29,5 +29,3 @@ In the navigation menu, you will find:
 - A [cheatsheet]({{ site.baseurl }}/cheatsheet) with a comprehensive list of editing functions, their keyboard shortcuts, and a complete list of URL parameters
 - The [documentation]({{ site.baseurl }}docs) itself describing [basic topics]({{ site.baseurl }}docs/basic) and [advanced topics]({{ site.baseurl }}docs/advanced) and giving pointers to [further reading]({{ site.baseurl }}docs/furtherreading)
 - [More information]({{ site.baseurl }}/about) about the development of mei-friend
-<!-- - [Latest news]({{ site.baseurl }}/news) about the project -->
-
