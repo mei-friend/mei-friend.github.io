@@ -54,6 +54,8 @@ These two methods can also be mixed by using `@startid` with `@tstamp2` or `@tst
 
 A control element (such as dynamics, directives) or ornaments (trills, mordents) may be added to the selected element with the keyboard shortcut `D` (see the menu bar or the [cheat sheet]({{ site.baseurl }}/cheatsheet/#inserting-elements)) for a list of shortcuts). By default, a control element is added without a `@place` attribute (or the equivalent `@curvedir` in slurs). To set or change this attribute, use `Invert placement` (`X`) multiple times, if necessary. Use `SHIFT - X` to set `@place` to `between`, such as in piano scores (see [between placement]({{ site.baseurl }}/docs/basic/manipulating/#moving-and-deleting-elements) for more details).  The default dynamic that is inserted is always "mf"; it can be changed by editing the string between the tags.
 
+To insert controle elements with `@tstamp` and `@tstamp2` attributes instead of start and end ids, press the <span class="keyIcon cmd2Key"></span> key simultaneously.
+
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;4: Inserting dynamics and inverting its placement.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/inserting/insert_dynam.gif" 

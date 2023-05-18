@@ -225,22 +225,20 @@ You can use the following shortcuts in combination with click and drag for selec
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">E</span></td>
-        <td class="explanation">Surround selection in editor with tag to be specified in context menu (entire current tag selected, if only single cursor position provided)</td>
+        <td class="explanation">Surround selected encoding in the editor with a tag to be specified in context menu (entire current tag selected, if only single cursor position provided)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon">/</span></td>
-        <td class="explanation">Enclose selection in editor with last tag specified in context menu (entire current tag selected, if only single cursor position provided)</td>
+        <td class="explanation">Surround selected encoding in the editor with last tag specified in context menu (entire current tag selected, if only single cursor position provided)</td>
     </tr>
 </table>
-
-<!-- INSERT -->
 
 ### Inserting elements
 
 <p>Key bindings insert elements without placement attribute by default. To insert or invert placement, use <span class="keyIcon">X</span>. The elements are inserted using `@startid` and `@endid` attributes by default. To insert them with `@tstamp` and `@tstaamp2` attributes instead, press <span class="keyIcon cmd2Key"></span> together with the keyboard shortcuts listed below. Time stamp insertion is supported for these elements: `slur`, `tie`, `hairpin`, `fermata`, `dir`, `dynam`, `pedal`, `mordent`, `trill`, `turn`, `glissando`.
-<!--To insert elements with @tstamp and @tstamp2 attributes,
-use the <span class="keyIcon">ALT &#8997;</span> key additionally.-->
+To insert elements with `@tstamp` and `@tstamp2` attributes, press the <span class="keyIcon cmd2Key"></span> key simultaneously.
 </p>
+
 <table>
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">T</span></td>
