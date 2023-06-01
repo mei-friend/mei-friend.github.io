@@ -7,7 +7,7 @@ layout: page
 
 # Text Editing operations
 
-Under `Code` in the menu bar you can find various text editing operations like "Undo", "Search" or "Replace". [Keyboard shortcuts]({{ site.baseurl }}/cheatsheet){:target="_blank"} are also available for these operations. Make sure that your cursor focus is actually in either notation or editor panel when using a shortcut.
+Under `Code` in the menu bar you can find many common text editing operations like `Undo`, `Search` or `Replace`. [Keyboard shortcuts]({{ site.baseurl }}/cheatsheet){:target="_blank"} are also available for these operations. To use the keyboard shortcuts, make sure that your cursor focus is presently in the notation or editor panel.
 
 <figure class="thirdwidth">
     <div class="figure-title">Fig.&thinsp;1: The 'Code' drop down menu.</div>
@@ -43,4 +43,4 @@ While editing the tag name of an XML element, mei-friend will co-edit the matchi
 
 ## Validate
 
-Automatic validation is [enabled]({{ site.baseurl }}/docs/basic/settings/#editor-behavior) by default but in case you turned it off with this option you can manually validate your MEI-file. More information [here]({{ site.baseurl }}/docs/basic/validation).
+Automatic validation is [enabled]({{ site.baseurl }}/docs/basic/settings/#editor-behavior) by default, but it may turned it off in the editor settings panel. When automatic validation is disabled, validation can be manually initiated by clicking on the validation icon at the top-left corner of the editor. More information [here]({{ site.baseurl }}/docs/basic/validation).
