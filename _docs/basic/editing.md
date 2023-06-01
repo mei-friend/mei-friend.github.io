@@ -5,7 +5,7 @@ permalink: /docs/basic/editing/
 layout: page
 ---
 
-# Text Editing operations
+# Code editing operations
 
 Under `Code` in the menu bar you can find many common text editing operations like `Undo`, `Search` or `Replace`. [Keyboard shortcuts]({{ site.baseurl }}/cheatsheet){:target="_blank"} are also available for these operations. To use the keyboard shortcuts, make sure that your cursor focus is presently in the notation or editor panel.
 
