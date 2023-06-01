@@ -31,6 +31,16 @@ If "[Code folding]({{ site.baseurl }}/docs/basic/settings/#editor-appearance)" i
 
 You can easily indent a selected part in the editor panel of your file with `Indent selection`. The indentation size can be adjusted in the [settings]({{ site.baseurl }}/docs/basic/settings/#editor-appearance). If no section over multiple lines is selected the entire MEI-file will be indentet.
 
+## Surround with tags
+
+Similar to several common XML editors (such as VS Code, Oxygen), you may surround or wrap the selection with an element, the name of which is to be determined through a small user interface. To initiate the command, use the `Surround with tags` menu item or the keyboard shortcut `CTRL - E` or `CMD - E`. To repeat wrapping with the previous element tag name, use `CTRL - /` or `CMD - /` or the pertinent menu item. 
+
+If nothing is selected in the editor, the element at the current cursor position is selected and used for wrapping. If the selected element is in one line, the starting and ending tag will be added to that line; however, when the selected element spans multiple lines, the starting and ending elements will be added at separate lines and the enclosed tag indented accordingly. 
+
+## Edit matching tags
+
+While editing the tag name of an XML element, mei-friend will co-edit the matching tag name simultaneously, independently whether the starting or the ending tag is modified.
+
 ## Validate
 
 Automatic validation is [enabled]({{ site.baseurl }}/docs/basic/settings/#editor-behavior) by default but in case you turned it off with this option you can manually validate your MEI-file. More information [here]({{ site.baseurl }}/docs/basic/validation).
