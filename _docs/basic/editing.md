@@ -41,6 +41,14 @@ If nothing is selected in the editor, the element at the current cursor position
 
 While editing the tag name of an XML element, mei-friend will co-edit the matching tag name simultaneously, independently whether the starting or the ending tag is modified.
 
+## Go to matching tag
+
+Jump to the matching tag and put the cursor to the beginning tag name. Thus, when in the opening tag, it will bring you to the closing tag and vice versa. 
+
+## Jump to line number
+
+Puts the cursor to the entered line number.
+
 ## Validate
 
 Automatic validation is [enabled]({{ site.baseurl }}/docs/basic/settings/#editor-behavior) by default, but it may turned it off in the editor settings panel. When automatic validation is disabled, validation can be manually initiated by clicking on the validation icon at the top-left corner of the editor. More information [here]({{ site.baseurl }}/docs/basic/validation).
