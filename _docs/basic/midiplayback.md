@@ -9,9 +9,10 @@ layout: page
 Besides [exporting your encoding as a MIDI file]({{ site.baseurl }}/docs/basic/import-export/#save-midi), it is possible to listen to a current MIDI-rendition of your encoding straight in the browser. This rendition is automatically updated whenever the encoding is changed, making this a useful tool for quickly sanity-checking the state of your encoding by listening to it.  
 
 MIDI playback is implemented in mei-friend using the open-source [html-midi-player](https://github.com/cifkao/html-midi-player). This is itself powered by [Magenta.js](https://github.com/magenta/magenta-js/tree/master/music/), which also provides the [SGM_Plus sound font](https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus/soundfont.json) used to sonify your encoding. 
+
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;1: Listen to your encoding using the MIDI playback control bar.</div>
-    <img class="figure-img" src="{{ site.baseurl }}/assets/img/midiplayback/midiplayback.png" 
+    <img class="figure-img" src="{{ site.baseurl }}/assets/img/midiplayback/midiplayback2.png" 
         alt="Screenshot of mei-friend interface showing MIDI playback control bar" />
     <figcaption class="figure-caption">The MIDI playback control bar (image bottom) can be used to listen to the encoding in its current state, as part of your encoding workflow.</figcaption>
 </figure>
@@ -30,8 +31,10 @@ The bar will always be opened on the bottom of the interface, just above the sta
 To close the bar, you may also use the `ESC` key.
 <figure class="figure thirdwidth">
     <div class="figure-title">Fig.&thinsp;2: Playback shortcut.</div>
-    <img class="figure-img" src="{{ site.baseurl }}/assets/img/midiplayback/bubble.png" 
-        alt="Screenshot of MIDI playback contextual bubble" />
+    <a href="http://mei-friend.mdw.ac.at?file=https://raw.githubusercontent.com/trompamusic-encodings/Beethoven_Op31_No3_HenleUrtext/master/Beethoven_Op31_No3_3-HenleUrtext.mei&scale=57&select=note-0000000052456173&page=4&speed=false" target="_blank">
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/midiplayback/bubble.png" 
+            alt="Screenshot of MIDI playback contextual bubble" />
+    </a>
     <figcaption class="figure-caption">Click on the playback shortcut bubble (bottom-left) to open the MIDI control bar and start playback. </figcaption>
 </figure>
 
@@ -55,4 +58,7 @@ The optimizations provided by mei-friend's [speed mode]({{ site.baseurl }}/docs/
 
 This speeds up performance, particularly when working with very large files, but also means that only the current page is available for MIDI playback. A speed-mode indicator is displayed in the MIDI playback control bar when the mode is enabled (see Fig.&thinsp;1, bottom center), to remind you of this limitation. Please adjust your workflow accordingly, e.g., by toggling speed mode off before playback and back on thereafter, when working with large files.
 
+## Following repetitions through selected expansion element
+
+The MIDI control bar offers a drop-down menu listing the expansion elements in the encoding (see `expansion-default` selected for the [3rd movement of Beethoven's Op.&nbsp;31 No.&nbsp;3](http://mei-friend.mdw.ac.at?file=https://raw.githubusercontent.com/trompamusic-encodings/Beethoven_Op31_No3_HenleUrtext/master/Beethoven_Op31_No3_3-HenleUrtext.mei&scale=57&select=note-0000000052456173&page=4&speed=false){:target="_blank"} in Figure&nbsp;1). If an expansion element is selected, mei-friend will follow the property list attribute to render the MIDI playback and thus following the expanded repetitions during the encoding. 
 
