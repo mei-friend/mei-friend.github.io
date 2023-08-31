@@ -39,7 +39,7 @@ Simply delete an element with the `DELETE` or `BACKSPACE` key. The delete operat
 
 ### Moving notes in pitch and across staves
 
-To modify the pitch of one or several selected notes, use `SHIFT - UP` or `SHIFT - DOWN` for increasing or decreasing the pitch by one (diatonic) tone or with a modifyer key (`CTRL` or `CMD` under macOS) by an octave. 
+To modify the pitch of one or several selected notes, use `SHIFT - UP/DOWN` for shifting the pitch by one (chromatic) semi-tone, `ALT - SHIFT - UP/DOWN` for shifting the pitch diatonically, or in combination with a modifyer key (`CTRL` or `CMD` under macOS) by an octave. 
 
 Selected notes or chords may be moved across staves (such as required in piano scores), using `CMD/CTRL - ALT UP/DOWN`. This will modify (or add or remove) the `@staff` attribute for all selected elements to indicate the altered staff number that the selected element should appear in. 
 ### Cleaning gestural accidentals (@accid.ges)
