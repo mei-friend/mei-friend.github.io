@@ -144,11 +144,19 @@ You can use the following shortcuts in combination with click and drag for selec
 <table>
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">&uarr;</span></td>
-        <td class="explanation">Move note, rest, mRest, multiRest one tone upwards </td>
+        <td class="explanation">Move note, rest, mRest, multiRest chromatically upwards </td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">&darr;</span></td>
-        <td class="explanation">Move note, rest, mRest, multiRest one tone downwards</td>
+        <td class="explanation">Move note, rest, mRest, multiRest chromatically downwards</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon altKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">&uarr;</span></td>
+        <td class="explanation">Move note, rest, mRest, multiRest diatonically upwards </td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon altKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">&darr;</span></td>
+        <td class="explanation">Move note, rest, mRest, multiRest diatonically downwards</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">&uarr;</span></td>
@@ -210,6 +218,18 @@ You can use the following shortcuts in combination with click and drag for selec
 Key bindings insert elements without placement attribute by default. To insert or invert placement, use <span class="keyIcon">X</span>. The elements are inserted using `@startid` and `@endid` attributes by default. To insert them with `@tstamp` and `@tstamp2` attributes instead, press <span class="keyIcon cmd2Key"></span> together with the keyboard shortcuts listed below. Time stamp insertion is supported for these elements: `slur`, `tie`, `hairpin`, `fermata`, `dir`, `dynam`, `pedal`, `mordent`, `trill`, `turn`, `glissando`.
 
 <table>
+    <tr>
+        <td class="icons"><span class="keyIcon">+</span></td>
+        <td class="explanation">Insert accidental sharp &#9839; to currently selected note(s)</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon">=</span></td>
+        <td class="explanation">Insert accidental natural &#9838; to currently selected note(s)</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon">&ndash;</span></td>
+        <td class="explanation">Insert accidental flat &#9837; to currently selected note(s)</td>
+    </tr>
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">T</span></td>
         <td class="explanation">Insert tempo at selected note(s)</td>
