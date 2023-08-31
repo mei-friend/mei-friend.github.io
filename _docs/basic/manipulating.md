@@ -42,9 +42,20 @@ Simply delete an element with the `DELETE` or `BACKSPACE` key. The delete operat
 To modify the pitch of one or several selected notes, use `SHIFT - UP/DOWN` for shifting the pitch by one (chromatic) semi-tone, `ALT - SHIFT - UP/DOWN` for shifting the pitch diatonically, or in combination with a modifyer key (`CTRL` or `CMD` under macOS) by an octave. 
 
 Selected notes or chords may be moved across staves (such as required in piano scores), using `CMD/CTRL - ALT UP/DOWN`. This will modify (or add or remove) the `@staff` attribute for all selected elements to indicate the altered staff number that the selected element should appear in. 
-### Cleaning gestural accidentals (@accid.ges)
+### Checking gestural accidentals (@accid.ges)
 
-This function will go through the entire encoding to check every element for co-occurences of  `@accid` and `@accid.ges` attributes and delete the unnecessary `@accid.ges`.
+The MEI schema allows having the attributes `@accid` and `@key.sig` or `keySig@sig` independently of the sounding, the gestural pitch accidental of the notes. So, to encode semantically correct tones in CMN, the `@accid.ges` attribute depends on the accidental context by the key signature or the current measure. Thus, there is ample opportunity for encoding inconsistencies. 
+
+In order to help find those inconsistencies, `Check @accid.ges` will check all notes for the existence of a missing or superfluous @accid.ges in relation the the current key signature (`@key.sig` inside `staffDef` or `scoreDef` or `@sig` inside `keySig` elements) or any accidentals provided in the current measure. Also redundant @accid.ges will be tracked. 
+
+All occurrences will be listed in the code checker panel and provided with a fix button that corrects both the encoding and the display, or an ignore button that will diable a given occurrence in the list (or re-enable it when pressed again). To bulk-process many occurrence at the same time, press the `fix all` button. This will process all enabled fixes in the list. 
+
+<figure class="halfwidth">
+    <div class="figure-title">Fig.&thinsp;3: Code checker panel with accid.ges report.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/manipulating/codeCheckerAccidGes.png" 
+            alt="Code checker panel with accid.ges report" />
+    <figcaption class="figure-caption">Code checker panel with accid.ges report. Issue number 3 has been disabled through the ignore button, issue number 4 has already been executed through the fix button.</figcaption>
+</figure>
 
 ### Renumbering measures
 
@@ -53,7 +64,7 @@ There are a couple of important settings for renumbering measures in the setting
 Before using `Renumber measures (exec)` it is recommended to use `Renumber measures (test)`: This will show how the renumbering will be done in an infobox before you can actually execute it.
 
 <figure class="figure">
-    <div class="figure-title">Fig.&thinsp;2: Renumbering measures.</div>
+    <div class="figure-title">Fig.&thinsp;4: Renumbering measures.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/manipulating/renumber_measures.gif" 
             alt="Renumbering measures" />
     <figcaption class="figure-caption">In this example the measure containing the upbeat is counted as a separate measure. To change that `@metcon` is set to `false` for that measure. Running `Renumber measures (test)` opens a window that shows the proposed changes which can then be executed with `Renumber measures (exec)`.</figcaption>
@@ -65,7 +76,7 @@ Before using `Renumber measures (exec)` it is recommended to use `Renumber measu
 `xml:id` can be either added or removed with `Add ids to MEI` and `Remove ids from MEi`. Ids will only be removed inside of `<body>` elements so e.g., `<meiHead>` is no affected. Removing keeps all `@xml:id` that are referenced somewhere (e.g., by a slur) to not lose any information about the encoding. The style of ids that are being generated can be selected in the [settings]({{ site.basurl }}/docs/basic/settings/#general). 
 
 <figure class="figure">
-    <div class="figure-title">Fig.&thinsp;3: Removing and adding ids.</div>
+    <div class="figure-title">Fig.&thinsp;5: Removing and adding ids.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/manipulating/ids.gif" 
             alt="Removing and adding ids" />
     <figcaption class="figure-caption">After removing ids the infobox shows how many ids have been removed and how many could not be removed due to them being referenced somewhere else. The infobox after adding ids shows how many ids have been added and the style used to generate them. Note: As you can see ids are only removed from the body.</figcaption>
