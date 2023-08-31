@@ -46,7 +46,7 @@ Selected notes or chords may be moved across staves (such as required in piano s
 
 The MEI schema allows having the attributes `@accid` and `@key.sig` or `keySig@sig` independently of the sounding, the gestural pitch accidental of the notes. So, to encode semantically correct tones in CMN, the `@accid.ges` attribute depends on the accidental context by the key signature or the current measure. Thus, there is ample opportunity for encoding inconsistencies. 
 
-In order to help find those inconsistencies, `Check @accid.ges` will check all notes for the existence of a missing or superfluous @accid.ges in relation the the current key signature (`@key.sig` inside `staffDef` or `scoreDef` or `@sig` inside `keySig` elements) or any accidentals provided in the current measure. Also redundant @accid.ges will be tracked. 
+In order to help find those inconsistencies, select `Manipulate -> Check @accid.ges` in the dropdown menu or use the keyboard shortcut given there. `Check @accid.ges` will check all notes for the existence of a missing or superfluous @accid.ges in relation the the current key signature (`@key.sig` inside `staffDef` or `scoreDef` or `@sig` inside `keySig` elements) or any accidentals provided in the current measure. Also redundant `@accid.ges` will be tracked. 
 
 All occurrences will be listed in the code checker panel and provided with a fix button that corrects both the encoding and the display, or an ignore button that will diable a given occurrence in the list (or re-enable it when pressed again). To bulk-process many occurrence at the same time, press the `fix all` button. This will process all enabled fixes in the list. 
 
