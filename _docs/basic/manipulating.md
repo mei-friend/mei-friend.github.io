@@ -50,7 +50,7 @@ In order to help find those inconsistencies, `Check @accid.ges` will check all n
 
 All occurrences will be listed in the code checker panel and provided with a fix button that corrects both the encoding and the display, or an ignore button that will diable a given occurrence in the list (or re-enable it when pressed again). To bulk-process many occurrence at the same time, press the `fix all` button. This will process all enabled fixes in the list. 
 
-<figure class="halfwidth">
+<figure class="figure">
     <div class="figure-title">Fig.&thinsp;3: Code checker panel with accid.ges report.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/manipulating/codeCheckerAccidGes.png" 
             alt="Code checker panel with accid.ges report" />
@@ -84,7 +84,7 @@ Before using `Renumber measures (exec)` it is recommended to use `Renumber measu
 
 ### Re-render via Verovio
 
-With this feature the file can be newly rendered. Rerendering will also correct the formating of the file like indentation (to just indent a selected part of a file use `Code -> Indent selection`). Note that the MEI encoding returned from Verovio might have a different schema referenced that your MEI file. 
+With this feature the encoding can be newly rendered running once through Verovio. Rerendering will also correct the formating of the file like indentation (to just indent a selected part of a file use `Code -> Indent selection`). Note that the MEI encoding returned from Verovio might have a different schema referenced than your original MEI file. 
 
 ### Add or ingest Facsimile
 
