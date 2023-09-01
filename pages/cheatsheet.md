@@ -135,7 +135,12 @@ You can use the following shortcuts in combination with click and drag for selec
 <table>
     <tr>
         <td class="icons"><span class="keyIcon">BACKSPACE</span> or <span class="keyIcon">DELETE</span></td>
-        <td class="explanation">Delete control elements, clef change, accid, artic, beam</td>
+        <td class="explanation">Delete selected elements both in encoding and notation. 
+            Applies to all control elements, clef change, accid, artic, beam, beamSpan, note, chord, rest, mRest, multiRest. 
+            When deleting the last note inside a chord, beam, tuplet, fTrem, bTrem, these parent elements will also get deleted. 
+            When deleting an element that is been pointed to by another element (such as by a slur through `@startid` or `@endid`), 
+            this pointing element will also be deleted.
+        </td>
     </tr>
 </table>
 
