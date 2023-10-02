@@ -338,7 +338,7 @@ Key bindings insert elements without placement attribute by default. To insert o
         <td class="explanation">Insert F clef <i>before</i> selected element</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon cmd3Key"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">F</span></td>
+        <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">F</span></td>
         <td class="explanation">Insert F clef <i>after</i> selected element</td>
     </tr>
     <tr>
