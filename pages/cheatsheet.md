@@ -310,7 +310,7 @@ Key bindings insert elements without placement attribute by default. To insert o
         <td class="explanation">Insert G clef <i>before</i> selected element</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">G</span></td>
+        <td class="icons"><span class="keyIcon cmd3Key"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">G</span></td>
         <td class="explanation">Insert G clef <i>after</i> selected element</td>
     </tr>
     <tr>
@@ -318,12 +318,16 @@ Key bindings insert elements without placement attribute by default. To insert o
         <td class="explanation">Insert F clef <i>before</i> selected element</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon cmdKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">F</span></td>
+        <td class="icons"><span class="keyIcon cmd3Key"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">F</span></td>
         <td class="explanation">Insert F clef <i>after</i> selected element</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon ctrlKey"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">C</span></td>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">C</span></td>
         <td class="explanation">Insert C clef <i>before</i> selected element</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon cmd3Key"></span><span class="keyIcon shiftKey"></span><span class="keyIcon">C</span></td>
+        <td class="explanation">Insert C clef <i>after</i> selected element</td>
     </tr>
 </table>
 
@@ -351,7 +355,7 @@ Key bindings insert elements without placement attribute by default. To insert o
         <td class="explanation">Toggle staccatissimo on note/chord</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">C</span></td>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">Y</span></td>
         <td class="explanation">Toggle spiccato on note/chord</td>
     </tr>
 </table>
