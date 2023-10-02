@@ -14,6 +14,7 @@ let altKey = "&#8997;"; // ALT symbol
 let ctrlKey = "&#8963;"; // always CTRL symbol on all OS
 let cmdKey = "&#8963;"; // CTRL symbol on WIN/LINUX; CMD on Mac
 let cmd2Key = "&#8997;"; // ALT symbol on WIN/Linux; CTRL on Mac
+let cmd3Key = "&#8997;"; // ALT symbol on WIN/Linux; CMD on Mac
 
 // Here we use text instead of symbols
 shiftKey = "SHIFT"; // prefer text instead of symbols
@@ -21,6 +22,7 @@ altKey = "ALT";
 ctrlKey = "CTRL";
 cmdKey = "CTRL";
 cmd2Key = "ALT";
+cmd3Key = "ALT";
 
 const platform = (
   navigator?.userAgentData?.platform ||
@@ -32,8 +34,10 @@ const platform = (
 if (platform.startsWith("mac")) {
   cmdKey = "&#8984;"; // CMD symbol
   cmd2Key = "&#8963;"; // CTRL symbol
+  cmd3Key = "&#8984;"; // CMD symbol
   cmdKey = "CMD"; // text instead of symbols
   cmd2Key = "CTRL";
+  cmd3Key = "CMD";
 }
 
 // upon content loaded, change element contents
