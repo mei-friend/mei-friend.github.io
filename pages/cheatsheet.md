@@ -321,7 +321,7 @@ Key bindings insert elements without placement attribute by default. To insert o
     </td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon altKey"></span><span class="keyIcon">O</span></td>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">O</span></td>
         <td class="explanation">Insert octave shift above (15va), spanning two selected notes/chords (below with CTRL)
     </td>
     </tr>
