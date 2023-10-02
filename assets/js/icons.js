@@ -44,6 +44,7 @@ if (platform.startsWith("mac")) {
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".cmdKey").forEach((e) => (e.innerHTML = cmdKey));
   document.querySelectorAll(".cmd2Key").forEach((e) => (e.innerHTML = cmd2Key));
+  document.querySelectorAll(".cmd3Key").forEach((e) => (e.innerHTML = cmd3Key));
   document.querySelectorAll(".ctrlKey").forEach((e) => (e.innerHTML = ctrlKey));
   document
     .querySelectorAll(".shiftKey")
