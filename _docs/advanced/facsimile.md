@@ -67,7 +67,7 @@ Another path to generating facsimile information for your encoding is to use the
        <img class="figure-img" src="{{ site.baseurl }}/assets/img/facsimile/DOMD-screenshot.png" 
         alt="Screenshot of the Deep Optical Measure Detector by the CEMFI lab" />
     </a>
-    <figcaption class="figure-caption">Screenshot of the Deep Optical Measure Detector by the <a href="http://www.cemfi.de/" target="_blank">CEMFI lab, Detmold</a>. </figcaption>
+    <figcaption class="figure-caption">Screenshot of the Deep Optical Measure Detector by the <a href="http://www.cemfi.de/" target="_blank">CEMFI lab, Detmold</a> (accessed 19 Nov. 2022). </figcaption>
 </figure>
 
 
@@ -87,7 +87,7 @@ You may insert new [`zone`](https://music-encoding.org/guidelines/v4/elements/zo
 #### Obtaining a fixed number of measures
 
 To ingest this facsimile skeleton file into your encoding, you need to make sure that: 
-* both your encoding and the skeleton file have the same number of [`measure`](https://music-encoding.org/guidelines/v4/elements/measure){:target="_blank"} elements
+* both your encoding and your skeleton file have the same number of [`measure`](https://music-encoding.org/guidelines/v4/elements/measure){:target="_blank"} elements
 * each [`<measure>`](https://music-encoding.org/guidelines/v4/elements/measure){:target="_blank"} has its own (locally-unique) [`<measure@n>`](https://music-encoding.org/guidelines/v4/elements/measure#attributes){:target="_blank"} attribute value, and these values match for corresponding measures across the two files. 
 
 To generate unique measure numbers ([`<measure@n>`](https://music-encoding.org/guidelines/v4/elements/measure#attributes){:target="_blank"}), select `Continue across incomplete measures` and `Continue across endings` in `mei-friend settings –> Renumber measures` in your skeleton file. 
@@ -96,4 +96,4 @@ Renumbering [`measure`](https://music-encoding.org/guidelines/v4/elements/measur
 
 #### Ingesting facsimile into an MEI file
 
-Open your target MEI file and make sure that it has the same number of measure elements and the identical measure numbering ([`<measure@n>`](https://music-encoding.org/guidelines/v4/elements/measure#attributes){:target="_blank"}) as the skeleton file. mei-friend will use this attribute to add a [`<measure@facs>`](https://music-encoding.org/guidelines/v4/elements/measure#attributes){:target="_blank"} attribute linking to a [`zone`](https://music-encoding.org/guidelines/v4/elements/zone){:target="_blank"} in your skeleton file to each measure in your encoding. Click on `Manipulate – Ingest facsimile` and select the skeleton file. After the ingestion, you may re-number your measures as you like, using the provided functionality in the mei-friend settings. Attention: Make sure that the [`body`](https://music-encoding.org/guidelines/v4/elements/body){:target="_blank"} element of your target MEI file has a [`<body@xml:id>`](https://music-encoding.org/guidelines/v4/elements/body#attributes){:target="_blank"} attribute before ingestion.
+Open your target MEI file and make sure that it has the same number of measure elements and the identical measure numbering ([`<measure@n>`](https://music-encoding.org/guidelines/v4/elements/measure#attributes){:target="_blank"}) as the skeleton file. mei-friend will use this attribute to add a [`<measure@facs>`](https://music-encoding.org/guidelines/v4/elements/measure#attributes){:target="_blank"} attribute linking to a [`zone`](https://music-encoding.org/guidelines/v4/elements/zone){:target="_blank"} in your skeleton file to each measure in your encoding. Click on `Manipulate – Ingest facsimile` and select the skeleton file. After the ingestion, you may re-number your measures in a musically sensible way as you like, using the provided functionality in the mei-friend settings. Attention: Make sure that the [`body`](https://music-encoding.org/guidelines/v4/elements/body){:target="_blank"} element of your target MEI file has a [`<body@xml:id>`](https://music-encoding.org/guidelines/v4/elements/body#attributes){:target="_blank"} attribute before ingestion.
