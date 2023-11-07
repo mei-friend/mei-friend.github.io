@@ -308,7 +308,7 @@ Key bindings insert elements without placement attribute by default. To insert o
         <td class="explanation">Insert trill to selected note(s)</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon">N</span></td>
+        <td class="icons"><span class="keyIcon">R</span></td>
         <td class="explanation">Insert turn to selected note(s) (with SHIFT: lower form)</td>
     </tr>
     <tr>
