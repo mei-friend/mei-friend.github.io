@@ -107,7 +107,7 @@ You can use the following shortcuts in combination with click and drag for selec
         <td class="explanation">Select the chord when clicking onto a note</td>
     </tr>
     <tr>
-        <td class="icons"><span class="keyIcon ctrlKey"></span><span class="keyIcon">SPACE</span></td>
+        <td class="icons"><span class="keyIcon ctrlKey"></span><span class="keyIcon altKey"></span><span class="keyIcon">SPACE</span></td>
         <td class="explanation">Switch focus between notation panel and editor panel</td>
     </tr>
 </table>
