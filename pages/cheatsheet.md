@@ -148,6 +148,19 @@ You can use the following shortcuts in combination with click and drag for selec
     </tr>
 </table>
 
+### Manipulate elements
+
+<table>
+    <tr>
+        <td class="icons"><span class="keyIcon">C</span></td>
+        <td class="explanation">Convert selected note(s) to chord(s) and vice versa</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">N</span></td>
+        <td class="explanation">Convert selected note(s) to rest(s) and vice versa, retaining pitch and octave information</td>
+    </tr>
+</table>
+
 ### Moving elements
 
 <table>
@@ -244,6 +257,10 @@ You can use the following shortcuts in combination with click and drag for selec
 Key bindings insert elements without placement attribute by default. To insert or invert placement, use <span class="keyIcon">X</span>. The elements are inserted using `@startid` and `@endid` attributes by default. To insert them with `@tstamp` and `@tstamp2` attributes instead, press <span class="keyIcon cmd2Key"></span> together with the keyboard shortcuts listed below. Time stamp insertion is supported for these elements: `slur`, `tie`, `hairpin`, `fermata`, `dir`, `dynam`, `pedal`, `mordent`, `trill`, `turn`, `glissando`.
 
 <table>
+    <tr>
+        <td class="icons"><span class="keyIcon">N</span></td>
+        <td class="explanation">Insert note, chord, rest (duplicate selected note, chord, rest, or if layer is selected, insert a quarter-note C4 to that layer)</td>
+    </tr>
     <tr>
         <td class="icons"><span class="keyIcon">+</span></td>
         <td class="explanation">Insert accidental sharp &#9839; to currently selected note(s)</td>
