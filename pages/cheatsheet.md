@@ -153,11 +153,11 @@ You can use the following shortcuts in combination with click and drag for selec
 <table>
     <tr>
         <td class="icons"><span class="keyIcon">C</span></td>
-        <td class="explanation">Convert selected note(s) to chord(s) and vice versa</td>
+        <td class="explanation">Convert selected note(s) to a new chord (having selected notes as children and cue, dur, dots, grace, stem.dir attributes in chord element) and vice versa (remove chord element while copying cue, dur, dots, grace, stem.dir attributes to note elements)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">N</span></td>
-        <td class="explanation">Convert selected note(s) to rest(s) and vice versa, retaining pitch and octave information</td>
+        <td class="explanation">Convert selected note(s) to rest(s) and vice versa, retaining pitch and octave information (each element receives new xml:id)</td>
     </tr>
 </table>
 
@@ -259,7 +259,7 @@ Key bindings insert elements without placement attribute by default. To insert o
 <table>
     <tr>
         <td class="icons"><span class="keyIcon">N</span></td>
-        <td class="explanation">Insert note, chord, rest (duplicate selected note, chord, rest, or if layer is selected, insert a quarter-note C4 to that layer)</td>
+        <td class="explanation">Insert a note, chord, rest (that is, duplicate (last) selected note, chord, rest. When selection is a layer, append a new quarter-note C4 to that layer)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">+</span></td>
