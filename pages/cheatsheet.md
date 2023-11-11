@@ -185,6 +185,23 @@ You can use the following shortcuts in combination with click and drag for selec
     </tr>
 </table>
 
+### Manipulate duration
+
+<table>
+    <tr>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">&rarr;</span></td>
+        <td class="explanation">Increase duration of a note, chord, rest, etc.</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">&larr;</span></td>
+        <td class="explanation">Decrease duration of a note, chord, rest, etc.</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon">.</span></td>
+        <td class="explanation">Toggle single dotting of a note, chord, rest, etc. </td>
+    </tr>
+</table>
+
 ### MEI encoding manipulation
 
 <table>
