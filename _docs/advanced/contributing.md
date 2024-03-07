@@ -8,11 +8,13 @@ layout: page
 
 We are grateful for contributions to the mei-friend project in the following areas: 
 
-* Bug reports, 
-* Feature requests, 
-* Contributing encodings to the public repertoire, 
-* Contributing translation fixes and new translations, and 
-* Contributing to the mei-friend codebase.
+1) Bug reports, 
+2) Feature requests, 
+3) Contributing encodings to the public repertoire, 
+4) Contributing translation fixes and new translations, and 
+5) Contributing to the mei-friend codebase.
+
+Note that the first three items do not require any programming knowledge and are accessible to all users of mei-friend: you can contribute to the project by simply using it and providing feedback through the [code repository's issue tracker](https://github.com/mei-friend/mei-friend/issues/new/choose), also available through mei-friend's `Help -> Provide feedback` menu item.
   
 <figure class="figure halfwidth">
     <div class="figure-title">Fig.&thinsp;1: Raising an issue on GitHub.</div>
@@ -21,7 +23,7 @@ We are grateful for contributions to the mei-friend project in the following are
     <figcaption class="figure-caption">Raising an issue on GitHub allows you to file a bug report, to request a new feature, or to make a contribution to the list of publically available repertoire.</figcaption>
 </figure>
 
-For more information, please refer to the [CONTRIBUTING](https://github.com/mei-friend/mei-friend/blob/develop/CONTRIBUTING.md) page. 
+For detailed information, please refer to the [CONTRIBUTING](https://github.com/mei-friend/mei-friend/blob/develop/CONTRIBUTING.md) page. 
 
 # Code of conduct
 
