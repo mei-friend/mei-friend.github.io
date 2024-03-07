@@ -45,6 +45,8 @@
           url: "docs/advanced/env/"
         - title: "Contributing to mei-friend"
           url: "docs/advanced/contributing/"
+        - title: "Code structure"
+          url: "docs/advanced/structure/"
     - title: "Further reading"
       url: "docs/furtherreading"
 - title: "About"
