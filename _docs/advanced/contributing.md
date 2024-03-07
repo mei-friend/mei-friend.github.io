@@ -23,7 +23,7 @@ Note that the first three items do not require any programming knowledge and are
     <figcaption class="figure-caption">Raising an issue on GitHub allows you to file a bug report, to request a new feature, or to make a contribution to the list of publically available repertoire.</figcaption>
 </figure>
 
-For detailed information, please refer to the [CONTRIBUTING](https://github.com/mei-friend/mei-friend/blob/develop/CONTRIBUTING.md) page. 
+{% include alert.html type="info" title="Contributor Guidelines" content="For detailed information, please refer to the <a href="https://github.com/mei-friend/mei-friend/blob/develop/CONTRIBUTING.md">mei-friend contributor guidelines</a>." %}
 
 # Code of conduct
 
