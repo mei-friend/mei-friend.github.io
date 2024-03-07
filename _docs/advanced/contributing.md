@@ -8,11 +8,11 @@ layout: page
 
 We are grateful for contributions to the mei-friend project in the following areas: 
 
-1) Bug reports, 
-2) Feature requests, 
-3) Contributing encodings to the public repertoire, 
-4) Contributing translation fixes and new translations, and 
-5) Contributing to the mei-friend codebase.
+1. Bug reports, 
+2. Feature requests, 
+3. Contributing encodings to the public repertoire, 
+4. Contributing translation fixes and new translations, and 
+5. Contributing to the mei-friend codebase.
 
 Note that the first three items do not require any programming knowledge and are accessible to all users of mei-friend: you can contribute to the project by simply using it and providing feedback through the [code repository's issue tracker](https://github.com/mei-friend/mei-friend/issues/new/choose), also available through mei-friend's `Help -> Provide feedback` menu item.
   
