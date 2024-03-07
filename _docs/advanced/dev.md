@@ -22,6 +22,9 @@ This will guide you to the screen shown in Figure 1 below.
     <figcaption class="figure-caption">Raising an issue on GitHub allows you to file a bug report, to request a new feature, or to make a contribution to the list of publically available repertoire.</figcaption>
 </figure>
 
+It is important that you provide all the required information to reproduce the (mal-)function on our systems. 
+The issue templates provide a clear structure of what precise information to fill in.
+
 ## Running mei-friend on your system
 
 If you want to run and test your own version of mei-friend on your system, please follow the instructions at [INSTALL.md](https://github.com/mei-friend/mei-friend/blob/develop/INSTALL.md). 
