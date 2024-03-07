@@ -44,7 +44,7 @@
         - title: "mei-friend Environments"
           url: "docs/advanced/env/"
         - title: "Contributing to mei-friend"
-          url: "docs/advanced/dev/"
+          url: "docs/advanced/contributing/"
         - title: "Extending the public repertoire"
           url: "docs/advanced/repertoire/"
     - title: "Further reading"
