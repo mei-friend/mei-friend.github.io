@@ -31,12 +31,12 @@ The current environment is reflected:
 3. In the mei-friend version string at the bottom right of the interface; this will be prefixed by 'staging-', 'develop-', or 'testing-' (for those respective environments, see Figure&thinsp;2), or will simply feature a version number (when in the 'production' environment).
 
 
-<figure class="figure halfwidth">
-    <div class="figure-title">Fig.&thinsp;2: The mei-friend logo for the testing environment.</div>
+<figure class="figure twothirdswidth">
+    <div class="figure-title">Fig.&thinsp;2: Screen shot of the mei-friend testing environment.</div>
     <img class="figure-img" src="{{ site.baseurl }}/assets/img/env/testing-screen-shot.png" 
         alt="The mei-friend logo in the staging environment">
     <figcaption class="figure-caption">
-        A screen shot of our testing version ('public alpha-testing') of mei-friend. 
+        A screen shot of our testing version ('public alpha-testing') of mei-friend showing the testing version of our owl mascot *Eulise*. 
         Click on the top-left logo in the user interface to return to the production (stable release) version. 
         The current mei-friend is automatically prefixed with 'testing-' in this environment.
     </figcaption>
