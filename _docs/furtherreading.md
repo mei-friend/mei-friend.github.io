@@ -23,9 +23,20 @@ Humanities Commons collection of pedagogical MEI resources, maintained by the ME
 
 ### On mei-friend
 
-<a name="GoeblWeigl-MEC2021">Goebl, W. & Weigl, D. M. (2022). Alleviating the Last Mile of Encoding: The mei-friend Package for the Atom Text Editor.  In S. Münnich & D. Rizo (Eds.), Music Encoding Conference Proceedings 2021 (pp. 31&ndash;39). University of Alicante. doi:[10.17613/fc1c-mx52](https://doi.org/10.17613/fc1c-mx52){:target="_blank"}
+<a name="GoeblWeigl-MEC2023"/>Goebl, W., & Weigl, D. M. (2023). 
+mei-friend v1.0: Music Encoding in the Browser. 
+Encoding Cultures. Joint MEC and TEI Conference 2023, 
+Paderborn, Germany. https://teimec2023.uni-paderborn.de/contributions/159.html
 
-<a name="GoeblWeigl-MEC2022"/>Goebl, W. & Weigl, D. M. (2022). The mei-friend Web Application: Editing MEI in the Browser. Music Encoding Conference 2022 [Late-breaking Reports]. [forthcoming].
+<a name="GoeblWeigl-MEC2022"/>Goebl, W. & Weigl, D. M. (2023). 
+The mei-friend Web Application: Editing MEI in the Browser. 
+Music Encoding Conference Proceedings 2022 [Late-breaking Reports]. 
+doi:[10.17613/dnj6-yy29](https://dx.doi.org/10.17613/dnj6-yy29){:target="_blank"}
+
+<a name="GoeblWeigl-MEC2021">Goebl, W. & Weigl, D. M. (2022). 
+Alleviating the Last Mile of Encoding: The mei-friend Package for the Atom Text Editor.  
+In S. Münnich & D. Rizo (Eds.), Music Encoding Conference Proceedings 2021 (pp. 31&ndash;39). University of Alicante. 
+doi:[10.17613/fc1c-mx52](https://doi.org/10.17613/fc1c-mx52){:target="_blank"}
 
 ### On the Verovio engraving tool
 
