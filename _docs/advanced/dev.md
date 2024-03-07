@@ -4,7 +4,7 @@ description: How to contribute to the development of mei-friend
 permalink: /docs/advanced/dev/
 layout: page
 ---
-# Developing mei-friend    
+# Contributing to mei-friend    
 
 ## Feedback
 

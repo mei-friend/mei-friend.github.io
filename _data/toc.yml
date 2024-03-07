@@ -43,7 +43,7 @@
           url: "docs/advanced/critapp/"
         - title: "mei-friend Environments"
           url: "docs/advanced/env/"
-        - title: "Developing mei-friend"
+        - title: "Contributing to mei-friend"
           url: "docs/advanced/dev/"
         - title: "Extending the public repertoire"
           url: "docs/advanced/repertoire/"
