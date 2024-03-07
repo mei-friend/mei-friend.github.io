@@ -1,5 +1,5 @@
 ---
-title: Developing mei-friend
+title: Contributing to mei-friend
 description: How to contribute to the development of mei-friend
 permalink: /docs/advanced/dev/
 layout: page
