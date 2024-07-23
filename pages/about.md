@@ -39,7 +39,7 @@ Development of mei-friend has been funded by several research projects over the 
 
 [FWF Signature Sound Vienna 2021&ndash;2024](https://iwk.mdw.ac.at/signature-sound-vienna/){:target="_blank"}
 
-[[Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under the National Research Data Infrastructure – 441958017](https://nfdi4culture.de/){:target="_blank"}
+[Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under the National Research Data Infrastructure – 441958017](https://nfdi4culture.de/){:target="_blank"}
 
 [Weave / FWF E-LAUTE &ndash; Electronic Linked, Annotated, and Unified Tablature Edition 2023&ndash;2026](https://iwk.mdw.ac.at/e-laute/){:target="_blank"}
 
@@ -85,7 +85,7 @@ Development of mei-friend has been funded by several research projects over the 
 
 ## Acknowledgments
 
-We thank Anna Plaksin ([@annplaksin](https://github.com/annplaksin){:target="_blank"}) for her on-going contributions to mei-friend's development via an [NFDI4Culture 2023](https://nfdi4culture.de/){:target="_blank"} ) research tooling development grant: [Musicological mark-up with mei-friend](https://nfdi4culture.de/news-events/news/2nd-forum-further-development-of-research-tools-data-services-report.html){:target="_blank"}.
+We thank Anna Plaksin ([@annplaksin](https://github.com/annplaksin){:target="_blank"}) for her on-going contributions to mei-friend's development via an [NFDI4Culture 2023](https://nfdi4culture.de/){:target="_blank"} research tooling development grant: [Musicological mark-up with mei-friend](https://nfdi4culture.de/news-events/news/2nd-forum-further-development-of-research-tools-data-services-report.html){:target="_blank"}.
 
 We thank Matthäus Pescoller ([@mapscl](https://github.com/mapscl){:target="_blank"}) for contributing to the documentation, and for his extensive testing of mei-friend in the creation of orchestral score encodings in the purvue of [Signature Sound Vienna](https://github.com/signature-sound-vienna){:target="_blank"}.
 
