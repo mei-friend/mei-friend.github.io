@@ -39,7 +39,7 @@ Development of mei-friend has been funded by several research projects over the 
 
 [FWF Signature Sound Vienna 2021&ndash;2024](https://iwk.mdw.ac.at/signature-sound-vienna/){:target="_blank"}
 
-[NFDI4Culture research tooling development grant 2023](https://nfdi4culture.de/){:target="_blank"}
+[[Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under the National Research Data Infrastructure – 441958017](https://nfdi4culture.de/){:target="_blank"}
 
 [Weave / FWF E-LAUTE &ndash; Electronic Linked, Annotated, and Unified Tablature Edition 2023&ndash;2026](https://iwk.mdw.ac.at/e-laute/){:target="_blank"}
 
