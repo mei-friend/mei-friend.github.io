@@ -24,7 +24,7 @@ Supported formats (through Verovio):
 
 ### Open local file through file dialog
 
-To open a music encoding file in any of the supported formats from your local file system, use the file dialog window by clicking `Menu–>Open file` (or pressing `CTRL O` on PC, or `CMD O` on macOS; see Fig.&thinsp;1). There are separate menu items for handling specific file types (MusicXML, Humdrum Kern, PAE, and ABC), which open the same file dialog but filter it using the corresponding format's typical file extension.
+To open a music encoding file in any of the supported formats from your local file system, use the file dialog window by clicking `File–>Open file` (or pressing `CTRL-O` on PC, or `CMD-O` on macOS; see Fig.&thinsp;1). There are separate menu items for handling specific file types (MusicXML, Humdrum Kern, PAE, and ABC), which open the same file dialog but filter it using the corresponding format's typical file extension.
 
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;1: mei-friend file menu list.</div>
@@ -67,6 +67,10 @@ mei-friend has several ways to save, export, or download data.
 
 Clicking on `File->Save MEI` (`CTRL-S` on PC, or `CMD-S` on macOS, see Fig.&thinsp;1) will instruct your browser to download the current MEI encoding to your local file system. 
 
+### Save as MEI Basic
+
+Clicking on `File->Save as MEI Basic`(`CTRL-SHIFT-B` on PC, or `CMD-SHIFT-B` on macOS) will instruct your browser to download a simplified version (without any editorial or analytical possibilities, as well as the integration of facsimiles and recordings) of the current MEI encoding to your local file system.
+
 ### Save SVG
 
 Clicking on `File->Save SVG` will instruct your browser to download the SVG image currently displayed in the notation panel. 
@@ -93,6 +97,10 @@ To generate and download a PDF file for the selected pages, click the `Save PDF`
     </a>
     <figcaption class="figure-caption">In 'Preview PDF' mode, the editor panel is hidden, and the notation panel is expanded to show a full page, with an additional page-range selector modal and a save-PDF button in the notation control bar. On the right, the Verovio settings panel is shown to adjust the details of the preview.</figcaption>
 </figure>
+
+### Generate mei-friend URL
+
+This feature allows you to create a unique link of your current encoding that can be shared with other users. By clicking on `File->Generate mei-friend URL` (`CTRL-L` on PC, or `CMD-L` on macOS) the link will be automatically copied to your clipboard.
 
 ### Git Commit
 
