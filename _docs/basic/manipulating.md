@@ -35,13 +35,13 @@ If you want some elements in your score to be aligned vertically, select all of 
 
 ### Deleting elements
 
-Simply delete an element with the `DELETE` or `BACKSPACE` key. The delete operation not only removes the selected element, it will also tidy up the encoding as required. For example, deleting an `octave` element will remove also all `oct.ges` of the notes under the octave extender line; or removing a beam, will remove the beam tag around the selected notes and readjust the indentation of the encoding. (Note: This does not apply to notes. Notes or chords can currently only be removed manually in the editor panel).
+Simply delete an element with the `DELETE` or `BACKSPACE` key. The delete operation not only removes the selected element, it will also tidy up the encoding as required. For example, deleting an `octave` element will remove also all `oct.ges` of the notes under the octave extender line; or removing a beam, will remove the beam tag around the selected notes and readjust the indentation of the encoding.
 
 ### Moving notes in pitch and across staves
 
-To modify the pitch of one or several selected notes, use `SHIFT - UP/DOWN` for shifting the pitch by one (chromatic) semi-tone, `ALT - SHIFT - UP/DOWN` for shifting the pitch diatonically, or in combination with a modifyer key (`CTRL` or `CMD` under macOS) by an octave. 
+To modify the pitch of one or several selected notes, use `SHIFT - UP/DOWN` for shifting the pitch by one (chromatic) semi-tone, `ALT - SHIFT - UP/DOWN` (`OPTION - SHIFT - UP/DOWN` under macOS) for shifting the pitch diatonically, or in combination with a modifier key (`CTRL` on PC or `CMD` under macOS) by an octave. 
 
-Selected notes or chords may be moved across staves (such as required in piano scores), using `CMD/CTRL - ALT UP/DOWN`. This will modify (or add or remove) the `@staff` attribute for all selected elements to indicate the altered staff number that the selected element should appear in. 
+Selected notes or chords may be moved across staves (such as required in piano scores), using `CTRL - ALT - UP/DOWN` (`CMD - OPTION - UP/DOWN` under macOS). This will modify (or add or remove) the `@staff` attribute for all selected elements to indicate the altered staff number that the selected element should appear in. 
 ### Checking gestural accidentals (@accid.ges)
 
 The MEI schema allows having the attributes `@accid` and `@key.sig` or `keySig@sig` independently of the sounding, the gestural pitch accidental of the notes. So, to encode semantically correct tones in CMN, the `@accid.ges` attribute depends on the accidental context by the key signature or the current measure. Thus, there is ample opportunity for encoding inconsistencies. 
