@@ -19,7 +19,7 @@ Using the `Insert` menu functions in the menu bar (or shortcuts) to add elements
 
 ## Selecting elements
 
-If you edit directly in the notation panel you can also select multiple elements and make changes for more than one element at once. To make it easier to select slurs or less tedious to click on articulation elements like staccato dots or accents you can enable [drag-select]({{ site.baseurl }}/docs/basic/settings/#drag-select): Go to `settings -> mei-friend` and enable `select slurs` and `select placement elements` under `drag select`. Holding `CTRL` (`CMD` under macOS) while leftclicking, selecting multiple elements is possible. To click-select the entire chord element, hold `ALT` while clicking on a note insied a chord.
+If you edit directly in the notation panel you can also select multiple elements and make changes for more than one element at once. To make it easier to select slurs or less tedious to click on articulation elements like staccato dots or accents you can enable [drag-select]({{ site.baseurl }}/docs/basic/settings/#drag-select): Go to `settings -> mei-friend` and enable `select slurs` and `select placement elements` under `drag select`. Holding `CTRL` (`CMD` under macOS) while leftclicking, selecting multiple elements is possible. To click-select the entire chord element, hold `ALT` (`OPTION` under macOS) while clicking on a note inside a chord.
 
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;1: Drag select.</div>
@@ -54,9 +54,9 @@ These two methods can also be mixed by using `@startid` with `@tstamp2` or `@tst
 
 ### Inserting dynamics, directives, and other control elements
 
-A control element (such as dynamics, directives) or ornaments (trills, mordents) may be added to the selected element with the keyboard shortcut `D` (see the menu bar or the [cheat sheet]({{ site.baseurl }}/cheatsheet/#inserting-elements)) for a list of shortcuts). By default, a control element is added without a `@place` attribute (or the equivalent `@curvedir` in slurs). To set or change this attribute, use `Invert placement` (`X`) multiple times, if necessary. Use `SHIFT - X` to set `@place` to `between`, such as in piano scores (see [between placement]({{ site.baseurl }}/docs/basic/manipulating/#moving-and-deleting-elements) for more details). The default dynamic that is inserted is always "mf"; it can be changed by editing the string between the tags.
+A control element (such as dynamics, directives) or ornaments (trills, mordents) may be added to the selected element with the respective keyboard shortcuts (see the menu bar or the [cheat sheet]({{ site.baseurl }}/cheatsheet/#inserting-elements) for a list of shortcuts). By default, a control element is added without a `@place` attribute (or the equivalent `@curvedir` in slurs). To set or change this attribute, use `Invert placement` (`X`) multiple times, if necessary. Use `SHIFT - X` to set `@place` to `between`, such as in piano scores (see [between placement]({{ site.baseurl }}/docs/basic/manipulating/#moving-and-deleting-elements) for more details). The default dynamic that is inserted is always "mf"; it can be changed by editing the string between the tags.
 
-To insert elements with `@tstamp` and `@tstamp2` attributes instead of start and end ids, press the <span class="keyIcon cmd2Key"></span> key simultaneously. Time stamp insertion is supported for these elements: `slur`, `tie`, `hairpin`, `fermata`, `dir`, `dynam`, `pedal`, `mordent`, `trill`, `turn`, `glissando`.
+To insert elements with `@tstamp` and `@tstamp2` attributes instead of start and end ids, press the `CTRL` (`CMD` under macOS) key simultaneously. Time stamp insertion is supported for these elements: `slur`, `tie`, `hairpin`, `fermata`, `dir`, `dynam`, `pedal`, `mordent`, `trill`, `turn`, `glissando`.
 
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;4: Inserting dynamics and inverting its placement.</div>
