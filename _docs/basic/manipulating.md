@@ -24,7 +24,7 @@ A special case is between placement, such as typically found in piano music: `SH
 
 ### Creating vertical groups
 
-If you want some elements in your score to be aligned vertically, select all of them and use `Add vertical group` or shortcut `V`. This will add an attribute [`@vgrp`](https://music-encoding.org/guidelines/v4/attribute-classes/att.verticalgroup.html) with a group number unused on the current page to your elements. Elements with the same group number will be vertically aligned by Verovio. A typical case would be a hairpin-dynamic connection as seen in Fig. 1 with the crescendo-forte. 
+If you want some elements in your score to be aligned vertically, select all of them and use `Add vertical group` or shortcut `V`. This will add an attribute [`@vgrp`](https://music-encoding.org/guidelines/v5/attribute-classes/att.verticalgroup.html) with a group number unused on the current page to your elements. Elements with the same group number will be vertically aligned by Verovio. A typical case would be a hairpin-dynamic connection as seen in Fig. 1 with the crescendo-forte. 
 
 <figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;2: Example of vertical groups with dynamics.</div>

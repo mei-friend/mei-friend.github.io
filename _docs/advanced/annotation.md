@@ -10,7 +10,7 @@ Annotation is an important affordance of musical score within a variety of use-c
 
 ## Inline vs. stand-off annotations
 
-mei-friend supports two distinct annotation modalities: inline annotations, created within the MEI document, using the <a href="https://music-encoding.org/guidelines/v4/elements/annot.html">`<annot>` element</a>; and, stand-off annotations, created using external [Linked Data](https://www.w3.org/DesignIssues/LinkedData.html){:target="_blank"} structures which target elements within the document.
+mei-friend supports two distinct annotation modalities: inline annotations, created within the MEI document, using the <a href="https://music-encoding.org/guidelines/v5/elements/annot.html">`<annot>` element</a>; and, stand-off annotations, created using external [Linked Data](https://www.w3.org/DesignIssues/LinkedData.html){:target="_blank"} structures which target elements within the document.
 
 The two modalities each have their benefits and drawbacks. Inline annotations are housed within the MEI document, which is useful where they are intended to be readily available to the encoding's audience -- they are tightly coupled (indeed, part of) the MEI document they are describing. However, they can only be created by those with write-access to the MEI encoding. Of course, a user might download an MEI file from a Web server and then add `<annot>` elements locally; but these annotations would not be available to others viewing the file at its original location, unless it were overwritten by the newly-annotated version. 
 
@@ -44,7 +44,7 @@ Choose among the tools available through the annotation panel to annotate your s
 </figure>
 
 #### Highlight 
-The 'Highlight' tool (highlighter icon) creates an inline annotation that targets each selected element: an <a href="https://music-encoding.org/guidelines/v4/elements/annot.html">`annot` element</a> with each selected element's `@xml:id` in its [`<annot@plist>`](https://music-encoding.org/guidelines/v4/elements/annot.html#attributes){:target="_blank"}. The `<annot>` is placed within the encoding at the [closest valid location](https://music-encoding.org/guidelines/v4/elements/annot.html#containedBy){:target="_blank"} relative to the first selected element.
+The 'Highlight' tool (highlighter icon) creates an inline annotation that targets each selected element: an <a href="https://music-encoding.org/guidelines/v5/elements/annot.html">`annot` element</a> with each selected element's `@xml:id` in its [`<annot@plist>`](https://music-encoding.org/guidelines/v5/elements/annot.html#attributes){:target="_blank"}. The `<annot>` is placed within the encoding at the [closest valid location](https://music-encoding.org/guidelines/v5/elements/annot.html#containedBy){:target="_blank"} relative to the first selected element.
 
 If the [`Show annotations`]({{ site.base_url}}/docs/basic/settings#annotations) setting is not disabled, the selected elements will be highlighted using green shading within the notation panel (Fig.&thinsp;3).
 
@@ -56,7 +56,7 @@ If the [`Show annotations`]({{ site.base_url}}/docs/basic/settings#annotations) 
 </figure>
 
 #### Describe
-The `Describe` tool (pencil icon) creates an inline annotation using the same mechanism as the [`Highlight`](#highlight) tool. In addition, it pops up an alert window to prompt the user to enter a textual description. This description is then entered into the [body of the generated `annot` element](https://music-encoding.org/guidelines/v4/elements/annot.html#mayContain){:target="_blank"} as textual content. 
+The `Describe` tool (pencil icon) creates an inline annotation using the same mechanism as the [`Highlight`](#highlight) tool. In addition, it pops up an alert window to prompt the user to enter a textual description. This description is then entered into the [body of the generated `annot` element](https://music-encoding.org/guidelines/v5/elements/annot.html#mayContain){:target="_blank"} as textual content. 
 
 #
 
@@ -68,7 +68,7 @@ The `Describe` tool (pencil icon) creates an inline annotation using the same me
 </figure>
 
 #### Link
-The `Link` tool (chain-link icon) creates an inline annotation using the same mechanism as the [`Highlight`](#highlight) tool. In addition, it pops up an alert window to prompt the user to enter a URI (Web address). This URI is then entered into the [body of the generated `annot` element](https://music-encoding.org/guidelines/v4/elements/annot.html#mayContain){:target="_blank"} as a [`ptr`](https://music-encoding.org/guidelines/v4/elements/ptr.html){:target="_blank"} element with its [`<ptr@target>`](https://mu/ic-encoding.org/guidelines/v4/elements/ptr.html#attributes){:target="_blank"} pointing to the supplied URI. 
+The `Link` tool (chain-link icon) creates an inline annotation using the same mechanism as the [`Highlight`](#highlight) tool. In addition, it pops up an alert window to prompt the user to enter a URI (Web address). This URI is then entered into the [body of the generated `annot` element](https://music-encoding.org/guidelines/v5/elements/annot.html#mayContain){:target="_blank"} as a [`ptr`](https://music-encoding.org/guidelines/v5/elements/ptr.html){:target="_blank"} element with its [`<ptr@target>`](https://mu/ic-encoding.org/guidelines/v4/elements/ptr.html#attributes){:target="_blank"} pointing to the supplied URI. 
 
 If the [`Show annotations`]({{ site.base_url}}/docs/basic/settings#annotations)) setting is not disabled, the selected elements will be highlighted using red shading within the notation panel (Fig.&thinsp;3). The mouse cursor will turn into a pointer indicator when hovering over the selected elements, and a tooltip will display the URI entered by the user (Fig.&thinsp;5). Clicking on a selected element will open the URI in a new browser tab.
 
