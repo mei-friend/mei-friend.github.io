@@ -41,6 +41,8 @@
           url: "docs/advanced/annotation/"
         - title: "Critical apparatus"
           url: "docs/advanced/critapp/"
+        - title: "Editorial Markup"
+          url: "docs/advanced/markup/"
         - title: "mei-friend Environments"
           url: "docs/advanced/env/"
         - title: "Contributing to mei-friend"
