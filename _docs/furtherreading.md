@@ -23,10 +23,12 @@ Humanities Commons collection of pedagogical MEI resources, maintained by the ME
 
 ### On mei-friend
 
+<a name="GoeblWeigl-JOSS2024"/>Goebl, W., & Weigl, D. M. (2024). mei-friend: An Interactive Web-based Editor for Digital Music Encodings. <em>Journal of Open Source Software</em>, 9(97), 6002. doi:[10.21105/joss.06002](https://doi.org/10.21105/joss.06002){:target="_blank"}
+
 <a name="GoeblWeigl-MEC2023"/>Goebl, W., & Weigl, D. M. (2023). 
 mei-friend v1.0: Music Encoding in the Browser. 
 Encoding Cultures. Joint MEC and TEI Conference 2023, 
-Paderborn, Germany. https://teimec2023.uni-paderborn.de/contributions/159.html
+Paderborn, Germany. <https://teimec2023.uni-paderborn.de/contributions/159.html>{:target="_blank"}
 
 <a name="GoeblWeigl-MEC2022"/>Goebl, W. & Weigl, D. M. (2023). 
 The mei-friend Web Application: Editing MEI in the Browser. 
