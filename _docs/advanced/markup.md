@@ -26,18 +26,21 @@ The markup tools may be accessed by clicking the corresponding 'highlighter' ico
     <figcaption class="figure-caption">The 'enrichment panel' (highlighter) icon at the top-right corner of the interface may be used to open and close the enrichment panel. </figcaption>
 </figure>
 
-The enrichment panel has three tabs:
+The enrichment panel has four tabs:
 
 * `Enrichment list`, to obtain a quick overview of the annotations and editorial markups currently present within your encoding
 * `Markup tools`, to create editorial observations in and interventions to the text
 * `Annotation tools`, to generate annotations
+* `Login to Solid`
 
 #### Markup settings
 
-In the markup settings, the person responsible for the editorial changes and the corresponding elements can be selected (Fig.&thinsp;2).
+##### Select markup responsibility
 
-Under `Selected elements`  you can either select you own elements (one or more) in the editor panel or in the notation panel. 
-Under `Accidentals` and `Articulation`
+In the markup settings, the person responsible for the editorial changes can be selected (Fig.&thinsp;2).
+
+But in order to have options to choose from the drop down menu of the markup responsibility setting, there must be a responsibility statement (<a href="https://music-encoding.org/guidelines/v5/elements/respStmt.html">`<respStmt>`</a>) in the MEI-Header (<a href="https://music-encoding.org/guidelines/v5/elements/meiHead.html">`<meiHead>`</a>) of your code. It is important that each `<persName>` entry has an `xml:id` attribute (Fig.&thinsp;3).
+
 
 <figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;2: Markup settings</div>
@@ -46,13 +49,45 @@ Under `Accidentals` and `Articulation`
     <figcaption class="figure-caption">Selecting the markup responsibility and the element selection for the markup.</figcaption>
 </figure>
 
-But in order to have options to choose from the drop down menu of the markup responsibility setting, there must be a responsibility statement (<a href="https://music-encoding.org/guidelines/v5/elements/respStmt.html">`<respStmt>`</a>) in the MEI-Header (<a href="https://music-encoding.org/guidelines/v5/elements/meiHead.html">`<meiHead>`</a>) of your code. It is important that each `<persName>` entry has an `xml:id` attribute (Fig.&thinsp;3).
-
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;3: Responsibility statement</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/markup/respStmt.png"/>
     <figcaption class="figure-caption">The two names from the markup setting appear because they are defined in the responsibility statement in the MEI-Header.</figcaption>
 </figure>
+
+#### Default selection for markup
+
+It is possible to specify different selections for the markup. 
+
+Under `Selected elements`  you can either select you own elements (one or more) in the editor panel or in the notation panel. 
+
+Under `Accidentals` only the accidentals of a note or multiple notes will be selected. This function especially useful if the accidental is embedded as an attribute of the note and will turn it into an element within the note:
+
+
+```
+Before editing:
+<note accid="n" dur="16" oct="4" pname="g" stem.dir="up" />
+
+After using the accidental selection:
+<note dur="16" oct="4" pname="g" stem.dir="up">
+	<sic>
+		<accid accid="n"/>
+	</sic>
+</note>
+```
+Under `Articulation` only the accidentals of a note, a chord or multiple notes/chords will be selected. This function particularly useful if the articulation is embedded as an attribute of the note and will turn it into an element within the note for example:
+
+```
+Before editing:
+<note artic="stacc" dur="8" oct="5" pname="b" stem.dir="down" />
+
+After using the articulation selection:
+<note dur="8" oct="5" pname="b" stem.dir="down">
+	<sic>
+		<artic artic="stacc"/>
+	</sic>
+</note>
+```
 
 #### Add alternative encodings
 
