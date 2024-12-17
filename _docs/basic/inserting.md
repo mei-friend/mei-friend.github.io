@@ -79,7 +79,7 @@ An `octave` element is inserted again on a series of selected notes, pressing `O
 
 ### Inserting a supplied element
 
-For details, please see [inserting supplied elements]({{ site.baseurl }}/docs/advanced/critapp/#inserting-supplied-element).
+For details, please see [Critical Apparatus & Editorial Markup]({{ site.baseurl }}/docs/advanced/markup).
 
 ### Toggling articulation
 

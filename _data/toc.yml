@@ -39,9 +39,7 @@
           url: "docs/advanced/facsimile/"
         - title: Annotating music encodings
           url: "docs/advanced/annotation/"
-        - title: "Critical apparatus"
-          url: "docs/advanced/critapp/"
-        - title: "Editorial Markup"
+        - title: "Critical Apparatus & Editorial Markup"
           url: "docs/advanced/markup/"
         - title: "mei-friend Environments"
           url: "docs/advanced/env/"

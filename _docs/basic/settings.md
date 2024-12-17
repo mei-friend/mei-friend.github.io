@@ -58,6 +58,13 @@ Allows you to show/hide certain control items in the notation control bar in ord
 
 ### MIDI playback
 
+- **Show playback shortcut:** This will cause a shortcut bubble to appear in the bottom-left corner of the mei-friend interface. By clicking on the shortcut bubble, the MIDI playback control bar will open and immediately start playing the playback.
+- **Show MIDI playback control bar:** Shows the MIDI playback control bar at the bottom of the mei-friend interface.
+- **Scroll-follow MIDI playback:** This lets the panel scroll-follow to display the currently-sounding score element, which will be highlighted in the notation if enabled in the settings.
+- **Page-follow MIDI playback:** The page displayed in the notation will flip itself in time to the music while the MIDI player ist playing.
+- **Highlight currently-sounding notes:** Visually highlighting currently-sounding notes in the notation panel during MIDI playback.
+- **Playback expansion:** Select an expansion element to be used for MIDI playback.
+
 More information [here]({{ site.baseurl }}/docs/basic/midiplayback).
 
 ### Transpose
@@ -92,17 +99,36 @@ See also [manipulating]({{ site.baseurl }}/docs/basic/manipulating/#renumbering-
 
 ### Facsimile panel
 
-More information [here]({{ site.baseurl }}/docs/advanced/facsimile)
+- **Show facsimile panel:** Show the score images of the source edition provided in the facsimile element.
+- **Facsimile panel position:** Select facsimile panel position relative to notation.
+- **Facsimile image zoom (%):** Select zoom level o facsimile image (in percent).
+- **Show full page:** Show facsimile image on full page.
+- **Show facsimile zone boxes:** Show the facsimile zone bounding boxes.
+- **Edit facsimile zones:** Edit the facsimile zones. This will link the bounding boxes to the facsimile zones.
+- **Show facsimile titles:** Show facsimile tiles above the source images.
+
+More information [here]({{ site.baseurl }}/docs/advanced/facsimile).
+
+### Handle editorial content
+
+- **Show editorial markup elements:** Highlight all elements contained by editorial markup elements (default: on).
+- **Show markup in PDF:** Show markup in PDF export (default:on).
+- **Content alternative encodings:** Choose default content of alternative encodings. Newly created alternative encodings copie by default the original reading, but can also be created empty.
+- **Select highlight color for:**
+	- `<supplied>`
+	- `<unclear>`
+	- `<sic>`
+	- `<corr>`
+	- `<orig>`
+	- `<reg>`
+	- `<add>`
+	- `<del>`
+
+More information [here]({{ site.baseurl }}/docs/advanced/markup).
 
 ### Use GitHub Actions
 
 This option allows you to hide or show available GitHub Actions when navigating within the repository in the GitHub menu.
-
-### Handle editorial content
-
-- **Show `<supplied>` elements:** Highlight supplied elements in the notation panel (default: on).
-- **Select `<supplied>` highlight color:** Choose the color of the highlights.
-- **Select `<supplied>` responsibility:** Select the person responsible for  supplied elements. The list contains the `xml:id` of every person named in `<meiHead> -> <fileDesc> -> <pubStmt>` as `<respStmt>`.
 
 ## Editor settings
 

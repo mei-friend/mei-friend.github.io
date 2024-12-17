@@ -19,17 +19,17 @@ In contrast, stand-off annotations use Linked Data structures to annotate target
 {% include alert.html type="warning" title="Reading and writing annotations" content="mei-friend currently supports reading and writing of inline annotations, and reading (loading) simple stand-off annotations stored on the Web in compliance with the Web Annotation Data Model. Writing stand-off annotations in this format, automated mapping between inline and stand-off annotations, and support for more music-specific stand-off annotation models, are planned for future development." %}
 
 
-## The annotation panel 
-Annotations may be generated and listed using the annotation panel. This panel may be accessed via the menu by selecting `View->Annotation panel`, via keyboard shortcut `CTRL-A`(or `CMD-A`on a Mac), or by clicking the corresponding 'highlighter' icon in the panel icons area at the top-right of the interface (Fig.&thinsp;1). 
+## The enrichment panel 
+Annotations may be generated and listed using the enrichment panel. This panel may be accessed via the menu by selecting `View->Enrichment panel`, via keyboard shortcut `CTRL-A`(or `CMD-A`on a Mac), or by clicking the corresponding 'highlighter' icon in the panel icons area at the top-right of the interface (Fig.&thinsp;1). 
 
 <figure class="thirdwidth">
-    <div class="figure-title">Fig.&thinsp;1: The 'annotation panel' icon.</div>
+    <div class="figure-title">Fig.&thinsp;1: The 'enrichment panel' icon.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/annotation/panelIcons-Highlight.png" 
             alt="'Annotation Panel' icon" />
-    <figcaption class="figure-caption">The 'annotation panel' (highlighter) icon at the top-right corner of the interface may be used to open and close the annotation panel. </figcaption>
+    <figcaption class="figure-caption">The 'enrichment panel' (highlighter) icon at the top-right corner of the interface may be used to open and close the annotation panel. </figcaption>
 </figure>
 
-The annotation panel has two tabs -- `Tools` to generate annotations, and `List` to obtain a quick overview of the annotations currently present within your encoding.
+The enrichment panel has four tabs -- `Annotation Tools` to generate annotations, `Markup Tools`  to create editorial observations in and interventions to the text, `List` to obtain a quick overview of the annotations currently present within your encoding and an option to log in to Solid.
 
 ### Tools for making annotations 
 To generate inline annotations using mei-friend, you must first [select one or more score elements]({{ site.base_url }}/docs/basic/inserting/#selecting-elements) that you wish to annotate. Note that [each element must possess a valid `@xml:id` attribute]({{ site.base_url }}/docs/basic/manipulating/#add-ids-to-or-remove-from-mei-encoding) in order to be annotated. 
