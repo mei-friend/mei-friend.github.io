@@ -29,7 +29,7 @@ Annotations may be generated and listed using the enrichment panel. This panel m
     <figcaption class="figure-caption">The 'enrichment panel' (highlighter) icon at the top-right corner of the interface may be used to open and close the annotation panel. </figcaption>
 </figure>
 
-The enrichment panel has four tabs -- `Annotation Tools` to generate annotations, `Markup Tools`  to create editorial observations in and interventions to the text, `List` to obtain a quick overview of the annotations currently present within your encoding and an option to log in to `Solid`.
+The enrichment panel has four tabs -- `Annotation Tools` to generate annotations, [`Markup Tools`]({{ site.base_url}}/docs/advanced/markup)  to create editorial observations in and interventions to the text, [`Enrichment List`]({{ site.base_url}}/docs/advanced/enrichlist) to obtain a quick overview of the annotations currently present within your encoding and an option to log in to `Solid`.
 
 ### Tools for making annotations 
 To generate inline annotations using mei-friend, you must first [select one or more score elements]({{ site.base_url }}/docs/basic/inserting/#selecting-elements) that you wish to annotate. Note that [each element must possess a valid `@xml:id` attribute]({{ site.base_url }}/docs/basic/manipulating/#add-ids-to-or-remove-from-mei-encoding) in order to be annotated. 

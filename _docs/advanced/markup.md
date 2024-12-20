@@ -35,7 +35,7 @@ The markup tools may be accessed by clicking the corresponding 'highlighter' ico
 
 The enrichment panel has four tabs:
 
-* `Enrichment list`, to obtain a quick overview of the annotations and editorial markups currently present within your encoding
+* [`Enrichment List`]({{ site.base_url}}/docs/advanced/enrichlist), to obtain a quick overview of the annotations and editorial markups currently present within your encoding
 * `Markup tools`, to create editorial observations in and interventions to the text
 * `Annotation tools`, to generate annotations
 * `Login to Solid`
