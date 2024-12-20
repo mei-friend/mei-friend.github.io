@@ -29,7 +29,7 @@ Annotations may be generated and listed using the enrichment panel. This panel m
     <figcaption class="figure-caption">The 'enrichment panel' (highlighter) icon at the top-right corner of the interface may be used to open and close the annotation panel. </figcaption>
 </figure>
 
-The enrichment panel has four tabs -- `Annotation Tools` to generate annotations, `Markup Tools`  to create editorial observations in and interventions to the text, `List` to obtain a quick overview of the annotations currently present within your encoding and an option to log in to Solid.
+The enrichment panel has four tabs -- `Annotation Tools` to generate annotations, `Markup Tools`  to create editorial observations in and interventions to the text, `List` to obtain a quick overview of the annotations currently present within your encoding and an option to log in to `Solid`.
 
 ### Tools for making annotations 
 To generate inline annotations using mei-friend, you must first [select one or more score elements]({{ site.base_url }}/docs/basic/inserting/#selecting-elements) that you wish to annotate. Note that [each element must possess a valid `@xml:id` attribute]({{ site.base_url }}/docs/basic/manipulating/#add-ids-to-or-remove-from-mei-encoding) in order to be annotated. 
@@ -78,37 +78,6 @@ If the [`Show annotations`]({{ site.base_url}}/docs/basic/settings#annotations))
             alt="Rendered 'link' annotation" />
     <figcaption class="figure-caption">A linked phrase (red shading). The link target URI appears as a tooltip on hover; clicking will open the target in a new tab. </figcaption>
 </figure>
-
-### The annotations list
-
-<figure class="thirdwidth">
-    <div class="figure-title">Fig.&thinsp;6: Annotations list.</div>
-        <img class="figure-img" src="{{ site.baseurl }}/assets/img/annotation/annotationPanel-List.png" 
-            alt="'List' tab of the Annotation panel" />
-    <figcaption class="figure-caption">The 'List' tab of the Annotation Panel lists all currently loaded annotations. </figcaption>
-</figure>
-
-The 'List' tab of the annotations panel (Fig.&thinsp;6) provides a convenient overview of all annotations loaded for the current encoding -- all inline `<annot>` alongside any [stand-off annotations loaded from the Web](#loading-stand-off-annotations-from-the-web), unless these exceed the [maximum number of annotations setting]({{ site.base_url}}/docs/basic/settings#annotations)). 
-
-Each annotation is represented by a 'bubble' (rounded rectangle), each split into an upper and lower region (see Fig.&thinsp;6). 
-
-The upper region characterizes the annotation's meaning, location, and extent:
-* *Type*, represented by a corresponding icon (highlighter: [highlight](#highlight), pencil: [describe](#describe), chain-link: [link](#link))
-* *Location*, represented by a page number (or span of page numbers) corresponding to the (current) page location of the annotated element(s) in the rendered notation -- updated dynamically to track layout changes
-* *Extent*, representing the number of elements annotated
-* *Body*, in the case of [describe](#describe) and [link](#link) annotations, reflecting the textual description or link entered when creating the annotation
-
-The lower region exposes four icons used to interact with the annotation:
-* *Flip to page* (page icon with arrow), to jump to and select the `<annot>` (inline annotations) or the first annotated element (stand-off annotations) annotated element within the editor and notation panels
-* *Inline indicator* (page icon with `<>` symbol), when not grayed out, indicates that the annotation is represented by an inline `<annot>` -- click the icon to copy the corresponding `<annot@xml:id>`to the 
-clipboard. 
-* *Stand-off indicator* (RDF icon, three connected circles -- nodes -- representing a graph), when not grayed out, indicates that the annotation is represented by a stand-off Web Annotation -- click the icon to copy the corresponding URI to the clipboard.
-* *Delete annotation* (square icon with `-`), to delete an annotation; this will remove inline `<annot>` elements, send an `HTTP DELETE` request to attempt to remove stand-off Web Annotations, and unload the annotation from the annotation list. 
-
-Note that we are planning functionality to convert between inline and stand-off annotations using the respective indicator icons in future development. 
-
-#### Loading stand-off annotations from the Web
-When working with an encoding [loaded from the Web via URL]({{ site.base_url }}/docs/basic/import-export/#open-url-and-public-repertoire) or through the [GitHub integration]({{ site.base_url }}/docs/basic/import-export), [Web Annotations targetting element (fragment) URIs within the encoding](#background-targetting-stand-off-annotations) may be loaded in by clicking on the `Load Web Annotation(s)` button with the RDF icon at the top of the [annotations list](#the-annotations-list). When prompted for a URI after clicking this button, you may either enter the URI of a Web Annotation to load it directly; or, you may enter the URI of a [Linked Data Platform](https://www.w3.org/TR/ldp/){:target="_blank"} (LDP) container -- such as those offered by [Solid Pods](https://solidproject.org/){:target="_blank"} -- in which case, any Web Annotations targetting the currently loaded encoding within the container (or, recursively, within contained containers) will be loaded for you.
 
 ## Background: Targetting stand-off annotations 
 The Linked Data paradigm involves the interconnection (linking) of resources stored on the Web by reference to their Web addresses or URIs. Any MEI document stored on the Web has its own URI; for instance, the following URI is the Web address of a sample encoding of an arrangement of Beethoven's *Hymn to Joy*:

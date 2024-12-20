@@ -7,13 +7,20 @@ layout: page
 # Critical Apparatus & Editorial Markup 
 Previously, mei-friend's functionalities targeting MEI's critical apparatus and editorial markup were limited to insertion and display of [`<supplied>`](https://music-encoding.org/guidelines/v5/elements/supplied.html){:target="_blank"} elements.
 
-Since then there have been updates in adding functionalities to the editorial markup. Now it is possible to insert and display [`<supplied>`](https://music-encoding.org/guidelines/v5/elements/supplied.html){:target="_blank"}, [`<choice>`](https://music-encoding.org/guidelines/v5/elements/choice.html){:target="_blank"}, [`<unclear>`](https://music-encoding.org/guidelines/v5/elements/unclear.html){:target="_blank"}, [`<sic>`](https://music-encoding.org/guidelines/v5/elements/sic.html){:target="_blank"}, [`<corr>`](https://music-encoding.org/guidelines/v5/elements/corr.html){:target="_blank"}, [`<orig>`](https://music-encoding.org/guidelines/v5/elements/orig.html){:target="_blank"}, [`<reg>`](https://music-encoding.org/guidelines/v5/elements/reg.html){:target="_blank"}, [`<add>`](https://music-encoding.org/guidelines/v5/elements/add.html){:target="_blank"}, [`<del>`](https://music-encoding.org/guidelines/v5/elements/del.html){:target="_blank"} elements. More information [here]({{ site.baseurl }}/docs/advanced/markup).
+Since then, further functions have been added to the editorial markup. Now it is possible to insert and display [`<supplied>`](https://music-encoding.org/guidelines/v5/elements/supplied.html){:target="_blank"}, [`<choice>`](https://music-encoding.org/guidelines/v5/elements/choice.html){:target="_blank"}, [`<unclear>`](https://music-encoding.org/guidelines/v5/elements/unclear.html){:target="_blank"}, [`<sic>`](https://music-encoding.org/guidelines/v5/elements/sic.html){:target="_blank"}, [`<corr>`](https://music-encoding.org/guidelines/v5/elements/corr.html){:target="_blank"}, [`<orig>`](https://music-encoding.org/guidelines/v5/elements/orig.html){:target="_blank"}, [`<reg>`](https://music-encoding.org/guidelines/v5/elements/reg.html){:target="_blank"}, [`<add>`](https://music-encoding.org/guidelines/v5/elements/add.html){:target="_blank"}, [`<del>`](https://music-encoding.org/guidelines/v5/elements/del.html){:target="_blank"} elements, as described below. 
 
 We plan to support working with [`<app>`](https://music-encoding.org/guidelines/v5/elements/app.html){:target="_blank"} in future development. 
 
 ## Editorial Markup
 
 The editorial markup records changes made to a musical text during its creation and editing. It documents alterations by the composer, copyists, or editors, ensuring transparency and clarity in the editorial process.
+
+<figure class="figure">
+    <div class="figure-title">Fig.&thinsp;1: The markup tool.</div>
+        <img class="figure-img" src="{{ site.baseurl }}/assets/img/markup/markup_example.gif" 
+            alt="'List' tab of the Annotation panel"/>
+    <figcaption class="figure-caption">Add alternative encodings, editorial interventions and discriptive markup with a click.</figcaption>
+</figure>
 
 ### Markup tools
 The markup tools may be accessed by clicking the corresponding 'highlighter' icon in the panel icons area at the top-right of the interface (Fig.&thinsp;1).
@@ -98,14 +105,12 @@ You can either indicate and correct apparent errors (<span style="color:#b30000"
 
 ```
 <choice>
-	<span style="color:#b30000">
-      <sic>
-         <note dur="2" oct="4" pname="g"></note>
-      </sic>
-	</span>      
-      <corr>
-         <note dur="4" oct="4" pname="g"></note>
-      </corr>
+	<sic>
+		<note dur="2" oct="4" pname="g"></note>
+	</sic>     
+	<corr>
+		<note dur="4" oct="4" pname="g"></note>
+	</corr>
 </choice>
 ```
 
