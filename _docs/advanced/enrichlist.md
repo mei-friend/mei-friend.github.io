@@ -4,7 +4,7 @@ description: Overview of annotations and editorial markup and interacting with t
 permalink: /docs/advanced/enrichlist/
 layout: page
 ---
-# Enrichment List 
+# The enrichment list 
 
 The 'List' tab of the enrichment panel (Fig.&thinsp;1) provides a convenient overview of all annotations and editorial markup loaded for the current encoding -- all inline `<annot>` and any [stand-off annotations loaded from the Web](#loading-stand-off-annotations-from-the-web) alongside all [markup elements]({{ site.base_url}}/docs/advanced/markup), unless these exceed the [maximum number of annotations setting]({{ site.base_url}}/docs/basic/settings#annotations)). 
 

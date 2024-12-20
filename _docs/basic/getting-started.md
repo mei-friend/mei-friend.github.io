@@ -47,7 +47,7 @@ When working with [local files]({{ site.base_url }}/docs/basic/import-export#ope
 On the top right of the interface, you will find four **panel icons** used to access the following panels and control bars: 
 * the [MIDI playback control bar]({{ site.base_url }}/docs/basic/midiplayback) allows you to listen to a sonification of your encoding;
 * the [facsimile panel]({{ site.base_url }}/docs/advanced/facsimile) lets you interact with source images referenced from the encoding;
-* the [annotations panel]({{ site.base_url}}/docs/advanced/annotation) provides an interface to read and generate in-line and stand-off score annotations;
+* the [enrichment panel]({{ site.base_url}}/docs/advanced/annotation) provides an interface to read and generate in-line and stand-off score annotations and editorial markup;
 * the [settings panel]({{ site.baseurl }}/docs/basic/settings) permits configuration and personalization of mei-friend on three tabs: 
     * *mei-friend* general application settings
     * *Editor*: settings supplied to the [CodeMirror](https://www.codemirror.net){:target="_blank"} text editor component integrated in mei-friend's editor panel
