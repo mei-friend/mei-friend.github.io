@@ -89,6 +89,8 @@ We thank Anna Plaksin ([@annplaksin](https://github.com/annplaksin){:target="_bl
 
 We thank Matthäus Pescoller ([@mapscl](https://github.com/mapscl){:target="_blank"}) for contributing to the documentation, and for his extensive testing of mei-friend in the creation of orchestral score encodings in the purvue of [Signature Sound Vienna](https://github.com/signature-sound-vienna){:target="_blank"}.
 
+We also thank Sophie Stremel ([@sstremel](https://github.com/sstremel){:target="_blank"}) for updating and enriching the documentation to the latest version.
+
 We thank the MEI community for input to the development of mei-friend. 
 In particular, we would like to acknowledge Laurent Pugin ([@lpugin](https://github.com/lpugin){:target="_blank"}), who contributed the code for schema validation, and 
 Thomas Weber ([@th-we](https://github.com/th-we){:target="_blank"}), who helped to improve the speed mode module.

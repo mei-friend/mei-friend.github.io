@@ -31,6 +31,10 @@ In this panel you have three tabs: mei-friend, editor and Verovio. There is a se
 
 - **Insert application statement:** Inserts default meta data into the first three lines of an MEI file if it is ``Rerenderd via Verovio`` at any point. If you made any changes to the schema used, it is recommended to turn this off so you do not have to change it back every time you rerender.
 
+- **Language:** Select your preferred language.
+
+- **Show splash screen on load:** Switches the mei-friend splash screen, when the application is loaded,  on or off.
+
 ### Drag select
 
 Here you can select the type of elements that will be selectable by mouse drag select. Espescially useful for placement elements and slurs that are difficult to select otherwise. Using this option mei-friend will always highlight the element closest to the cursor in the editor panel.
@@ -43,13 +47,25 @@ Allows you to show/hide certain control items in the notation control bar in ord
 - **Show notation update controls:** Show controls for notation updating behavior after changes in the editor panel. 
 - **Show notation font selector:** Select the notation font used in the notation panel.
 - **Show navigation arrows:** These arrows allow to navigate in the notation panel from note to note horizontally or vertically (alternatively use the four arrow keys).
+- **Show speed mode checkbox:** Show the speed mode checkbox in the notation panel. For more information about the speed mode see [Working with large files: Speed mode]({{ site.baseurl }}/docs/advanced/largefiles.md).
 
 <figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;2: Controls in the notation panel.</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/settings/show_controls.PNG" 
             alt="Controls in the notation panel" />
-    <figcaption class="figure-caption">(1) Update controls (2) Notation font selector (3) Navigation arrows.</figcaption>
+    <figcaption class="figure-caption">(1) Update controls (2) Notation font selector (3) Navigation arrows (4) Speed mode controls.</figcaption>
 </figure>
+
+### MIDI playback
+
+- **Show playback shortcut:** This will cause a shortcut bubble to appear in the bottom-left corner of the mei-friend interface. By clicking on the shortcut bubble, the MIDI playback control bar will open and immediately start playing the playback.
+- **Show MIDI playback control bar:** Shows the MIDI playback control bar at the bottom of the mei-friend interface.
+- **Scroll-follow MIDI playback:** This lets the panel scroll-follow to display the currently-sounding score element, which will be highlighted in the notation if enabled in the settings.
+- **Page-follow MIDI playback:** The page displayed in the notation will flip itself in time to the music while the MIDI player ist playing.
+- **Highlight currently-sounding notes:** Visually highlighting currently-sounding notes in the notation panel during MIDI playback.
+- **Playback expansion:** Select an expansion element to be used for MIDI playback.
+
+More information [here]({{ site.baseurl }}/docs/basic/midiplayback).
 
 ### Transpose
 mei-friend exposes [Verovio's transposition functionality](https://book.verovio.org/advanced-topics/transposition.html){:target="_blank"} to be controlled through the mei-friend settings panel. Verovio supports a base-40 transposition system that allows for all musically sensible transposition intervals containing up to two sharps or flats (double augmented or double diminished, respectively). 
@@ -83,13 +99,36 @@ See also [manipulating]({{ site.baseurl }}/docs/basic/manipulating/#renumbering-
 
 ### Facsimile panel
 
-More information [here]({{ site.baseurl }}/docs/advanced/facsimile)
+- **Show facsimile panel:** Show the score images of the source edition provided in the facsimile element.
+- **Facsimile panel position:** Select facsimile panel position relative to notation.
+- **Facsimile image zoom (%):** Select zoom level o facsimile image (in percent).
+- **Show full page:** Show facsimile image on full page.
+- **Show facsimile zone boxes:** Show the facsimile zone bounding boxes.
+- **Edit facsimile zones:** Edit the facsimile zones. This will link the bounding boxes to the facsimile zones.
+- **Show facsimile titles:** Show facsimile tiles above the source images.
+
+More information [here]({{ site.baseurl }}/docs/advanced/facsimile).
 
 ### Handle editorial content
 
-- **Show `<supplied>` elements:** Highlight supplied elements in the notation panel (default: on).
-- **Select `<supplied>` highlight color:** Choose the color of the highlights.
-- **Select `<supplied>` responsibility:** Select the person responsible for  supplied elements. The list contains the `xml:id` of every person named in `<meiHead> -> <fileDesc> -> <pubStmt>` as `<respStmt>`.
+- **Show editorial markup elements:** Highlight all elements contained by editorial markup elements (default: on).
+- **Show markup in PDF:** Show markup in PDF export (default:on).
+- **Content alternative encodings:** Choose default content of alternative encodings. Newly created alternative encodings copie by default the original reading, but can also be created empty.
+- **Select highlight color for:**
+	- `<supplied>`
+	- `<unclear>`
+	- `<sic>`
+	- `<corr>`
+	- `<orig>`
+	- `<reg>`
+	- `<add>`
+	- `<del>`
+
+More information [here]({{ site.baseurl }}/docs/advanced/markup).
+
+### Use GitHub Actions
+
+This option allows you to hide or show available GitHub Actions when navigating within the repository in the GitHub menu.
 
 ## Editor settings
 
@@ -107,6 +146,7 @@ More information [here]({{ site.baseurl }}/docs/advanced/facsimile)
 ### Editor behavior
 
 - **Auto validation:** Enable automatic validation to validate encoding against schema after each edit. This feature works like a spell checker for MEI. More information [here]({{ site.baseurl }}/docs/basic/validation).
+- **Auto show validation report:** The validation report will be displayed automatically at the end of the validation process.
 - **Auto close brackets:** Automatically close brackets.
 - **Auto close tags:** Automatically close tags of elements if written by hand.
 - **Match tags:** Highlight elements tags around the cursor in the editor.
