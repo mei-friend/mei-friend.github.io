@@ -80,10 +80,30 @@ Changes can be made via the notation panel using the [`Inserting`]({{ site.base_
 
 ## Internationalization
 
-To satisfy mei-friend's aspiration to user-friendliness, selection of the language of the user interface is provided through the world panel icon at the top-right corner of the mei-friend window. Currently, the most common languages are supported (English as the default language, and currently Catalan, German, Spanish, French, Italian, Japanese, Polish and Ukrainian); however, we are aware that many are missing. Please note that we have used automatic translation support to generate many of those language files. If there is any strange formulation in a language you know or you feel that a specific language is missing, please provide us feedback through a [GitHub issue](https://github.com/mei-friend/mei-friend/issues/new/choose){:target="_blank"} or &ndash; even better &ndash; through a pull request with the edited or added language file of [your fork of the mei-friend repository](https://github.com/mei-friend/mei-friend/fork){:target="_blank"}. The language pack files are simple JavaScript files in the [`app/static/lang`](https://github.com/mei-friend/mei-friend/tree/main/app/static/lang){:target="_blank"} directory. The language pack contains a constant object named `lang` with a key/value combination for each menu item with text; the key name is simultaneously the element identifier in the user interface.
+In line with mei-friend's aspiration to user-friendliness, it is possible to translate the application's user interface into several different languages using the globe icon at the top-right corner of the mei-friend window. If your browser's language is supported, this will be the default chosen when you first load the interface; otherwise, English wil be chosen as a default.
+
+As of v1.2.0, supported languages include:
+* Bosnian
+* Catalan
+* Chinese
+* Croatian
+* Danish
+* German
+* English
+* Esperanto
+* French
+* Italian
+* Japanese
+* Dutch
+* Polish
+* Serbian
+* Spanish
+* Ukranian
+  
+Translations of the interface to a new language are done in a two-stage process: first, automatic translation of the default English language-pack, followed by manual verification and correction by members of the MEI community. If you detect any strange or incorrect formulations in a language you know, or you would like a specific language to be supported, please provide us feedback through a [GitHub issue](https://github.com/mei-friend/mei-friend/issues/new/choose){:target="_blank"} or &ndash; even better &ndash; through a pull request with the edited or added language file of [your fork of the mei-friend repository](https://github.com/mei-friend/mei-friend/fork){:target="_blank"}. The language pack files are simple JavaScript files in the [`app/static/lang`](https://github.com/mei-friend/mei-friend/tree/main/app/static/lang){:target="_blank"} directory. The language pack contains a constant object named `lang` with a key/value combination for each menu item with text; the key name is simultaneously the element identifier in the user interface.
 
 ## mei-friend appearance
-You may personalize the visual appearance of mei-friend by choosing among the themes available under `Editor -> Editor appearance` in the [settings]({{ site.base_url }}/docs/basic/settings). There are a variety of bright and dark themes available; *Eulise the Owl*'s circadian rhythm will adjust accordingly. If `Theme` is set to default, a pre-configured theme matching the dark-mode / night-shift settings of your operating system will be applied. You may also choose to math the notation's appearance to your selected theme by activating the `Notation matches theme` checkbox. In case of a dark theme, this will invert the usual colors of the notation.
+You may personalize the visual appearance of mei-friend by choosing among the themes available under `Editor -> Editor appearance` in the [settings]({{ site.base_url }}/docs/basic/settings). There are a variety of bright and dark themes available; *Eulise the Owl*'s circadian rhythm will adjust accordingly. If `Theme` is set to default, a pre-configured theme matching the dark-mode / night-shift settings of your operating system will be applied. You may also choose to match the notation's appearance to your selected theme by activating the `Notation matches theme` checkbox. In case of a dark theme, this will invert the usual colors of the notation.
 
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;4: Themes.</div>
