@@ -64,31 +64,35 @@ But in order to have options to choose from the drop down menu of the markup res
 
 #### Default selection for markup
 
-It is possible to specify different selections for the markup. 
+Elements can be selected for markup according to different modes, determined using the 'Default selection for markup' drop-down menu: 
 
-Under `Selected elements`  you can either select you own elements (one or more) in the editor panel or in the notation panel. 
+Using `Selected elements`, MEI elements may be selected using either the editor panel or the notation panel. 
 
-Under `Accidentals` only the accidentals of a note or multiple notes will be selected. This function especially useful if the accidental is embedded as an attribute of the note and will turn it into an element within the note:
+Using `Accidentals`, only the accidentals of the note(s) within the selection will be marked up. This function is especially useful if the accidental is embedded as an attribute of the note; in this case, it will be automatically changed it into an element within the note, to make it accessible to markup:
 
-
-```
 Before editing:
+```
 <note accid="n" dur="16" oct="4" pname="g" stem.dir="up" />
+```
 
 After using the accidental selection:
+```
 <note dur="16" oct="4" pname="g" stem.dir="up">
 	<sic>
 		<accid accid="n"/>
 	</sic>
 </note>
 ```
-Under `Articulation` only the accidentals of a note, a chord or multiple notes/chords will be selected. This function particularly useful if the articulation is embedded as an attribute of the note and will turn it into an element within the note for example:
 
-```
+Using `Articulation`, only the accidentals of a note, a chord or multiple notes/chords will be selected. As in the case of accidentals above, this function is particularly useful if the articulation is embedded as an attribute of the note; it will be turned into an element within the note to make it accessible to markup. For example:
+
 Before editing:
+```
 <note artic="stacc" dur="8" oct="5" pname="b" stem.dir="down" />
+```
 
 After using the articulation selection:
+```
 <note dur="8" oct="5" pname="b" stem.dir="down">
 	<sic>
 		<artic artic="stacc"/>
@@ -128,7 +132,7 @@ or indicate regularization of variant, irregular and non-standard forms (<span s
 ```
 ##### Interventions in the text
 
-The <a href="https://music-encoding.org/guidelines/v5/elements/subst.html">`<subst>`</a> element groups transcriptional elements when the combination is to be regarded as a single intervention in the text. 
+The <a href="https://music-encoding.org/guidelines/v5/elements/subst.html">`<subst>`</a> element groups transcriptional elements when their combination is to be regarded as a single intervention in the text. 
 The most common combination is a replacement of portions of the musical text using both the <span style="color:#8585ad">`<del>`</span> and <span style="color:#00cccc">`<add>`</span> element:
 
 ```
@@ -144,6 +148,7 @@ The most common combination is a replacement of portions of the musical text usi
     </add>
 </subst>
 ```
+
 #### Add editorial interventions
 
 <span style="color:#e69500">`<supplied>`</span>: Contains material supplied by the transcriber or editor for any reason.
