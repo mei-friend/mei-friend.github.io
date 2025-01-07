@@ -85,15 +85,13 @@ Development of mei-friend has been funded by several research projects over the 
 
 ## Acknowledgments
 
-We thank Anna Plaksin ([@annplaksin](https://github.com/annplaksin){:target="_blank"}) for her on-going contributions to mei-friend's development via an [NFDI4Culture 2023](https://nfdi4culture.de/){:target="_blank"} research tooling development grant: [Musicological mark-up with mei-friend](https://nfdi4culture.de/news-events/news/2nd-forum-further-development-of-research-tools-data-services-report.html){:target="_blank"}.
-
 We thank Matthäus Pescoller ([@mapscl](https://github.com/mapscl){:target="_blank"}) for contributing to the documentation, and for his extensive testing of mei-friend in the creation of orchestral score encodings in the purvue of [Signature Sound Vienna](https://github.com/signature-sound-vienna){:target="_blank"}.
 
-We also thank Sophie Stremel ([@sstremel](https://github.com/sstremel){:target="_blank"}) for updating and enriching the documentation to the latest version.
+We also thank Sophie Stremel ([@sstremel](https://github.com/sstremel){:target="_blank"}) for her contributions in updating and enriching the documentation.
 
 We thank the MEI community for input to the development of mei-friend. 
 In particular, we would like to acknowledge Laurent Pugin ([@lpugin](https://github.com/lpugin){:target="_blank"}), who contributed the code for schema validation, and 
-Thomas Weber ([@th-we](https://github.com/th-we){:target="_blank"}), who helped to improve the speed mode module.
+Thomas Weber ([@th-we](https://github.com/th-we){:target="_blank"}), who helped to improve the speed mode module, and Anna Plaksin ([@annplaksin](https://github.com/annplaksin){:target="_blank"}) for implementing extensive functionalities for editorial mark-up, alongside other contributions to mei-friend's development via an [NFDI4Culture 2023](https://nfdi4culture.de/){:target="_blank"} research tooling development grant: [Musicological mark-up with mei-friend](https://nfdi4culture.de/news-events/news/2nd-forum-further-development-of-research-tools-data-services-report.html){:target="_blank"}.
 
 ## License
 
@@ -104,8 +102,7 @@ The mei-friend documentation is provided under [CC BY 4.0](http://creativecommon
 
 ## Components
 
-The mei-friend Web application uses [CodeMirror](https://codemirror.net){:target="_blank"} as its text editor, and [Verovio](https://www.verovio.org){:target="_blank"} as its music engraving engine. [GitHub](https://github.org){:target="_blank"} integration is provided using [jsgit](https://github.com/creationix/jsgit){:target="_blank"}, [jsgit-browser](https://github.com/LivelyKernel/js-git-browser){:target="_blank"}, and the [GitHub REST API](https://docs.github.com/en/rest){:target="_blank"}. XML-DOM manipulations are performed using [tXml](https://github.com/TobiasNickel/tXml){:target="_blank"} by Tobias Nickel. The MEI validation and RNG loading code is adapted from the implementation in the [Verovio editor](https://editor.verovio.org){:target="_blank"}, kindly contributed by Laurent Pugin. It makes use of [libxml2](https://gitlab.gnome.org/GNOME/libxml2/){:target="_blank"}. PDF functionalities are provided by [PDFKit](https://github.com/foliojs/pdfkit) by Devon Govett, using [SVG-to-PDFKit](https://github.com/alafr/SVG-to-PDFKit). MIDI playback is implemented using [html-midi-player](https://github.com/cifkao/html-midi-player){:target="_blank"}. This is itself powered by [Magenta.js](https://github.com/magenta/magenta-js/tree/master/music/){:target="_blank"}, which also provides the [SGM_Plus sound font](https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus/soundfont.json){:target="_blank"} used to sonify your encoding. Icons are taken from GitHub's [Octicons repository](https://github.com/primer/octicons){:target="_blank"}.
-
+The mei-friend Web application uses [CodeMirror](https://codemirror.net){:target="_blank"} as its text editor, and [Verovio](https://www.verovio.org){:target="_blank"} as its music engraving engine. [GitHub](https://github.org){:target="_blank"} integration is provided using using [isomorphic-git](https://isomorphic-git.org/){:target="_blank"} and the [GitHub REST API](https://docs.github.com/en/rest){:target="_blank"}. XML-DOM manipulations are performed using [tXml](https://github.com/TobiasNickel/tXml){:target="_blank"} by Tobias Nickel. The MEI validation and RNG loading code is adapted from the implementation in the [Verovio editor](https://editor.verovio.org){:target="_blank"}, kindly contributed by Laurent Pugin. It makes use of [libxml2](https://gitlab.gnome.org/GNOME/libxml2/){:target="_blank"}. Lute tablature formats are converted to MEI using [luteconv](https://bitbucket.org/bayleaf/luteconv/){:target="_blank"} by Paul Overell, via the [luteconv-webui wrapper service](https://luteconv.mdw.ac.at){:target="blank"} developed in collaboration with Stefan Szepe and hosted at mdw. PDF functionalities are provided by [PDFKit](https://github.com/foliojs/pdfkit) by Devon Govett, using [SVG-to-PDFKit](https://github.com/alafr/SVG-to-PDFKit). MIDI playback is implemented using [html-midi-player](https://github.com/cifkao/html-midi-player){:target="_blank"}. This is itself powered by [Magenta.js](https://github.com/magenta/magenta-js/tree/master/music/){:target="_blank"}, which also provides the [SGM_Plus sound font](https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus/soundfont.json){:target="_blank"} used to sonify your encoding. Icons are taken from GitHub's [Octicons repository](https://github.com/primer/octicons){:target="_blank"}.
 
 The mei-friend documentation website adapts the [Docsy Jekyll template](https://vsoch.github.io/docsy-jekyll/){:target="_blank"}, which is based
 on the beautiful [Docsy](https://github.com/google/docsy){:target="_blank"} template for [Hugo](https://gohugo.io/){:target="_blank"}. The mei-friend documentation website is hosted by [GitHub Pages](https://pages.github.com){:target="_blank"}.
@@ -114,6 +111,9 @@ on the beautiful [Docsy](https://github.com/google/docsy){:target="_blank"} temp
 
 <a name="GoeblWeigl-JOSS2024"></a>
 Goebl, W., & Weigl, D. M. (2024). mei-friend: An Interactive Web-based Editor for Digital Music Encodings. <em>Journal of Open Source Software</em>, 9(97), 6002. doi:[10.21105/joss.06002](https://doi.org/10.21105/joss.06002){:target="_blank"}
+
+<a name="Plaksin-DLfM2023"></a>
+Plaksin, A. (2023). Understanding the needs of music editors in a digital world. Adding support for editorial markup to the mei-friend editor. In Proc. International Conference on Digital Libraries for Musicology, Milan, Italy. doi: [10.1145/3625135.3625149](https://doi.org/10.1145/3625135.3625149){:target="_blank"}
 
 <a name="GoeblWeigl-TEIMEC2023"></a>
 Goebl, W., & Weigl, D. M. (2023). mei-friend v1.0: Music Encoding in the Browser. <em>Encoding Cultures. Joint MEC and TEI Conference 2023<7em>, Paderborn, Germany. https://teimec2023.uni-paderborn.de/contributions/159.html
