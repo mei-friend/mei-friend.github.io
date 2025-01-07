@@ -100,7 +100,7 @@ To generate and download a PDF file for the selected pages, click the `Save PDF`
 
 ### Generate mei-friend URL
 
-This feature allows you to create a unique link of your current encoding that can be shared with other users. By clicking on `File->Generate mei-friend URL` (`CTRL-L` on PC, or `CMD-L` on macOS) the link will be automatically copied to your clipboard.
+This feature allows you to create a unique link that can be shared with other users to allow them to closely replicate your current encoding session (currently open encoding; interface layout; and a variety of settings). By clicking on `File->Generate mei-friend URL` (`CTRL-L` on PC, or `CMD-L` on macOS) the link will be automatically copied to your clipboard.
 
 ### Git Commit
 
