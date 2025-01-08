@@ -10,7 +10,7 @@ layout: page
 
 mei-friend is a friendly, browser-based editor for music encodings. The Music Encoding Intiative ([MEI](https://music-encoding.org){:target="_blank"}) is a welcoming community of music technologists, librarians, historians, theorists, and other music scholars engaged in an ongoing effort to define best practices for representing musical documents and structures. Based on this initiative, a family of <a href="https://music-encoding.org/resources/schemas.html" target="_blank">MEI XML schemas</a> express a core set of rules for recording physical and intellectual characteristics of documents in a variety of notation systems, including modern common Western music notation (CMN), Renaisance-era mensural and Medieval neume notations, and several types of guitar and lute tablature notations. In short, MEI is used to encode music notation in a machine-readable structure.
 
-If you are unfamiliar with MEI (or with XML schemas in general), please refer to the [tutorials published by the Music Encoding Initiative](https://music-encoding.org/resources/tutorials.html){:target="blank} to get up to speed. For comprehensive documentation of MEI's schemas, please refer to the [MEI Guidelines](https://music-encoding.org/guidelines/v4/content/){:target="_blank"}.
+If you are unfamiliar with MEI (or with XML schemas in general), please refer to the [tutorials published by the Music Encoding Initiative](https://music-encoding.org/resources/tutorials.html){:target="blank} to get up to speed. For comprehensive documentation of MEI's schemas, please refer to the [MEI Guidelines](https://music-encoding.org/guidelines/v5/content/){:target="_blank"}.
 
 Beside MEI, mei-friend is able to [open a number of different music encoding formats]({{ site.baseurl }}/docs/basic/import-export). These are all automatically converted to MEI for you in the background when opened. Editing in mei-friend is thus always done in MEI, even on files that originate in a different encoding format. This makes mei-friend especially suitable for 'cleaning up' encodings as the final step in a workflow that may start with, e.g., a rough MusicXML encoding produced by an [Optical Music Recognition (OMR)](https://ddmal.music.mcgill.ca/research/OMR/resources/OMRBibliography/) process, or via conversion from notation software such as [MuseScore](https://musescore.org){:target="_blank"}, [Sibelius](https://www.sibelius.com){:target="_blank"}, [Finale](https://www.finalemusic.com){:target="_blank"}, or [Dorico](https://www.steinberg.net/dorico/){:target="_blank"}. For this reason, we refer to mei-friend as a *last-mile* encoding editor. 
 
@@ -47,7 +47,7 @@ When working with [local files]({{ site.base_url }}/docs/basic/import-export#ope
 On the top right of the interface, you will find four **panel icons** used to access the following panels and control bars: 
 * the [MIDI playback control bar]({{ site.base_url }}/docs/basic/midiplayback) allows you to listen to a sonification of your encoding;
 * the [facsimile panel]({{ site.base_url }}/docs/advanced/facsimile) lets you interact with source images referenced from the encoding;
-* the [annotations panel]({{ site.base_url}}/docs/advanced/annotation) provides an interface to read and generate in-line and stand-off score annotations;
+* the [enrichment panel]({{ site.base_url}}/docs/advanced/annotation) provides an interface to read and generate in-line and stand-off score annotations and editorial markup;
 * the [settings panel]({{ site.baseurl }}/docs/basic/settings) permits configuration and personalization of mei-friend on three tabs: 
     * *mei-friend* general application settings
     * *Editor*: settings supplied to the [CodeMirror](https://www.codemirror.net){:target="_blank"} text editor component integrated in mei-friend's editor panel
@@ -70,7 +70,7 @@ The **editor** and **notation panels** are tightly coupled; changes made using t
     <figcaption class="figure-caption">When the 'Update' checkbox is active, the notation panel automatically updates whenever changes are made in the editor panel. When unchecked, click the icon next to the checkbox to update manually.</figcaption>
 </figure>
 
-mei-friend also allows you to make changes to your encoding directly from the notation panel, allowing you to update the MEI XML without requiring any manual (textual) intervention. For this to work, the MEI elements in your encoding must be furnished with [`@xml:id`](https://music-encoding.org/guidelines/v4/content/shared.html#sharedCommonAttributes){:target="_blank"} identifiers, which are used to connect the graphical (SVG) elements in the notation panel back to the textual (MEI XML) elements the editor. If some of your MEI elements are missing these identifiers, or might be using the same `@xml:id` twice (e.g., due to copying an element), you can [generate the missing `@xml:id`]({{ site.baseurl }}/docs/basic/manipulating/#addremove-ids-tofrom-mei) attributes automatically using the `Manipulate` menu.
+mei-friend also allows you to make changes to your encoding directly from the notation panel, allowing you to update the MEI XML without requiring any manual (textual) intervention. For this to work, the MEI elements in your encoding must be furnished with [`@xml:id`](https://music-encoding.org/guidelines/v5/content/shared.html#sharedCommonAttributes){:target="_blank"} identifiers, which are used to connect the graphical (SVG) elements in the notation panel back to the textual (MEI XML) elements the editor. If some of your MEI elements are missing these identifiers, or might be using the same `@xml:id` twice (e.g., due to copying an element), you can [generate the missing `@xml:id`]({{ site.baseurl }}/docs/basic/manipulating/#addremove-ids-tofrom-mei) attributes automatically using the `Manipulate` menu.
 
 {% include alert.html type="warning" title="Why doesn't the text editor respond to my interactions with the notation?" content='MEI elements must be furnished with <span class="code">@xml:id</span> attributes to connect your interactions with the notation back to the editor panel. Please <a href="/docs/basic/manipulating/#addremove-ids-tofrom-mei">generate these identifiers</a> and try again.' %}
 
@@ -80,10 +80,30 @@ Changes can be made via the notation panel using the [`Inserting`]({{ site.base_
 
 ## Internationalization
 
-To satisfy mei-friend's aspiration to user-friendliness, selection of the language of the user interface is provided through the world panel icon at the top-right corner of the mei-friend window. Currently, the most common languages are supported (English as the default language, and currently Catalan, German, Spanish, French, and Italian); however, we are aware that many are missing. Please note that we have used automatic translation support to generate many of those language files. If there is any strange formulation in a language you know or you feel that a specific language is missing, please provide us feedback through a [GitHub issue](https://github.com/mei-friend/mei-friend/issues/new/choose){:target="_blank"} or &ndash; even better &ndash; through a pull request with the edited or added language file of [your fork of the mei-friend repository](https://github.com/mei-friend/mei-friend/fork){:target="_blank"}. The language pack files are simple JavaScript files in the [`app/static/lang`](https://github.com/mei-friend/mei-friend/tree/main/app/static/lang){:target="_blank"} directory. The language pack contains a constant object named `lang` with a key/value combination for each menu item with text; the key name is simultaneously the element identifier in the user interface.
+In line with mei-friend's aspiration to user-friendliness, it is possible to translate the application's user interface into several different languages using the globe icon at the top-right corner of the mei-friend window. If your browser's language is supported, this will be the default chosen when you first load the interface; otherwise, English wil be chosen as a default.
+
+As of v1.2.0, supported languages include:
+* Bosnian
+* Catalan
+* Chinese
+* Croatian
+* Danish
+* German
+* English
+* Esperanto
+* French
+* Italian
+* Japanese
+* Dutch
+* Polish
+* Serbian
+* Spanish
+* Ukranian
+  
+Translations of the interface to a new language are done in a two-stage process: first, automatic translation of the default English language-pack, followed by manual verification and correction by members of the MEI community. If you detect any strange or incorrect formulations in a language you know, or you would like a specific language to be supported, please provide us feedback through a [GitHub issue](https://github.com/mei-friend/mei-friend/issues/new/choose){:target="_blank"} or &ndash; even better &ndash; through a pull request with the edited or added language file of [your fork of the mei-friend repository](https://github.com/mei-friend/mei-friend/fork){:target="_blank"}. The language pack files are simple JavaScript files in the [`app/static/lang`](https://github.com/mei-friend/mei-friend/tree/main/app/static/lang){:target="_blank"} directory. The language pack contains a constant object named `lang` with a key/value combination for each menu item with text; the key name is simultaneously the element identifier in the user interface.
 
 ## mei-friend appearance
-You may personalize the visual appearance of mei-friend by choosing among the themes available under `Editor -> Editor appearance` in the [settings]({{ site.base_url }}/docs/basic/settings). There are a variety of bright and dark themes available; *Eulise the Owl*'s circadian rhythm will adjust accordingly. If `Theme` is set to default, a pre-configured theme matching the dark-mode / night-shift settings of your operating system will be applied. You may also choose to math the notation's appearance to your selected theme by activating the `Notation matches theme` checkbox. In case of a dark theme, this will invert the usual colors of the notation.
+You may personalize the visual appearance of mei-friend by choosing among the themes available under `Editor -> Editor appearance` in the [settings]({{ site.base_url }}/docs/basic/settings). There are a variety of bright and dark themes available; *Eulise the Owl*'s circadian rhythm will adjust accordingly. If `Theme` is set to default, a pre-configured theme matching the dark-mode / night-shift settings of your operating system will be applied. You may also choose to match the notation's appearance to your selected theme by activating the `Notation matches theme` checkbox. In case of a dark theme, this will invert the usual colors of the notation.
 
 <figure class="figure">
     <div class="figure-title">Fig.&thinsp;4: Themes.</div>
