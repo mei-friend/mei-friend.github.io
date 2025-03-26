@@ -21,6 +21,12 @@ The first time you use mei-friend with your GitHub account, you need to allow me
     <figcaption class="figure-caption">Screenshot of the application authorization to allow mei-friend access your GitHub profile when you are signed in.</figcaption>
 </figure>
 
+### Adding a new organisation
+
+If you have already authorized mei-friend for your GitHub organisations, but you want to add a new organisation to your mei-friend list, you should follow these steps: 
+
+Go to your gitHub account, open the settings panel of your profile, and go to `applications` further down in the menu list. Under the tab `Authorized OAuth Apps` you have the opportunity to click on the `mei-friend` entry and grant new repos access.
+
 ### Sign in
 
 After having authorized mei-friend, you may then sign in to GitHub with your username and password (Fig.&thinsp;2 left-hand side). Depending on your security level of GitHub you may be asked for a two-factor authentication code (such as shown in Fig.&thinsp;2 right-hand side). 
