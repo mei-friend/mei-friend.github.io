@@ -50,7 +50,7 @@ On the top right of the interface, you will find four **panel icons** used to ac
 * the [enrichment panel]({{ site.base_url}}/docs/advanced/annotation) provides an interface to read and generate in-line and stand-off score annotations and editorial markup;
 * the [settings panel]({{ site.baseurl }}/docs/basic/settings) permits configuration and personalization of mei-friend on three tabs: 
     * *mei-friend* general application settings
-    * *Editor*: settings supplied to the [CodeMirror](https://www.codemirror.net){:target="_blank"} text editor component integrated in mei-friend's editor panel
+    * *Editor*: settings supplied to the [CodeMirror 5](https://www.codemirror.net/5/){:target="_blank"} text editor component integrated in mei-friend's editor panel
     * *Verovio*: settings supplied to the [Verovio](https://www.verovio.org/index.xhtml){:target="_blank"} engraving library, used to generate the content of mei-friend's notation panel
 
 ## Modifying layout of screen regions
