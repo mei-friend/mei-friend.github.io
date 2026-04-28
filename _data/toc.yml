@@ -1,4 +1,4 @@
-- title: "Cheat sheet" 
+- title: "Cheat sheet"
   url: "cheatsheet"
 - title: Documentation
   url: "docs"
@@ -6,11 +6,11 @@
     - title: "Basic Topics"
       url: "docs/basic"
       children:
-        - title: "Getting started" 
+        - title: "Getting started"
           url: "docs/basic/getting-started/"
         - title: "Import and Export"
           url: "docs/basic/import-export/"
-        - title: Navigation 
+        - title: Navigation
           url: "docs/basic/navigation/"
         - title: Inserting
           url: "docs/basic/inserting/"
@@ -18,20 +18,20 @@
           url: "docs/basic/manipulating/"
         - title: Editing
           url: "docs/basic/editing/"
-        - title: Settings 
+        - title: Settings
           url: "docs/basic/settings/"
-        - title: Persistence 
+        - title: Persistence
           url: "docs/basic/persistence/"
-        - title: Validation 
+        - title: Validation
           url: "docs/basic/validation/"
         - title: "MIDI playback"
           url: "docs/basic/midiplayback/"
-        - title: "GitHub integration" 
+        - title: "GitHub integration"
           url: "docs/basic/github/"
     - title: "Advanced topics"
       url: "docs/advanced"
       children:
-        - title: "Working with large files: Speed mode" 
+        - title: "Working with large files: Speed mode"
           url: "docs/advanced/largefiles/"
         - title: "Remote control via URL parameters"
           url: "docs/advanced/urlparameters/"
@@ -49,6 +49,8 @@
           url: "docs/advanced/contributing/"
         - title: "Code structure"
           url: "docs/advanced/structure/"
+        - title: "Automation"
+          url: "docs/advanced/automation/"
     - title: "Further reading"
       url: "docs/furtherreading"
 - title: "About"
