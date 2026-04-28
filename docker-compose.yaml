@@ -2,11 +2,12 @@ version: '3.7'
 services:
   site:
     container_name: docsy
+    platform: linux/amd64
+    # Change from 3.8 to 4.2 or 'latest'
+    image: jekyll/jekyll:4.2.2
     command: jekyll serve --watch --drafts
-    image: jekyll/jekyll:3.8
-    volumes: 
+    volumes:
       - "./:/srv/jekyll"
       - "./vendor/bundle:/usr/local/bundle"
-      # remove "./vendor/bundle:/usr/local/bundle" volume when deploying in production
-    ports: 
+    ports:
       - "4000:4000"
