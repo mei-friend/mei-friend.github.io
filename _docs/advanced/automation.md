@@ -118,7 +118,7 @@ Users need write access to the caller repository so that processing results can 
 ### Central repository {#central-repository}
 
 The central repository contains the actual processing logic: the workflow definitions and the scripts (e.g., shell or Python) that implement the available work packages.
-It defines a workflow that is triggered by the caller workflow via the GitHub API.
+It exposes one or more reusable workflows (`on: workflow_call`) that the caller workflow invokes directly via a `uses:` reference. A central repository may expose a single entry point for all work packages or several specialised workflows that the caller picks between.
 
 When triggered, both the central and the caller repository are checked out into a shared runner environment by the GitHub Actions process.
 The central repository's scripts are then executed with access to the caller repository's data.
@@ -163,23 +163,25 @@ Setting up a custom central repository gives you full control over the available
 
 **1. Create a central repository**
 
-Fork or use the [provided central repository](https://github.com/mei-friend/automation/) as a starting point. Your central repository must contain:
-- A receiving workflow YAML that accepts the inputs relayed by caller repositories and dispatches them to the appropriate script
+Use the [provided central repository](https://github.com/mei-friend/automation/) as a template. Your central repository must contain:
+- One or more reusable workflow YAML files (`on: workflow_call`) that accept the inputs relayed by caller repositories and dispatch them to the appropriate script
 - The processing scripts (e.g., shell or Python) that implement your work packages
 - Optionally, a JSON work package definition file that can be provided to mei-friend's **"Custom configuration"** field
 
 **2. Update each caller repository**
 
-Each caller repository contains a GitHub Actions workflow YAML file at `.github/workflows/caller.yml`. This file includes a reference to the central repository to which work package execution requests are forwarded. To connect a caller repository to your custom central repository, change the following field:
+Each caller repository contains a GitHub Actions workflow YAML file at `.github/workflows/caller.yml`. This file invokes a reusable workflow from the central repository via a `uses:` reference. To connect a caller repository to your custom central repository, change that line:
 
 ```yaml
-# Replace this value with your own central repository
-repository: [CENTRAL_REPO_OWNER/CENTRAL_REPO_NAME]
+jobs:
+  call-shared:
+    # Replace with the path to your own central workflow
+    uses: [CENTRAL_REPO_OWNER]/[CENTRAL_REPO_NAME]/.github/workflows/[WORKFLOW_FILE].yml@main
 ```
 
 This change must be made in every caller repository that should use your central repository. Any caller repository still pointing to the original value will continue to use the provided central repository.
 
-Note that the receiving workflow in your central repository must accept the same input structure that the caller workflow sends. If you change the input schema in the central repository, the caller workflow YAML must be updated accordingly in all caller repositories.
+Note that the reusable workflow in your central repository must accept the same input structure that the caller workflow sends. If you change the input schema in the central repository, the caller workflow YAML must be updated accordingly in all caller repositories.
 
 
 ## Example use case: E-LAUTE {#example-e-laute}
@@ -191,14 +193,15 @@ Users can test the E-LAUTE automation functions using their own caller repositor
 
 **1. Point your caller repository to the E-LAUTE central repository**
 
-In your caller repository, open `.github/workflows/caller.yml` and update the central repository reference to the E-LAUTE central repository:
+In your caller repository, open `.github/workflows/caller.yml` and update the `uses:` line to point to the E-LAUTE central repository's coordinator workflow:
 
 ```yaml
-# Replace the existing value with the E-LAUTE central repository
-repository: [E_LAUTE_CENTRAL_REPO_OWNER/E_LAUTE_CENTRAL_REPO_NAME]
+jobs:
+  call-shared:
+    uses: e-laute/E-LAUTE_GH_Actions/.github/workflows/run_coordinator.yml@main
 ```
 
-<!-- PLACEHOLDER: exact YAML field name and E-LAUTE central repository path needed -->
+The E-LAUTE central repository exposes several reusable workflows (single-file processing, batch processing, validation, provenance upload, etc.); `run_coordinator.yml` is the standard entry point for running a work package on a single MEI file.
 
 <figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;3: Caller workflow YAML with E-LAUTE central repository</div>
@@ -215,7 +218,7 @@ In mei-friend's GitHub Actions panel, set the **"Custom configuration"** URL to 
 
 `[URL_TO_E_LAUTE_WORK_PACKAGES_JSON]`
 
-<!-- PLACEHOLDER: URL to the E-LAUTE work_packages.json file needed -->
+<!-- PLACEHOLDER: URL to the E-LAUTE work_packages.json file needed INSERT AFTER CLEANUP OF THAT REPO-->
 
 Once both are in place, open any MEI file from your caller repository in mei-friend. The GitHub Actions panel will show the E-LAUTE work packages in the dropdown menu, ready to be applied to your encoding.
 
