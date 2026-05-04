@@ -10,16 +10,15 @@ layout: page
 mei-friend can trigger automated processing of MEI files via GitHub Actions. Users select named **work packages** — bundled processing operations such as transformation, validation, or pre/post-processing — from mei-friend's interface, which are then executed on GitHub's servers.
 This automated processing complements manual editing within mei-friend, but does not replace it.
 
-The setup described here separates automation logic from project data: GitHub Actions workflow files and processing scripts are maintained in a shared central repository, while users store their MEI files in their own caller repository based on a provided template.
+The setup described here separates automation logic from project data: the processing scripts are maintained in a shared central repository, while users store their MEI files in their own caller repository based on a provided template.
 Users with familiarity in a scripting language can also set up their own central repository with custom GitHub Actions workflows and scripts.
-
 
 ## Applying automation in a user repository {#applying-automation}
 
 To avoid confusion upfront, the following two are worth distinguishing upfront:
-- **Work package**: a named processing operation selectable in mei-friend, defined in a JSON configuration file. Each work package may invoke one or more scripts as part of a single operation.
-- **GitHub Actions workflow** (or simply *workflow* in this documentation): a YAML-defined automation pipeline that runs on GitHub's servers and carries out the execution. Workflows form the underlying infrastructure; they are not directly visible to the user in mei-friend.
 
+- **Work package**: a named processing operation selectable in mei-friend, defined in a JSON configuration file. Each work package may invoke one or more scripts as part of a single operation.
+- **GitHub Actions workflow** (or simply _workflow_ in this documentation): a YAML-defined automation pipeline that runs on GitHub's servers and carries out the execution. Workflows form the underlying infrastructure; they are not directly visible to the user in mei-friend.
 
 ## Step-by-step instructions for using automation in your project
 
@@ -36,7 +35,6 @@ Provide the URL of a JSON file that defines the available work packages and thei
 
 To create your own work package definition, see [Creating your own work package definition](#creating-your-own-work-package-definition).
 
-
 ### 3. Running a work package from mei-friend
 
 - Log in to GitHub in mei-friend and open a file from your caller repository.
@@ -52,8 +50,8 @@ To create your own work package definition, see [Creating your own work package 
 
 - In the GitHub Actions panel, select the **"Custom configuration"** tab and confirm that the URL for the work package definition is filled in.
 - Select a work package from the dropdown menu and fill in the parameters as needed. Parameters may have pre-filled default values; adjust them to match your use case. Two helper buttons allow you to:
-    - paste the current file path into a parameter field, or
-    - paste the ID of the currently selected XML element into a parameter field.
+  - paste the current file path into a parameter field, or
+  - paste the ID of the currently selected XML element into a parameter field.
 
 <figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;2: GitHub Actions panel</div>
@@ -64,31 +62,31 @@ To create your own work package definition, see [Creating your own work package 
 
 - Click **"Run workflow"** to execute the selected work package. (The button label follows GitHub Actions terminology; clicking it triggers the underlying GitHub Actions workflow that processes the selected work package.) Execution takes place on GitHub and may take some time; a progress bar in the panel indicates the current status. A link to the GitHub Actions workflow run log is also available in the panel once execution has started.
 - Once completed, a success or failure message is shown in the panel.
-    - **On success**: if the work package produced changes to the encoding, they are committed to the caller repository. Click **"Reload MEI file"** to see the updated content in mei-friend. If the work package only generated a report without modifying any files, no commit is made.
-    - **On failure**: click the link in the panel to open the GitHub Actions workflow run log and inspect what went wrong.
-
+  - **On success**: if the work package produced changes to the encoding, they are committed to the caller repository. Click **"Reload MEI file"** to see the updated content in mei-friend. If the work package only generated a report without modifying any files, no commit is made.
+  - **On failure**: click the link in the panel to open the GitHub Actions workflow run log and inspect what went wrong.
 
 ## Troubleshooting
 
 - If **"Commit changes"** fails, verify that you have write access to the caller repository and that GitHub Actions is enabled in the repository's settings on GitHub.
 - TODO: add more troubleshooting tips
 
-
-
 ## Creating your own work package definition {#creating-your-own-work-package-definition}
 
 The JSON work package definition file controls which work packages appear in mei-friend's GitHub Actions panel and how they are presented to the user. It is hosted at a publicly accessible, CORS-enabled URL — for example as a raw file in a GitHub repository — and referenced in mei-friend's GitHub Actions panel under **"Custom configuration"**.
 
 Each entry in the JSON defines a work package by:
+
 - a **name**, displayed in the dropdown menu
 - a **description**, shown as a tooltip in the panel
 - a list of **parameters**, each with a type, optional default value, and description, rendered as labelled form fields in the GitHub Actions panel
 
 Users are not required to inspect or understand the underlying scripts or YAML workflow definitions. A JSON template and a worked example are provided in the central repository:
+
 - [Template](https://github.com/mei-friend/automation/blob/main/work_package_template.json)
 - [Example](https://github.com/mei-friend/automation/blob/main/work_packages.json)
 
 The JSON configuration can be provided to mei-friend in two ways:
+
 1. Via the **"Custom configuration"** field in mei-friend's GitHub Actions panel (see [Enabling automation in mei-friend](#enabling-automation-in-mei-friend))
 2. As a URL parameter when sharing a link to mei-friend, which allows the tool to pre-configure itself automatically when a project member follows that link
 
@@ -104,7 +102,6 @@ Once your JSON file is hosted at a publicly accessible, CORS-enabled URL, provid
 
 If you need processing logic not available in any existing central repository, you can set up your own with custom scripts and GitHub Actions workflow definitions. This additionally requires updating the caller workflow YAML in each caller repository to point to your new central repository. See [Setting up your own central repository](#setting-up-your-own-central-repository) for step-by-step instructions.
 
-
 ## Structure of the automation setup {#structure-of-the-automation-setup}
 
 The automation setup distinguishes between three main components:
@@ -119,7 +116,6 @@ The automation setup distinguishes between three main components:
             alt="Overview diagram of the automation setup" />
     <figcaption class="figure-caption">Overview diagram of the automation setup.</figcaption>
 </figure>
-
 
 When a work package is selected and triggered in mei-friend, the central workflow operates on the data from the caller repository and writes results back to it.
 Users need write access to the caller repository, but do not need any knowledge of GitHub Actions or the scripts in the central repository.
@@ -150,7 +146,6 @@ Some work packages require access to external resources such as project database
 Credentials (API keys, passwords) must be stored as [Secrets](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions) in the caller repository and are passed as inputs when the central workflow is triggered.
 The central workflow can then use these values without them being exposed in logs or code.
 
-
 ### Execution flow {#execution-flow}
 
 The following steps describe what happens when a user clicks "Run workflow" in mei-friend's GitHub Actions panel:
@@ -168,6 +163,7 @@ Setting up a custom central repository gives you full control over the available
 **1. Create a central repository**
 
 Use the [provided central repository](https://github.com/mei-friend/automation/) as a template. Your central repository must contain:
+
 - One or more reusable workflow YAML files (`on: workflow_call`) that accept the inputs relayed by caller repositories and dispatch them to the appropriate script
 - The processing scripts (e.g., shell or Python) that implement your work packages
 - Optionally, a JSON work package definition file that can be provided to mei-friend's **"Custom configuration"** field
@@ -186,7 +182,6 @@ jobs:
 This change must be made in every caller repository that should use your central repository. Any caller repository still pointing to the original value will continue to use the provided central repository.
 
 Note that the reusable workflow in your central repository must accept the same input structure that the caller workflow sends. If you change the input schema in the central repository, the caller workflow YAML must be updated accordingly in all caller repositories.
-
 
 ## Example use case: E-LAUTE {#example-e-laute}
 
@@ -236,8 +231,6 @@ Once both are in place, open any MEI file from your caller repository in mei-fri
 <!-- SUGGESTED SCREENSHOT (Fig. 4): The GitHub Actions panel in mei-friend with the "Custom configuration" tab open, showing the E-LAUTE JSON URL filled in and the E-LAUTE work packages populated in the dropdown menu. Ideally shows one or more E-LAUTE work package names to make the example concrete. -->
 
 TODO: describe available E-LAUTE work packages and their functionality, and how they can be applied to MEI files in the caller repository.
-
-
 
 <!--
 Automation is triggered through mei-friend's GitHub integration:
