@@ -74,12 +74,6 @@ To create your own work package definition, see [Creating your own work package 
 
 The JSON work package definition file controls which work packages appear in mei-friend's GitHub Actions panel and how they are presented to the user. It is hosted at a publicly accessible, CORS-enabled URL — for example as a raw file in a GitHub repository — and referenced in mei-friend's GitHub Actions panel under **"Custom configuration"**.
 
-Each entry in the JSON defines a work package by:
-
-- a **name**, displayed in the dropdown menu
-- a **description**, shown as a tooltip in the panel
-- a list of **parameters**, each with a type, optional default value, and description, rendered as labelled form fields in the GitHub Actions panel
-
 Users are not required to inspect or understand the underlying scripts or YAML workflow definitions. A JSON template and a worked example are provided in the central repository:
 
 - [Template](https://github.com/mei-friend/automation/blob/main/work_package_template.json)
@@ -90,17 +84,45 @@ The JSON configuration can be provided to mei-friend in two ways:
 1. Via the **"Custom configuration"** field in mei-friend's GitHub Actions panel (see [Enabling automation in mei-friend](#enabling-automation-in-mei-friend))
 2. As a URL parameter when sharing a link to mei-friend, which allows the tool to pre-configure itself automatically when a project member follows that link
 
+### JSON file structure {#json-file-structure}
+
+The JSON file has the following top-level structure:
+
+```json
+{
+  "central_repository": "owner/repo",
+  "branch": "main",
+  "automation": "path/to/run_automation.sh",
+  "work_packages": [ ... ]
+}
+```
+
+| Field                | Description                                                                         |
+| -------------------- | ----------------------------------------------------------------------------------- |
+| `central_repository` | The GitHub repository containing the processing scripts, in `owner/repo` format     |
+| `branch`             | The branch of the central repository to use                                         |
+| `automation`         | Path (relative to the central repository root) to the automation entry-point script |
+| `work_packages`      | Array of work package definitions (see below)                                       |
+
+These three top-level fields are passed directly as inputs to the caller workflow when a work package is triggered. This means **no changes to `caller.yml` are required** when switching between central repositories — the JSON file alone controls which central repository and automation script are used.
+
+Each entry in the `work_packages` array defines a work package by:
+
+- a **name**, displayed in the dropdown menu
+- a **description**, shown as a tooltip in the panel
+- a list of **parameters**, each with a type, optional default value, and description, rendered as labelled form fields in the GitHub Actions panel
+
 Depending on your needs, there are two levels of customization:
 
 **1. Writing a custom JSON file (no changes to GitHub Actions workflows or scripts required)**
 
-If the scripts you need are already available in an existing central repository — such as the [provided central repository](https://github.com/mei-friend/automation/) or the [E-LAUTE automation repository](https://github.com/e-laute/automation/) — you can define new work packages simply by writing a custom JSON file. Each entry specifies which script to invoke and with which parameters, allowing you to create project-specific named work packages with tailored default values, expose only a relevant subset of available operations, or present existing scripts under clearer names for your project members.
+If the scripts you need are already available in an existing central repository — such as the [provided central repository](https://github.com/mei-friend/automation/) or the [E-LAUTE automation repository](https://github.com/e-laute/automation/) — you can define new work packages simply by writing a custom JSON file that points `central_repository` to that repository. Each work package entry specifies which script to invoke and with which parameters, allowing you to create project-specific named work packages with tailored default values, expose only a relevant subset of available operations, or present existing scripts under clearer names for your project members.
 
 Once your JSON file is hosted at a publicly accessible, CORS-enabled URL, provide that URL in the **"Custom configuration"** field to load your work packages in mei-friend.
 
-**2. Setting up your own central repository (requires changes to GitHub Actions workflows)**
+**2. Setting up your own central repository**
 
-If you need processing logic not available in any existing central repository, you can set up your own with custom scripts and GitHub Actions workflow definitions. This additionally requires updating the caller workflow YAML in each caller repository to point to your new central repository. See [Setting up your own central repository](#setting-up-your-own-central-repository) for step-by-step instructions.
+If you need processing logic not available in any existing central repository, you can set up your own with custom scripts. See [Setting up your own central repository](#setting-up-your-own-central-repository) for step-by-step instructions.
 
 ## Structure of the automation setup {#structure-of-the-automation-setup}
 
@@ -124,21 +146,19 @@ Creating a repository from the provided template is sufficient to connect the ca
 ### Caller repository {#caller-repository}
 
 The caller repository is the user's own GitHub repository where MEI files are stored and versioned.
-Beyond the project data, it contains only a minimal GitHub Actions workflow file that is set up to receive trigger events dispatched by mei-friend and forward them — along with the relevant inputs such as the selected work package name, file path, element ID, and other parameter values — to the central repository for processing.
+Beyond the project data, it contains only a minimal, generic GitHub Actions workflow file (`caller.yml`) that receives trigger events dispatched by mei-friend and carries out the processing using the central repository and automation script specified in the dispatch inputs.
 
 The caller repository must be set up from the [provided template](https://github.com/mei-friend/caller-template), which already includes this caller workflow.
-No further workflow configuration is required.
-Users need write access to the caller repository so that processing results can be committed back by the central workflow upon completion.
+The central repository, branch, and automation script are specified entirely through the JSON configuration file — switching to a different central repository is done by pointing mei-friend to a different JSON URL.
+Users need write access to the caller repository so that processing results can be committed back upon completion.
 
 ### Central repository {#central-repository}
 
-The central repository contains the actual processing logic: the workflow definitions and the scripts (e.g., shell or Python) that implement the available work packages.
-It exposes one or more reusable workflows (`on: workflow_call`) that the caller workflow invokes directly via a `uses:` reference. A central repository may expose a single entry point for all work packages or several specialised workflows that the caller picks between.
+The central repository contains the actual processing logic: the scripts (e.g., shell or Python) that implement the work packages, and an automation entry-point script whose path is specified in the JSON configuration file.
 
-When triggered, both the central and the caller repository are checked out into a shared runner environment by the GitHub Actions process.
-The central repository's scripts are then executed with access to the caller repository's data.
-Any changes to MEI files or other outputs produced by this process are committed back to the caller repository.
-Beyond this interaction, the central and caller repositories are otherwise independent and may be owned by different users or GitHub organizations, allowing automation logic to be reused and shared across projects.
+When triggered, the caller workflow checks out the central repository at the specified branch and runs the automation script with the dispatch inputs (work package ID, file path, parameters, etc.). The script has access to the caller repository's data and commits any changes back to it upon completion.
+
+The central and caller repositories are otherwise independent and may be owned by different users or GitHub organizations, allowing automation logic to be reused and shared across projects.
 
 **Authentication and secrets**
 
@@ -150,76 +170,46 @@ The central workflow can then use these values without them being exposed in log
 
 The following steps describe what happens when a user clicks "Run workflow" in mei-friend's GitHub Actions panel:
 
-1. mei-friend dispatches a trigger event to the **caller repository** via the GitHub API, passing the selected work package name, the file path, the selected element ID (if any), and the parameter values as inputs.
-2. The **caller workflow** relays this event and all inputs to the **central repository**, together with a reference to the caller repository.
-3. The **central workflow** checks out both repositories into a shared environment and executes the script corresponding to the selected work package.
-4. If the script produces changes to the encoding, these are committed back to the **caller repository** by the central workflow.
+1. mei-friend dispatches a `workflow_dispatch` event to the **caller repository** via the GitHub API. The dispatch payload includes: the selected work package ID and its full definition, the file path, the parameter values, a commit message, and the three central-repository routing fields from the JSON file (`central_repository`, `branch`, `automation`).
+2. The **caller workflow** uses the supplied `central_repository` and `branch` to check out the central repository and runs the script at the `automation` path, passing all remaining inputs.
+3. The **automation script** executes the work package's processing logic against the caller repository's data.
+4. If the script produces changes to the encoding, these are committed back to the **caller repository**.
 5. mei-friend polls the GitHub API for workflow status and reports success or failure in the panel. Upon success, the user can click "Reload MEI file" to see the updated content.
 
 ### Setting up your own central repository {#setting-up-your-own-central-repository}
 
-Setting up a custom central repository gives you full control over the available work packages and their implementation. Changes are required in two places: the new central repository itself, and the caller workflow YAML in each caller repository that should use it.
+Setting up a custom central repository gives you full control over the available work packages and their implementation.
 
 **1. Create a central repository**
 
 Use the [provided central repository](https://github.com/mei-friend/automation/) as a template. Your central repository must contain:
 
-- One or more reusable workflow YAML files (`on: workflow_call`) that accept the inputs relayed by caller repositories and dispatch them to the appropriate script
+- An automation entry-point script (e.g., `automation/run_automation.sh`) that receives the dispatch inputs and executes the appropriate work package logic
 - The processing scripts (e.g., shell or Python) that implement your work packages
-- Optionally, a JSON work package definition file that can be provided to mei-friend's **"Custom configuration"** field
+- A JSON work package definition file with the `central_repository`, `branch`, and `automation` fields pointing to your repository
 
-**2. Update each caller repository**
+**2. Provide your JSON file to mei-friend**
 
-Each caller repository contains a GitHub Actions workflow YAML file at `.github/workflows/caller.yml`. This file invokes a reusable workflow from the central repository via a `uses:` reference. To connect a caller repository to your custom central repository, change that line:
-
-```yaml
-jobs:
-  call-shared:
-    # Replace with the path to your own central workflow
-    uses: [CENTRAL_REPO_OWNER]/[CENTRAL_REPO_NAME]/.github/workflows/[WORKFLOW_FILE].yml@main
-```
-
-This change must be made in every caller repository that should use your central repository. Any caller repository still pointing to the original value will continue to use the provided central repository.
-
-Note that the reusable workflow in your central repository must accept the same input structure that the caller workflow sends. If you change the input schema in the central repository, the caller workflow YAML must be updated accordingly in all caller repositories.
+Host your JSON file at a publicly accessible, CORS-enabled URL and enter it in mei-friend's **"Custom configuration"** field. The `central_repository` and `branch` fields in the JSON tell the caller workflow where to find your scripts; no other configuration is needed in the caller repository.
 
 ## Example use case: E-LAUTE {#example-e-laute}
 
 The [E-LAUTE digital edition project](https://e-laute.info) uses this automation mechanism to manage encoding, derivation, and post-processing of several thousand MEI files across more than 50 GitHub repositories.
 The E-LAUTE central repository provides a set of work packages tailored to the project's needs, including derivation of notation types from one another, validation against project-specific encoding guidelines, and post-processing to generate provenance metadata.
 
-Users can test the E-LAUTE automation functions using their own caller repository. This requires two adjustments:
+Users can test the E-LAUTE automation functions using their own caller repository:
 
-**1. Point your caller repository to the E-LAUTE central repository**
-
-In your caller repository, open `.github/workflows/caller.yml` and update the `uses:` line to point to the E-LAUTE central repository's coordinator workflow:
-
-```yaml
-jobs:
-  call-shared:
-    uses: e-laute/automation/.github/workflows/run_coordinator.yml@main
-```
-
-The E-LAUTE central repository exposes several reusable workflows (single-file processing, batch processing, validation, provenance upload, etc.); `run_coordinator.yml` is the standard entry point for running a work package on a single MEI file.
-
-<figure class="halfwidth">
-    <div class="figure-title">Fig.&thinsp;3: Caller workflow YAML with E-LAUTE central repository</div>
-        <img class="figure-img" src="{{ site.baseurl }}/assets/img/automation/caller-yaml-elaute.png"
-            alt="Screenshot of the caller workflow YAML file showing the central repository reference field" />
-    <figcaption class="figure-caption">The caller workflow YAML file open in the GitHub web interface, with the central repository reference updated to point to the E-LAUTE central repository.</figcaption>
-</figure>
-
-<!-- SUGGESTED SCREENSHOT (Fig. 3): The caller workflow YAML file (.github/workflows/caller.yml) open in the GitHub web editor or a text editor. The line containing the central repository reference should be visible and highlighted, showing the E-LAUTE central repo value filled in. -->
-
-**2. Load the E-LAUTE work package definitions in mei-friend**
+**Load the E-LAUTE work package definitions in mei-friend**
 
 In mei-friend's GitHub Actions panel, set the **"Custom configuration"** URL to the E-LAUTE work package definition file:
 
-`[URL_TO_E_LAUTE_WORK_PACKAGES_JSON]`
+[https://raw.githubusercontent.com/e-laute/automation/refs/heads/main/scripts/work_packages.json](https://raw.githubusercontent.com/e-laute/automation/refs/heads/main/scripts/work_packages.json)
 
-<!-- PLACEHOLDER: URL to the E-LAUTE work_packages.json file needed INSERT AFTER CLEANUP OF THAT REPO-->
+<!-- TODO: Verify link, currently broken-->
 
-Once both are in place, open any MEI file from your caller repository in mei-friend. The GitHub Actions panel will show the E-LAUTE work packages in the dropdown menu, ready to be applied to your encoding.
+The JSON file already contains the correct `central_repository`, `branch`, and `automation` values pointing to the E-LAUTE central repository.
+
+Once the URL is set, open any MEI file from your caller repository in mei-friend. The GitHub Actions panel will show the E-LAUTE work packages in the dropdown menu, ready to be applied to your encoding.
 
 <figure class="halfwidth">
     <div class="figure-title">Fig.&thinsp;4: GitHub Actions panel with E-LAUTE work packages</div>
@@ -231,49 +221,3 @@ Once both are in place, open any MEI file from your caller repository in mei-fri
 <!-- SUGGESTED SCREENSHOT (Fig. 4): The GitHub Actions panel in mei-friend with the "Custom configuration" tab open, showing the E-LAUTE JSON URL filled in and the E-LAUTE work packages populated in the dropdown menu. Ideally shows one or more E-LAUTE work package names to make the example concrete. -->
 
 TODO: describe available E-LAUTE work packages and their functionality, and how they can be applied to MEI files in the caller repository.
-
-<!--
-Automation is triggered through mei-friend's GitHub integration:
-
-Open a file from a GitHub repository
-Select a processing command (as provided by the configured automation)
-Optionally specify:
-file paths
-XML elements (via selection)
-command parameters
-Execute the workflow
-
-The workflow runs on GitHub and may take some time to complete.
-
-## Inputs
-
-Depending on the configured automation, the following inputs may be provided:
-
-File scope: current file or multiple files
-Element scope: selected XML elements (optional)
-Command: processing operation defined by the central repository
-Parameters: command-specific options
-
-## Results
-
-After completion:
-
-Changes are committed to the GitHub repository
-Updated files can be reloaded in mei-friend
-Workflow logs are available via GitHub Actions
-Configuration
-
-To enable automation, the following must be configured:
-
-A GitHub repository containing MEI files
-A caller workflow in that repository
-A reference to a central automation repository
-
-The central repository defines which commands are available in mei-friend.
-
-Notes
-Processing is executed remotely via GitHub Actions
-Some workflows may require repository secrets (e.g. API credentials)
-Execution time depends on the complexity of the workflow
-Scope
- -->
