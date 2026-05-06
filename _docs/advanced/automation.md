@@ -212,7 +212,7 @@ The JSON file already contains the correct `central_repository`, `branch`, and `
 Once the URL is set, open any MEI file from your caller repository in mei-friend. The GitHub Actions panel will show the E-LAUTE work packages in the dropdown menu, ready to be applied to your encoding.
 
 <figure class="halfwidth">
-    <div class="figure-title">Fig.&thinsp;4: GitHub Actions panel with E-LAUTE work packages</div>
+    <div class="figure-title">Fig.&thinsp;3: GitHub Actions panel with E-LAUTE work packages</div>
         <img class="figure-img" src="{{ site.baseurl }}/assets/img/automation/github-actions-panel-elaute.png"
             alt="Screenshot of mei-friends GitHub Actions panel showing E-LAUTE work packages in the dropdown" />
     <figcaption class="figure-caption">GitHub Actions panel with the E-LAUTE work package definition loaded, showing available E-LAUTE work packages in the dropdown menu.</figcaption>
