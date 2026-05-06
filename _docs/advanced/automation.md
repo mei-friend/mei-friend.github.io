@@ -197,7 +197,7 @@ In your caller repository, open `.github/workflows/caller.yml` and update the `u
 ```yaml
 jobs:
   call-shared:
-    uses: e-laute/E-LAUTE_GH_Actions/.github/workflows/run_coordinator.yml@main
+    uses: e-laute/automation/.github/workflows/run_coordinator.yml@main
 ```
 
 The E-LAUTE central repository exposes several reusable workflows (single-file processing, batch processing, validation, provenance upload, etc.); `run_coordinator.yml` is the standard entry point for running a work package on a single MEI file.
