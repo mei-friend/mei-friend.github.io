@@ -133,8 +133,6 @@ The automation setup distinguishes between three main components:
 </figure>
 
 When a work package is selected and triggered in mei-friend, the central workflow operates on the data from the caller repository and writes results back to it.
-Users need write access to the caller repository, but do not need any knowledge of GitHub Actions or the scripts in the central repository.
-Creating a repository from the provided template is sufficient to set up the connection between the caller repository and the central repository and have the necessary setup in place.
 
 ### Caller repository {#caller-repository}
 
@@ -184,6 +182,7 @@ Use the [provided central repository](https://github.com/mei-friend/automation/)
 **2. Provide your work package definitions to mei-friend**
 
 Host your work package definitions at a publicly accessible, CORS-enabled URL and enter it in mei-friend's **"Work package definition"** field. The `central_repository` and `branch` fields in the JSON tell the caller workflow where to find your scripts; no other configuration is needed in the caller repository.
+The URL can also be supplied as a URL-parameter, `?automation=...`, to load the work package definition when opening an mei-friend link.
 
 ## Example use case: E-LAUTE {#example-e-laute}
 
