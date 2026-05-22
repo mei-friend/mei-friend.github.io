@@ -45,7 +45,6 @@
           url: "docs/advanced/enrichlist/"
         - title: "Automation"
           url: "docs/advanced/automation/"
-
     - title: "For developers"
       url: "docs/develop"
       children:
