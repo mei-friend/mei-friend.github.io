@@ -6,7 +6,7 @@ layout: page
 ---
 # Basic topics
 
-Here you may read about the basic topcis related to the usage of mei-friend.
+Here you may read about the basic topics related to the usage of mei-friend.
 
 <div class="section-index">
     <hr class="panel-line">
