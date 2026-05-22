@@ -1,7 +1,7 @@
 ---
 title: Code structure
 description: Developer documentation concering the mei-friend code structure
-permalink: /docs/advanced/structure/
+permalink: /docs/develop/structure/
 layout: page
 ---
 
