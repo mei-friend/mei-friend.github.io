@@ -87,11 +87,11 @@ Development of mei-friend has been funded by several research projects over the 
 
 We thank Matthäus Pescoller ([@mapscl](https://github.com/mapscl){:target="_blank"}) for contributing to the documentation, and for his extensive testing of mei-friend in the creation of orchestral score encodings in the purvue of [Signature Sound Vienna](https://github.com/signature-sound-vienna){:target="_blank"}.
 
-We also thank Sophie Stremel ([@sstremel](https://github.com/sstremel){:target="_blank"}) for her contributions in updating and enriching the documentation.
+We also thank Sophie Stremel ([@sstremel](https://github.com/sstremel){:target="_blank"}) for her contributions to the enrichment chapter, and Julia Jaklin ([@ohwjd](https://github.com/ohwjd){:target="_blank"}) and Henning Burghoff ([@Brathenning](https://github.com/Brathenning){:target="_blank"}) for providing documentation of mei-friend's support for project-specific automation using GitHub Actions.
 
 We thank the MEI community for input to the development of mei-friend. 
 In particular, we would like to acknowledge Laurent Pugin ([@lpugin](https://github.com/lpugin){:target="_blank"}), who contributed the code for schema validation, and 
-Thomas Weber ([@th-we](https://github.com/th-we){:target="_blank"}), who helped to improve the speed mode module, and Anna Plaksin ([@annplaksin](https://github.com/annplaksin){:target="_blank"}) for implementing extensive functionalities for editorial mark-up, alongside other contributions to mei-friend's development via an [NFDI4Culture 2023](https://nfdi4culture.de/){:target="_blank"} research tooling development grant: [Musicological mark-up with mei-friend](https://nfdi4culture.de/news-events/news/2nd-forum-further-development-of-research-tools-data-services-report.html){:target="_blank"}.
+Thomas Weber ([@th-we](https://github.com/th-we){:target="_blank"}), who helped to improve the speed mode module, and Anna Plaksin ([@annplaksin](https://github.com/annplaksin){:target="_blank"}) for implementing extensive functionalities for editorial mark-up, alongside other contributions to mei-friend's development via an [NFDI4Culture 2023](https://nfdi4culture.de/){:target="_blank"} research tooling development grant: [Musicological mark-up with mei-friend](https://nfdi4culture.de/news-events/news/2nd-forum-further-development-of-research-tools-data-services-report.html){:target="_blank"}. We thank Julia Jaklin ([@ohwjd](https://github.com/ohwjd){:target="_blank"}) for contributing support for remote-configured GitHub Actions.
 
 ## License
 
