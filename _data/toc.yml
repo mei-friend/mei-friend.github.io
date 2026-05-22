@@ -47,7 +47,7 @@
           url: "docs/advanced/automation/"
 
     - title: "For developers"
-      url: "docs/develop/"
+      url: "docs/develop"
       children:
         - title: "mei-friend Environments"
           url: "docs/develop/env/"

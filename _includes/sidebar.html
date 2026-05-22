@@ -76,7 +76,10 @@
                       <li class="collapse show" id="{{ child.title | slugify }}">
                         {% if entry.children %}
                           {% for child in entry.children %}
-                            <a class="td-sidebar-link td-sidebar-link__page {% if page.url == fullentryurl | strip %}active{% endif %}" id="m-{{ section.title | slugify }}-{{ entry.title | slugify }}-{{ child.title | slugify }}" href="{% if child.url %}{{ site.baseurl }}/{{ child.url | replace: 'docs', versionlink }}{% else %}{{ child.external_url }}{% endif %}">{{ child.title }}</a>{% endfor %}
+                            {% capture fullchildurl %}
+                              {{- "/" | append: child.url | replace: 'docs', versionlink -}}
+                            {% endcapture %}
+                            <a class="td-sidebar-link td-sidebar-link__page {% if page.url == fullchildurl | strip %}active{% endif %}" id="m-{{ section.title | slugify }}-{{ entry.title | slugify }}-{{ child.title | slugify }}" href="{% if child.url %}{{ site.baseurl }}/{{ child.url | replace: 'docs', versionlink }}{% else %}{{ child.external_url }}{% endif %}">{{ child.title }}</a>{% endfor %}
                         {% endif %}
                       </li>
                     </ul>
