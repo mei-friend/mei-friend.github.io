@@ -125,12 +125,19 @@ You can use the following shortcuts in combination with click and drag for selec
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">X</span></td>
-        <td class="explanation">Set att.placement (dir, dynam, trill, ...) to @place="between" 
+        <td class="explanation">Set att.placement (dir, dynam, trill, ...) to @place="between"
         and determine staff attribute from staff group of selected element (has to contain exactly two staves)</td>
     </tr>
     <tr>
         <td class="icons"><span class="keyIcon">V</span></td>
         <td class="explanation">Insert vertical group (`@vgrp`) attribute to selected elements with a new value for the displayed page</td>
+    </tr>
+        <td class="icons"><span class="keyIcon">C</span></td>
+        <td class="explanation">Convert selected note(s) to a new chord (having selected notes as children and cue, dur, dots, grace, stem.dir attributes in chord element) and vice versa (remove chord element while copying cue, dur, dots, grace, stem.dir attributes to note elements)</td>
+    </tr>
+    <tr>
+        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">N</span></td>
+        <td class="explanation">Convert selected note(s) to rest(s) and vice versa, retaining pitch and octave information (each element receives new xml:id)</td>
     </tr>
 </table>
 
@@ -139,25 +146,12 @@ You can use the following shortcuts in combination with click and drag for selec
 <table>
     <tr>
         <td class="icons"><span class="keyIcon">BACKSPACE</span> or <span class="keyIcon">DELETE</span></td>
-        <td class="explanation">Delete selected elements both in encoding and notation. 
-            Applies to all control elements, clef change, accid, artic, beam, beamSpan, note, chord, rest, mRest, multiRest. 
-            When deleting the last note inside a chord, beam, tuplet, fTrem, bTrem, these parent elements will also get deleted. 
-            When deleting an element that is been pointed to by another element (such as by a slur through `@startid` or `@endid`), 
+        <td class="explanation">Delete selected elements both in encoding and notation.
+            Applies to all control elements, clef change, accid, artic, beam, beamSpan, note, chord, rest, mRest, multiRest.
+            When deleting the last note inside a chord, beam, tuplet, fTrem, bTrem, these parent elements will also get deleted.
+            When deleting an element that is been pointed to by another element (such as by a slur through `@startid` or `@endid`),
             this pointing element will also be deleted.
         </td>
-    </tr>
-</table>
-
-### Manipulate elements
-
-<table>
-    <tr>
-        <td class="icons"><span class="keyIcon">C</span></td>
-        <td class="explanation">Convert selected note(s) to a new chord (having selected notes as children and cue, dur, dots, grace, stem.dir attributes in chord element) and vice versa (remove chord element while copying cue, dur, dots, grace, stem.dir attributes to note elements)</td>
-    </tr>
-    <tr>
-        <td class="icons"><span class="keyIcon shiftKey"></span><span class="keyIcon">N</span></td>
-        <td class="explanation">Convert selected note(s) to rest(s) and vice versa, retaining pitch and octave information (each element receives new xml:id)</td>
     </tr>
 </table>
 
@@ -198,7 +192,7 @@ You can use the following shortcuts in combination with click and drag for selec
     </tr>
 </table>
 
-### Manipulate duration
+### Manipulating duration
 
 <table>
     <tr>
@@ -215,7 +209,7 @@ You can use the following shortcuts in combination with click and drag for selec
     </tr>
 </table>
 
-### MEI encoding manipulation
+### Manipulating the MEI encoding
 
 <table>
     <tr>
@@ -441,6 +435,10 @@ in the form of <span class="code">https://mei-friend.mdw.ac.at/?file=fileURL&sel
         <td class="explanation">Open specified file URL</td>
     </tr>
     <tr>
+        <td class="automation">automation=<i>workpackageURL</i></td>
+        <td class="explanation">Load mei-friend with the specified GitHub Actions work package settings</td>
+    </tr>
+    <tr>
         <td class="code">scale=<i>number</i></td>
         <td class="explanation">Specify scaling of notation (default: 55; min: 10; max: 200)</td>
     </tr>
@@ -494,7 +492,7 @@ in the form of <span class="code">https://mei-friend.mdw.ac.at/?file=fileURL&sel
 
 <p>
 <a class="code" target="_blank"
-href="https://mei-friend.mdw.ac.at/?file=https://raw.githubusercontent.com/trompamusic-encodings/Schumann-Clara_Romanze-in-a-Moll/master/Schumann-Clara_Romanze-ohne-Opuszahl_a-Moll.mei&orientation=top&select=beam-0000001097443359,staff-0000001071700568,chord-0000002117575656,chord-0000000554871076&select=slur-0000000400617177,slur-0000001381747608&speed=true&breaks=auto">Schumann piece with several elements 
+href="https://mei-friend.mdw.ac.at/?file=https://raw.githubusercontent.com/trompamusic-encodings/Schumann-Clara_Romanze-in-a-Moll/master/Schumann-Clara_Romanze-ohne-Opuszahl_a-Moll.mei&orientation=top&select=beam-0000001097443359,staff-0000001071700568,chord-0000002117575656,chord-0000000554871076&select=slur-0000000400617177,slur-0000001381747608&speed=true&breaks=auto">Schumann piece with several elements
 selected in the middle</a>
 </p>
 <p>
