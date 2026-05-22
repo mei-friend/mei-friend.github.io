@@ -35,7 +35,8 @@ To avoid confusion upfront, the following two terms are worth distinguishing upf
 
 Work packages set up the connection to the central repository and tell mei-friend about the available processing operations and their parameters. They are defined in a JSON file that is hosted at a publicly accessible, CORS-enabled URL (for example as a raw file in a public GitHub repository).
 You need to enter the URL of this JSON file in mei-friend's settings in the **"Work package definition"** field. The following example file can be used for testing: <a href="https://raw.githubusercontent.com/mei-friend/automation/refs/heads/main/work_packages.json" target="_blank" rel="noopener noreferrer">work_packages.json</a>.
-The URL can also be supplied as a URL-parameter, `?automation=...`, to load the work package definition when opening an mei-friend link.
+
+{% include alert.html type="info" title="Setup using an mei-friend link" content='To simplify this setup, the URL of the JSO file can also be supplied as a URL-parameter, `?automation=...`. This loads the work package definition when opening mei-friend.' %}
 
 To create your own work package definition, see [Creating your own work package definition](#creating-your-own-work-package-definition).
 
