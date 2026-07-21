@@ -7,7 +7,8 @@ layout: page
 
 # Workflow automation via GitHub Actions
 
-{% include alert.html type="info" title="Under development" content='This functionality is currently only available in mei-friend\'s <a href="https://staging.mei-friend.mdw.ac.at" target="_blank" rel="noopener noreferrer">staging environment</a>.' %}
+<!--
+{% include alert.html type="info" title="Under development" content='This functionality is currently only available in mei-friend\'s <a href="https://staging.mei-friend.mdw.ac.at" target="_blank" rel="noopener noreferrer">staging environment</a>.' %} -->
 
 mei-friend aims to be a broadly useful editor. However, encoding projects often have requirements that could be usefully automated but are too specific to be implemented as built-in features. To accommodate, you can set up mei-friend to trigger automated processing of MEI files via GitHub Actions.
 To do so, you need to define so-called "work packages" -- bundled processing operations such as transformation, validation, or pre/post-processing.
@@ -36,7 +37,7 @@ To avoid confusion upfront, the following two terms are worth distinguishing upf
 Work packages set up the connection to the central repository and tell mei-friend about the available processing operations and their parameters. They are defined in a JSON file that is hosted at a publicly accessible, CORS-enabled URL (for example as a raw file in a public GitHub repository).
 You need to enter the URL of this JSON file in mei-friend's settings in the **"Work package definition"** field. The following example file can be used for testing: <a href="https://raw.githubusercontent.com/mei-friend/automation/refs/heads/main/work_packages.json" target="_blank" rel="noopener noreferrer">work_packages.json</a>.
 
-{% include alert.html type="info" title="Setup using an mei-friend link" content='To simplify this setup, the URL of the JSO file can also be supplied as a URL-parameter, <code>?automation=...</code>. This loads the work package definition when opening mei-friend.' %}
+{% include alert.html type="info" title="Setup using an mei-friend link" content='To simplify this setup, the URL of the JSON file can also be supplied as a URL-parameter, <code>?automation=...</code>: <a href="https://staging.mei-friend.mdw.ac.at/?automation=https://raw.githubusercontent.com/mei-friend/automation/refs/heads/main/work_packages.json" target="_blank" rel="noopener noreferrer">https://staging.mei-friend.mdw.ac.at/?automation=https://raw.githubusercontent.com/mei-friend/automation/refs/heads/main/work_packages.json</a>. This loads the work package definition when opening mei-friend.' %}
 
 To create your own work package definition, see [Creating your own work package definition](#creating-your-own-work-package-definition).
 
